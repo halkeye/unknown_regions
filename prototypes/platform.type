@@ -1,0 +1,23 @@
+#PROTOTYPE
+Name         Generic Spaceplatform~
+Filename     platform.type~
+Description  ~
+Class        3
+Tractorbeam  200
+Lasers       10
+Maxmissiles  150
+Maxshield    1000
+Maxhull      20000
+Maxenergy    30000
+Hyperspeed   0
+Maxchaff     25
+Realspeed    0
+Manuever     0
+Maxbombs     0
+Comm         25
+Sensor       25
+Astro_array  25
+Ion          10
+End
+
+#END

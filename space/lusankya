@@ -1,0 +1,51 @@
+#SHIP
+Name         SSD Lusankya~
+OrigName     SSD Lusankya~
+Filename     lusankya~
+Description  ~
+Owner        The Imperial Remnants~
+Pilot        ~
+Copilot      ~
+Color        Cyan~
+Class        2
+Shipyard     45
+Hanger       9051
+Turret1      0
+Turret2      0
+Statet0      0
+Statet1      0
+Statet2      0
+Lastdoc      45
+Firstroom    9001
+Lastroom     9300
+Cockpit      9027
+Coseat       9014
+Pilotseat    9013
+Gunseat      9016
+Navseat      9018
+Engineroom   0
+Entrance     9052
+Hyperspeed   125
+Comm         255
+Tractorbeam  255
+Sensor       255
+Astro_array  255
+Realspeed    35
+Maxshield    1000
+Maxhull      20000
+Maxenergy    30000
+Manuever     5
+Maxchaff     0
+Maxmissiles  150
+MaxBombs     25
+Ion	       30
+Lasers       20
+LaserDamage  0
+Shipstate    1
+Missilestate 0
+Home         Kuat~
+Flags		   0
+Alarm	       0
+End
+
+#END

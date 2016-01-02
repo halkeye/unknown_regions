@@ -1,0 +1,3179 @@
+#AREA   {PROTO} Rance's area in progress~
+
+
+
+#AUTHOR Rance~
+
+#RANGES
+0 0 0 0
+$
+
+#FLAGS
+0
+
+#ECONOMY 0 43722
+
+#CLIMATE 2 2 2
+
+#MOBILES
+#1601
+Mall Security ~
+a Security Guard~
+A security guard is here, watching over you.
+~
+~
+3 40 0 Z
+105 0 -162 21d10+1050 10d4+2
+100 0
+8 8 0
+25 10 10 25 25 10 10
+0 0 0 0 0
+0 0 0 0 1 0 10
+21 21 0 64 64 64 544 2
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Hello there... 
+say please enjoy your stay here at the &YG&calactic &YM&cmall. 
+smile 
+~
+> speech_prog hi 100~
+Say hello there $n 
+~
+> speech_prog name 100~
+say ohh.. i know everyone... 
+grin 
+~
+|
+#1602
+Molly~
+Molly~
+Molly stands here selling delectables.
+~
+~
+3 0 0 Z
+50 0 -25 10d10+500 5d4+2
+0 0
+8 8 2
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+10 10 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Hello there... u must be hungry. 
+smile 
+say this is what we have. 
+mpforce $n list 
+~
+|
+#1603
+John~
+John~
+John sits behind the counter selling snacks
+~
+~
+3 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+18 10 10 18 18 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Hello, look for some snacks?
+say you've came to the right place!
+smile 
+say this is what i have... 
+mpforce $n list 
+~
+|
+#1604
+Sarah~
+Sarah~
+Sarah stands here selling her sweet confectons.
+~
+~
+3 0 0 Z
+1 0 -100 0d0+0 0d0+0
+0 0
+8 8 0
+18 10 10 18 18 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+mmm 
+say don't you just love the sweet taste of candy? 
+mpforce $n list 
+~
+> speech_prog yes 100~
+say why don't you try some already? 
+smile $n 
+giggle 
+~
+|
+#1605
+David~
+David~
+David, here selling brand new funriture.
+~
+~
+3 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+25 10 10 25 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say hello, this heare is what we currently have for sale.
+say please take a look around.  
+say i'll be happy to take questions if you have any. 
+smile 
+mpforce $n list 
+~
+|
+#1606
+Joe~
+a newly created Joe~
+Joe wanders around the store helping customers.
+~
+~
+3 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Hello, let's see what you have there... 
+grin 
+~
+|
+#1607
+Hanna~
+Hanna ~
+Hanna stands here behind the counter dispensing drugs.
+~
+~
+3 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Hello there, how may i help you? 
+smile 
+mpforce $n list 
+~
+|
+#1608
+Scyth~
+Scyth~
+Scyth walks around the room showing off his blasters
+~
+~
+3 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Hello there... interested in anything? 
+say if you have any questions, i'll be pleased to answer them for you 
+chuckle 
+mpforce $n list 
+~
+|
+#1609
+Bridgette~
+Bridgette~
+Bridgette
+~
+~
+3 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+say Welcome to the &gT&carrainian &gO&cbservatory. 
+say we are always open to guests from all around. 
+smile $n 
+say if you would like to see the stars just say &rstars 
+~
+|
+#1900
+Last mob~
+a newly created Last mob~
+Some god abandoned a newly created Last mob here.
+~
+~
+1 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#1601
+&B nicly carved granet fountain ~
+a &B nicly carved granet fountain ~
+A &B nicly carved granet fountain  is here.~
+~
+16 0 0
+0 0 0 0
+1 0 0
+#1602
+ATM machine~
+a ATM machine~
+A ATM machine is here.~
+~
+7 0 0
+0 0 0 0
+1 0 0
+#1603
+Bantha Sandwich~
+a Bantha Sandwich~
+A Bantha Sandwich is here.~
+~
+12 0 1
+0 0 0 0
+1 25 2
+#1604
+&gGreen Salad~
+a &gGreen Salad~
+A &gGreen Salad is here.~
+~
+12 0 0
+0 0 0 0
+1 75 7
+#1605
+&YSub Sandwich~
+a &YSub Sandwich~
+A &YSub Sandwich is here.~
+~
+12 8192 1
+0 0 0 0
+1 150 15
+#1606
+&BDish of Sushi~
+a &BDish of Sushi~
+A &BDish of Sushi is here.~
+~
+12 8192 1
+0 0 0 0
+1 50 5
+#1607
+&OCheetos~
+a &OCheetos~
+A &OCheetos is here.~
+~
+12 8192 1
+0 0 0 0
+1 46 4
+#1608
+Cherry coke~
+a Cherry coke~
+A Cherry coke is here.~
+~
+10 8192 1
+0 0 0 0
+1 33 3
+#1609
+&BRice Crispies~
+a &BRice Crispies~
+A &BRice Crispies is here.~
+~
+12 8192 1
+0 0 0 0
+1 15 1
+#1610
+Fruit snacks~
+a Fruit snacks~
+A Fruit snacks is here.~
+~
+12 8192 1
+0 0 0 0
+1 50 5
+#1611
+Potato chips~
+a Potato chips~
+A Potato chips is here.~
+~
+12 8192 1
+0 0 0 0
+1 112 11
+#1612
+Juri juice~
+a Juri juice~
+A Juri juice is here.~
+~
+10 8192 1
+0 0 0 0
+1 79 7
+#1613
+Cheesy Popcorn~
+a Cheesy Popcorn~
+A Cheesy Popcorn is here.~
+~
+12 8192 1
+0 0 0 0
+1 76 7
+#1614
+Bannana Chips~
+a Bannana Chips~
+A Bannana Chips is here.~
+~
+12 8192 1
+0 0 0 0
+1 0 0
+#1615
+Fudge Cookies~
+a Fudge Cookies~
+A Fudge Cookies is here.~
+~
+12 8192 1
+0 0 0 0
+1 58 5
+#1616
+apple~
+a apple~
+A apple is here.~
+~
+12 8192 1
+0 0 0 0
+1 50 5
+#1617
+Red Vines~
+a Red Vines~
+A Red Vines is here.~
+~
+12 8192 1
+0 0 0 0
+1 125 12
+#1618
+Skittles~
+a Skittles~
+A Skittles is here.~
+~
+12 8192 1
+0 0 0 0
+1 125 12
+#1619
+Sour strips~
+a Sour strips~
+A Sour strips is here.~
+~
+12 8192 1
+0 0 0 0
+1 150 15
+#1620
+Large Jaw Breaker~
+a Large Jaw Breaker~
+A Large Jaw Breaker is here.~
+~
+12 8192 1
+0 0 0 0
+1 90 9
+#1621
+some salt-water taffy~
+a some salt-water taffy~
+A some salt-water taffy is here.~
+~
+12 8192 1
+0 0 0 0
+1 200 20
+#1622
+Jolly Rancher~
+a Jolly Rancher~
+A Jolly Rancher is here.~
+~
+12 8192 1
+0 0 0 0
+1 40 4
+#1623
+large comfortable bed~
+a large comfortable bed~
+A large comfortable bed is here.~
+~
+6 8192 1
+0 0 585 0
+1 2000 200
+#1624
+Big comfy sofa~
+a Big comfy sofa~
+A Big comfy sofa is here.~
+~
+6 8192 1
+0 0 1 0
+1 1500 150
+#1625
+metalic chair~
+a metalic chair~
+A metalic chair is here.~
+~
+6 8192 1
+0 0 1 0
+1 1000 100
+#1626
+hot tub~
+a hot tub~
+A hot tub is set into the ground in the center of the room.~
+~
+6 8192 1
+0 0 2 0
+1 1000 100
+#1627
+&BBlue rave light~
+a &BBlue rave light~
+A &BBlue rave light is here.~
+~
+7 0 8193
+0 0 0 0
+1 0 0
+#1628
+&GGreen rave light~
+a &GGreen rave light~
+A &GGreen rave light is here.~
+~
+7 0 8193
+0 0 0 0
+1 0 0
+#1629
+&xBlack light~
+a &xBlack light~
+A black ligh is screwed intot he ceiling~
+~
+6 1 1
+0 0 0 0
+1 0 0
+#1630
+&gOlive Drab Cargo pants~
+a &gOlive Drab Cargo pants~
+A &gOlive Drab Cargo pants is here.~
+~
+7 0 33 1
+1 1 0 0
+1 0 0
+#1631
+&OOrange Fleece Pullover~
+a &OOrange Fleece Pullover~
+A &OOrange Fleece Pullover is here.~
+~
+4 0 9 1
+1 1 0 0
+1 0 0
+#1632
+Brown sandles~
+a Brown sandles~
+A Brown sandles is here.~
+~
+4 0 65 2
+0 0 0 0
+1 0 0
+#1633
+silver clip shades~
+a silver clip shades~
+A silver clip shades is here.~
+~
+7 0 131073
+0 0 0 0
+1 0 0
+#1634
+glob of hair gel~
+a glob of hair gel~
+A glob of hair gel is here.~
+~
+4 33057 17
+0 0 0 0
+1 0 0
+A
+13 1000000
+A
+19 1000000
+A
+17 -100000
+A
+18 1000000
+#1635
+Medkit~
+a Medkit~
+A Medkit is here.~
+~
+43 0 16385
+10 10 0 0
+1 1234 123
+#1636
+fisherman's hat~
+a fisherman's hat~
+A fisherman's hat is here.~
+~
+4 0 17
+0 0 0 0
+1 0 0
+#1637
+Bacta Spray~
+a Bacta Spray~
+A Bacta Spray is here.~
+~
+49 0 8193
+0 0 0 -1
+1 0 0
+#1638
+glass table ~
+a glass table ~
+A Glass Table is here set with may others~
+~
+6 0 0
+0 0 0 0
+1 0 0
+#1639
+&zTight Black Jeans~
+a &zTight Black Jeans~
+A &zTight Black Jeans is here.~
+~
+7 1073741824 32
+0 0 0 0
+1 0 0
+#1660
+diamond ring~
+a diamond ring~
+A diamond ring is here.~
+~
+7 1 3
+0 0 0 0
+1 0 0
+#1661
+thang~
+a thang~
+A thang is here.~
+~
+49 0 1
+0 0 0 -1
+1 0 0
+> speech_prog hi 100~
+mpecho Tonight... tonight... tonight... 
+~
+|
+#1899
+&cl&Bong&c f&Blowing&c b&Blue&c s&Bilk&c d&Bress~
+a &cl&Bong&c f&Blowing&c b&Blue&c s&Bilk&c d&Bress~
+A &cl&Bong&c f&Blowing&c b&Blue&c s&Bilk&c d&Bress is here.~
+~
+4 0 9
+0 0 0 0
+1 0 0
+#1900
+Last object ~
+a Last object ~
+A Last object  is here.~
+~
+7 0 0
+0 0 0 0
+1 0 0
+#0
+
+
+#ROOMS
+#1601
+&YG&calactic &YM&call&P&W~
+You stand here before the large entrence of the &YG&calactic&Y M&call&w 
+There are alot of people entering and leaving the mall, you see that  
+you should move with the flow so you do not interupt traffic.  You see 
+a nice shiny credit on the ground... should you take it? 
+~
+0 0 0
+D0
+~
+~
+0 -1 1602
+D1
+~
+~
+0 -1 1637
+D2
+~
+~
+0 -1 1645
+D3
+~
+~
+0 -1 1644
+S
+#1602
+&YF&coyer&P&W~
+This is a large mall, the walls are painted white over stucco with
+beautiful finished wood floors. This is a place where many people pass
+each other by. The area is brightly lit by the glass ceiling.
+
+~
+1073741840&2 0 0 0
+D0
+~
+~
+0 -1 1603
+D1
+~
+~
+0 -1 1605
+D2
+~
+~
+0 -1 1601
+D3
+~
+~
+0 -1 1604
+D7
+~
+~
+0 -1 1609
+S
+#1603
+&Y F&cood &YC&court~
+Here you enter the food court, you see many tables that surround you, 
+most of which are fully seated by people, you smell the nice aroma of  
+food commming from the little fast food joints, this area is brightly 
+lite by the full glass ceiling.  The floors made nice and shiny from  
+wood. 
+~
+1073741840&2 0 0 0
+D0
+~
+~
+0 -1 1606
+D1
+~
+~
+0 -1 1607
+D2
+~
+~
+0 -1 1602
+D3
+~
+~
+0 -1 1608
+S
+#1604
+&Y W&cest&Y S&ctairs~
+~
+1073741840&2 0 0 0
+D1
+~
+~
+0 -1 1602
+D4
+~
+~
+0 -1 1616
+S
+#1605
+&Y E&cast&Y S&ctairs~
+~
+1073741840&2 0 0 0
+D3
+~
+~
+0 -1 1602
+D4
+~
+~
+0 -1 1625
+S
+#1606
+&Y M&call&Y S&ctrip~
+Further into the food court, you still see many tables that surround you, 
+most of which are fully seated by people, you smell the nice aroma of 
+food commming from the little fast food joints, this area is brightly 
+lite by the full glass ceiling.  The floors begins to merge into nice 
+smooth granet flooring. 
+~
+1073741840&2 0 0 0
+D0
+~
+~
+0 -1 1612
+D1
+~
+~
+0 -1 1610
+D2
+~
+~
+0 -1 1603
+D3
+~
+~
+0 -1 1611
+S
+#1607
+&R S&Ynack &RB&Yar~
+Here you take a seat as food revolves around on a convayer.  snacks are 
+the speciality here, every so often a new item comes around.  John stand  
+in the middle fo the convayer belt and restocks the food, making sure  
+there is enough to go around. 
+~
+1073742352 0 0 0
+D3
+~
+~
+0 -1 1603
+S
+#1608
+&R Y&Yummy &RF&Yoods~
+This here is a very simple store, tables on once side for you to sit  
+and enjoy your orders.  on the other side a table with a glass coverings 
+displays foods off all sorts. Come around often and there will be new  
+foods from around the world. 
+~
+1073742352 0 0 1
+D1
+~
+~
+0 -1 1603
+S
+#1609
+&R B&Yank~
+~
+1073742464 0 0 1
+D8
+~
+~
+0 -1 1602
+S
+#1610
+&R F&Yurniture &RS&Ytore~
+This store is basically half and half, the back is the workshop where 
+the furniture is made, that area which is cut off to customers. The  
+front all nice with the displays of furniture made by David, there is  
+a strong smell of wood in teh air. 
+~
+1073742352 0 0 0
+D3
+~
+~
+0 -1 1606
+S
+#1611
+&R C&Yandy &RS&Ytore~
+Confections... sweet confections is what you see, you see clear tubes 
+all around the room filled to the brim with candy. the Smell in the air  
+so sweet it makes you want to have some, there in the back corner is a  
+machine making fresh taffy, you stand there watching it knead the sugars. 
+~
+1073742352 0 0 0
+D1
+~
+~
+0 -1 1606
+S
+#1612
+&Y M&Call&Y S&ctrip~
+Here you come to the end of the food court where there are shops but no 
+food, the area still nicely lite, there is a indoor pond along the back 
+side on each side of the turbolift as you can see, you look closly in the 
+pond and see plenty of colorful fish swimming around, and credits all over. 
+~
+1073741840&2 0 0 0
+D0
+~
+~
+0 -1 1615
+D1
+~
+~
+0 -1 1613
+D2
+~
+~
+0 -1 1606
+D3
+~
+~
+0 -1 1614
+S
+#1613
+&R H&Yealth &RS&Ytore~
+Here you walk up to a counter all white with plenty of referance books 
+to check medication types and such, there is also a cash register.  Hanna 
+stand behind the counter waiting to take your order.  The whole back of  
+the Health shop is lined with large shelves the hold health items. 
+~
+1073742352 0 0 0
+D3
+~
+~
+0 -1 1612
+S
+#1614
+&R P&Yawn&R S&Yhop~
+You walk into a actually nice pawnshop, there ar shelves on all 3 sides 
+of the room, the counter is set in the middle. Joe is there taking  
+questions. The shop is nicely lite, and the air with a scent of some  
+strange sweet aroma od incense. 
+~
+1073742352 0 0 0
+D1
+~
+~
+0 -1 1612
+S
+#1615
+&Y T&curbolift~
+You stand here in a nice glass turbolift, as you look out you see
+the vast amount of people, walking about and shoppping. You see 
+that the turbolift is nicely kept clean and build with nice order.
+  
+&B L&cE&bV&cE&BL&CS 
+  
+&R 1st&Y Floor     
+&R 2st&Y Floor     
+  
+~
+1073741848&2 0 0 0
+> speech_prog 2nd~
+mpechoat $n The Turbolift makes a small noise 
+mpechoat $n Then Rises to the second floor 
+mptransfer $n 1620 
+~
+> speech_prog 1st~
+mpechoat $n The Turbolift makes a small noise  
+mpechoat $n Then briskly decends to the first floor 
+mptransfer $n 1612  
+~
+|
+S
+#1616
+&B L&cevel&B T&cwo~
+~
+1073741840&2 0 0 0
+D0
+~
+~
+0 -1 1617
+D5
+~
+~
+0 -1 1604
+S
+#1617
+&B U&cpper&B S&ctrip~
+You are on the second floor of the &YG&calactic&Y M&call. Light radiates
+brilliantly through white tint windows posted along the ceiling of the
+strip. People pass briskly as they run about looking for new deals among
+the many player shops on the second floor strip. Everything seems alive
+and busy. A person could get a little disoriented with this much going on!
+~
+1073741840&2 0 0 0
+D0
+~
+~
+0 -1 1618
+D2
+~
+~
+0 -1 1616
+D3
+~
+~
+0 -1 1626
+S
+#1618
+&B U&cpper&B S&ctrip~
+You are on the second floor of the &YG&calactic&Y M&call. Light radiates
+brilliantly through white tint windows posted along the ceiling of the
+strip. People pass briskly as they run about looking for new deals among
+the many player shops on the second floor strip. Everything seems alive
+and busy. A person could get a little disoriented with this much going on!
+~
+1073741840&2 0 0 0
+D0
+~
+~
+0 -1 1619
+D2
+~
+~
+0 -1 1617
+D3
+~
+~
+0 -1 1627
+S
+#1619
+&B U&cpper&B S&ctrip~
+You are on the second floor of the &YG&calactic&Y M&call. Light radiates
+brilliantly through white tint windows posted along the ceiling of the
+strip. People pass briskly as they run about looking for new deals among
+the many player shops on the second floor strip. Everything seems alive
+and busy. A person could get a little disoriented with this much going on!
+~
+1073741840&2 0 0 0
+D0
+~
+~
+0 -1 1630
+D1
+~
+~
+0 -1 1620
+D2
+~
+~
+0 -1 1618
+D3
+~
+~
+0 -1 1628
+D7
+~
+~
+0 -1 1629
+S
+#1620
+&B U&cpper&B S&ctrip~
+You are on the second floor of the &YG&calactic&Y M&call. Light radiates
+brilliantly through white tint windows posted along the ceiling of the
+strip. People pass briskly as they run about looking for new deals among
+the many player shops on the second floor strip. Everything seems alive
+and busy. A person could get a little disoriented with this much going on!
+~
+1073741840&2 0 0 0
+D0
+~
+~
+0 -1 1615
+D1
+~
+~
+0 -1 1621
+D3
+~
+~
+0 -1 1619
+S
+#1621
+&B U&cpper&B S&ctrip~
+You are on the second floor of the &YG&calactic&Y M&call. Light radiates
+brilliantly through white tint windows posted along the ceiling of the
+strip. People pass briskly as they run about looking for new deals among
+the many player shops on the second floor strip. Everything seems alive
+and busy. A person could get a little disoriented with this much going on!
+~
+1073741840&2 0 0 0
+D0
+~
+~
+0 -1 1631
+D1
+~
+~
+0 -1 1633
+D2
+~
+~
+0 -1 1622
+D3
+~
+~
+0 -1 1620
+D6
+~
+~
+0 -1 1632
+S
+#1622
+&B U&cpper&B S&ctrip~
+You are on the second floor of the &YG&calactic&Y M&call. Light radiates
+brilliantly through white tint windows posted along the ceiling of the
+strip. People pass briskly as they run about looking for new deals among
+the many player shops on the second floor strip. Everything seems alive
+and busy. A person could get a little disoriented with this much going on!
+~
+1073741840&2 0 0 0
+D0
+~
+~
+0 -1 1621
+D1
+~
+~
+0 -1 1634
+D2
+~
+~
+0 -1 1623
+S
+#1623
+&B U&cpper&B S&ctrip~
+You are on the second floor of the &YG&calactic&Y M&call. Light radiates
+brilliantly through white tint windows posted along the ceiling of the
+strip. People pass briskly as they run about looking for new deals among
+the many player shops on the second floor strip. Everything seems alive
+and busy. A person could get a little disoriented with this much going on!
+~
+1073741840&2 0 0 0
+D0
+~
+~
+0 -1 1622
+D1
+~
+~
+0 -1 1635
+D2
+~
+~
+0 -1 1624
+S
+#1624
+&B U&cpper&B S&ctrip~
+You are on the second floor of the &YG&calactic&Y M&call. Light radiates
+brilliantly through white tint windows posted along the ceiling of the
+strip. People pass briskly as they run about looking for new deals among
+the many player shops on the second floor strip. Everything seems alive
+and busy. A person could get a little disoriented with this much going on!
+~
+1073741840&2 0 0 0
+D0
+~
+~
+0 -1 1623
+D1
+~
+~
+0 -1 1636
+D2
+~
+~
+0 -1 1625
+S
+#1625
+&B L&cevel&B T&cwo~
+~
+1073741840&2 0 0 0
+D0
+~
+~
+0 -1 1624
+D5
+~
+~
+0 -1 1605
+S
+#1626
+&R M&Yens&R C&l&Yothing~
+~
+0 0 0
+D1
+~
+~
+0 -1 1617
+S
+#1627
+&R B&Youtique~
+~
+0 0 0
+D1
+~
+~
+0 -1 1618
+S
+#1628
+shop 7~
+~
+0 0 0
+D1
+~
+~
+0 -1 1619
+S
+#1629
+shop 8~
+~
+0 0 0
+D8
+~
+~
+0 -1 1619
+S
+#1630
+shop 9~
+~
+0 0 0
+D2
+~
+~
+0 -1 1619
+S
+#1631
+shop 10~
+~
+0 0 0
+D2
+~
+~
+0 -1 1621
+S
+#1632
+shop 12~
+~
+0 0 0
+D9
+~
+~
+0 -1 1621
+S
+#1633
+shop 11~
+~
+0 0 0
+D3
+~
+~
+0 -1 1621
+S
+#1634
+shop 13~
+~
+0 0 0
+D3
+~
+~
+0 -1 1622
+S
+#1635
+&R B&Ylasters~
+This is a nicely lit room and all around you, you see glass shelves 
+filled with weapons of all sorts. At the main showcase in front you 
+see a nice display of new blasters for sale. The blasters range from cheap 
+budgetlines to expensive t-21's  
+~
+1073742352&2 0 0 0
+D3
+~
+~
+0 -1 1623
+S
+#1636
+&R E&Yxplosives~
+~
+0 0 0
+D3
+~
+~
+0 -1 1624
+S
+#1637
+&RS&Otation&R R&Ooad&W~
+&cStation Road&W is one of the main roads crossing the city. It seems to be
+filled with life as people come this way and that, mostly to get to the
+mall which can be found at the center of the street. The pavement on this
+road seems to shine like silver as it is kept clean by the good janitors
+that wander the streets collecting trash.
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1638
+D3
+~
+~
+0 -1 1601
+S
+#1638
+&RS&Ytation &RR&Yoad&W~
+&cStation Road&W is one of the main roads crossing the city. It seems to be
+filled with life as people come this way and that, mostly to get to the
+mall which can be found at the center of the street. The pavement on this
+road seems to shine like silver as it is kept clean by the good janitors
+that wander the streets collecting trash.
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1639
+D3
+~
+~
+0 -1 1637
+S
+#1639
+&RS&Otation&R R&Ooad&W~
+&cStation Road&W is one of the main roads crossing the city. It seems to be
+filled with life as people come this way and that, mostly to get to the
+mall which can be found at the center of the street. The pavement on this
+road seems to shine like silver as it is kept clean by the good janitors
+that wander the streets collecting trash.
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1640
+D3
+~
+~
+0 -1 1638
+S
+#1640
+&RS&Ytation &RR&Yoad&W~
+&cStation Road&W is one of the main roads crossing the city. It seems to be
+filled with life as people come this way and that, mostly to get to the
+mall which can be found at the center of the street. The pavement on this
+road seems to shine like silver as it is kept clean by the good janitors
+that wander the streets collecting trash.
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1742
+D3
+~
+~
+0 -1 1639
+S
+#1641
+&RB&Yirch &W~
+You are standing on the main street of the city &GT&cerra&w which glimmers
+with a sparkle in the serene bright blue sky. The atmosphere is tranquil
+and peaceful with a hint of excitement around the corner. Above small
+clouds sentry the sky like blimps watching over the city. Time almost
+seems to stop in this almost magical city of relaxation and serenity. You
+can just tell that this is a city you wont be able to forget for quite
+some time. 
+
+~
+67108864 0 0 1
+D0
+~
+~
+0 -1 1648
+D2
+~
+~
+0 -1 1643
+S
+#1642
+&RS&Otation&R R&Ooad&W~
+&cStation Road&W is one of the main roads crossing the city. It seems to be
+filled with life as people come this way and that, mostly to get to the
+mall which can be found at the center of the street. The pavement on this
+road seems to shine like silver as it is kept clean by the good janitors
+that wander the streets collecting trash.
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1657
+D3
+~
+~
+0 -1 1640
+S
+#1643
+&RB&Yirch &W~
+You are standing on the main street of the city &GT&cerra&w which glimmers
+with a sparkle in the serene bright blue sky. The atmosphere is tranquil
+and peaceful with a hint of excitement around the corner. Above small
+clouds sentry the sky like blimps watching over the city. Time almost
+seems to stop in this almost magical city of relaxation and serenity. You
+can just tell that this is a city you wont be able to forget for quite
+some time. 
+
+~
+67108864 0 0 1
+D0
+~
+~
+0 -1 1641
+D2
+~
+~
+0 -1 1667
+S
+#1644
+&RS&Otation&R R&Ooad&W~
+&cStation Road&W is one of the main roads crossing the city. It seems to be
+filled with life as people come this way and that, mostly to get to the
+mall which can be found at the center of the street. The pavement on this
+road seems to shine like silver as it is kept clean by the good janitors
+that wander the streets collecting trash.
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1601
+D3
+~
+~
+0 -1 1649
+S
+#1645
+&RB&Yirch &W~
+You are standing on the main street of the city &GT&cerra&w which glimmers
+with a sparkle in the serene bright blue sky. The atmosphere is tranquil
+and peaceful with a hint of excitement around the corner. Above small
+clouds sentry the sky like blimps watching over the city. Time almost
+seems to stop in this almost magical city of relaxation and serenity. You
+can just tell that this is a city you wont be able to forget for quite
+some time. 
+
+~
+67108864 0 0 1
+D0
+~
+~
+0 -1 1601
+D2
+~
+~
+0 -1 1646
+S
+#1646
+&RB&Yirch &W~
+You are standing on the main street of the city &GT&cerra&w which glimmers
+with a sparkle in the serene bright blue sky. The atmosphere is tranquil
+and peaceful with a hint of excitement around the corner. Above small
+clouds sentry the sky like blimps watching over the city. Time almost
+seems to stop in this almost magical city of relaxation and serenity. You
+can just tell that this is a city you wont be able to forget for quite
+some time. 
+
+~
+67108864 0 0 1
+D0
+~
+~
+0 -1 1645
+D2
+~
+~
+0 -1 1647
+S
+#1647
+&RB&Yirch &W~
+You are standing on the main street of the city &GT&cerra&w which glimmers
+with a sparkle in the serene bright blue sky. The atmosphere is tranquil
+and peaceful with a hint of excitement around the corner. Above small
+clouds sentry the sky like blimps watching over the city. Time almost
+seems to stop in this almost magical city of relaxation and serenity. You
+can just tell that this is a city you wont be able to forget for quite
+some time. 
+
+~
+67108864 0 0 1
+D0
+~
+~
+0 -1 1646
+D2
+~
+~
+0 -1 1648
+S
+#1648
+Intersection of &RB&Yirch &Wand &bA&clessandra&w~
+You are standing on the main street of the city &GT&cerra&w which glimmers
+with a sparkle in the serene bright blue sky. The atmosphere is tranquil
+and peaceful with a hint of excitement around the corner. Above small
+clouds sentry the sky like blimps watching over the city. Time almost
+seems to stop in this almost magical city of relaxation and serenity. You
+can just tell that this is a city you wont be able to forget for quite
+some time. 
+
+~
+67108864 0 0 1
+D0
+~
+~
+0 -1 1647
+D1
+~
+~
+0 -1 1678
+D2
+~
+~
+0 -1 1641
+D3
+~
+~
+0 -1 1686
+S
+#1649
+&RS&Otation&R R&Ooad&W~
+&cStation Road&W is one of the main roads crossing the city. It seems to be
+filled with life as people come this way and that, mostly to get to the
+mall which can be found at the center of the street. The pavement on this
+road seems to shine like silver as it is kept clean by the good janitors
+that wander the streets collecting trash.
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1644
+D3
+~
+~
+0 -1 1660
+S
+#1657
+&RS&Otation&R R&Ooad&W~
+&cStation Road&W is one of the main roads crossing the city. It seems to be
+filled with life as people come this way and that, mostly to get to the
+mall which can be found at the center of the street. The pavement on this
+road seems to shine like silver as it is kept clean by the good janitors
+that wander the streets collecting trash.
+~
+67108872 0 0 1
+D1
+~
+~
+0 -1 1658
+D3
+~
+~
+0 -1 1642
+S
+#1658
+&RS&Otation&R R&Ooad&W~
+&cStation Road&W is one of the main roads crossing the city. It seems to be
+filled with life as people come this way and that, mostly to get to the
+mall which can be found at the center of the street. The pavement on this
+road seems to shine like silver as it is kept clean by the good janitors
+that wander the streets collecting trash.
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1659
+D3
+~
+~
+0 -1 1657
+S
+#1659
+&RS&Otation&R R&Ooad&W~
+&cStation Road&W is one of the main roads crossing the city. It seems to be
+filled with life as people come this way and that, mostly to get to the
+mall which can be found at the center of the street. The pavement on this
+road seems to shine like silver as it is kept clean by the good janitors
+that wander the streets collecting trash.
+~
+67108864 0 0 1
+D3
+~
+~
+0 -1 1658
+S
+#1660
+&RS&Otation&R R&Ooad&W~
+&cStation Road&W is one of the main roads crossing the city. It seems to be
+filled with life as people come this way and that, mostly to get to the
+mall which can be found at the center of the street. The pavement on this
+road seems to shine like silver as it is kept clean by the good janitors
+that wander the streets collecting trash.
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1649
+D3
+~
+~
+0 -1 1662
+S
+#1661
+&RS&Otation&R R&Ooad&W~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1660
+D3
+~
+~
+0 -1 1662
+S
+#1662
+&RS&Otation&R R&Ooad&W~
+&cStation Road&W is one of the main roads crossing the city. It seems to be
+filled with life as people come this way and that, mostly to get to the
+mall which can be found at the center of the street. The pavement on this
+road seems to shine like silver as it is kept clean by the good janitors
+that wander the streets collecting trash.
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1661
+D3
+~
+~
+0 -1 1663
+S
+#1663
+&RS&Otation&R R&Ooad&W~
+&cStation Road&W is one of the main roads crossing the city. It seems to be
+filled with life as people come this way and that, mostly to get to the
+mall which can be found at the center of the street. The pavement on this
+road seems to shine like silver as it is kept clean by the good janitors
+that wander the streets collecting trash.
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1662
+D3
+~
+~
+0 -1 1664
+S
+#1664
+&RS&Otation&R R&Ooad&W~
+&cStation Road&W is one of the main roads crossing the city. It seems to be
+filled with life as people come this way and that, mostly to get to the
+mall which can be found at the center of the street. The pavement on this
+road seems to shine like silver as it is kept clean by the good janitors
+that wander the streets collecting trash.
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1663
+D3
+~
+~
+0 -1 1665
+S
+#1665
+&RS&Otation&R R&Ooad&W~
+&cStation Road&W is one of the main roads crossing the city. It seems to be
+filled with life as people come this way and that, mostly to get to the
+mall which can be found at the center of the street. The pavement on this
+road seems to shine like silver as it is kept clean by the good janitors
+that wander the streets collecting trash.
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1664
+D3
+~
+~
+0 -1 1666
+S
+#1666
+&RS&Otation&R R&Ooad&W~
+&cStation Road&W is one of the main roads crossing the city. It seems to be
+filled with life as people come this way and that, mostly to get to the
+mall which can be found at the center of the street. The pavement on this
+road seems to shine like silver as it is kept clean by the good janitors
+that wander the streets collecting trash.
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1665
+S
+#1667
+&RB&Yirch &W~
+You are standing on the main street of the city &GT&cerra&w which glimmers
+with a sparkle in the serene bright blue sky. The atmosphere is tranquil
+and peaceful with a hint of excitement around the corner. Above small
+clouds sentry the sky like blimps watching over the city. Time almost
+seems to stop in this almost magical city of relaxation and serenity. You
+can just tell that this is a city you wont be able to forget for quite
+some time. 
+
+~
+67108864 0 0 1
+D0
+~
+~
+0 -1 1643
+D2
+~
+~
+0 -1 1668
+S
+#1668
+Intersection of &RB&Yirch &Wand &GT&caeda &wStreet &w~
+You are standing on the main street of the city &GT&cerra&w which glimmers
+with a sparkle in the serene bright blue sky. The atmosphere is tranquil
+and peaceful with a hint of excitement around the corner. Above small
+clouds sentry the sky like blimps watching over the city. Time almost
+seems to stop in this almost magical city of relaxation and serenity. You
+can just tell that this is a city you wont be able to forget for quite
+some time. 
+
+~
+67108864 0 0 1
+D0
+~
+~
+0 -1 1667
+D1
+~
+~
+0 -1 1694
+D2
+~
+~
+0 -1 1669
+D3
+~
+~
+0 -1 1702
+S
+#1669
+&RB&Yirch &W~
+You are standing on the main street of the city &GT&cerra&w which glimmers
+with a sparkle in the serene bright blue sky. The atmosphere is tranquil
+and peaceful with a hint of excitement around the corner. Above small
+clouds sentry the sky like blimps watching over the city. Time almost
+seems to stop in this almost magical city of relaxation and serenity. You
+can just tell that this is a city you wont be able to forget for quite
+some time. 
+
+~
+67108864 0 0 1
+D0
+~
+~
+0 -1 1668
+D2
+~
+~
+0 -1 1670
+S
+#1670
+&RB&Yirch &W~
+You are standing on the main street of the city &GT&cerra&w which glimmers
+with a sparkle in the serene bright blue sky. The atmosphere is tranquil
+and peaceful with a hint of excitement around the corner. Above small
+clouds sentry the sky like blimps watching over the city. Time almost
+seems to stop in this almost magical city of relaxation and serenity. You
+can just tell that this is a city you wont be able to forget for quite
+some time. 
+
+~
+67108864 0 0 1
+D0
+~
+~
+0 -1 1669
+D2
+~
+~
+0 -1 1671
+S
+#1671
+&RB&Yirch &W~
+You are standing on the main street of the city &GT&cerra&w which glimmers
+with a sparkle in the serene bright blue sky. The atmosphere is tranquil
+and peaceful with a hint of excitement around the corner. Above small
+clouds sentry the sky like blimps watching over the city. Time almost
+seems to stop in this almost magical city of relaxation and serenity. You
+can just tell that this is a city you wont be able to forget for quite
+some time. 
+
+~
+67108864 0 0 1
+D0
+~
+~
+0 -1 1670
+D2
+~
+~
+0 -1 1672
+S
+#1672
+Intersection of &RB&Girch&W and &bA&wquartis &bR&woad&w~
+You are standing on the main street of the city &GT&cerra&w which glimmers
+with a sparkle in the serene bright blue sky. The atmosphere is tranquil
+and peaceful with a hint of excitement around the corner. Above small
+clouds sentry the sky like blimps watching over the city. Time almost
+seems to stop in this almost magical city of relaxation and serenity. You
+can just tell that this is a city you wont be able to forget for quite
+some time. 
+
+~
+67108864 0 0 1
+D0
+~
+~
+0 -1 1671
+D1
+~
+~
+0 -1 1710
+D2
+~
+~
+0 -1 1673
+D3
+~
+~
+0 -1 1718
+S
+#1673
+&RB&Yirch &W~
+You are standing on the main street of the city &GT&cerra&w which glimmers
+with a sparkle in the serene bright blue sky. The atmosphere is tranquil
+and peaceful with a hint of excitement around the corner. Above small
+clouds sentry the sky like blimps watching over the city. Time almost
+seems to stop in this almost magical city of relaxation and serenity. You
+can just tell that this is a city you wont be able to forget for quite
+some time. 
+
+~
+67108864 0 0 1
+D0
+~
+~
+0 -1 1672
+D2
+~
+~
+0 -1 1674
+S
+#1674
+&RB&Yirch &W~
+You are standing on the main street of the city &GT&cerra&w which glimmers
+with a sparkle in the serene bright blue sky. The atmosphere is tranquil
+and peaceful with a hint of excitement around the corner. Above small
+clouds sentry the sky like blimps watching over the city. Time almost
+seems to stop in this almost magical city of relaxation and serenity. You
+can just tell that this is a city you wont be able to forget for quite
+some time. 
+
+~
+67108864 0 0 1
+D0
+~
+~
+0 -1 1673
+D2
+~
+~
+0 -1 1675
+S
+#1675
+&RB&Yirch &W~
+You are standing on the main street of the city &GT&cerra&w which glimmers
+with a sparkle in the serene bright blue sky. The atmosphere is tranquil
+and peaceful with a hint of excitement around the corner. Above small
+clouds sentry the sky like blimps watching over the city. Time almost
+seems to stop in this almost magical city of relaxation and serenity. You
+can just tell that this is a city you wont be able to forget for quite
+some time. 
+
+~
+67108864 0 0 1
+D0
+~
+~
+0 -1 1674
+D2
+~
+~
+0 -1 1676
+S
+#1676
+Intersection of &RB&Yirch&W and &YT&Whremos &YS&Wtreet~
+You are standing on the main street of the city &GT&cerra&w which glimmers
+with a sparkle in the serene bright blue sky. The atmosphere is tranquil
+and peaceful with a hint of excitement around the corner. Above small
+clouds sentry the sky like blimps watching over the city. Time almost
+seems to stop in this almost magical city of relaxation and serenity. You
+can just tell that this is a city you wont be able to forget for quite
+some time. 
+
+~
+67108864 0 0 1
+D0
+~
+~
+0 -1 1675
+D1
+~
+~
+0 -1 1726
+D3
+~
+~
+0 -1 1734
+S
+#1678
+&bA&clessandra &w~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1679
+D3
+~
+~
+0 -1 1648
+S
+#1679
+&bA&clessandra &w~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1680
+D3
+~
+~
+0 -1 1678
+S
+#1680
+&bA&clessandra &w~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1681
+D3
+~
+~
+0 -1 1679
+S
+#1681
+&bA&clessandra &w~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1682
+D3
+~
+~
+0 -1 1680
+S
+#1682
+&bA&clessandra &w~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1683
+D3
+~
+~
+0 -1 1681
+S
+#1683
+&bA&clessandra &w~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1684
+D3
+~
+~
+0 -1 1682
+S
+#1684
+&bA&clessandra &w~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1685
+D3
+~
+~
+0 -1 1683
+S
+#1685
+Intersection of &BA&Wlessandra &Wand &YK&Windras ~
+~
+67108864 0 0 1
+D0
+~
+~
+0 -1 1749
+D2
+~
+~
+0 -1 1753
+D3
+~
+~
+0 -1 1684
+S
+#1686
+&bA&clessandra &w~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1648
+D3
+~
+~
+0 -1 1687
+S
+#1687
+&bA&clessandra &w~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1686
+D3
+~
+~
+0 -1 1688
+S
+#1688
+&bA&clessandra &w~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1687
+D3
+~
+~
+0 -1 1689
+S
+#1689
+&bA&clessandra &w~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1688
+D3
+~
+~
+0 -1 1690
+S
+#1690
+&bA&clessandra &w~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1689
+D3
+~
+~
+0 -1 1691
+S
+#1691
+&bA&clessandra &w~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1690
+D3
+~
+~
+0 -1 1692
+S
+#1692
+&bA&clessandra &w~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1691
+D3
+~
+~
+0 -1 1693
+S
+#1693
+&bA&clessandra &w~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1692
+S
+#1694
+&GT&caeda &wStreet &w~
+You are standing on Taeda Street, one of the streets crossing the city of
+&GT&Werra. The general feel of freedom and happiness still envelops you
+throughout the city. The street is spotless and looks to be well kept.
+
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1695
+D3
+~
+~
+0 -1 1668
+S
+#1695
+&GT&caeda &wStreet &w~
+You are standing on Taeda Street, one of the streets crossing the city of
+&GT&Werra. The general feel of freedom and happiness still envelops you
+throughout the city. The street is spotless and looks to be well kept.
+
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1696
+D3
+~
+~
+0 -1 1694
+S
+#1696
+&GT&caeda &wStreet &w~
+You are standing on Taeda Street, one of the streets crossing the city of
+&GT&Werra. The general feel of freedom and happiness still envelops you
+throughout the city. The street is spotless and looks to be well kept.
+
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1697
+D3
+~
+~
+0 -1 1695
+S
+#1697
+&GT&caeda &wStreet &w~
+You are standing on Taeda Street, one of the streets crossing the city of
+&GT&Werra. The general feel of freedom and happiness still envelops you
+throughout the city. The street is spotless and looks to be well kept.
+
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1698
+D3
+~
+~
+0 -1 1696
+S
+#1698
+&GT&caeda &wStreet &w~
+You are standing on Taeda Street, one of the streets crossing the city of
+&GT&Werra. The general feel of freedom and happiness still envelops you
+throughout the city. The street is spotless and looks to be well kept.
+
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1699
+D3
+~
+~
+0 -1 1697
+S
+#1699
+&GT&caeda &wStreet &w~
+You are standing on Taeda Street, one of the streets crossing the city of
+&GT&Werra. The general feel of freedom and happiness still envelops you
+throughout the city. The street is spotless and looks to be well kept.
+
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1700
+D3
+~
+~
+0 -1 1698
+S
+#1700
+&GT&caeda &wStreet &w~
+You are standing on Taeda Street, one of the streets crossing the city of
+&GT&Werra. The general feel of freedom and happiness still envelops you
+throughout the city. The street is spotless and looks to be well kept.
+
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1701
+D3
+~
+~
+0 -1 1699
+S
+#1701
+Intersection of &GT&Waeda Street and &YK&Windras~
+You are standing on Taeda Street, one of the streets crossing the city of
+&GT&Werra. The general feel of freedom and happiness still envelops you
+throughout the city. The street is spotless and looks to be well kept.
+
+~
+67108864 0 0 1
+D0
+~
+~
+0 -1 1752
+D2
+~
+~
+0 -1 1754
+D3
+~
+~
+0 -1 1700
+S
+#1702
+&GT&Waeda Street~
+You are standing on Taeda Street, one of the streets crossing the city of
+&GT&Werra. The general feel of freedom and happiness still envelops you
+throughout the city. The street is spotless and looks to be well kept.
+
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1668
+D3
+~
+~
+0 -1 1703
+S
+#1703
+&GT&Waeda Street~
+You are standing on Taeda Street, one of the streets crossing the city of
+&GT&Werra. The general feel of freedom and happiness still envelops you
+throughout the city. The street is spotless and looks to be well kept.
+
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1702
+D3
+~
+~
+0 -1 1704
+S
+#1704
+&GT&Waeda Street~
+You are standing on Taeda Street, one of the streets crossing the city of
+&GT&Werra. The general feel of freedom and happiness still envelops you
+throughout the city. The street is spotless and looks to be well kept.
+
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1703
+D3
+~
+~
+0 -1 1705
+S
+#1705
+&GT&Waeda Street~
+You are standing on Taeda Street, one of the streets crossing the city of
+&GT&Werra. The general feel of freedom and happiness still envelops you
+throughout the city. The street is spotless and looks to be well kept.
+
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1704
+D3
+~
+~
+0 -1 1706
+S
+#1706
+&GT&Waeda Street~
+You are standing on Taeda Street, one of the streets crossing the city of
+&GT&Werra. The general feel of freedom and happiness still envelops you
+throughout the city. The street is spotless and looks to be well kept.
+
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1705
+D3
+~
+~
+0 -1 1707
+S
+#1707
+&GT&Waeda Street~
+You are standing on Taeda Street, one of the streets crossing the city of
+&GT&Werra. The general feel of freedom and happiness still envelops you
+throughout the city. The street is spotless and looks to be well kept.
+
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1706
+D3
+~
+~
+0 -1 1708
+S
+#1708
+&GT&Waeda Street~
+You are standing on Taeda Street, one of the streets crossing the city of
+&GT&Werra. The general feel of freedom and happiness still envelops you
+throughout the city. The street is spotless and looks to be well kept.
+
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1707
+D3
+~
+~
+0 -1 1709
+S
+#1709
+&GT&Waeda Street~
+You are standing on Taeda Street, one of the streets crossing the city of
+&GT&Werra. The general feel of freedom and happiness still envelops you
+throughout the city. The street is spotless and looks to be well kept.
+
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1708
+S
+#1710
+&bA&wquartis &bR&woad&w~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1711
+D3
+~
+~
+0 -1 1672
+S
+#1711
+&bA&wquartis &bR&woad&w~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1712
+D3
+~
+~
+0 -1 1710
+S
+#1712
+&bA&wquartis &bR&woad&w~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1713
+D3
+~
+~
+0 -1 1711
+S
+#1713
+&bA&wquartis &bR&woad&w~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1714
+D3
+~
+~
+0 -1 1712
+S
+#1714
+&bA&wquartis &bR&woad&w~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1715
+D3
+~
+~
+0 -1 1713
+S
+#1715
+&bA&wquartis &bR&woad&w~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1716
+D3
+~
+~
+0 -1 1714
+S
+#1716
+&bA&wquartis &bR&woad&w~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1717
+D3
+~
+~
+0 -1 1715
+S
+#1717
+Intersection of &BA&Wquartis &BR&Woad and &YK&Windras~
+~
+67108864 0 0 1
+D0
+~
+~
+0 -1 1756
+D2
+~
+~
+0 -1 1757
+D3
+~
+~
+0 -1 1716
+S
+#1718
+&bA&wquatris &bR&woad&W~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1672
+D3
+~
+~
+0 -1 1719
+S
+#1719
+&bA&wquatris &bR&woad&W~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1718
+D3
+~
+~
+0 -1 1720
+S
+#1720
+&bA&wquatris &bR&woad&W~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1719
+D3
+~
+~
+0 -1 1721
+S
+#1721
+&bA&wquatris &bR&woad&W~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1720
+D3
+~
+~
+0 -1 1722
+S
+#1722
+&bA&wquatris &bR&woad&W~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1721
+D3
+~
+~
+0 -1 1723
+S
+#1723
+&bA&wquatris &bR&woad&W~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1722
+D3
+~
+~
+0 -1 1724
+S
+#1724
+&bA&wquatris &bR&woad&W~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1723
+D3
+~
+~
+0 -1 1725
+S
+#1725
+&bA&wquatris &bR&woad&W~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1724
+S
+#1726
+&YT&Whremos &YS&Wtreet~
+~
+67108872 0 0 1
+D1
+~
+~
+0 -1 1727
+D3
+~
+~
+0 -1 1676
+S
+#1727
+&YT&Whremos &YS&Wtreet~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1728
+D3
+~
+~
+0 -1 1726
+S
+#1728
+&YT&Whremos &YS&Wtreet~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1729
+D3
+~
+~
+0 -1 1727
+S
+#1729
+&YT&Whremos &YS&Wtreet~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1730
+D3
+~
+~
+0 -1 1728
+S
+#1730
+&YT&Whremos &YS&Wtreet~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1731
+D3
+~
+~
+0 -1 1729
+S
+#1731
+&YT&Whremos &YS&Wtreet~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1732
+D3
+~
+~
+0 -1 1730
+S
+#1732
+&YT&Whremos &YS&Wtreet~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1733
+D3
+~
+~
+0 -1 1731
+S
+#1733
+Intersection of &YT&Whermos &YS&Wtreet and &YK&Windras~
+~
+67108864 0 0 1
+D0
+~
+~
+0 -1 1759
+D3
+~
+~
+0 -1 1732
+S
+#1734
+&YT&Whremos &YS&Wtreet~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1676
+D3
+~
+~
+0 -1 1735
+S
+#1735
+&YT&Whremos &YS&Wtreet~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1734
+D3
+~
+~
+0 -1 1736
+S
+#1736
+&YT&Whremos &YS&Wtreet~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1735
+D3
+~
+~
+0 -1 1737
+S
+#1737
+&YT&Whremos &YS&Wtreet~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1736
+D3
+~
+~
+0 -1 1738
+S
+#1738
+&YT&Whremos &YS&Wtreet~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1737
+D3
+~
+~
+0 -1 1739
+S
+#1739
+&YT&Whremos &YS&Wtreet~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1738
+D3
+~
+~
+0 -1 1740
+S
+#1740
+&YT&Whremos &YS&Wtreet~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1739
+D3
+~
+~
+0 -1 1741
+S
+#1741
+&YT&Whremos &YS&Wtreet~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1740
+S
+#1742
+&RS&Ytation &RR&Yoad~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1744
+D3
+~
+~
+0 -1 1640
+S
+#1743
+&RS&Ytation &RR&Yoad~
+~
+67108864 0 0 1
+D3
+~
+~
+0 -1 1742
+S
+#1744
+&RS&Ytation &RR&Yoad&W~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1745
+D3
+~
+~
+0 -1 1742
+S
+#1745
+&RS&Ytation &RR&Yoad&W~
+~
+67108864 0 0 1
+D1
+~
+~
+0 -1 1746
+D3
+~
+~
+0 -1 1744
+S
+#1746
+Intersection of &RS&Ytation &RR&Yoad &Wand &YK&Windras&W~
+~
+67108864 0 0 1
+D2
+~
+~
+0 -1 1747
+D3
+~
+~
+0 -1 1745
+S
+#1747
+&YK&Windras ~
+This is one of the most beautiful streets in the city of &GT&Werra. All
+seems calm as birds flutter and small dogs dart across the street. Flowers
+grow in great abundance, most looking wild yet colorful and almost
+claming. Off to the side you also notice some small &pbunny rabbits&w and
+wonder what the heck they're doing around. 
+~
+67108864 0 0 1
+D0
+~
+~
+0 -1 1746
+D2
+~
+~
+0 -1 1748
+S
+#1748
+&YK&Windras ~
+This is one of the most beautiful streets in the city of &GT&Werra. All
+seems calm as birds flutter and small dogs dart across the street. Flowers
+grow in great abundance, most looking wild yet colorful and almost
+claming. Off to the side you also notice some small &pbunny rabbits&w and
+wonder what the heck they're doing around.  
+
+~
+67108864 0 0 1
+D0
+~
+~
+0 -1 1747
+D2
+~
+~
+0 -1 1749
+S
+#1749
+&YK&Windras ~
+This is one of the most beautiful streets in the city of &GT&Werra. All
+seems calm as birds flutter and small dogs dart across the street. Flowers
+grow in great abundance, most looking wild yet colorful and almost
+claming. Off to the side you also notice some small &pbunny rabbits&w and
+wonder what the heck they're doing around.
+
+~
+67108864 0 0 1
+D0
+~
+~
+0 -1 1748
+D2
+~
+~
+0 -1 1685
+S
+#1750
+&gT&che &gT&carrainian &gO&cbservatory~
+&cThe central area of the observatory is filled with computer equiptment
+&All around you , you see flashing lights and blinking buttons about here
+&cand there. The main telascope in the room catches your eyes at an
+instant. Many students pass by you to get there work done, and continue to
+study and map out the boundless space.
+
+~
+1140850704&2 0 0 1
+> rand_prog 20~
+mpecho You hear the slight sound of the moters that drive the telascope. 
+~
+> speech_prog stars 100~
+mpecho &B<&c==============================================&c>&w 
+mpecho &CThe Holovid flickers on and displays some coords&w 
+mpecho &z 
+mpecho &B       <&c===&Y*&r*&Y*&BCOORDS&Y*&r*&Y*&w&w&c===&B>&w 
+mpecho &z 
+mpecho &Y      Drake &g- &r 1000 3500 4600 
+mpecho &Y      Khron &g- &r 2365 8562 9257 
+mpecho &Y      Tiara &g- &r 7654 2345 9643 
+mpecho &z 
+mpecho &B<&c==============================================&B>&w 
+mpecho &z 
+mpecho &cVoice Recognition Online.... 
+mpecho &cPlease say the coords to see the stars.... 
+~
+> speech_prog 3500 100~
+mpecho &c[        &p     *     &y              *  &c      ] 
+mpecho &c[&B        *          &Y*                &c    *&c ] 
+mpecho &c[&g *        &B*         &Y        &r*        &c    &c ] 
+mpecho &c[&c   *      &p       *  &Y        &Y   *     &c    &c ] 
+mpecho &c[&p        * &p         &B     *   &g           * &c ] 
+mpecho &c[&r *        &Y     *    &p        *&c   *         &c] 
+mpecho &c[&p        * &p         &B     *   &g           * &c ] 
+mpecho &c[&g *        &B*         &Y        &r*        &c    &c ] 
+mpecho &c[&c   *      &p       *  &Y        &Y   *     &c    &c ] 
+mpecho &c[&B        *          &Y*                &c    *&c ] 
+~
+> speech_prog 8562 100~
+mpecho &c[&c           * &p  *      &c      *     &p          * &c] 
+mpecho &c[&p*            &c       * &p  *         &c   *        &c] 
+mpecho &c[&c      *      &p     *   &Y      *     &p          * &c] 
+mpecho &c[&c           * &p        &c      *      &p            &c] 
+mpecho &c[&c     &g*       &p        &c            &p        *    &c] 
+mpecho &c[&c     *       &p        &c          *  &p            &c] 
+mpecho &c[&c            &p       * &c            &c  *          &c] 
+mpecho &c[&p            *&c        &p     *       &c            &c] 
+mpecho &c[&p            &c        &Y*&p            &c        *    &c] 
+mpecho &c[&p   *         &c *       &p            &r   *        &c] 
+~
+> speech_prog 2345 100~
+mpecho &c[  &Y            * &w   *&Y    *               &c ] 
+mpecho &c[  &w        *       &Y          *           &c ] 
+mpecho &c[  &Y      *            &w          *        &c ] 
+mpecho &c[  &w    *            &Y              *      &c ] 
+mpecho &c[  &Y   *                &w            *     &c ] 
+mpecho &c[  &w    *           &Y               *      &c ] 
+mpecho &c[  &Y     *             &w           *       &c ] 
+mpecho &c[  &w      *         &Y            *         &c ] 
+mpecho &c[  &Y         *        &w        *           &c ] 
+mpecho &c[  &w            * &w   *&w    *               &c ] 
+~
+|
+S
+#1751
+&YK&Windras~
+This is one of the most beautiful streets in the city of &GT&Werra. All
+seems calm as birds flutter and small dogs dart across the street. Flowers
+grow in great abundance, most looking wild yet colorful and almost
+claming. Off to the side you also notice some small &pbunny rabbits&w and
+wonder what the heck they're doing around.
+
+~
+67108872 0 0 1
+D0
+~
+~
+0 -1 1753
+D2
+~
+~
+0 -1 1752
+S
+#1752
+&YK&Windras~
+This is one of the most beautiful streets in the city of &GT&Werra. All
+seems calm as birds flutter and small dogs dart across the street. Flowers
+grow in great abundance, most looking wild yet colorful and almost
+claming. Off to the side you also notice some small &pbunny rabbits&w and
+wonder what the heck they're doing around.
+
+~
+67108872 0 0 1
+D0
+~
+~
+0 -1 1751
+D2
+~
+~
+0 -1 1701
+S
+#1753
+&YK&Windras~
+This is one of the most beautiful streets in the city of &GT&Werra. All
+seems calm as birds flutter and small dogs dart across the street. Flowers
+grow in great abundance, most looking wild yet colorful and almost
+claming. Off to the side you also notice some small &pbunny rabbits&w and
+wonder what the heck they're doing around.
+
+~
+67108864 0 0 1
+D0
+~
+~
+0 -1 1685
+D2
+~
+~
+0 -1 1751
+S
+#1754
+&YK&Windras~
+This is one of the most beautiful streets in the city of &GT&Werra. All
+seems calm as birds flutter and small dogs dart across the street. Flowers
+grow in great abundance, most looking wild yet colorful and almost
+claming. Off to the side you also notice some small &pbunny rabbits&w and
+wonder what the heck they're doing around.
+
+~
+67108864 0 0 1
+D0
+~
+~
+0 -1 1701
+D2
+~
+~
+0 -1 1755
+S
+#1755
+&YK&Windras~
+This is one of the most beautiful streets in the city of &GT&Werra. All
+seems calm as birds flutter and small dogs dart across the street. Flowers
+grow in great abundance, most looking wild yet colorful and almost
+claming. Off to the side you also notice some small &pbunny rabbits&w and
+wonder what the heck they're doing around.
+
+~
+67108864 0 0 1
+D0
+~
+~
+0 -1 1754
+D2
+~
+~
+0 -1 1756
+S
+#1756
+&YK&Windras~
+This is one of the most beautiful streets in the city of &GT&Werra. All
+seems calm as birds flutter and small dogs dart across the street. Flowers
+grow in great abundance, most looking wild yet colorful and almost
+claming. Off to the side you also notice some small &pbunny rabbits&w and
+wonder what the heck they're doing around.
+
+~
+67108864 0 0 1
+D0
+~
+~
+0 -1 1755
+D2
+~
+~
+0 -1 1717
+S
+#1757
+&YK&Windras~
+This is one of the most beautiful streets in the city of &GT&Werra. All
+seems calm as birds flutter and small dogs dart across the street. Flowers
+grow in great abundance, most looking wild yet colorful and almost
+claming. Off to the side you also notice some small &pbunny rabbits&w and
+wonder what the heck they're doing around.
+
+~
+67108864 0 0 1
+D0
+~
+~
+0 -1 1717
+D2
+~
+~
+0 -1 1758
+S
+#1758
+&YK&Windras~
+This is one of the most beautiful streets in the city of &GT&Werra. All
+seems calm as birds flutter and small dogs dart across the street. Flowers
+grow in great abundance, most looking wild yet colorful and almost
+claming. Off to the side you also notice some small &pbunny rabbits&w and
+wonder what the heck they're doing around.
+
+~
+67108864 0 0 1
+D0
+~
+~
+0 -1 1757
+D2
+~
+~
+0 -1 1759
+S
+#1759
+&YK&Windras~
+This is one of the most beautiful streets in the city of &GT&Werra. All
+seems calm as birds flutter and small dogs dart across the street. Flowers
+grow in great abundance, most looking wild yet colorful and almost
+claming. Off to the side you also notice some small &pbunny rabbits&w and
+wonder what the heck they're doing around.
+
+~
+67108864 0 0 1
+D0
+~
+~
+0 -1 1758
+D2
+~
+~
+0 -1 1733
+S
+#1900
+Last room~
+~
+8 0 0 0
+D0
+~
+~
+0 -1 1750
+S
+#0
+
+
+#RESETS
+O 1 1602 1 1609
+M 1 1604 1 1611
+G 1 1617 1
+G 1 1618 1
+G 1 1619 1
+G 1 1620 1
+G 1 1621 1
+G 1 1622 1
+M 1 1601 1 1602
+E 1 53 1 16
+E 1 53 1 18
+O 1 1601 1 1602
+M 1 1606 1 1614
+G 1 59 1
+O 1 1638 1 1603
+O 1 1625 1 1603
+O 1 1638 1 1606
+O 1 1625 1 1606
+M 1 1607 1 1613
+G 1 1635 1
+M 1 1605 1 1610
+G 1 1625 1
+G 1 1624 1
+G 1 1626 1
+G 1 1623 1
+M 1 1602 1 1608
+G 1 1603 1
+G 1 1604 1
+G 1 1605 1
+G 1 1606 1
+G 1 1607 1
+G 1 1608 1
+O 1 1625 1 1608
+O 1 1638 1 1608
+M 1 1603 1 1607
+G 1 1612 1
+G 1 1609 1
+G 1 1614 1
+G 1 1610 1
+G 1 1613 1
+G 1 1615 1
+G 1 1616 1
+O 1 1625 1 1607
+O 1 1638 1 1607
+O 1 2 1 1601
+S
+
+
+#SHOPS
+ 1602    0  0  0  0  0   120   0         0 23    ; Molly
+ 1603    0  0  0  0  0   120   0         0 23    ; John
+ 1604    0  0  0  0  0   120  90         0 23    ; Sarah
+ 1605    0  0  0  0  0   120  90         0 23    ; David
+ 1606    2  0  0  0  0   120  90         0 23    ; a newly created Joe
+ 1607    0  0  0  0  0   120   0         0 23    ; Hanna 
+ 1608    0  0  0  0  0   120  90         0 23    ; Scyth
+0
+
+
+#REPAIRS
+ 1606    0  0  0         100   1         0 23    ; a newly created Joe
+0
+
+
+#SPECIALS
+S
+
+
+#$

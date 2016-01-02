@@ -1,0 +1,33 @@
+#! /bin/csh -f
+
+set port = 5555
+if ( "$1" != "" ) set port="$1"
+
+cd ../area
+nohup
+nice
+limit stack 1024k
+limit core unlimited
+if ( -e shutdown.txt ) rm -f shutdown.txt
+
+while ( 1 )
+    # If you want to have logs in a different directory,
+    #   change the 'set logfile' line to reflect the directory name.
+    set index = 1000
+    while ( 1 )
+        set logfile = ../log/$index.log
+        if ( ! -e $logfile ) break
+        @ index++
+    end
+
+    date > $logfile
+    date > ../area/boot.txt
+    ../src/unknown $port >&! $logfile
+
+    if ( -e shutdown.txt ) then
+        rm -f shutdown.txt
+        exit 0
+    endif
+    sleep 15
+    
+end

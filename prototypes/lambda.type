@@ -1,0 +1,23 @@
+#PROTOTYPE
+Name         Lambda-class Shuttle~
+Filename     lambda.type~
+Description  ~
+Class        0
+Tractorbeam  0
+Lasers       4
+Maxmissiles  2
+Maxshield    200
+Maxhull      500
+Maxenergy    4500
+Hyperspeed   80
+Maxchaff     0
+Realspeed    125
+Manuever     0
+Maxbombs     0
+Comm         0
+Sensor       0
+Astro_array  0
+Ion          0
+End
+
+#END

@@ -1,0 +1,23 @@
+#PROTOTYPE
+Name         Defender-class Assault Carrier~
+Filename     dcac.type~
+Description  ~
+Class        1
+Tractorbeam  160
+Lasers       4
+Maxmissiles  0
+Maxshield    400
+Maxhull      2500
+Maxenergy    9000
+Hyperspeed   125
+Maxchaff     10
+Realspeed    75
+Manuever     20
+Maxbombs     0
+Comm         10
+Sensor       10
+Astro_array  10
+Ion          4
+End
+
+#END

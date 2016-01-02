@@ -1,0 +1,23 @@
+#PROTOTYPE
+Name         Marauder Corvette~
+Filename     marauder.type~
+Description  ~
+Class        1
+Tractorbeam  3
+Lasers       8
+Maxmissiles  2
+Maxshield    525
+Maxhull      1250
+Maxenergy    7500
+Hyperspeed   100
+Maxchaff     5
+Realspeed    120
+Manuever     0
+Maxbombs     0
+Comm         0
+Sensor       0
+Astro_array  0
+Ion          0
+End
+
+#END

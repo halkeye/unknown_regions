@@ -1,0 +1,24 @@
+Filename          mail~
+Vnum              100
+Min_read_level    1
+Min_post_level    1
+Min_remove_level  0
+Max_posts         100
+Type 	           1
+Read_group        ~
+Post_group        ~
+Extra_readers     ~
+Extra_removers    ~
+End
+Filename          coder~
+Vnum              101
+Min_read_level    101
+Min_post_level    101
+Min_remove_level  101
+Max_posts         50
+Type 	           0
+Read_group        ~
+Post_group        ~
+Extra_readers     ~
+Extra_removers    ~
+End

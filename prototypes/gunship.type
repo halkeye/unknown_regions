@@ -1,0 +1,23 @@
+#PROTOTYPE
+Name         Corel. Gunship~
+Filename     gunship.type~
+Description  ~
+Class        1
+Tractorbeam  0
+Lasers       10
+Maxmissiles  20
+Maxshield    595
+Maxhull      1800
+Maxenergy    10000
+Hyperspeed   100
+Maxchaff     5
+Realspeed    75
+Manuever     0
+Maxbombs     0
+Comm         25
+Sensor       25
+Astro_array  25
+Ion          5
+End
+
+#END

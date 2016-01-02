@@ -1,0 +1,31 @@
+Name        Noghri~
+Race        13
+Classes     0
+Str_Plus    2
+Dex_Plus    5
+Wis_Plus    -2
+Int_Plus    -1
+Con_Plus    -4
+Cha_Plus    -3
+Lck_Plus    0
+Affected    32768
+Resist      0
+Suscept     0
+Language    6
+AC_Plus    0
+Height     51
+Weight     80
+Hunger_Mod  0
+Thirst_mod  0
+Death_age   150
+Consent     20
+Ability  20
+Ability  5
+Ability  -5
+Ability  -5
+Ability  5
+Ability  0
+Ability  0
+Ability  0
+End
+

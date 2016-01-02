@@ -1,0 +1,23 @@
+#PROTOTYPE
+Name         Mon Calamari Lightcruiser MC40a~
+Filename     mc40a~
+Description  ~
+Class        2
+Tractorbeam  0
+Lasers       6
+Maxmissiles  12
+Maxshield    650
+Maxhull      6000
+Maxenergy    12500
+Hyperspeed   120
+Maxchaff     10
+Realspeed    35
+Manuever     25
+Maxbombs     8
+Comm         15
+Sensor       15
+Astro_array  15
+Ion          4
+End
+
+#END

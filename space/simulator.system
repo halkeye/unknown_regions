@@ -1,0 +1,51 @@
+#SPACE
+Name         Simulator~
+Filename     simulator.system~
+Planet1      A Simulated Planet~
+Planet2      ~
+Planet3      ~
+Star1        A Simulated Star~
+Star2        ~
+Location1a      A Simulated Landing Pad~
+Location1b      ~
+Location1c      ~
+Location2a       ~
+Location2b      ~
+Location2c      ~
+Location3a      ~
+Location3b      ~
+Location3c      ~
+Doc1a          198
+Doc2a          0
+Doc3a          0
+Doc1b          0
+Doc2b          0
+Doc3b          0
+Doc1c          0
+Doc2c          0
+Doc3c          0
+P1x          0
+P1y          0
+P1z          0
+P2x          0
+P2y          0
+P2z          0
+P3x          0
+P3y          0
+P3z          0
+S1x          0
+S1y          0
+S1z          0
+S2x          0
+S2y          0
+S2z          0
+Xpos          1000000
+Ypos          1000000
+Flags         0
+Fcz			0
+Controls		0
+Code		0
+Alertstatus	0
+End
+
+#END

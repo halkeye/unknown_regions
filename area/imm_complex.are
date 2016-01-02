@@ -1,0 +1,273 @@
+#AREA   Unknown Regions Immortal Complex~
+
+
+
+#AUTHOR Gavin~
+
+#RANGES
+0 0 0 0
+$
+
+#FLAGS
+0
+
+#ECONOMY 0 6250000
+
+#CLIMATE 2 2 2
+
+#MOBILES
+#100
+m100~
+a newly created m100~
+Some god abandoned a newly created m100 here.
+~
+~
+1 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#199
+m199~
+a newly created m199~
+Some god abandoned a newly created m199 here.
+~
+~
+1 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#100
+A Mail Terminal~
+A Mail Terminal~
+A Mail Terminal is here.~
+~
+13 0 0
+0 0 0 0
+1 0 0
+#101
+The Coder's Board ~
+The Coder's Board~
+The Coder's Board is here~
+~
+13 0 0
+0 0 0 0
+1 0 0
+#199
+o199~
+a o199~
+A o199 is here.~
+~
+13 0 0
+0 0 0 0
+1 0 0
+#0
+
+
+#ROOMS
+#100
+Omnipresent Complex~
+~
+524312 0 0 1
+D1
+~
+~
+0 -1 106
+D2
+~
+~
+0 -1 101
+D5
+~
+~
+0 -1 111
+> speech_prog test~
+if clan($n) == The Imperial Remnants 
+mpecho yes 
+else 
+mpecho no 
+endif 
+~
+|
+S
+#101
+Mail Room~
+~
+524304 0 0 0
+D0
+~
+~
+0 -1 100
+S
+#102
+Floating in a void~
+~
+67371032 0 0 1
+S
+#103
+Rance's Home~
+As you come into Rance's cubicle, you notice that the room is comforting
+and easy on the eyes. The walls are painted a light blue and there are
+windows about on each side. There are plants in each corner of the room as
+well as a large fish tank. There is a table on the back side of the room
+with 2 comfortable chairs. On the opposing side, there rests a nice soft
+sofa. nice soft sofa.
+
+~
+604110872 0 0 1
+D1
+~
+~
+0 -1 107
+> rand_prog 30~
+mpechoat $r The wind enters from one of the windows then leaves through the 
+mpechoat $r other after swirling around you, cooling you off. 
+~
+|
+S
+#104
+Akira~
+~
+67239960 0 0 1
+S
+#105
+An Empty Apartment~
+~
+67371032 0 0 1
+S
+#106
+Builder's Room~
+~
+67108888 0 0 1
+D3
+~
+~
+0 -1 100
+S
+#107
+Alessandra's Treehouse~
+~
+604110864 0 0 1
+D2
+~
+~
+0 -1 108
+D3
+~
+~
+0 -1 103
+D5
+~
+~
+0 -1 100
+> speech_prog star 100~
+mpecho &c[&Y *       *            *&c] 
+mpecho &c[&Y *            &B*&c      *&c] 
+mpecho &c[&Y      *       *        *&c] 
+mpecho &c[&Y         *        *     &c] 
+mpecho &c[&Y      &R*           *     &c] 
+~
+> rand_prog 30~
+mpechoat $r You hear the crickets chirp outside as you see the moon lit sky  
+mpechoaround $r You hear the crickets chirp outside as you see the moon lit sky
+  
+~
+|
+S
+#108
+Gavin's Home~
+~
+604110864 0 0 1
+D5
+~
+~
+2048 -1 101
+S
+#109
+Floating in a void~
+~
+67108872 0 0 1
+S
+#110
+Floating in a void~
+~
+67108872 0 0 1
+S
+#111
+Coder's Room~
+~
+67109392 0 0 1
+D4
+~
+~
+0 -1 100
+S
+#120
+Floating In A Void!~
+~
+67108872 0 0 1
+S
+#121
+&C&cAroshi's Pad~
+~
+67371544 0 0 1
+D0
+~
+~
+0 -1 100
+D6
+~
+~
+0 -1 120
+S
+#150
+Floating in a void~
+~
+8 0 0 0
+S
+#198
+A Simulated Landing Pad~
+~
+67108872 0 0 1
+S
+#199
+Transportation Room~
+This room is going to be setup for players who come to test to try out areas.
+~
+8 0 0 0
+S
+#0
+
+
+#RESETS
+O 1 100 1 101
+O 1 101 1 111
+S
+
+
+#SHOPS
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

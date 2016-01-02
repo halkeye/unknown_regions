@@ -1,0 +1,23 @@
+#PROTOTYPE
+Name         Imperator-class Star Destoyer~
+Filename     isd.type~
+Description  ~
+Class        2
+Tractorbeam  35
+Lasers       10
+Maxmissiles  65
+Maxshield    1000
+Maxhull      14000
+Maxenergy    26000
+Hyperspeed   70
+Maxchaff     25
+Realspeed    38
+Manuever     0
+Maxbombs     12
+Comm         25
+Sensor       25
+Astro_array  25
+Ion          10
+End
+
+#END

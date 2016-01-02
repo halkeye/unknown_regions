@@ -1,0 +1,23 @@
+#PROTOTYPE
+Name         Tie-Fighters~
+Filename     tiefighters.proto~
+Description  ~
+Class        0
+Tractorbeam  0
+Lasers       0
+Maxmissiles  0
+Maxshield    0
+Maxhull      1
+Maxenergy    1500
+Hyperspeed   0
+Maxchaff     0
+Realspeed    60
+Manuever     0
+Maxbombs     0
+Comm         0
+Sensor       0
+Astro_array  0
+Ion          0
+End
+
+#END

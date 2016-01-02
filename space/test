@@ -1,0 +1,37 @@
+#SHIP
+Name         test~
+OrigName     test~
+Filename     test~
+Description  ~
+Owner        ~
+Pilot        ~
+Copilot      ~
+Color        Cyan~
+Class        2
+Shipyard     0
+Hanger       0
+Turret1      0
+Turret2      0
+Statet0      0
+Statet1      0
+Statet2      0
+Lastdoc      0
+Firstroom    0
+Lastroom     0
+Cockpit      0
+Coseat       0
+Pilotseat    0
+Gunseat      0
+Navseat      0
+Engineroom   0
+Entrance     0
+Prototype    Mon Calamari Lightcruiser MC40a~
+LaserDamage  0
+Shipstate    0
+Missilestate 0
+Home         ~
+Flags		   0
+Alarm	       0
+End
+
+#END

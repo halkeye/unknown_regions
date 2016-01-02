@@ -1,0 +1,2359 @@
+#AREA   UED NewbieStation.~
+
+
+
+#AUTHOR Squall~
+
+#RANGES
+1 100 1 100
+$
+
+#RESETMSG You hear the hum of repulsorlifts powering up in the distance~
+
+#FLAGS
+2 3
+
+#ECONOMY 0 497668575
+
+#CLIMATE 2 2 2
+
+#MOBILES
+#10340
+Neural Program Droid~
+Neural Program Loader~
+A Droid is here loading neural programs into people.
+~
+Domick carries himself with a grace and confidence born from his
+long life and many experiences in these Realms. He is looked on
+with awe and unquestioned respect. That respect is well deserved.
+Do not attempt to kill him, for you shall surely die.
+~
+1141900291 4194344 1000 Z
+1 0 94 1d1+1000 0d0+0
+100 0
+8 8 1
+13 13 13 13 13 13 0
+0 0 0 0 37
+0 0 0 0 131072 131073 0
+0 0 0 0 1059840 0 0 0
+0 0 0 0 0 0 0 0
+> all_greet_prog 100~
+say Welcome, to the Neural Program Center 
+say What would you like to learn today? 
+~
+|
+#10342
+academy student~
+a student~
+An academy student is here, taking a break from his studies.
+~
+~
+1073741827 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 67108863 67108863 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> speech_prog no nope~
+say You can have it anyways.
+give luke $n
+drop all
+~
+> speech_prog yes yep~
+say Ok you can have it then.
+give luke $n
+drop all
+~
+> speech_prog hi hello~
+say Hello.
+Say I found this toy ... is it yours?
+mpat 10399 mpoload 10320
+mpecho A student shows you a Statue of Gavin. 
+~
+|
+#10343
+believer~
+A Believer~
+A Believer is here, worshipping an unknown force.
+~
+~
+1073741827 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 67108863 67108863 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> all_greet_prog 100~
+snif 
+say I lost my statue of Gavin. 
+~
+> speech_prog key~
+if ovnuminv (10320) >= 1
+say You want the key for this door?
+point north
+say here let me open it for you
+mpat 10399 mpoload 10423
+unlock north
+open north
+mpat 10399 drop all
+mpat 10399 purge
+else
+cry
+endif
+~
+> speech_prog door door? key?~
+if ovnuminv (10320) >= 1
+say You want the key for this door?
+point north
+say here let me open it for you
+mpat 10399 mpoload 10423
+unlock north
+open north
+mpat 10399 drop all
+mpat 10399 purge
+else
+cry
+endif
+~
+> speech_prog door? north~
+if ovnuminv (10320) >= 1
+say You want the key for this door?
+point north
+say here let me open it for you
+mpat 10399 mpoload 10423
+unlock north
+open north
+mpat 10399 drop all
+mpat 10399 purge
+else
+cry
+endif
+~
+|
+#10345
+chadoyn cage~
+the chadoyn~
+The chadoyn is straining its leash, attempting to attack you.
+~
+He looks back at you with his beady little eyes and a snarl on his face.
+You are pretty sure you can best him in regards to combat.
+~
+3 0 0 Z
+2 0 25 2d4+1 0d0+0
+0 0
+8 8 0
+13 13 13 13 13 13 0
+0 0 0 0 44
+85 0 0 0 131072 131073 0
+0 0 3 0 2048 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 85~
+if level($n) >= 6
+if rand(50)
+mpechoat $n You feel an overwhelming desire for greater challenge.
+else
+mpechoat $n The chadoyn is far too easy for you to kill.
+endif
+endif
+~
+|
+#10350
+professor schoolmaster teacher headmaster~
+the Schoolmaster~
+The schoolmaster is here offering diplomas to academy graduates.
+~
+Domick carries himself with a grace and confidence born from his
+long life and many experiences in these Realms. He is looked on
+with awe and unquestioned respect. That respect is well deserved.
+Do not attempt to kill him, for you shall surely die.
+~
+3 4194472 1000 Z
+1 0 94 1d1+1000 0d0+0
+100 0
+8 8 1
+13 13 13 13 13 13 0
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 1059840 0 0 0
+0 0 0 0 0 0 0 0
+> all_greet_prog 100~
+if level($n) == 1 
+mpgain $n 0 500 
+endif 
+~
+|
+#10355
+pilot~
+a pilot~
+A Mon Calamarian pilot is here ferrying academy graduates.
+~
+~
+3 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> act_prog p gives you a diploma.~
+look diploma
+say Thank-you.
+give diploma $n
+~
+> all_greet_prog 100~
+bow $n
+say May I see your diploma please.
+~
+|
+#10360
+practice droid~
+a practice droid~
+A practice droid is here waiting for combat.
+~
+~
+67108867 0 0 Z
+1 0 100 1d4+5 0d0+0
+10 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#10365
+service droid~
+a service droid~
+A service droid is here handing out canteens and rations.
+~
+~
+67108867 0 0 Z
+10 0 0 10d0+100 0d0+25
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> speech_prog water canteen~
+mpoload 10314 1
+give canteen $n
+drop all
+~
+> speech_prog food ration~
+mpoload 10313 1
+give ration $n
+drop all
+~
+|
+#10370
+shopkeeper droid~
+a shopkeeper~
+A droid is here selling useful items to students.
+~
+~
+67108867 8 0 Z
+20 0 80 2d20+2 2d10+10
+100 0
+8 8 0
+13 13 13 13 13 13 13
+0 0 0 0 0
+0 0 0 0 9 66994422 0
+2 2 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#10394
+Abbigayle language teacher~
+abbigayle~
+A beautiful lady stands here, waiting for her students.
+~
+This has to be one of the most beautiful women in these Realms, both inside
+and out. Her eyes have a sparkle of amusement and her face an easy smile.
+She knows you are admiring her, and she does not seem to mind. She is
+comfortable and confident that the picture she makes is breath taking. Her
+voice at last breaks the spell. Her voice is like satin, you can hardly
+wait for your lessons to begin. Any reason to hear her speak the tongues
+foreign to your ears.
+~
+1048579 4194472 0 Z
+5 16 5 1000d1+0 1d6+3
+50 0
+8 8 2
+13 13 13 13 13 13 13
+0 0 0 0 0
+0 0 0 0 671871 671871 0
+0 0 3 0 1059840 0 0 0
+0 0 0 0 0 0 0 0
+> all_greet_prog 100~
+if ispc($n)
+wink $n
+if level($n) < 20
+tell $n My lessons start when you reach level 20. Have fun until then.
+else
+tell $n I am ready to teach you, are you prepared for the lessons?
+endif
+grin $n
+endif
+~
+> death_prog 100~
+say You know, I am really a lover, not a fighter ...
+mpslay $n
+mpat $n mpechoat $n But alas, killing me was a slaying offense.
+mpgoto 10399
+mpat 10306 mpmload 10394
+~
+> act_prog p flees head over heels!~
+mptrans 0.$n
+mpechoat $n Abbigayle says, 'You fled, so I shall spare your life!'
+mpgoto 10399
+mpat 10306 mpmload 10394
+~
+|
+#10395
+sad student~
+a sad student~
+A sad student leans against the wall.
+~
+~
+1073741827 0 0 Z
+1 0 0 0d0+0 0d0+0
+100 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 67108863 67108863 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> all_greet_prog 100~
+close north
+say Don't let it happen to you $n
+~
+> rand_prog 25~
+Say My brother is dead.
+Say Killed bt a stray blaster shot.
+Say Gone forever.
+snif
+say If only he had made a clone....
+~
+|
+#10396
+wookiee angry captured caged~
+A Wookiee~
+An angry wookiee has been tied up here.
+~
+~
+3 0 0 Z
+5 0 87 1d10+50 0d4+2
+50 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+1 0 0 0 1 1 0
+1 1 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#10397
+Marine hopeful~
+Marine Cadet~
+A Marine Cadet is eagerly listening to the briefing.
+~
+~
+1073741827 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> rand_prog 5~
+say I hope I don't fail this time, I'm completely ready!  
+say I mastered kick and I can throw a vibro blade now  
+say YEAH 
+~
+|
+#10398
+droid br-1e~
+The Droid, BR-1E~
+BR-1E is here briefing cadets.
+~
+~
+1140850691 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> act_prog west~
+say Your late Cadet $n .  
+say This will go on your record. I do hope you will be punctual on
+say all our briefings from now on.  
+mpechoat $n What do you need to know?  
+mpechoat $n To learn about something just say its name  
+mpforce $n look list  
+~
+|
+#10399
+Yuuzhan Vong~
+a Small Yuuzhan Vong~
+A Yuuzhan Vong is standing here with his stick ready to strike
+~
+~
+1610612739 8 0 Z
+2 0 95 0d10+20 0d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+0 0 0 0 1048576 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpechoat $n As the simulant dies you can hear your teacher saying
+mpechoat $n congratulations and then a door opens to your north 
+mpechoat $n and you enter. 
+mptransfer $n 10310 
+~
+|
+#10400
+Flight Teacher~
+Flight teacher~
+A Flight Teacher is here explaining the fundamentals of Space Combat
+~
+~
+536871939 0 0 Z
+105 0 -162 1000d20+1050 10d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+21 21 0 0 1056768 0 0 0
+0 0 0 0 0 0 0 0
+> all_greet_prog 100~
+say Why are cadets always LATE?!   
+mutter   
+say Alright Cadet $n . Sit down   
+say I'll teach you what you missed but from now on, PAY ATTENTION 
+say First type Practice starfighters, practice ship systems, practice 
+say navigation and practice weapon systems.  
+say Alright class here is how you fire lasers   
+say type FIRE after you target a ship.   
+say to TARGET a ship. type TARGET SHIP.   
+say There are also several other types of weapons such as   
+say missiles and other defensive things. This display will   
+say explain it better then I can.  
+~
+|
+#10499
+final mob~
+a newly created final mob~
+Some god abandoned a newly created final mob here.
+~
+~
+1 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#10300
+bracelet charm academy~
+a Bracelet~
+A charm bracelet from the academy lies here~
+~
+4 0 4097
+2 2 0 0
+2 0 0
+E
+bracelet charm~
+This is a bracelet that will bring you luck in your travels. It can
+be found at the Darkhaven Acamdemy
+~
+A
+31 1
+> drop_prog 100~
+mpforce $n sac $o
+~
+|
+#10301
+combat boots academy~
+&za pair of Black Boots&w~
+&za pair of nice boots have been left here.&w~
+~
+4 0 65 126
+3 3 0 0
+3 0 0
+E
+combat boots~
+This boots are so comfortable and light, you feel you can walk a lot
+farther. The can be found at the Darkhaven Academy.
+~
+A
+14 100
+> drop_prog 100~
+mpforce $n sac $o
+~
+|
+#10302
+belt leather academy~
+&R&WWhite Utility Belt&w~
+&R&Wa White Utility Belt has been left here.&w~
+~
+4 0 2049
+2 2 0 0
+2 0 0
+E
+belt leather~
+This belt is made of a fine leather, braided for strength. You can get
+it at the Darkhaven Academy.
+~
+A
+5 1
+> drop_prog 100~
+mpforce $n sac $o
+~
+|
+#10303
+Pants~
+&za pair of Black Pants&w~
+&za pair of nice black pants have been left here.&w~
+~
+4 0 33
+2 2 0 0
+3 0 0
+E
+leggings~
+These leggings will offer good protection until you can get better. They
+can be found at the Darkhaven Academy.
+~
+#10304
+academy cap~
+an academy cap~
+A Coruscant Academy cap is here.~
+~
+4 0 17
+3 3 0 0
+2 0 0
+E
+helmet iron~
+This is a helmet made of fine iron, from the Darkhaven Academy.  It will
+protect you until you can find better.
+~
+A
+3 1
+> drop_prog 100~
+mpforce $n sac $o
+~
+|
+#10305
+cape brocade academy~
+&Oa brown cape&W~
+&Oa brown cape is here&G&W~
+~
+4 0 1025
+5 5 0 0
+3 0 0
+E
+cape brocade~
+This cape is made from a heavy brocade. It will offer you warmth and
+protection until you can find something better. You can find it at the
+Darkhave Academy.
+~
+> drop_prog 100~
+mpforce $n sac $o
+~
+|
+#10306
+collar metal academy~
+a strong metal collar~
+A strong metal collar from the academy~
+~
+9 0 5
+3 2 0 0
+5 0 0
+E
+collar metal ~
+This collar fits closely around your neck. It is thick with spikes to
+protect you in battle. You can find it in the Darkhaven Academy
+~
+> drop_prog 100~
+mpforce $n sac $o
+~
+|
+#10307
+visor completion academy~
+a visor of completion~
+A visor of completion is here, emitting a faint glow.~
+~
+9 64 131073
+2 0 0 0
+1 0 0
+E
+visor completion~
+Congratulations! You have completed the Darkhaven Academy and can now
+wear this visor with pride! It is magic too, type WEAR VISOR to use.
+~
+A
+4 1
+A
+3 1
+> wear_prog 100~
+mpechoat $n As you wear this visor, you feel more intelligent and wise!
+mpechoaround $n As $n wears the visor of completion, $e looks more complete!
+~
+|
+#10308
+white shirt~
+a white shirt~
+A white shirt bearing the Academy mark has been left here.~
+~
+4 0 9
+4 4 0 0
+5 0 0
+#10309
+sleeves tin academy~
+lightweight tin sleeves~
+Lightweight tin sleeves from the academy~
+~
+9 0 257
+3 3 0 0
+1 0 0
+E
+sleeves tin~
+This sleeves will protect your arms until you can find something better.
+You can find them in the Darkhaven Academy.
+~
+A
+1 1
+> drop_prog 100~
+mpforce $n sac $o
+~
+|
+#10310
+forceshield energyshield shields shield~
+a personal energy shield~
+A personal energy shield was left here.~
+~
+4 0 513
+2 2 0 0
+5 0 0
+#10311
+Duralight~
+Duralight~
+A Duralight is glowing here.~
+~
+1 8257 1
+0 0 50 0
+1 5 0
+A
+24 -1
+#10312
+academy vibro blade knife dagger vibro-blade~
+a vibro-blade~
+You see a finely honed vibro-blade here.~
+~
+2 64 8193
+12 5 4 2 1000 1000
+3 250 50
+#10313
+ration standard packaged~
+a packaged ration~
+A packaged ration is here, waiting to be eaten.~
+~
+19 8192 1
+50 50 0 0
+2 5 0
+#10314
+canteen water grey stock~
+a canteen~
+A small grey canteen has been drooped here.~
+~
+10 0 1
+40 40 0 0
+1 10 1
+#10315
+drinking fountain~
+a fountain~
+A drinking fountain rests against the wall.~
+~
+16 0 0
+1000 1000 0 0
+1 0 0
+#10316
+socks~
+a pair of socks~
+A pair of socks is in a ball on the floor.~
+~
+4 8192 65 1
+0 6 -1 -1
+1 5 0
+#10317
+supply pack back backpack~
+a supply pack~
+A supply pack has been left here.~
+~
+8 0 1025 128
+35 0 0 0
+1 5 0
+A
+17 -5
+#10318
+grey button~
+a button~
+A small grey button seems out of place on the wall here.~
+~
+27 0 0
+0 0 0 0
+1 0 0
+> push_prog 100~
+mpoload 10316 1
+mpoload 10308 1
+mpoload 10303 1
+pull button
+drop all
+mpecho A small panel opens revealing several articles of clothing.
+~
+|
+#10319
+box~
+a box~
+A small box .. I wonder whats inside, maybe you should open it.~
+~
+8 0 1
+10 1 0 0
+1 1000 100
+#10320
+Statue of Gavin~
+A Statue of Gavin~
+Someone left a Statue of Gavin here.~
+~
+7 0 1
+0 0 0 0
+1 0 0
+#10321
+diploma academy coruscant graduation~
+a diploma~
+Someone dropped their coruscant academy graduation diploma here.~
+~
+7 0 1
+0 0 0 0
+1 0 0
+#10322
+academy shuttle~
+a shuttle~
+A small shuttle is docked here.~
+~
+7 0 0
+0 0 0 0
+1 0 0
+#10323
+Holo Display~
+a Holo Display~
+A Holo Display is showing Space Combat tips here.~
+~
+7 0 0
+0 0 0 0
+1 0 0
+#10414
+student message terminal~
+a student message terminal~
+A student message terminal is here for you to play with.~
+~
+7 0 0
+0 0 0 0
+1 0 0
+#10415
+Idiot's Guide to the Galaxy~
+a Idiot's Guide to the Galaxy~
+A Idiot's Guide to the Galaxy is here.~
+~
+7 64 16385
+5 5 0 0
+1 0 0
+E
+Idiot's Guide to the Galaxy~
+Idiots Guide to the Galaxy 
+                          by 
+                    Squall Leonhart 
+  
+This is a guide to the mud and how to play in general as 
+well as a Frequently Asked Questions list(FAQ). It would 
+be a good idea to read through the whole thing before asking 
+people questions although they don't mind. 
+  
+Now type "Look Display" to look at the display on the guide 
+and increase your knowledge and wisdom!
+
+This guide is derived partially for the basic gameplay
+mechanics from Smaugs excellent Adventurer's Guide. 
+Credits to them. I added things SWR added and modified
+what they had to fit what had been changed.  
+~
+E
+display~
+&R&WUnknown Regions'&w 
+               &BIdiots Guide to the Galaxy&w 
+                    &PTable of Contents:&w 
+	      &C1.Rules                  11.Quests 
+		2.Movement                 12.Making Items 
+		3.Communicating            13.Skills 
+		4.Combat                   14.The Force 
+		5.Equipment                15.Shops 
+		6.Spacecraft               16.Organizations 
+		7.Space combat             17.Planets and Government 
+		8.Stats                    18.Bounty Hunting 
+		9.Items                    19.Role Playing 
+		10.Death                   20.Misc&w 
+&YTo read information on a given subject, type "look #" and that 
+will bring up the correct page. For example, typing "look 15" would 
+tell you about shops. Also try "look sets", "look senate" and "look FAQ".&w 
+~
+E
+rules~
+Type Help Rules
+To see all the rules
+~
+E
+3~
+&CCommunication is one of the most important factors in this game. To allow
+for the best possible communication, the immortals have coded several channels
+to allow your message to go to the intended audience. You also have the ability
+to shut off channels you do not want to use. For a list of all the channels 
+available to you, type "channel". To turn on a channel, type "chan +<channel>"
+and to turn off a channel, type "chan -<channel>". For instance, chan -chat 
+would turn off chat channel. You can also turn off all channels at once by 
+typing "chan -all" and turn on all channels by typing "chan +all". 
+The following is a list of channels, their purpose and how to use them. 
+              ***COMLINK IS REQUIRED TO USE CHANNELS*** 
+SAY - This is a channel used to talk to a person with whom you are in the 
+same room. You type "say <message>" or ' message to use. 
+TELL - This channel is used to talk to a single person, they do not have to be
+in the same room with you. You type "tell 0.[person] <message>". When a person
+sends a tell to you, or a Someone tells to you, you may send a tell back to 
+them by using "reply <message>". Warning! reply sends a message to the last 
+person who sends you a tell. So, if a tells comes in while you are typing, 
+your reply will go to that person, so use reply sparingly. 
+YELL - This channel is seen by other people in your area, those people who 
+show up on "where" and have yell channel on will hear your yell. To use, 
+type "yell <message>". 
+***** For more channel info, type "look 3A" ***** 
+~
+E
+3a~
+~
+E
+3b~
+&COOC - This channel is meant for OOC messages(Out of character) meaning
+stuff that doesn't relate to your roleplaying and such. This is the 
+only channel that can use this stuff except tell. See "look 19" 
+for info on RP. 
+SHOUT - This channel is seen by anyone on the mud who has the channel on.
+You may use the channel by typing "shout <message>". 
+CHAT - This is the most commonly used channel. The purpose of this channel
+is general chatter. This channel is heard by anyone who has the channel on.
+To use, type "chat <message>" or . message.   
+MUSIC - This channel is used to recite lyrics from music you like to listen
+to. This channel is heard by anyone who has the channel on. To use, type 
+"music <message>". Try not to spam the channel with macro'd lyrics. Keep the
+language CLEAN. You may use ONLY symbols to replace profanity, not letters 
+and symbols mixed. 
+QUEST - This channel is used to have quests or "mud games". This channel is
+heard by anyone who has the channel on. To use, type "quest <message>". 
+ ***** For more on channels, type "look 3C" ***** 
+~
+E
+3c~
+&CAUCTION - This channel is used to buy and sell items between players. For  
+details on use, type HELP AUCTION. Note: You NEED a Auclink to use the 
+Auction Network 
+SOCIAL - Also available to you are socials and emote. To get a complete list of
+social commands, type "social". An emote is a personalized social, starting 
+with your name. Socials and emotes are seen by all people in the room. 
+To use a social, type "social" or "social [person]". To use an emote, type 
+"emote <message>" or , <message>. 
+GROUP - When you are grouped, you can talk to other members of the group 
+by typing "gtell <message>" 
+CLAN - Once you join a clan, you also have a private clan channel to talk 
+to your fellow clan members. Each clan has their own clantalk channel. To use,
+type "clan <message>". 
+COUNCIL - Councils are now families with the exception of the Senate 
+this is to talk between members. 
+counciltalk type "cou <message>". 
+WARTALK - This channel is seem by all players in UR, but is dedicated 
+to bantering between pkill players.  This channel has all the same language 
+and harassment laws as all other channels.  To use the channel, type 
+"war <message>". 
+TUNE - Tune to a private frequency for multiple players #'s 1 - 99
+TALK - Talk in your private frequency. 
+~
+E
+2~
+&CMovement is very important because it covers going from one room to another
+as well as one place in the galaxy to another(Except when using Spacecraft;for
+travel). There are various things that affect your movement. This will  
+cover your movement choices and some of the things that affect your movement. 
+Movement is even the act of not moving, like sleep. The basic moves are  
+directions, n, e, s, w, d, and u, as well as ne, nw, se, and sw. Also a  
+new exit type "Somewhere", where you type a word or "leave" word to use.  
+STAND - This command allows you to stand up so you can move. 
+REST -  This stops movement and allows you a slighty faster regeneration of hp,
+mana and movement points than standing. You must stand to stop resting. 
+SIT -   This stops movement and allows you a slighty faster regeneration of hp,
+mana and movement points than resting. You must stand to stop sitting. 
+SLEEP - When sleeping you can not receive tells or see anything that is going 
+on in the room you are occupying. This is the best position for hp, 
+mana and movement point recovery. You must wake to stop sleeping. 
+WAKE -  This commands will stop you from sleeping, sitting or resting. Once 
+you wake, you can move. 
+Force Sight -  This is a force skill that allows you to look inside an
+adjoining room. 
+this spell allows you to see the room as if you were standing in it. 
+SCAN -  This is a skill that allows you to look inside an adjoining room. This
+does not give as much information as scry. 
+***** More on movement, look 2A ***** 
+~
+E
+Idiot's Guide to the Galaxy~
+Credits- I admit I got alot of the basic mud stuff from Smaug's 
+Newbie Guide. I simply took what they had and changed it and 
+editted it for SWR and Unknown Regions. I'd like to thank them 
+for making a fine codebase and a nice newbie guide :) 
+~
+E
+2a~
+&CEXIT -  This is not an actual movement, but very helpful for getting an idea
+of what the rooms next to you are. Type "exits" to use. 
+FLOAT - A force spell similar to fly. It is like a levitation spell. 
+CLIMB - Needed to use certain exit types. It is used automatically. 
+TRACK - Used to track mobiles or players within an area. 
+Often you will encounter doors, and want to pass without a key. Here are some
+things that make that possible. 
+PICK LOCK - This is a smuggling skill that picks the lock. 
+doorbash -  This is a combat skill that knocks a door from its hinges, you can
+and 
+and will take damage from using this skill. 
+PASS DOOR - This is a force spell cast on a player, allowing them to pass
+through 
+a door. 
+***** More on movement, look 2B ***** 
+~
+E
+2b~
+&CThe following are some of the things that affect your movement: 
+DEXTERITY - The higher your dexterity, the better your movement. 
+EQUIPMENT - There is equipment to both help and hinder movement. 
+FIGHTING -  Each round you fight reduces your movement points. 
+WEIGHT -    The more you carry, the more movement points it takes to move.
+FLEE -      Lack of movement points can adversly affect your ability to flee.
+Do not start a rough fight if you are very low in moves. 
+FLY -       This spell reduces the amount of movement points it takes to move.
+Commands that get you places: 
+HAIL - Takes you to the nearest hotel 
+Vehicles and Speeders: 
+You may use land vehicles such as speeders, land crawlers etc. 
+Drive (direction) - Used with land based vehicles 
+Fly (Direction) - used with air base vehicles 
+Space craft: 
+discussed in "look 6"  
+~
+E
+4~
+&CFighting and Combat are the easiest levels to attain here. This section
+of the guide will teach you how to fight. If you can take the mob and 
+how to run away to fight another day.  
+***** Preparing for a fight ***** 
+LOCATIONS -   You do not necessarily want to gain levels by killing the 
+      inhabitants of a planet as it may upset clans who rule over it 
+Holodecks are the safest place to level at however they get 
+predictable eventually and you must seek real experience. 
+The Highwind is a good place to level at. Type Highwind for 
+its location. 
+SPELLS -      If your a force user by all means cast protective spells 
+upon yourself and ready yourself for a fight. if not maybe 
+you could find a kind jedi to do it on you.  
+HEALS -       There are seveal items that heal in the game such as First Aid
+Kits, 
+salves, potions, pills. Its a good idea to have a few of these on 
+hand. 
+***** For more on Combat, type "look 4A" ***** 
+~
+E
+4b~
+&C***** During the fight ***** 
+During the fight is a perfect time to use your spells and skills, they
+damage the mobs more then just your weapon alone. A lot of your skills are
+automatic, and require you to do nothing for them to work. In addition to
+your spells and/or skills, you may find some explosives and stun gas 
+useful during a fight.  
+Sometimes a mob with a blaster will flee and fire at you from another 
+room, You must either chase them or if your low on hp, Run! 
+  
+FLEE -     Flee is the command that will make you run from a fight. To use,
+type FLEE. This will take you to a room ajoining the room your were 
+fighting in. This WILL make you lose experience, but is a better 
+option than dying.  
+WIMPY -    This is the command that will flee you automatically when set. To
+set your wimpy, type "wimpy" and it will set your wimpy to about 
+twenty percent of your maximum hitpoints. You may also set your  
+wimpy to a desired hitpoint by typing "wimpy #". You do lose exp. 
+when your wimpy makes you flee, so do not set it too high. 
+HAIL -     fleeing then hailing is a very good strategy to get away from 
+a tough mob. It lands you at a hotel which is a safe room and 
+you can quit if you want. 
+ ***** For more on Combat, type "look 4C" ***** 
+~
+E
+4a~
+&CLOOK - Looking at the room and the mob itself is very important for seeing
+if the mob is tough. To see the mobs shields and the room description,  
+type "look". You want to have matching shields to reduce the damage  
+you take from the fight. For instance, if the mob has thundershield, you  
+will be damaged everytime you hit the mob unless you have thundershield  
+also. Also, type "look [mob]" to see what equipment and/or weapons  
+the mob is wearing. The better the equipment, the more chance that  
+the mob has spells and rougher attacks.  
+                    ***** Starting the fight *****  
+KILL -   The easiest way to start a fight is using kill. To do this just type
+"kill [mob]". This can not be used against another player.  
+MURDER - This command lets you kill players as well as mobs. Use it in  
+the same syntax as kill and remember you NEED a In Character reason  
+to kill a player.  
+SPELLS - You may start a fight with certain spells, like dispel magic, faerie
+fire, curse, poison and weaken. If you use any of these spells against  
+a player, it will start a fight with them. You can also start fights   
+with regular attack spell, such as fireball, harm and choke  
+similar spells.  
+***** For more on Combat, type "look 4B" ***** 
+~
+E
+4c~
+&C    ****MISC****  
+Explosives - Grenades, Thermal Detonators and Mines do damage  
+players and mobs. Mobs will chase after you and attack you once hit 
+just as they would if you attacked them normally.  
+Sniping - Sniping is firing a blaster from another room. Mobs will 
+chase after you and players will too, unless their stupid.  
+Throwings - Throwing Weapons like vibro-blades and such will produce 
+the same effect as sniping except usually with more damage. 
+~
+E
+5~
+&CSome part of your time will be dedicated to finding good clothes or
+Equipment. 
+There is equipment for every need, at low levels you usually want equipment
+to boost your stats, to allow for the maximum growth at each level. As you
+get higher level it gets more complicated and intense, you then have to think
+more about armor class, hitpoints, fp, saves, hitroll and damroll modifiers 
+on the equipment. Also, a lot of the better equipment has anti-alignment and
+anti-class flags. For anti-alignment flags, you may put them on when your 
+alignment correct for that piece of eq, then it may zap you and fall to the 
+ground once your alignment changes. Anti-class flags simply prevents you 
+from wearing a piece of equipment not meant for your class.  
+Following will show equipment slots, how to wear and remove equipment and about
+equipment damage and repair. 
+SLOTS -     There are two equipment setups, one for those who have dual wield 
+and one for those who do not. When you dual wield, you lose the 
+ability to wear a shield and hold something in your hand during the 
+time you are wielding a second weapon. To see what a complete 
+list of equipment position slots look like, type LOOK SETS. 
+INVENTORY - To see what you are carrying type "inventory" or "i". This shows 
+you all the items you have but are not currently wearing. Items 
+are counted from bottom up, you wear things from the bottom first. 
+***** More on equipment, type "look 5A" ***** 
+~
+E
+5a~
+&CCOMPARE - This command compares the armor class of two items. To use you wear
+one of the items and type "compare [item]" for the item in your 
+inventory you want to compare to the one you are wearing. 
+Hint-This only compares armor class, not affects. Use the spell 
+"know essence" or scanners to get a better idea 
+WEAR -    This is the command that allows you to take equipment from your 
+inventory and place it on your body. This can be done one piece at a 
+time by typing "wear [item]" or all your equipment at once by typing 
+"wear all". Wear all places only the first item type for each slot 
+on you. 
+WIELD -   This is the command to wield a weapon. Unlike wear, you must remove 
+the weapon you are wielding before wielding another weapon. To use, 
+type "wield [weapon]". 
+***** More on equipment, type "look 5B" ***** 
+~
+E
+5b~
+&CREMOVE -  This is the command to remove weapons and equipment from its wear 
+position to your inventory. To use, type "remove [item]". 
+HOLD -    This command makes you hold an item from your inventory, this command
+may only be used when not dual wielding and only for items that have 
+a hold flag. To use, type "hold [item]". 
+EXAM -    This command is used to look closely at an item, to see if it has 
+any damage. The examine command is used by typing "exam [item]". 
+REPAIR -  This command is used to fix broken, but not scrapped, equipment. 
+You may only repair at a blacksmiths and it is a good idea to do so 
+often. To use, remove item to inventory and type "repair [item]". 
+ARM -     Use this to make a grenade active. Get rid of it quickly by throwing
+it. 
+THROW -   This allows you to throw something you are holding in a direction or
+in the room. type throw just to throw it in the room you are in. Type 
+"Throw [Item] [Direction]" to throw it to another room. 
+~
+E
+6~
+&CSpacecraft is the most conventional way of getting between planets 
+and starsystems. Speed and ships various stat affects how it handles. 
+Here you will learn the basics of flying a ship, From controlling speed 
+to making better accurate hyperspace jumps. You learn it all here. 
+Spacecraft are separated into three classes: 
+Starfighters - Small, Swift, Nimble, Weak 
+Mid-Targets - In between starfighter and Capital Ships 
+Capital Ships - Huge, Sluggish, Strong 
+They have stats just like players do as well. 
+Lasers - Amount of laser cannons, Affects how many times you can fire 
+per round. They detract from the energy reserve in the ship. 
+  
+Energy - The amount of energy your ship has to function. Ie Hyperspace 
+fly... use weapons.. life support... etc. 
+Missiles/Rockets/Torpedos - Extra Ordinance you can fire. You can only 
+fire one of these per round. The order for damage is Missiles Torpedos 
+Rockets. Thats from least to greatest. 
+Ion Cannons - Best used when shields are low, Used to knock out ship 
+systems like the maindrive or turrets or missile launchers. 
+***** For more on Spacecraft, type "look 6A" ***** 
+~
+E
+6a~
+&CShields - The amount of shield points the ship has.. You can recharge  
+it manually to speed up the process(sucks more energy) or wait for  
+it to regenerate which happens slowly  
+Tractor Beam - How many tractor beam emitters your ship is equipped  
+with. determines your beams range.  
+Hull - How much damage your ship can take before breaking apart  
+and exploding.  
+Chaff - How much chaff you have to explode missiles and such before  
+they approach your ship.  
+  
+Turrets - Quad Laser turrets you can target independantly different  
+ships allowing large ships to attack several ships at once.   
+Speed - How fast your ship is capable of at Sublight Speed  
+Hyperspeed - How fast your ship is capable of in Hyperspace  
+Manueverability - How manueverable/agile/nimble your ship is  
+Ie, how fast can it turn around, evade laser fire. etc 
+  
+***** For more on Spacecraft, type "look 6B" ***** 
+~
+A
+3 2
+A
+4 1
+> get_prog 100~
+mpechoat $n &R&WYou grab the console and it flickers on with a message: 
+mpechoat $n &YCongratulations on the purchase of this fine guide! 
+mpechoat $n &YIt is your guide to health, happiness and money in this 
+mpechoat $n &Yworld as well as serves as an answerman to allll your 
+mpechoat $n &Yquestions... all you have to do is look at the display! 
+mpechoat $n &Ytype "Look Display" 
+~
+|
+#10416
+a Replicator~
+a Replicator~
+&Ya Replicator is installed here.~
+~
+12 2 0
+0 0 0 0
+1 0 0
+#10420
+prototype blaster~
+prototype blaster~
+A prototype blaster is here~
+~
+2 0 8193
+0 0 0 6
+1 0 0
+#10421
+prototype saber lightsaber~
+a prototype lightsaber~
+A prototype lightsaber shouldn't be here~
+~
+2 0 8193 128
+0 0 0 3
+1 0 0
+> use_prog 100~
+mpecho !!SOUND(saber.wav)
+mpechoat $n Your lightsaber ignites with a soft hum and a bright glow.
+mpechoaround $n $n's lightsaber seemingly jumps into $s hand.
+mpechoaround $n &WIt ignites with a hum and a bright glow.
+~
+|
+#10422
+prototype vibro-blade~
+prototype vibro-blade~
+A prototype vibro-blade shouldn't be here~
+~
+2 0 8193
+0 0 0 2
+1 0 0
+#10423
+key~
+a key~
+An old fashioned mechanical key was left on the ground here.~
+~
+18 0 1
+0 0 0 0
+1 0 0
+#10424
+Wristlink~
+&Ca Wristlink&w~
+A Wrist Comlink has been left here.~
+~
+8 0 4097
+0 0 0 0
+1 50 5
+#10425
+prototype grenade~
+a newly created prototype grenade~
+Some god dropped a newly created prototype grenade here.~
+~
+50 1073741824 0
+0 0 0 0
+1 0 0
+#10426
+generic armor~
+a newly created generic armor~
+Some god dropped a newly created generic armor here.~
+~
+4 1073741824 0
+0 0 0 0
+1 0 0
+#10427
+protoype landmine~
+a newly created protoype landmine~
+Some god dropped a newly created protoype landmine here.~
+~
+51 0 1
+0 0 0 0
+1 0 0
+#10428
+prototype light~
+a newly created prototype light~
+Some god dropped a newly created prototype light here.~
+~
+1 0 1
+0 0 0 0
+1 0 0
+#10429
+prototype shield~
+a newly created prototype shield~
+Some god dropped a newly created prototype shield here.~
+~
+4 0 513
+0 0 0 0
+1 0 0
+#10430
+prototype comlink~
+a newly created prototype comlink~
+Some god dropped a newly created prototype comlink here.~
+~
+2 0 0
+0 0 0 0
+1 0 0
+#10431
+enhanced targeting visor tracker~
+an enhanced targeting visor~
+An enhanced targeting visor is here.~
+~
+4 0 131073
+4 4 0 0
+3 0 750
+A
+18 3
+A
+19 1
+A
+2 -1
+> wear_prog 100~
+mpechoat $n The visor lights up, as it tracks people. 
+~
+> remove_prog 100~
+mpechoat $n The visor slowly shuts down. 
+~
+|
+#10432
+blastech dh17 dh-17 blaster pistol~
+a BlasTech DH-17 blaster pistol~
+A BlasTech DH-17 Blaster Pistol was left here.~
+~
+2 0 8193
+12 6 3 6 3000 3000
+1 750 75
+A
+18 1
+A
+19 2
+#10487
+carsanum spice~
+some poorly refined carsanum~
+Some carsanum was dropped here.~
+~
+47 0 1
+1 10 0 0
+1 200 20
+#10488
+ammo cell amunition cartridge~
+an ammunition cell~
+An ammunition cell was carelessly left here.~
+~
+25 8192 16385
+500 500 0 0
+1 10 10
+#10489
+lens~
+a newly created lens~
+Some god dropped a newly created lens here.~
+~
+32 0 1
+0 0 0 0
+1 0 0
+#10490
+test toolkit~
+a newly created test toolkit~
+Some god dropped a newly created test toolkit here.~
+~
+36 0 1
+0 0 0 0
+1 0 0
+#10491
+test durastuff~
+a newly created test durastuff~
+Some god dropped a newly created test durastuff here.~
+~
+37 0 1
+0 0 0 0
+1 0 0
+#10492
+test battery~
+a newly created test battery~
+Some god dropped a newly created test battery here.~
+~
+35 0 1
+0 0 0 0
+1 0 0
+#10493
+oven~
+An old oven~
+An old oven is lying here.~
+~
+38 8192 1
+0 0 0 0
+1 1000 100
+#10494
+some scrap durasteel~
+a newly created some scrap durasteel~
+Some god dropped a newly created some scrap durasteel here.~
+~
+34 0 1
+0 0 0 0
+1 0 0
+#10495
+gem~
+a newly created gem~
+Some god dropped a newly created gem here.~
+~
+33 0 1
+0 0 0 0
+1 0 0
+#10496
+mirror~
+a newly created mirror~
+Some god dropped a newly created mirror here.~
+~
+34 0 1
+0 0 0 0
+1 0 0
+#10497
+circuit board~
+a Circuit Board~
+A circuit board is in danger of getting stepped on.~
+~
+35 0 1
+0 0 0 0
+1 100 10
+#10498
+superconductor~
+a newly created superconductor~
+Some god dropped a newly created superconductor here.~
+~
+36 0 1
+0 0 0 0
+1 0 0
+#10499
+final object~
+a newly created final object~
+Some god dropped a newly created final object here.~
+~
+13 0 0
+0 0 0 0
+1 0 0
+#0
+
+
+#ROOMS
+#10300
+Important Decision~
+&CWelcome to Unknown Regions. This is a highly modified Star Wars reality
+mud. You have here a decision to make as the room specifies.  
+&GYou can do the following: 
+&R&Wsay "1" - Skip the Academy because you already know how to play.  
+say "2" - Go through the Academy (Best if you are new)&w 
+&PNote - Make sure your name is appropriate for rp and 
+such.(We are flexible) Type help name for more info. 
+&B**Write a Bio and Description before leaving the room**&w 
+&b(Note: Orphans are overdone, and not currently being accepted) 
+~
+16779288 0 0 0
+E
+plaque~
+Paying attention to descriptions and looking at items inside the
+description will sometimes lead to rewards.  This plaque will not, but
+drops a hint.  Inside this academy spend you time reading descriptions and
+looking at any type of objects you see.  
+~
+> speech_prog 1~
+mpapply $n
+mpechoat $n a Door opens to your east and you enter. 
+mptransfer $n 10301 
+~
+> speech_prog 2~
+mpapply $n
+mpechoat $n a door opens to your west and you enter. 
+mptransfer $n 10303 
+~
+> act_prog p drops some credits.~
+mppurge credits 
+~
+|
+S
+#10301
+Ready Room~
+&CThis is the ready room where you get suited up and get your equipment  
+and provisions for your mission to the Unknown Regions. It seems bare  
+except for the replicators and storage bins.&w  
+&R&WTo get Equipment - say Eq  
+To get Rations - say ration  
+To get Water - say canteen&w 
+&RIf you say eq more then one time, expect to be punished&w 
+~
+-2146959344 0 0 0
+D1
+~
+~
+0 -1 10304
+> leave_prog 100~
+if isimmort($n)
+else
+  mpforce $n vis
+endif
+~
+> speech_prog Education~
+mpechoat $n As you say the word, a door opens up. 
+mpechoat $n Suddenly a gust of wind blows you through. 
+mptransfer $n 10304 
+~
+> speech_prog eq~
+mea $n The replicator whirs into action and begins making your equipment.
+if race($n) == Defel 
+mpoload 10432 
+mpoload 10424 
+mpoload 10311 
+mpoload 10310 
+else 
+mpoload 10432 
+mpoload 10431 
+mpoload 10415 
+mpoload 10311 
+mpoload 10310 
+mpoload 10308 
+mpoload 10305 
+mpoload 10303 
+mpoload 10302 
+mpoload 10301 
+mpoload 10424 
+endif 
+mpoload 10317 
+put all pack 
+give pack $n 
+~
+> speech_prog ration food~
+mpecho &BThe Replicator rumbles and spits out a ration.&w 
+mpoload 10313 
+give ration $n 
+drop ration 
+~
+> speech_prog water canteen drink~
+mpoload 10314 
+mpechoat $n &BThe Replicator rumbles and spits out a canteen. 
+give canteen $n 
+drop canteen 
+~
+> rand_prog 1~
+get all 
+drop replicator 
+mpat 3 drop all 
+~
+|
+S
+#10302
+Ejection Room~
+You are entering the ejection room which is pressurized and you are 
+put into a suit as you are ejected into the space of Unknown Regions.
+~
+33554456 0 0 0
+D0
+~
+~
+0 -1 199
+D2
+~
+~
+0 -1 10301
+> entry_prog 100~
+mpapplyb $n
+if level($n) == 1 
+mpgain $n 1 500 
+else 
+endif 
+mpat $n fe 'heal' $n 
+mpat $n fe 'heal' $n 
+~
+|
+S
+#10303
+Neural Program Center~
+&CYou have entered a room full of comfortable looking chairs. This is  where
+you learn your various skills. You can see people laying down   and 
+getting programs injected into their brain.    To see a list of skills you 
+can learn, type practice.   To learn a skill type practice 'name of skill' 
+When you practice a skill at a teacher it usually starts out at  20 
+percent. As you use the skill, it will go higher and you will be better at 
+using it and it will give you better results. When a player teachers you 
+skills TEACH (person) (skill) It will start much higher as high as 90 
+percent if they are verpine or 50 percent for most races. 
+~
+2064 0 0 0
+D2
+~
+~
+0 -1 10306
+D3
+~
+~
+0 -1 10305
+S
+#10304
+Neural Program Center~
+&CYou have entered a room full of comfortable looking chairs. This is
+where you learn your various skills. You can see people laying down 
+and getting programs injected into their brain.&w  
+&R&WTo see a list of skills you can learn, type practice. 
+To learn a skill type practice 'name of skill'&w 
+~
+-2147483632 0 0 0
+D0
+~
+~
+0 -1 10302
+D3
+~
+~
+0 -1 10301
+E
+wall footprints~
+the foot prints disappear into the west wall...maybe you should try to
+'open west' wall 
+~
+E
+bookbag~
+The bookbag has half of a map inside it. 
+~
+E
+map~
+To continue forward, you should check the north wall for a 'passage' 
+HINT: type passage 
+~
+S
+#10305
+Learning to Move~
+To move from room to room, As I'm sure you figured out already, you
+just type the first letter of the direction. There are other types
+of exits in the regions. Where you have to say something to get there
+or type something. usuaully its, enter or leave. 
+~
+-2147481576 0 0 0
+D1
+~
+~
+0 -1 10303
+S
+#10306
+Learning to use your Comlink~
+&CYour comlink is one of your most vital items as it lets you send and  
+receive holonet and galactic net signals. It allows you to communicate  
+with others over great distances. There are several channels in your  
+comlink. You can see it by typing &R&WCHAN&C. You can turn off and  
+on various channels by typing &R&WChan -(name of channel)&C The way to  
+use these cannels is to type their name followed by a message example  
+is chat Hello everybody. It sends a global message spanning the galaxy  
+to everyone's comlink saying Hello Everybody. Also. remember all  
+channels are &GIC&C except for &POOC&C. To see what ooc and ic means  
+type &Bhelp roleplay.&w  
+~
+-2147481584 0 0 0
+D0
+~
+~
+0 -1 10303
+D2
+~
+~
+0 -1 10307
+S
+#10307
+Status Monitoring~
+&CThis room will teach you several commands to check your statistics and  
+character health. These commands are SCORE, EQUIPMENT, INVENTORY, and 
+LEVEL. Score is used by typing SC, it tells you all the basic statistics 
+about your character. Equipment is used by typing EQ, this shows you all  
+the items you are currently wearing. Inventory is used by typing I, and  
+shows you all items you are carrying other than your worn equipment. 
+Level is used by typing LEVEL, it show your current level, your current 
+experience points, and the experience needed for the next few levels. 
+Use the help menu to get more information on the topics covered here, 
+type HELP subject. 
+~
+-2147483632 0 0 0
+D0
+~
+~
+0 -1 10306
+D1
+~
+~
+0 -1 10308
+E
+Door~
+You see a solid oak door.
+~
+S
+#10308
+Anticipating Battle~
+&CYou have entered a briefing room which is one of your final tests 
+before you can graduate and be sent to join the rest in the Unknown 
+Regions. This is a test of combat and you would do your best to  
+listen and gain every edge in battle you can.  
+~
+-2147483632 0 0 0
+D1
+~
+~
+0 -1 10309
+E
+list~
+Fighting Briefing: 
+To start a battle. You start it by attacking the npc or player. 
+you can do this by typing kill (name) or by using an offensive
+weapon or item or object or skill. 
+  
+Example of an Object - Grenade, Sniping with a blaster, Throwing a vibro
+blade. 
+  
+Example of a Skill - backstab, a dark force skill. 
+  
+It is also a good idea to get as much of an edge in battle as you can. 
+Force Enhancements from Jedi's are good as well as Cyber Enhancements
+and using skills like Inner Strength and such are good as well. 
+~
+S
+#10309
+Holo-Arena~
+It seems to be a rather listless wall until the simulation begins to
+turn on. You seem to be on the grounds of a swampy forest like planet.
+and you look around quickly readying yourself for your opponent. 
+~
+-2147483632 0 0 0
+D3
+Lost in Darkhaven Academy
+~
+~
+0 -1 10308
+E
+door~
+You see a solid oak door.
+~
+> entry_prog 100~
+if mobinroom(10399) < 1  
+mpmload 10399  
+mpechoat $n Suddenly you are knocked out to the ground from behind! 
+mpechoat $n You are being attacked by a young Yuuzhan Vong! 
+mpforce yuuzhan mpkill $n 
+endif 
+~
+|
+S
+#10310
+Death and Cloning 101~
+&CDeath in Unknown Regions is permanent. Meaning he looses his ship.
+eq and house(s). However. You can create a clone of yourself to 
+play when you die. This is done in the wayland system. Your clone 
+is not the same person as your former self icly. but beware. If your
+former self had enemies. They can still come after your clone. Death
+can come in a series of ways... Starvation.. Poison... Dieing in a space
+fight.. Dying in combat... and they are all permanent. It is a good 
+idea to clone often so you have a more recent version of yourself  
+The clone only clones you at the time you cloned.. so if you gained 
+levels after you cloned and die. You will have to relevel. 
+~
+-2147483632 0 0 0
+D0
+~
+~
+0 -1 10311
+S
+#10311
+Preparing for Space Flight~
+&COne of the things the Unknown Regions has is space travel and its 
+required to get around most of it. Here you will be introduced into 
+a controlled enviroment to fly a sample spacecraft which will be similar
+to what they have there. type &R&WHELP SPACECRAFT&C to get the list of 
+commands.&w 
+~
+-2147483632 0 0 0
+D0
+Lost in Darkhaven Academy
+~
+~
+0 -1 10312
+D2
+~
+~
+0 -1 10310
+S
+#10312
+Preparing for Space Combat~
+&CIn addition to learning how to fly. After you learn how to manuever 
+your craft which is by the way quite elementary. You will then learn 
+how to use your ships weapon systems and you will fight a defenseless 
+drone. Be warned however that in real space combat. Ships will fire back
+at you and it is a good idea to RECHARGE your shields. 
+~
+16 0 0 0
+D0
+~
+~
+0 -1 10313
+D2
+Lost in Darkhaven Academy
+~
+~
+0 -1 10311
+D10
+~
+bookshelf~
+526347 -1 10313
+E
+Crystal Globes~
+The crystal globes appear to be lighting the bookshelf up the most. 
+~
+E
+bookshelf~
+The bookshelf looks like a door, maybe you should try 'open bookshelf' 
+And the try 'bookshelf' 
+~
+E
+display~
+Functions of your ship during Space Combat. 
+Ion Cannons - These knock out a ship's systems and work best when a ship
+is low on shields. 
+  
+Missiles/Rockets/Torpedos - These are what their names say. Rockets 
+do the most damage, torpedos second and missiles do the least. You 
+have a limited supply of these. They can be deterred by deploying
+chaff which causes them to explode before they can hit you 
+  
+Chaff - Keeps missiles from hitting you. You have a limited supply of
+this. Type CHAFF to deploy chaff. 
+  
+Recharging your Shields - Recharge your shields frequently in combat
+if they are getting low. Try to manage your energy consumption as
+your ship has limited energy and recharging eats energy. 
+  
+Knowing when to run - Usually one X-Wing against a Star Destroyer is never
+good. So know how strong your foe is, both ship wise and his skill in flying
+before you engage someone. 
+  
+Autotrack - Once you have targetted someone "Target <Someone>" then you
+type autotrack. It makes your ship automatically follow theirs in an attack
+vector. 
+~
+S
+#10313
+Launch Pad~
+&CYou are standing in the station's small launch pad for training
+vehicles. You can see several Wraith Trainers as well as some  
+Valkeryie Trainers waiting to be launched. In the distance you  
+can spot several probes waiting to be destroyed and the other  
+landing pad which you must land on after completeing this task. 
+&R&WOpen the hatch - Open Wraith or Valkeryie 
+&R&WBoarding it - Board Wraith or Valkeryie. 
+&GNote - You can skip the space flight if you want by going west. 
+~
+88 0 0 0
+D2
+~
+~
+0 -1 10312
+D3
+~
+~
+0 -1 10314
+D10
+~
+crack~
+526336 -1 10302
+E
+door~
+You see an oak door.
+~
+E
+picture~
+This is a picture of fresh cut flowers in a glass vase. It seems to
+be hanging here just to cover a huge crack. That crack is so large, you
+can probably squeeze through it! Perhaps you should look closer at the
+crack. HINT: type CRACK. 
+~
+E
+crack~
+This is a huge CRACK, you could probably squeeze through it. 
+~
+E
+wall~
+This is a picture of fresh cut flowers in a glass vase. It seems to
+be hanging here just to cover a huge crack. That crack is so large, you
+can probably squeeze through it! Perhaps you should look closer at the
+crack. HINT: type CRACK.
+~
+> entry_prog 100~
+mpwithdraw 1000 
+give 1000 credits $n 
+~
+|
+S
+#10314
+Graduation Pad~
+&CCongratulations!, You have finished your first spaceflight and your 
+first space combat. Now you have finished all the basic requisite  
+training to go on to the Unknown Regions. You know how to fight, 
+how to fly a ship, how to move around. check your stats and  
+such by now. You have one more thing to learn. RP then you  
+can be deployed into UR space. 
+~
+-2147483632 0 0 0
+D3
+~
+~
+0 -1 10315
+S
+#10315
+Learning to RP~
+&CRPing is Roleplaying. When you are in the game you are roleplaying
+Roleplaying meaning you ARE the character in the game, Your not playing
+a game, your living in it. For example you wouldn't say anything thats
+IRL(in real life). Like what was on tv last night and such over IC 
+(in character) channels. There is an OOC(Out of Character) channel that
+can only be used when in a hotel or home. When you kill a person it  
+must be IC not OOC. Killing over OOC things is strictly prohibited.&w 
+&CYou can find more info on the subject by typing help ic and looking 
+at your Guide to the Galaxy. 
+~
+16 0 0 0
+D0
+~
+~
+0 -1 10301
+D1
+~
+~
+0 -1 10314
+S
+#10316
+Combat Commands~
+This room explains about WIMPY, FLEE, and RECALL as a way to leave from
+combat. Wimpy is an automatic withdrawal from a fight when your hitpoints
+reach a set minimum. To set your wimpy, type WIMPY or WIMPY <number>. The
+number being the amount of hitpoints you want remaining when you leave the
+battle. You will lose experience for wimpying out of a fight, but the amount
+of experience lost will generally be less then the amount lost from death.
+You may also manually withdraw from a fight with flee. To use flee, just
+type FLEE. You may flee out of the fight at any amount of hitpoints. Fleeing
+will cost you loss of experience. You may also "recall" from a fight. This
+is done with the spell "word of recall" or reciting a recall scroll. You 
+lose more experience when you recall from a fight then when you use wimpy
+or flee. Recall should be used as a last resort.
+~
+24 0 0 0
+D0
+~
+~
+0 -1 10401
+D4
+Preparing for combat
+~
+~
+0 -1 10315
+S
+#10317
+Time To Take A Break~
+This is a safe room in which you may take a REST or SLEEP.  To get out of
+sleeping WAKE and to stop resting STAND.  Your character will also get
+hungry and thirsty from time to time.  In this room just say food or drink
+to get your meal.  To eat food type EAT <whatever> to drink something type
+DRINK <whatever>.  Also you can FILL your drink containers from fountains.
+ 
+~
+2064 0 0 1
+D0
+~
+~
+0 -1 10327
+D2
+~
+~
+0 -1 10315
+S
+#10318
+The Basement~
+Sometimes an item may apear useless at first. There are many junk items that
+are worthless but some might just come in handy. Try making small talk with
+this student. He seems to have found something that might proove useful to
+you.
+ 
+Sometimes one item may be found inside another. To look into an object that
+is a container use: LOOK IN <container>. To get an item from a
+container use: GET <item> FROM <container>. To put an item in a container
+use: PUT <item> IN <container>. Sometimes you will also need to OPEN
+<container> as well.
+ 
+Hint: say hello
+~
+2064 0 0 1
+D4
+~
+~
+0 -1 10322
+S
+#10319
+Up in a Small Loft~
+Sometimes items can be obtained by manipulating other items. Some classes
+can make items from other ones using skills such as MAKEBLASTER, MAKESPICE,
+or MAKELIGHTSABER. Other times it is as simple as opening a box or pushing
+a button as is the case in this room.
+~
+16 0 0 1
+D5
+~
+~
+0 -1 10322
+S
+#10320
+Looting Your Kills~
+The most common way in most muds to gain equipment is by looting the
+corpses of dead mobiles(monsters etc). After you kill this droid use
+EXAMINE CORPSE to see what it was carrying. Then use GET ALL FROM CORPSE
+to get the goodies from it. To automaticly loot corpses when you kill
+something you can set CONFIG +AUTOLOOT or CONFIG +AUTOCRED for just
+credits.
+~
+16 0 0 1
+D1
+~
+~
+0 -1 10405
+D3
+~
+~
+0 -1 10322
+S
+#10321
+Academy Store~
+Shops are a great way of aquiring equipment and getting rid of extras.
+To get a list of what a shopkeeper is selling type LIST. To buy an item
+type BUY <objectname>. If you have extra equipment or have found something
+that you want to sell type SELL <object>. To find out how much a shopkeeper
+will buy something for type VALUE <object>.
+ 
+One of the more useful items in this shop is the backpack. Once you have
+bought one you can put any extra items you have in it for safe keeping.
+You may also wear it. If you don't have enough credits to buy anything try
+getting some from the droid a couple of rooms to the east.
+~
+2064 0 0 1
+D1
+~
+~
+0 -1 10322
+S
+#10322
+Finding Items~
+A major part to the game is finding equipment.  Sometimes it will be worse,
+which you shouldn't keep.  Other times it will be better, which will help
+your character become stronger.  You may Steal, Search or Dig to find this
+equipment. 
+~
+16 0 0 1
+D0
+~
+~
+0 -1 10323
+D1
+~
+~
+0 -1 10320
+D2
+~
+~
+3 -1 10327
+D3
+~
+~
+0 -1 10321
+D4
+~
+~
+0 -1 10319
+D5
+~
+~
+0 -1 10318
+S
+#10323
+The Last Challange~
+Congradulations you're almost done. The graduation hall is just to the
+north. Only one problem though. The doors locked. Maybe this kid
+knows where the key is. If only he'd stop crying long enough for you
+to ask.        
+  
+hint: find the statue 
+hint: give him the doll 
+hint: say where's the key 
+~
+2064 0 0 1
+D0
+~
+~
+7 10423 10324
+D2
+~
+~
+0 -1 10322
+S
+#10324
+Graduating from the Academy~
+Congradulations you did it .. line up and get your diploma.   You are in a
+long wide hallway. The floor is covered in a plush red carpet. The walls
+are made of a tansparent duraplast and come together to form dome over
+your head. Looking out the window you notice that the hallway in fact a
+catwalk connecting the academy to a small landing platform at the end. You
+can't look much more than 20 or 30 levels into the city depths below as
+many walkways criss-cross between the buildings obscuring your view of the
+lower levels. Looking up you see several cloudcars slowly navigating
+coruscants many skyscrapers. A stairway at the end of the hall slopes up
+towards the docking bay. It is the only exit other than the door behind
+you, back into the academy. 
+~
+0 0 0
+D2
+~
+~
+1 -1 10323
+D4
+~
+Graduation~
+524288 -1 10325
+S
+#10325
+Academy Docking Bay~
+Detached from the rest of the Academy to leave room for ships to manuever,
+this docking bay is large enough to hold four or five shuttles. The space
+above is clear and you can see the clouds above you. Anyone launching
+a shuttle from here would have to fly straight though as several larger
+buildings box in the sides of the docking bay no less 30 feet out on each
+side. The noise of the city is blends together forming a loud pulsing hum
+pushing in from all directions. There is a slight and very rare breeze
+blowing down beetween the buildings and across the pad. It is an odd
+feeling in such a boxed in environment.
+ 
+There is a small shuttle here waiting to take you home. To board it type
+ENTER.
+~
+0 0 0
+D5
+~
+~
+0 -1 10324
+D10
+~
+~
+133120 -1 10326
+S
+#10326
+The Shuttle home~
+You are in a small single compartment shuttle. The passenger seats are
+directly behind the pilots chair and slightly raised to give you a
+nice view for your journey. The seats recline back into a sleeping
+position in case you get tired. A small pantry and a restroom are at
+the back of the cabin.   The purpose of this shuttle is to take the
+newly graduated students home. Its a bit of a luxury compared to the
+rest of your stay at the academy. It must be as much for apearances
+as it is to honor the graduates. You will need to give your diploma
+to the driver before he will launch... Wouldn't want to spend this
+much money on drop outs. If you don't have a diploma yet type LEAVE,
+and then go look for the schoolmaster. 
+~
+8 0 0 1
+D10
+~
+~
+264192 -1 10325
+S
+#10327
+Some Important Words of Advice~
+A very important thing to learn about early is cloning. Death is permanent.
+When you die you loose everything. However... somewhere deep in the core
+worlds is a place that creates and stores the clones of those who are
+willing to pay a small fee. Having a clone makes a back up of your
+character at the moment of cloning that can be used in the event of an
+untimely death. My advice is to find the cloning facilities as soon as
+possible and make a new clone at least every five levels. Death is a lot
+less painful when you loose 5 levels as opposed to having to start over
+from the beginning.
+&GNote: Cloning does not save items or credits, so beware.&W 
+~
+-2147483624 0 0 1
+D0
+~
+~
+3 -1 10322
+D2
+~
+~
+0 -1 10317
+S
+#10398
+Other combat essentials~
+There are other things you could learn, such as Tractor Beams and such.  To
+use Tractor Beams, type TRACTOR <ship>. To untractor a ship, type TRACTOR
+none.  
+~
+-2147483648 0 0 1
+D3
+~
+~
+0 -1 10429
+S
+#10399
+This Room is used by a Mob program do not delete.~
+~
+8 0 0 1
+S
+#10400
+A Dank Pit~
+~
+134217736 0 0 1
+D3
+~
+~
+0 -1 10308
+S
+#10401
+Before the Pits~
+~
+133128 0 0 1
+D0
+~
+~
+0 -1 10308
+D2
+~
+~
+0 -1 10316
+S
+#10402
+A Dank Pit~
+~
+-2147483648 0 0 1
+D1
+~
+~
+0 -1 10308
+S
+#10403
+Before Graduation~
+Since you decided to bypass all the good stuff, you now declare that you
+can start off quickly. If this  is your first time playing a SWR mud, or
+just not used to it, I suggest you turn back. 
+~
+-2147481584 0 0 1
+D0
+~
+~
+0 -1 10324
+D3
+~
+~
+0 -1 10404
+D5
+~
+~
+0 -1 10300
+S
+#10404
+Newbie Store~
+~
+-2147481584 0 0 1
+D1
+~
+~
+0 -1 10403
+S
+#10405
+More Kills to Loot~
+~
+-2147483648 0 0 1
+D3
+~
+~
+0 -1 10320
+S
+#10406
+Floating in a Void~
+~
+8 0 0 1
+S
+#10429
+Preparing for Space Combat~
+Space combat is more dangerous than fighting on the ground, as one or the
+other is sure to die. Maybe there is  possibility of disabling the ship,
+but that's only if your ship has ion cannons. Space combat  cannot be done
+until you gain sufficient piloting levels. When you attain Space Combat 1
+and  Weapon Systems, you will have the power to fire your lasers and
+missiles.  To fire your lasers, simply type FIRE. FIRE can also be used to
+fire missiles, rockets, or torpedos. For these, simply type FIRE
+<rockets/missiles/torpedos>. You will have to wait for the launcher to
+reload before firing again. To target a ship, type TARGET <ship> and type
+AUTOTRACK to keep facing it. You cannot fire lasers or  missiles without
+facing the ship to be destroyed.
+Go East to learn more. 
+~
+-2147483640 0 0 1
+D1
+~
+~
+0 -1 10398
+D3
+~
+~
+0 -1 10315
+S
+#10430
+Student Lounge~
+You stand in the player lounge the last safe zone in the galexy....
+relax and have a cool new drink as this will be your last time
+you can let your guard down and not be marked for death....
+ 
+A student message terminal is here for you to practice reading and
+writing messages. Use NOTE LIST to get a list of the messages and
+NOTE READ <msgnum> to read a specific message. Type HELP NOTE
+for more commands.
+~
+2056 0 0 0
+D1
+~
+~
+0 -1 10300
+S
+#0
+
+
+#RESETS
+O 1 10414 1 10300
+M 1 10340 1 10303
+D 0 10309 0 1
+M 1 10365 3 10317
+O 1 10315 1 10317
+M 1 10342 1 10318
+O 1 10318 1 10319
+M 1 10360 7 10320
+M 1 10343 1 10323
+D 0 10323 0 2
+M 1 10350 1 10324
+O 1 10414 1 10324
+D 0 10324 2 0
+O 1 10322 1 10325
+M 1 10355 1 10326
+M 1 10395 2 10327
+D 0 10327 0 1
+O 1 10320 1 10399
+O 1 10423 1 10399
+M 1 10360 7 10405
+O 1 10414 1 10430
+M 1 10396 2 10402
+M 1 10396 3 10400
+D 0 10322 2 1
+M 1 10370 1 10321
+G 1 10317 1
+G 1 10311 1
+G 1 10432 1
+M 1 10365 4 10403
+M 1 10370 2 10404
+G 1 10311 1
+G 1 10312 1
+G 1 10317 1
+G 1 10432 1
+O 1 10416 1 10301
+M 1 10340 2 10304
+M 1 10400 1 10312
+O 1 10323 1 10312
+D 0 10312 10 1
+S
+
+
+#SHOPS
+ 10370   15  0  0  0  0   120  90         0 23    ; a shopkeeper
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+S
+
+
+#$

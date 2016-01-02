@@ -1,0 +1,14 @@
+#PLANET
+Name         Planet1~
+Filename     planet.planet~
+BaseValue    0
+Flags        0
+PopSupport   0.000000
+X            0
+Y            0
+Z            0
+Code         0
+Area         Gavin.are~
+End
+
+#END

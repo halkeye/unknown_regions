@@ -1,0 +1,23 @@
+#PROTOTYPE
+Name         A-wing~
+Filename     awing.type~
+Description  ~
+Class        0
+Tractorbeam  0
+Lasers       2
+Maxmissiles  6
+Maxshield    50
+Maxhull      120
+Maxenergy    7000
+Hyperspeed   200
+Maxchaff     20
+Realspeed    150
+Manuever     120
+Maxbombs     0
+Comm         0
+Sensor       0
+Astro_array  0
+Ion          0
+End
+
+#END

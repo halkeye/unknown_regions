@@ -1,0 +1,23 @@
+#PROTOTYPE
+Name         Corellian Corvette~
+Filename     crvt.type~
+Description  ~
+Class        2
+Tractorbeam  0
+Lasers       6
+Maxmissiles  20
+Maxshield    650
+Maxhull      4000
+Maxenergy    14000
+Hyperspeed   130
+Maxchaff     20
+Realspeed    62
+Manuever     40
+Maxbombs     0
+Comm         20
+Sensor       20
+Astro_array  20
+Ion          2
+End
+
+#END

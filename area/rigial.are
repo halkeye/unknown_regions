@@ -1,0 +1,2490 @@
+#AREA   rigial.are~
+
+
+
+#AUTHOR Angel~
+
+#RANGES
+0 0 0 0
+$
+
+#FLAGS
+0
+
+#ECONOMY 0 6417000
+
+#CLIMATE 3 4 2
+
+#MOBILES
+#5401
+Spaceport Guard~
+Rigial Spaceport Guard~
+Rigial Spaceport Guard is here looking out for smugglers.
+~
+~
+1342177345 0 0 Z
+90 0 -125 18d10+900 9d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+18 18 0 0 0 0 48 2
+262144 0 0 0 0 0 0 0
+> greet_prog 100~
+say Hello, and welcome to Rigial 7. 
+say Let me check your personals for weapons and you can be on your way.
+emote checks you for weapons. 
+~
+|
+#5402
+Lazy Guard~
+Rigial Lazy Guard~
+A guard is lounging about lazily.
+~
+~
+1342177347 0 0 Z
+50 0 -25 10d10+500 5d4+2
+0 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+10 10 0 0 0 0 32 0
+262144 0 0 0 0 0 0 0
+#5403
+Rigial Citizen~
+Rigial Citizen~
+Rigial Citizen is here looking around.
+~
+~
+268435457 0 0 Z
+25 0 37 5d10+250 2d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+5 5 0 0 0 0 0 0
+262144 0 0 0 0 0 0 0
+> greet_prog 10~
+emote looks and you and smiles. 
+~
+|
+#5404
+Shopper~
+Shopper~
+A shopper looks around for good buys.
+~
+~
+268435457 0 0 Z
+50 0 -25 10d10+500 5d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+10 10 0 0 0 0 0 0
+262144 0 0 0 0 0 0 0
+> greet_prog 10~
+say Wheres a sale when you want one. 
+sigh 
+~
+|
+#5405
+Street Guard~
+Rigial Street Guard~
+Rigial Street Guards are looking for trouble makers.
+~
+~
+1 0 0 Z
+150 0 -275 30d10+1500 15d4+2
+1000 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+30 30 0 0 0 0 688 2
+262144 0 0 0 0 0 0 0
+#5406
+Planets Defense Planner~
+Rigial Planet Defense Planner~
+Rigial Planet Defense Planner is here planning out where to place shields.
+~
+~
+268435457 0 0 Z
+50 0 -25 10d10+500 5d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+10 10 0 0 0 0 0 0
+262144 0 0 0 0 0 0 0
+#5407
+Lukka~
+Lukka~
+Lukka is busy signing papers.
+~
+~
+268435459 0 0 Z
+100 0 -150 20d10+1000 10d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+20 20 0 0 0 0 0 0
+262144 0 0 0 0 0 0 0
+#5408
+Student~
+student~
+A student is here ready to study.
+~
+~
+268435457 0 0 Z
+20 0 50 4d10+200 2d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+4 4 0 0 0 0 0 0
+262144 0 0 0 0 0 0 0
+#5409
+Luccus~
+Luccus~
+Luccus is here waiting by a counter ready to take your order.
+~
+~
+838860803 0 0 Z
+100 0 -150 20d10+1000 10d4+2
+10000 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+20 20 0 0 0 0 0 0
+262144 0 0 0 0 0 0 0
+#5410
+Booska~
+Booska~
+Booska is here thinking of new ice cream ideas.
+~
+~
+570427395 0 0 Z
+100 0 -150 20d10+1000 10d4+2
+10000 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+20 20 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#5411
+Smithy~
+Smithy~
+Smithy is here sorting out books.
+~
+~
+838860803 0 0 Z
+100 0 -150 20d10+1000 10d4+2
+10000 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+20 20 0 0 0 0 0 0
+262144 0 0 0 0 0 0 0
+#5412
+Faith~
+Faith~
+Faith is here looking at fashion magazines.
+~
+~
+570425347 0 0 Z
+100 0 -150 20d10+1000 10d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+20 20 0 0 0 0 0 0
+262144 0 0 0 0 0 0 0
+#5600
+last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+1073741825 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#5401
+A steak~
+a steak~
+A steak is here.~
+~
+12 0 1
+30 100 0 0
+1 10 1
+#5402
+burger~
+a burger~
+A burger is here.~
+~
+7 0 1
+3 100 0 0
+1 3 0
+#5403
+cola~
+a cola~
+A cola is here.~
+~
+10 0 1
+10 10 15 0
+1 4 0
+#5404
+fries~
+a fries~
+A fries is here.~
+~
+12 0 1
+2 100 0 0
+1 3 0
+#5405
+counter with a cash register~
+a counter with a cash register~
+A counter with a cash register is here.~
+~
+6 0 0
+0 0 0 0
+1 0 0
+#5406
+chocolate ice cream~
+a chocolate ice cream~
+A chocolate ice cream is here.~
+~
+12 0 0
+2 100 0 0
+1 2 0
+#5407
+vanillia ice cream~
+a vanillia ice cream~
+A vanillia ice cream is here.~
+~
+12 0 0
+2 100 0 0
+1 2 0
+#5408
+orange ice cream~
+a orange ice cream~
+A orange ice cream is here.~
+~
+7 0 1
+2 100 0 0
+1 2 0
+#5409
+ornate fountain~
+an ornate fountain~
+An ornate fountain is spouting water into the air.~
+~
+16 1073745920 0
+1000 1000 0 0
+8000 0 0
+#5410
+park bench~
+a park bench~
+&C&cA duraplast park bench has been placed near the path.&w~
+~
+6 1073745920 0
+0 0 585 0
+4000 0 0
+#5411
+durasteel lamp~
+a durasteel lamp~
+&c&CA durasteel lamp provides light during the evening.&w~
+~
+22 1073745921 0
+0 0 0 0
+1200 0 0
+#5412
+row of flowers~
+a row of flowers~
+&G&gRows of beautiful flowers line the garden.&w~
+~
+12 1073741824 0
+0 0 0 0
+1 0 0
+#5413
+swing set~
+a swing set~
+&O&YA yellow swing set has been installed here.&w~
+~
+6 1073745920 0
+0 0 33 0
+5000 0 0
+#5414
+sand box~
+a sand box~
+&Y&OA large sand box fills the area.&w~
+~
+6 1073745920 0
+0 0 18 0
+8000 0 0
+#5600
+last object~
+a last object~
+A last object is here.~
+~
+7 1073741824 0
+0 0 0 0
+1 0 0
+#0
+
+
+#ROOMS
+#5401
+Rigial Starport~
+~
+0 0 1
+D0
+~
+~
+0 -1 5402
+S
+#5402
+Riga Boulevard~
+~
+0 0 1
+D0
+~
+~
+0 -1 5404
+D2
+~
+~
+0 -1 5401
+S
+#5403
+Customs Station~
+~
+16 0 0 1
+D3
+~
+~
+0 -1 5404
+S
+#5404
+Riga Boulevard~
+~
+0 0 1
+D0
+~
+~
+0 -1 5405
+D1
+~
+~
+0 -1 5403
+D2
+~
+~
+0 -1 5402
+S
+#5405
+Regal Square~
+~
+0 0 1
+D0
+~
+~
+0 -1 5406
+D1
+~
+~
+0 -1 5438
+D2
+~
+~
+0 -1 5404
+D3
+~
+~
+0 -1 5411
+S
+#5406
+Riga Boulevard~
+~
+0 0 1
+D0
+~
+~
+0 -1 5407
+D1
+~
+~
+0 -1 5418
+D2
+~
+~
+0 -1 5405
+D3
+~
+~
+0 -1 5417
+S
+#5407
+Riga Boulevard~
+~
+0 0 1
+D0
+~
+~
+0 -1 5408
+D2
+~
+~
+0 -1 5406
+D3
+~
+~
+0 -1 5419
+S
+#5408
+Riga Boulevard~
+~
+0 0 1
+D0
+~
+~
+0 -1 5409
+D1
+~
+~
+0 -1 5420
+D2
+~
+~
+0 -1 5407
+S
+#5409
+Riga Boulevard~
+~
+0 0 1
+D0
+~
+~
+0 -1 5410
+D2
+~
+~
+0 -1 5408
+S
+#5410
+Riga Boulevard~
+~
+0 0 1
+D1
+~
+~
+0 -1 5430
+D2
+~
+~
+0 -1 5409
+D3
+~
+~
+0 -1 5429
+S
+#5411
+Martagon Lane~
+~
+0 0 1
+D1
+~
+~
+0 -1 5405
+D2
+~
+~
+0 -1 5414
+D3
+~
+~
+0 -1 5412
+S
+#5412
+Martagon Lane~
+~
+0 0 1
+D1
+~
+~
+0 -1 5411
+D3
+~
+~
+0 -1 5413
+S
+#5413
+Martagon Lane~
+~
+8 0 0 1
+D1
+~
+~
+0 -1 5412
+D2
+~
+~
+0 -1 5415
+S
+#5414
+Capitoline Inn~
+~
+524824 0 0 1
+D0
+~
+~
+0 -1 5411
+S
+#5415
+Employment~
+~
+16 0 0 1
+D0
+~
+~
+0 -1 5413
+D2
+~
+~
+0 -1 5416
+S
+#5416
+Hallway~
+~
+16 0 0 1
+D0
+~
+~
+0 -1 5415
+D1
+~
+~
+0 -1 5473
+D3
+~
+~
+0 -1 5472
+S
+#5417
+Brinhom Diner~
+~
+24 0 0 1
+D1
+~
+~
+0 -1 5406
+S
+#5418
+Regal Shopping Complex~
+~
+24 0 0 1
+D0
+~
+~
+0 -1 5481
+D1
+~
+~
+0 -1 5482
+D2
+~
+~
+0 -1 5480
+D3
+~
+~
+0 -1 5406
+S
+#5419
+Booska's Hothsicles~
+~
+16 0 0 1
+D1
+~
+~
+0 -1 5407
+S
+#5420
+Astral Park~
+~
+8 0 0 1
+D1
+~
+~
+0 -1 5519
+D3
+~
+~
+0 -1 5408
+S
+#5421
+Grand Memorial~
+~
+0 0 1
+D1
+~
+~
+0 -1 5422
+S
+#5422
+Imperator Boulevard~
+~
+0 0 1
+D1
+~
+~
+0 -1 5423
+D3
+~
+~
+0 -1 5421
+S
+#5423
+Imperator Boulevard~
+~
+0 0 1
+D0
+~
+~
+0 -1 5435
+D1
+~
+~
+0 -1 5424
+D3
+~
+~
+0 -1 5422
+S
+#5424
+Imperator Boulevard~
+~
+0 0 1
+D0
+~
+~
+0 -1 5436
+D1
+~
+~
+0 -1 5425
+D3
+~
+~
+0 -1 5423
+S
+#5425
+Imperator Boulevard~
+~
+0 0 1
+D0
+~
+~
+0 -1 5437
+D1
+~
+~
+0 -1 5426
+D3
+~
+~
+0 -1 5424
+S
+#5426
+Imperator Boulevard~
+~
+0 0 1
+D1
+~
+~
+0 -1 5427
+D2
+~
+~
+2048 -1 5468
+D3
+~
+~
+0 -1 5425
+S
+#5427
+Imperator Boulevard~
+~
+0 0 1
+D0
+~
+~
+0 -1 5455
+D1
+~
+~
+0 -1 5428
+D3
+~
+~
+0 -1 5426
+S
+#5428
+Imperator Boulevard~
+~
+0 0 1
+D1
+~
+~
+0 -1 5429
+D3
+~
+~
+0 -1 5427
+S
+#5429
+Imperator Boulevard~
+~
+0 0 1
+D1
+~
+~
+0 -1 5410
+D3
+~
+~
+0 -1 5428
+S
+#5430
+Imperator Boulevard~
+~
+0 0 1
+D1
+~
+~
+0 -1 5431
+D3
+~
+~
+0 -1 5410
+S
+#5431
+Imperator Boulevard~
+~
+0 0 1
+D1
+~
+~
+0 -1 5432
+D3
+~
+~
+0 -1 5430
+S
+#5432
+Imperator Boulevard~
+~
+0 0 1
+D0
+~
+~
+0 -1 5452
+D1
+~
+~
+0 -1 5433
+D3
+~
+~
+0 -1 5431
+S
+#5433
+Imperator Boulevard~
+~
+0 0 1
+D1
+~
+~
+0 -1 5434
+D3
+~
+~
+0 -1 5432
+S
+#5434
+Janiz Street~
+~
+0 0 1
+D0
+~
+~
+0 -1 5446
+D2
+~
+~
+0 -1 5445
+D3
+~
+~
+0 -1 5433
+S
+#5435
+Q-Mart~
+~
+24 0 0 1
+D2
+~
+~
+0 -1 5423
+S
+#5436
+Avar's Survival Gear~
+~
+24 0 0 1
+D2
+~
+~
+0 -1 5424
+S
+#5437
+Quaggin Pastry Shop~
+~
+24 0 0 1
+D2
+~
+~
+0 -1 5425
+S
+#5438
+Martagon Lane~
+~
+0 0 1
+D1
+~
+~
+0 -1 5439
+D3
+~
+~
+0 -1 5405
+S
+#5439
+Martagon Lane~
+~
+0 0 1
+D1
+~
+~
+0 -1 5440
+D3
+~
+~
+0 -1 5438
+S
+#5440
+Martagon Lane~
+~
+0 0 1
+D1
+~
+~
+0 -1 5441
+D3
+~
+~
+0 -1 5439
+S
+#5441
+Martagon Lane~
+~
+0 0 1
+D1
+~
+~
+0 -1 5442
+D3
+~
+~
+0 -1 5440
+S
+#5442
+Martagon Lane~
+~
+0 0 1
+D0
+~
+~
+0 -1 5443
+D3
+~
+~
+0 -1 5441
+S
+#5443
+Janiz Street~
+~
+0 0 1
+D0
+~
+~
+0 -1 5444
+D1
+~
+~
+0 -1 5449
+D2
+~
+~
+0 -1 5442
+S
+#5444
+Janiz Street~
+~
+0 0 1
+D0
+~
+~
+0 -1 5445
+D1
+~
+~
+0 -1 5450
+D2
+~
+~
+0 -1 5443
+S
+#5445
+Janiz Street~
+~
+0 0 1
+D0
+~
+~
+0 -1 5434
+D1
+~
+~
+0 -1 5451
+D2
+~
+~
+0 -1 5444
+S
+#5446
+Janiz Street~
+~
+0 0 1
+D0
+~
+~
+0 -1 5447
+D2
+~
+~
+0 -1 5434
+S
+#5447
+Janiz Street~
+~
+0 0 1
+D0
+~
+~
+0 -1 5448
+D2
+~
+~
+0 -1 5446
+S
+#5448
+Janiz Street~
+~
+0 0 1
+D2
+~
+~
+0 -1 5447
+S
+#5449
+Beach~
+~
+0 0 1
+D0
+~
+~
+0 -1 5450
+D3
+~
+~
+0 -1 5443
+S
+#5450
+Beach~
+~
+0 0 1
+D0
+~
+~
+0 -1 5451
+D2
+~
+~
+0 -1 5449
+D3
+~
+~
+0 -1 5444
+S
+#5451
+Beach~
+~
+0 0 1
+D2
+~
+~
+0 -1 5450
+D3
+~
+~
+0 -1 5445
+S
+#5452
+Trammis Street~
+~
+0 0 1
+D0
+~
+~
+0 -1 5453
+D2
+~
+~
+0 -1 5432
+S
+#5453
+Trammis Street~
+~
+0 0 1
+D0
+~
+~
+0 -1 5454
+D2
+~
+~
+0 -1 5452
+S
+#5454
+Trammis Street~
+~
+0 0 1
+D2
+~
+~
+0 -1 5453
+D3
+~
+~
+0 -1 5463
+S
+#5455
+Ilte Road~
+~
+0 0 1
+D0
+~
+~
+0 -1 5456
+D2
+~
+~
+0 -1 5427
+S
+#5456
+Ilte Road~
+~
+0 0 1
+D0
+~
+~
+0 -1 5457
+D2
+~
+~
+0 -1 5455
+S
+#5457
+Thunder Lane ~
+~
+0 0 1
+D1
+~
+~
+0 -1 5460
+D2
+~
+~
+0 -1 5456
+D3
+~
+~
+0 -1 5459
+S
+#5458
+Thunder Lane~
+~
+0 0 1
+D0
+~
+~
+0 -1 5467
+D1
+~
+~
+0 -1 5459
+S
+#5459
+Thunder Lane~
+~
+0 0 1
+D1
+~
+~
+0 -1 5457
+D3
+~
+~
+0 -1 5458
+S
+#5460
+Thunder Lane ~
+~
+0 0 1
+D1
+~
+~
+0 -1 5461
+D3
+~
+~
+0 -1 5457
+S
+#5461
+Thunder Lane ~
+~
+0 0 1
+D0
+~
+~
+0 -1 5464
+D1
+~
+~
+0 -1 5462
+D2
+~
+~
+0 -1 5465
+D3
+~
+~
+0 -1 5460
+S
+#5462
+Thunder Lane ~
+~
+0 0 1
+D1
+~
+~
+0 -1 5463
+D3
+~
+~
+0 -1 5461
+S
+#5463
+Thunder Lane ~
+~
+0 0 1
+D1
+~
+~
+0 -1 5454
+D3
+~
+~
+0 -1 5462
+S
+#5464
+Regal Yards Medical Center~
+~
+16 0 0 1
+D2
+~
+~
+0 -1 5461
+S
+#5465
+Provincial Lane~
+~
+0 0 1
+D0
+~
+~
+0 -1 5461
+D2
+~
+~
+0 -1 5466
+S
+#5466
+Rigial Provincial Manor~
+~
+24 0 0 1
+D0
+~
+~
+0 -1 5465
+D1
+~
+~
+0 -1 5496
+D2
+~
+~
+0 -1 5504
+D3
+~
+~
+0 -1 5507
+S
+#5467
+Rigial Provincial Academy~
+~
+24 0 0 1
+D0
+~
+~
+0 -1 5532
+D2
+~
+~
+0 -1 5458
+S
+#5468
+Dark Alley~
+~
+0 0 1
+D0
+~
+~
+0 -1 5426
+D1
+~
+~
+0 -1 5470
+D2
+~
+~
+0 -1 5469
+S
+#5469
+Dark Alley End~
+~
+0 0 1
+D0
+~
+~
+0 -1 5468
+D5
+~
+~
+2048 -1 5471
+S
+#5470
+Bar~
+~
+24 0 0 1
+D1
+~
+~
+0 -1 5518
+D2
+~
+~
+0 -1 5517
+D3
+~
+~
+0 -1 5468
+S
+#5471
+Underground Rave Party~
+~
+16 0 0 1
+D1
+~
+~
+0 -1 5513
+D4
+~
+~
+0 -1 5469
+S
+#5472
+Hallway~
+~
+16 0 0 1
+D0
+~
+~
+0 -1 5475
+D1
+~
+~
+0 -1 5416
+S
+#5473
+Hallway~
+~
+16 0 0 1
+D0
+~
+~
+0 -1 5476
+D1
+~
+~
+0 -1 5474
+D2
+~
+~
+0 -1 5477
+D3
+~
+~
+0 -1 5416
+S
+#5474
+Hallway~
+~
+16 0 0 1
+D0
+~
+~
+0 -1 5478
+D2
+~
+~
+0 -1 5479
+D3
+~
+~
+0 -1 5473
+S
+#5475
+Bounty Office~
+~
+16 0 0 1
+D2
+~
+~
+0 -1 5472
+S
+#5476
+Expresso Mail Office~
+~
+16 0 0 1
+D2
+~
+~
+0 -1 5473
+S
+#5477
+Reapo Lost & Found Service~
+~
+16 0 0 1
+D0
+~
+~
+0 -1 5473
+S
+#5478
+Galaxy Mail Office~
+~
+16 0 0 1
+D2
+~
+~
+0 -1 5474
+S
+#5479
+Pawn Shop~
+~
+16 0 0 1
+D0
+~
+~
+0 -1 5474
+S
+#5480
+store~
+~
+16 0 0 1
+D0
+~
+~
+0 -1 5418
+S
+#5481
+Vizier Clothiers~
+~
+16 0 0 1
+D2
+~
+~
+0 -1 5418
+S
+#5482
+Marble Walkway~
+~
+16 0 0 1
+D0
+~
+~
+0 -1 5485
+D1
+~
+~
+0 -1 5483
+D2
+~
+~
+0 -1 5489
+D3
+~
+~
+0 -1 5418
+S
+#5483
+Marble Walkway~
+~
+16 0 0 1
+D0
+~
+~
+0 -1 5488
+D1
+~
+~
+0 -1 5484
+D2
+~
+~
+0 -1 5486
+D3
+~
+~
+0 -1 5482
+S
+#5484
+Marble Walkway~
+~
+0 0 1
+D0
+~
+~
+0 -1 5490
+D1
+~
+~
+0 -1 5491
+D2
+~
+~
+0 -1 5492
+D3
+~
+~
+0 -1 5483
+S
+#5485
+Restrooms~
+~
+16 0 0 1
+D2
+~
+~
+0 -1 5482
+S
+#5486
+Exit to Mall Parkinglot~
+~
+16 0 0 1
+D0
+~
+~
+0 -1 5483
+D1
+~
+~
+0 -1 5487
+S
+#5487
+Mall Parkinglot~
+~
+16 0 0 1
+D3
+~
+~
+0 -1 5486
+S
+#5488
+Grand Galactic Bank~
+~
+144 0 0 1
+D2
+~
+~
+0 -1 5483
+S
+#5489
+Naydihl's Fabrics~
+~
+16 0 0 1
+D0
+~
+~
+0 -1 5482
+S
+#5490
+Drug Store~
+~
+16 0 0 1
+D2
+~
+~
+0 -1 5484
+S
+#5491
+Marble Walkway~
+~
+16 0 0 1
+D0
+~
+~
+0 -1 5494
+D1
+~
+~
+0 -1 5495
+D2
+~
+~
+0 -1 5493
+D3
+~
+~
+0 -1 5484
+S
+#5492
+Mall Services~
+~
+16 0 0 1
+D0
+~
+~
+0 -1 5484
+S
+#5493
+Armour Shop~
+~
+16 0 0 1
+D0
+~
+~
+0 -1 5491
+S
+#5494
+Eletronics Shop~
+~
+16 0 0 1
+D2
+~
+~
+0 -1 5491
+S
+#5495
+Luggage Shop~
+~
+16 0 0 1
+D3
+~
+~
+0 -1 5491
+S
+#5496
+East Wing~
+~
+16 0 0 1
+D1
+~
+~
+0 -1 5497
+D3
+~
+~
+0 -1 5466
+S
+#5497
+Hallway~
+~
+16 0 0 1
+D2
+~
+~
+0 -1 5498
+D3
+~
+~
+0 -1 5496
+S
+#5498
+Hallway~
+~
+16 0 0 1
+D0
+~
+~
+0 -1 5497
+D1
+~
+~
+0 -1 5502
+D2
+~
+~
+0 -1 5499
+D3
+~
+~
+0 -1 5503
+S
+#5499
+Hallway~
+~
+16 0 0 1
+D0
+~
+~
+0 -1 5498
+D1
+~
+~
+0 -1 5501
+D3
+~
+~
+0 -1 5500
+S
+#5500
+Planetary Defense Center~
+~
+24 0 0 1
+D1
+~
+~
+0 -1 5499
+S
+#5501
+Office of the Defense Prefect~
+~
+16 0 0 1
+D3
+~
+~
+0 -1 5499
+S
+#5502
+Office of Commerce~
+~
+16 0 0 1
+D3
+~
+~
+0 -1 5498
+S
+#5503
+Restroom~
+~
+16 0 0 1
+D1
+~
+~
+0 -1 5498
+S
+#5504
+Ornate Hall~
+~
+16 0 0 1
+D0
+~
+~
+0 -1 5466
+D2
+~
+~
+0 -1 5505
+S
+#5505
+Ornate Hall~
+~
+24 0 0 1
+D0
+~
+~
+0 -1 5504
+D2
+~
+~
+0 -1 5506
+S
+#5506
+Office of the Governor~
+~
+16 0 0 1
+D0
+~
+~
+0 -1 5505
+S
+#5507
+West Wing~
+~
+16 0 0 1
+D1
+~
+~
+0 -1 5466
+D3
+~
+~
+0 -1 5508
+S
+#5508
+Hallway~
+~
+16 0 0 1
+D1
+~
+~
+0 -1 5507
+D2
+~
+~
+0 -1 5509
+S
+#5509
+Hallway~
+~
+16 0 0 1
+D0
+~
+~
+0 -1 5508
+D1
+~
+~
+3 -1 5511
+D2
+~
+~
+0 -1 5510
+S
+#5510
+Hallway~
+~
+16 0 0 1
+D0
+~
+~
+0 -1 5509
+D1
+~
+~
+0 -1 5512
+S
+#5511
+File Vault~
+~
+16 0 0 1
+D3
+~
+~
+1 -1 5509
+S
+#5512
+Staff Room~
+~
+16 0 0 1
+D3
+~
+~
+0 -1 5510
+S
+#5513
+Dance Floor~
+~
+16 0 0 1
+D0
+~
+~
+0 -1 5514
+D2
+~
+~
+0 -1 5516
+D3
+~
+~
+0 -1 5471
+D6
+~
+~
+0 -1 5515
+S
+#5514
+Liquir Bar~
+~
+16 0 0 1
+D2
+~
+~
+0 -1 5513
+S
+#5515
+Bathroom~
+~
+16 0 0 1
+D9
+~
+~
+0 -1 5513
+S
+#5516
+DJ Booth~
+~
+16 0 0 1
+D0
+~
+~
+0 -1 5513
+S
+#5517
+Pool Table Area~
+~
+16 0 0 1
+D0
+~
+~
+0 -1 5470
+S
+#5518
+Bathroom~
+~
+0 0 1
+D3
+~
+~
+0 -1 5470
+S
+#5519
+Stone Walkway~
+~
+0 0 2
+D0
+~
+~
+0 -1 5520
+D2
+~
+~
+0 -1 5521
+D3
+~
+~
+0 -1 5420
+S
+#5520
+Stone Walkway~
+~
+0 0 2
+D1
+~
+~
+0 -1 5522
+D2
+~
+~
+0 -1 5519
+D3
+~
+~
+0 -1 5531
+D7
+~
+~
+0 -1 5529
+S
+#5521
+Stone Walkway~
+~
+0 0 2
+D0
+~
+~
+0 -1 5519
+D3
+~
+~
+0 -1 5530
+S
+#5522
+Stone Walkway~
+~
+0 0 2
+D1
+~
+~
+0 -1 5523
+D2
+~
+~
+0 -1 5528
+D3
+~
+~
+0 -1 5520
+S
+#5523
+Stone Walkway~
+~
+0 0 2
+D0
+~
+~
+0 -1 5524
+D2
+~
+~
+0 -1 5527
+D3
+~
+~
+0 -1 5522
+S
+#5524
+Stone Walkway~
+~
+0 0 2
+D0
+~
+~
+0 -1 5525
+D2
+~
+~
+0 -1 5523
+S
+#5525
+Stone Walkway~
+~
+0 0 2
+D2
+~
+~
+0 -1 5524
+D3
+~
+~
+0 -1 5526
+S
+#5526
+Ornate Fountain~
+~
+0 0 2
+D1
+~
+~
+0 -1 5525
+S
+#5527
+Playground~
+~
+0 0 2
+D0
+~
+~
+0 -1 5523
+D3
+~
+~
+0 -1 5528
+S
+#5528
+Playground~
+~
+0 0 2
+D0
+~
+~
+0 -1 5522
+D1
+~
+~
+0 -1 5527
+S
+#5529
+Garden~
+~
+0 0 2
+D2
+~
+~
+0 -1 5531
+D8
+~
+~
+0 -1 5520
+S
+#5530
+Fountain~
+~
+0 0 2
+D1
+~
+~
+0 -1 5521
+S
+#5531
+Garden~
+~
+0 0 2
+D0
+~
+~
+0 -1 5529
+D1
+~
+~
+0 -1 5520
+S
+#5532
+Main Hall~
+~
+0 0 1
+D1
+~
+~
+0 -1 5536
+D2
+~
+~
+0 -1 5467
+D3
+~
+~
+0 -1 5533
+S
+#5533
+Main Hall~
+~
+0 0 1
+D1
+~
+~
+0 -1 5532
+D3
+~
+~
+0 -1 5534
+S
+#5534
+Main Hall~
+~
+0 0 1
+D0
+~
+~
+0 -1 5535
+D1
+~
+~
+0 -1 5533
+S
+#5535
+Elevator~
+~
+8 0 0 1
+> speech_prog 1 main~
+mpechoat $n &YYou have now entered the main hall on ground level. 
+mptrans $n 5534 
+~
+> speech_prog 2 Cafe~
+mpechoat $n &YYou have reached the cafe level on the second floor. 
+mptrans $n 5554 
+~
+|
+S
+#5536
+Main Hall~
+~
+0 0 1
+D1
+~
+~
+0 -1 5537
+D3
+~
+~
+0 -1 5532
+S
+#5537
+Main Hall~
+~
+0 0 1
+D0
+~
+~
+0 -1 5538
+D3
+~
+~
+0 -1 5536
+S
+#5538
+University Annex~
+~
+0 0 1
+D0
+~
+~
+0 -1 5539
+D1
+~
+~
+0 -1 5544
+D2
+~
+~
+0 -1 5537
+D3
+~
+~
+0 -1 5543
+S
+#5539
+Stone Corridor~
+~
+0 0 1
+D0
+~
+~
+0 -1 5540
+D2
+~
+~
+0 -1 5538
+S
+#5540
+Stone Corridor~
+~
+0 0 1
+D1
+~
+~
+0 -1 5542
+D2
+~
+~
+0 -1 5539
+D3
+~
+~
+0 -1 5541
+S
+#5541
+Student Lounge~
+~
+0 0 1
+D1
+~
+~
+0 -1 5540
+S
+#5542
+Science Wing~
+~
+0 0 1
+D3
+~
+~
+0 -1 5540
+S
+#5543
+Arts Wing~
+~
+0 0 1
+D0
+~
+~
+0 -1 5547
+D1
+~
+~
+0 -1 5538
+D3
+~
+~
+0 -1 5545
+S
+#5544
+Technology Wing~
+~
+16 0 0 1
+D0
+~
+~
+0 -1 5552
+D1
+~
+~
+0 -1 5548
+D2
+~
+~
+0 -1 5553
+D3
+~
+~
+0 -1 5538
+S
+#5545
+Arts Wing~
+~
+0 0 1
+D0
+~
+~
+0 -1 5546
+D1
+~
+~
+0 -1 5543
+S
+#5546
+Advanced Art Studies~
+~
+0 0 1
+D2
+~
+~
+0 -1 5545
+S
+#5547
+Basic Art Studies~
+~
+0 0 1
+D2
+~
+~
+0 -1 5543
+S
+#5548
+Technology Wing~
+~
+16 0 0 1
+D0
+~
+~
+0 -1 5549
+D1
+~
+~
+0 -1 5551
+D2
+~
+~
+0 -1 5550
+D3
+~
+~
+0 -1 5544
+S
+#5549
+Racing Pod Construction Class~
+~
+16 0 0 1
+D2
+~
+~
+0 -1 5548
+S
+#5550
+Starship Drafting Class~
+~
+16 0 0 1
+D0
+~
+~
+0 -1 5548
+S
+#5551
+Metallurgy Shop~
+~
+4194320 0 0 1
+D3
+~
+~
+0 -1 5548
+S
+#5552
+Droid Programming Class~
+~
+16 0 0 1
+D2
+~
+~
+0 -1 5544
+S
+#5553
+Basic Technology Studies Class~
+~
+16 0 0 1
+D0
+~
+~
+0 -1 5544
+S
+#5554
+Hall~
+~
+0 0 1
+D0
+~
+~
+0 -1 5535
+S
+#5600
+Last Room~
+~
+67108872 0 0 1
+S
+#0
+
+
+#RESETS
+M 1 5401 1 5401
+M 1 5401 2 5487
+M 1 5403 1 5438
+M 1 5403 4 5409
+M 1 5403 4 5409
+M 1 5403 4 5406
+M 1 5404 1 5482
+M 1 5404 3 5491
+M 1 5404 3 5491
+M 1 5405 1 5405
+M 1 5405 2 5442
+M 1 5405 3 5434
+M 1 5405 4 5410
+M 1 5405 5 5457
+M 1 5406 1 5500
+M 1 5407 1 5506
+M 1 5408 1 5532
+M 1 5408 3 5534
+M 1 5408 3 5534
+M 1 5408 4 5537
+M 1 5408 6 5540
+M 1 5408 6 5540
+M 1 5409 1 5417
+G 1 5403 1
+G 1 5404 1
+G 1 5402 1
+O 1 5405 1 5417
+M 1 5410 1 5419
+G 1 5408 1
+G 1 5406 1
+G 1 5407 1
+M 1 5405 5 5419
+O 1 5405 1 5419
+O 1 5405 1 5481
+O 1 5405 1 5489
+O 1 5405 1 5490
+M 1 5404 3 5494
+O 1 5405 1 5494
+M 1 5404 3 5495
+O 1 5405 1 5495
+O 1 5405 1 5493
+M 1 5411 1 5480
+G 1 36 1
+O 1 5405 1 5480
+M 1 5402 1 5403
+O 1 5409 1 5526
+O 1 5410 1 5524
+O 1 5410 1 5522
+O 1 5410 1 5521
+O 1 5409 1 5530
+O 1 5411 1 5525
+O 1 5411 1 5523
+O 1 5411 1 5520
+O 1 5410 1 5519
+O 1 5412 1 5531
+O 1 5412 1 5529
+O 1 5413 1 5528
+O 1 5414 1 5527
+D 0 5509 1 1
+S
+
+
+#SHOPS
+ 5409    0  0  0  0  0   120 100         0 23    ; Luccus
+ 5410    0  0  0  0  0   120 100         0 23    ; Booska
+ 5411    0  0  0  0  0   120  90         0 23    ; Smithy
+ 5412    0  0  0  0  0   120  90         0 23    ; Faith
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+M  5401 spec_police
+M  5405 spec_police
+M  5406 spec_clan_order
+S
+
+
+#$

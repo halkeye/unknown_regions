@@ -1,0 +1,23 @@
+#PROTOTYPE
+Name         Y-wing~
+Filename     ywing.type~
+Description  ~
+Class        0
+Tractorbeam  0
+Lasers       2
+Maxmissiles  8
+Maxshield    100
+Maxhull      275
+Maxenergy    4500
+Hyperspeed   175
+Maxchaff     6
+Realspeed    100
+Manuever     65
+Maxbombs     6
+Comm         0
+Sensor       0
+Astro_array  0
+Ion          2
+End
+
+#END

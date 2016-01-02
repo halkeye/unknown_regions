@@ -1,0 +1,27 @@
+#CLAN
+Name         The Imperial Remnants~
+Filename     imprem~
+Description  ~
+Leader       Itzana~
+NumberOne    ackbar~
+NumberTwo    ~
+Type         0
+Members      2
+Memberslist  Itzana Ackbar~
+Storeroom    0
+Funds        10000000
+Jail         0
+Enlist         101
+Atwar        ~
+Rank         0 100 Cadet~
+Rank         1 250 Lieutenant~
+Rank         2 500 Comander~
+Rank         3 750 Captain~
+Rank         4 1000 Commodore~
+Rank         5 1500 Admiral~
+Rank         6 2000 Grand Admiral~
+Rank         7 2500 Moff~
+Rank         8 3000 Grand Moff~
+End
+
+#END

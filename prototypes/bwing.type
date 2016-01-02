@@ -1,0 +1,23 @@
+#PROTOTYPE
+Name         B-wing~
+Filename     bwing.type~
+Description  ~
+Class        0
+Tractorbeam  0
+Lasers       3
+Maxmissiles  8
+Maxshield    160
+Maxhull      325
+Maxenergy    6500
+Hyperspeed   110
+Maxchaff     15
+Realspeed    85
+Manuever     95
+Maxbombs     0
+Comm         0
+Sensor       0
+Astro_array  0
+Ion          3
+End
+
+#END

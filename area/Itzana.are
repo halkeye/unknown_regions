@@ -1,0 +1,6558 @@
+#AREA   {PROTO} Itzana's area in progress~
+
+
+
+#AUTHOR Itzana~
+
+#RANGES
+0 0 0 0
+$
+
+#FLAGS
+0
+
+#ECONOMY 0 103016411
+
+#CLIMATE 2 2 2
+
+#MOBILES
+#3301
+Marcie~
+Frauline Marcie, clothing Designer~
+Frauline Marcie, clothing Designer
+~
+~
+3 0 0 Z
+100 0 -150 20d10+1000 10d4+2
+0 0
+8 8 2
+25 10 10 10 10 10 10
+0 0 0 0 0
+2 0 0 0 -2147483643 2 0
+20 20 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#3302
+joe pirate~
+Joe Pirate~
+Joe Pirate
+~
+~
+3 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpat 3385 mptransfer captain 3406 
+mpforce captain say Thats it, your all under arrest!
+mptransfer captain 3385 
+mptransfer all 3385 
+~
+|
+#3303
+hermit~
+Old forest Hermit~
+Old forest Hermit
+~
+The Hermit is a short old man with a knowledge that sparkles in his eyes. He
+has seen much and been almost everywhere, now he just wanders about and 
+collects artifacts from ages long lost and forgotten. His most recent
+aquisition: A very old and dangerous artifact from the great war that ravaged
+these lands, it appears to still be intact but it will take much to make this
+hermit part with it. 
+~
+1 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#3304
+Dhacia gelfling~
+Dhacia, the small Gelfling~
+Dhacia, the small Gelfling
+~
+~
+3 0 0 Z
+50 0 -25 10d10+500 5d4+2
+0 0
+8 8 2
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 41 57 1 0 0
+10 10 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#3305
+Itzana Kintouni~
+&B&bI&rtzana &bK&rintouni&G~
+&B&bI&rtzana &bK&rintouni&G
+~
+Itzana is a wonderfully curvascious twi'lek thats edging on the tall side, she
+has pale skin and rich jade green eyes which seem to call out to whom she
+looks upon, he lekku are about waist length and gently sway as she walks. She
+usually has a bright smile on her face and plays the part of the innocent
+young female, but you wonder what might truely be behind that facade. 
+~
+3 0 0 Z
+190 0 -375 38d10+1900 19d4+2
+0 0
+8 8 2
+10 10 10 10 10 10 10
+0 0 0 0 0
+2 0 0 0 1 2 0
+38 38 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#3306
+seldar~
+Seldar, Inn bartender~
+Seldar, Inn bartender
+~
+~
+1 0 0 Z
+100 0 -150 20d10+1000 10d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+20 20 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#3307
+todar~
+Todar~
+Todar, resident Bard
+~
+~
+131 0 0 Z
+190 0 -375 38d10+1900 19d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+38 38 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#3308
+huntsmen~
+A Forest Huntsmen~
+A Forest Huntsmen
+~
+~
+1 0 800 Z
+100 0 -150 20d10+1000 10d4+2
+50000 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 4
+20 20 0 0 0 0 512 3
+0 0 0 0 0 0 0 0
+#3309
+headhunter~
+The Head Huntsmen~
+The Head Huntsmen
+~
+~
+196609 0 0 Z
+190 0 -375 38d10+1900 19d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 20
+38 38 0 0 2097152 0 2032 3
+0 0 0 0 0 0 0 0
+#3310
+Outer Gate Keeper~
+The Gate Keeper~
+The Gate Keeper stands here greeting guests of Wilksen.
+~
+~
+32771 0 1000 Z
+100 0 -150 20d10+1000 10d4+2
+700 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 4
+20 20 0 0 0 0 0 3
+0 0 0 0 0 0 0 0
+> speech_prog 'open the gate'~
+if isevil ($n) 
+say BE GONE EVIL VERMIN! 
+slap $n 
+say Thou shalt not infiltrate this haven with your filth! 
+else 
+say Welcome to the town of Wilksen sire, may your stay be pleasant and
+fruitful... 
+bow $n 
+unlock north 
+open north 
+endif 
+~
+> speech_prog 'close the gate'~
+if isevil ($n) 
+glare $n 
+say Anything to keep the likes of you away from our city.. 
+else 
+bow $n 
+say Yes sire, I do hope you enjoyed your time here.. 
+endif 
+close north 
+lock north 
+~
+> greet_prog 100~
+close north    
+lock north 
+say Halt, identify yourself stranger..    
+if isevil ($n)    
+l $n    
+blink $n    
+say VILE DEMON! Your kind is not wanted here! Be gone!    
+slap $n    
+mpechoat $n The Gate Keeper hefts you up and chucks you southward  
+mpechoaround $n The Gate Keeper picks up $n and chucks them to the south  
+mptransfer $n 3382     
+else      
+say Ahh I am sorry sire, I did not know it was you..     
+bow $n     
+say How may I be of assistance?     
+endif     
+~
+|
+#3311
+yojo master blacksmith~
+Yojo~
+Yojo the Master Blacksmith
+~
+~
+3 0 200 Z
+100 0 -150 20d10+1000 10d4+2
+10000 0
+8 8 1
+25 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+20 20 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> all_greet_prog 100~
+if isevil($n) 
+say You shall not defile my shop with your presence! 
+say OUT WITH YOU! 
+emote grabs $n by the nape of the neck and hauls them southward. 
+mptransfer $n 3400 
+else 
+smile 
+say Hello $n, welcome to my shop. 
+say Feel free to look about the merchandise and see if you like any of it.     
+endif 
+~
+|
+#3312
+Inner Gate Keeper~
+The Gate Keeper~
+The Gate Keeper stands here greeting guests of Wilksen
+~
+~
+32771 0 0 Z
+100 0 -150 20d10+1000 10d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+20 20 0 0 0 0 0 3
+0 0 0 0 0 0 0 0
+> speech_prog 'open the gate'~
+if isevil ($n)  
+say Vile Demon! Though shalt not escape this city alive!
+mpkill $n  
+else  
+bow $n  
+say Good bye sire, I do hope you stay was most pleasant.
+smile $n  
+unlock south  
+open south  
+endif  
+~
+> speech_prog 'close the gate'~
+if isevil ($n)  
+blink $n  
+say How does thou enter the city?? Tis no matter, though shalt not live to
+escape it!  
+close south  
+lock south  
+mpkill $n  
+else  
+smile $n  
+say Welcome to our city sire, do enjoy your visit, this city has much to 
+offer..  
+close south  
+lock south  
+endif  
+~
+> greet_prog 100~
+close south  
+lock south  
+say Halt, identify yourself stranger..  
+if isevil ($n)  
+l $n  
+blink $n  
+say VILE DEMON! Your kind is not wanted here! Be gone!  
+slap $n  
+mpechoat $n The Gate Keeper hefts you up and chucks you northward 
+mpechoaround $n The Gate Keeper picks up $n and chucks them to the north  
+mptransfer $n 3386   
+else    
+say Ahh I am sorry sire, I did not know it was you..   
+bow $n   
+say How may I be of assistance?   
+endif   
+~
+|
+#3313
+Cell Guard~
+A Cell Guard~
+A cell guard stands here, a sleepy look upon his face.
+~
+~
+32771 0 0 Z
+100 0 -150 20d10+1000 10d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+20 20 0 0 0 0 0 3
+0 0 0 0 0 0 0 0
+> bribe_prog 25000~
+sneer $n 
+say Bout time one of your kind finally paid their way out.. 
+mpechoat $n The guard grabs you by the collar and drags you out of town.
+mpechoaround $n The guard grabs $n and drags them out of town. 
+mptransfer $n 3382 
+mpdeposit 
+~
+|
+#3314
+Captain guard~
+The Captain of the Guard~
+The Captain of the city guard stands here going over the daily reports..
+~
+~
+131073 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+0 0 0 0 0 0 768 3
+0 0 0 0 0 0 0 0
+#3315
+town guard wilksen~
+A member of the city patrol~
+A member of the Wilksen town guard.
+~
+~
+32769 0 0 Z
+100 0 -150 20d10+1000 10d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 0
+20 20 0 0 0 0 0 1
+0 0 0 0 0 0 0 0
+> greet_prog 100~
+emote looks $n over carefully for a moment 
+if isevil($n) 
+say Halt where you stand $n! Your kind is not wanted in our town! 
+say You shall pay for your trespass... 
+mpkill $n 
+else 
+bow $n 
+say Good day $n. 
+smile 
+endif 
+~
+> death_prog 100~
+mpmload 3314 
+mpforce captain emote comes running in at the cry of his guard.          
+mpforce captain say What is going on here?!? 
+mpforce captain say Doesn't matter, your all under arrest RIGHT NOW! 
+mpforce captain emote calls for more guard to take you all to prison.        
+mptransfer all 3496 
+mppurge captain 
+~
+|
+#0
+
+
+#OBJECTS
+#3301
+Comm Station~
+a Comm Station~
+A Comm Station is here.~
+~
+6 0 0
+0 0 260 0
+1 0 0
+#3302
+Gunnery Station~
+a Gunnery Station~
+A Gunnery Station is here.~
+~
+6 0 0
+0 0 260 0
+1 0 0
+#3303
+Engineering Station~
+a Engineering Station~
+A Engineering Station is here.~
+~
+6 0 0
+0 0 260 0
+1 0 0
+#3304
+cash register~
+An old fashioned cash register~
+An old fashioned cash register~
+~
+6 0 0
+0 0 36 0
+1 0 0
+#3305
+Satchel Charge~
+Satchel Charge~
+A boxlike object~
+~
+50 2 16385
+10000 25000 0 0
+75 25000000 1000000
+E
+instructions~
+&Y/&Y/&z/&z/&Y/&Y/&z/&z/&Y/&Y/&z/&z/&Y/&Y/&z/&z/&Y/&Y/&z/&z/&Y/&Y/&z/&z/&Y/&Y/
+&Y/&z/&z/&Y/&Y/&z/&z/&Y/&Y/&z/&z/&Y/&Y/&z/&z/&Y/&Y/&z/&z/&Y/&Y/&z/&z/&Y/&Y/&z/
+&z/&z/&Y/&Y/&r  INSTRUCTIONS:   &Y/&Y/&z/&z/ 
+&z/&Y/&Y/&z/&r 1: Hold Device   &Y/&z/&z/&Y/ 
+&Y/&Y/&z/&z/&r 2: Arm Device    &z/&z/&Y/&Y/ 
+&Y/&z/&z/&Y/&r 3: Place Device  &z/&Y/&Y/&z/ 
+&z/&z/&Y/&Y/&r 4: Vacate Planet &Y/&Y/&z/&z/ 
+&z/&Y/&Y/&z/&r WARNING: Falure  &Y/&z/&z/&Y/ 
+&Y/&Y/&z/&z/&r to complete #4   &z/&z/&Y/&Y/ 
+&Y/&z/&z/&Y/&r will result in   &z/&Y/&Y/&z/ 
+&z/&z/&Y/&Y/&r personal death.  &Y/&Y/&z/&z/ 
+&z/&Y/&Y/&z/&z/&Y/&Y/&z/&z/&Y/&Y/&z/&z/&Y/&Y/&z/&z/&Y/&Y/&z/&z/&Y/&Y/&z/&z/&Y/
+&Y/&Y/&z/&z/&Y/&Y/&z/&z/&Y/&Y/&z/&z/&Y/&Y/&z/&z/&Y/&Y/&z/&z/&Y/&Y/&z/&z/&Y/&Y/
+~
+E
+satchel~
+This thing is box shaped, the dimensions are about 4"x6"x12". On the top part
+is a panel covering the arming switches, just below the panel, outlined by 
+yellow and black stripes are the &YINSTRUCTIONS&g for it. It is highly advised
+you read them. 
+~
+> wear_prog 100~
+mpechoat $n &rYou flip open the panel and prime the arming circuits
+mpechoaround $n &rThey open a small console and push a couple buttons. 
+~
+|
+#3306
+couch~
+&rItzana's couch~
+&rItzana's couch in the corner~
+~
+6 0 0
+0 0 577 0
+1 0 0
+#3307
+shades~
+&YGold Wireframed Clip Shades~
+&YGold Wireframed Clip Shades~
+~
+4 0 131073
+5 5 0 -1
+5 1500000000 150000000
+A
+18 10000
+A
+20 8
+A
+20 32
+A
+20 4194304
+A
+20 512
+A
+20 2
+A
+20 16777216
+#3308
+A large beach towel~
+A large beach towel~
+A folded up beach towel set next to the pool~
+~
+4 0 1025
+1 1 0 0
+1 0 0
+#3309
+agat anklet~
+&xBlack Agat Anklet~
+&xBlack Agat Anklet~
+~
+4 0 2097153 1
+1 1 0 0
+1 250000000 25000000
+A
+20 65536
+#3310
+Hub Keycard~
+a Hub Keycard~
+Magnetic Keycard~
+~
+13 0 1
+0 0 0 0
+1 0 0
+#3311
+silver bracelet chain~
+&B&WSilver Bracelet Chain~
+&B&WSilver Bracelet Chain~
+~
+4 0 4097 1
+2 2 0 0
+1 500000000 50000000
+A
+19 5000
+#3312
+pendant~
+&cA tetragram pendant with &rRuby, &bSaphire, &B&WDiamond &cand &zHematite &cstones at each corner~
+&cA tetragram pendant with &rRuby, &bSaphire, &B&WDiamond &cand &zHematite &cstones at each corner~
+~
+4 0 5 1
+2 2 0 0
+3 1500000000 150000000
+A
+17 -10000
+A
+20 33554432
+A
+20 67108864
+A
+20 268435456
+A
+20 128
+#3313
+crystal~
+&cCrystal&b Teardrop Earring~
+&cCrystal&b Teardrop Earring~
+~
+4 0 65537 1
+1 1 0 0
+1 500000000 50000000
+A
+4 5
+A
+3 5
+A
+20 4
+#3314
+glass ring~
+&zA scorched glass ring~
+&zA scorched glass ring~
+~
+4 1 3 1
+1 1 0 0
+1 250000000 25000000
+A
+20 256
+A
+20 8192
+#3315
+chime anklet~
+&CAnklet of silent chimes~
+&CAnklet of silent chimes~
+~
+4 0 2097153
+12 0 0 0
+1 250000000 25000000
+A
+20 32768
+#3316
+ark~
+&YArk of the Covenant&G~
+&YA golden box covered in cherubs~
+~
+8 0 16385
+10000 1 3317 12
+1 1000000 100000
+#3317
+key~
+&YA Golden Cherub Key~
+&YA long golden key, the handle of which appears to be a Cherub of sorts~
+~
+7 0 65 1
+0 0 0 0
+1 50000000 5000000
+#3318
+bed~
+&rItzana's Bed~
+&rA comfy bed with a nice quilt&G~
+~
+6 0 0
+0 0 641 0
+1 0 0
+#3319
+crib~
+&B&rA small crib next to the bed~
+&B&rA small crib next to the bed~
+~
+6 0 0
+0 0 1152 0
+1 0 0
+#3320
+fritos~
+Fritos scoops with spicy cheese sauce.~
+A tray of Fritos~
+~
+12 0 16385
+100 100 0 0
+1 0 0
+#3321
+root beer~
+bottle of Root Beer~
+A bottle of something~
+~
+10 0 16385
+100 6 8 0
+1 0 0
+#3322
+arm chair~
+&rA rustic old arm chair&G~
+&rA rustic old arm chair sitting in the shadowy corner&G~
+~
+6 0 0
+0 0 1154 0
+1 0 0
+#3323
+hammock~
+&BA small hammock&G~
+&BA small hammock hanging from supporting posts&G~
+~
+6 0 0
+0 0 1154 0
+1 0 0
+#3324
+bar stool~
+&zOne of many stools&G~
+&zNumerous bar stools&G~
+~
+6 0 0
+0 0 513 0
+1 0 0
+#3325
+Bar~
+&OA long mahagony bar~
+&OA long mahagony bar~
+~
+6 0 0
+0 0 32 0
+1 0 0
+#3326
+platter~
+&B&WA silver platter&g~
+&B&WA silver platter&g~
+~
+8 0 1
+10 0 0 12
+1 500 50
+#3327
+forest map~
+a forest map~
+A forest map is here.~
+~
+7 128 16385
+0 0 0 0
+1 250000 25000
+E
+map~
+&G=================== &RR&B&W-Rhapsody Inn 
+&G=&g......&b*&B&W-&b*&B&W-&b*&g......&G= 
+&G=&g......&B&W|&g.&B&W|&g..&B&W\&g.....&G= &RS&B&W-Entry point 
+&G=&g....&b*&B&W-&b*&g.&b*&g...&b*&B&W-&b*&g..&G= 
+&G=&g...&B&W/|\&g.&B&W/&g.&B&W\&g..&B&W|/&g...&G= &RE&B&W-Exit point 
+&G=&g..&b*&g.&b*&g.&b*&g.&RR&g.&b*&B&W-&b*&g....&G= 
+&G=&g.&B&W/&g.&B&W\|&g.&B&W|&g.&B&W|/&g..&B&W|&g....&G= 
+&G=&g&b*&B&W-&b*&B&W-&b*&g.&b*&B&W-&b*&B&W-&b*&B&W-&b*&B&W-&b*&g..&G= 
+&G=&g&B&W|/&g...&B&W/&g..&B&W|&g...&B&W|&g..&B&W\&g.&G= 
+&G=&g&b*&B&W-&b*&B&W-&b*&B&W-&b*&g.&b*&B&W-&b*&B&W-&b*&g.&b*&B&W-&RS&G= 
+&G=&g&g..&B&W|&g...&B&W|&g...&B&W|&g..&B&W\|&g..&G= 
+&G=&g&g..&b*&B&W-&b*&B&W-&b*&B&W-&RE&g.&b*&g...&b*&g..&G= 
+&G=&g&g.......&B&W\&g.&B&W/&g...&B&W/&g...&G= 
+&G=&g&g........&b*&B&W-&b*&B&W-&b*&g....&G= 
+&G=&g&g..........&B&W|&g......&G= 
+&G=&g&g........&b*&B&W-&b*&g......&G= 
+&G=================== 
+&rWARNING!! Do not stray from 
+&rthe shown paths, if you do 
+&ryou may become forever lost 
+&rin the forest! 
+~
+#3328
+cot~
+one of the two cots~
+A couple of cots against the wall~
+~
+6 0 0
+0 0 576 0
+1 0 0
+#3329
+Ye Ole Immortal Enhancer~
+Ye Ole Immortal Enhancer~
+Ye Ole Immortal Enhancer~
+~
+27 0 0
+0 0 0 0
+1 0 0
+> push_prog 100~
+if level ($n) > 100 
+mpgain $n 0 5000000 
+mpgain $n 1 5000000 
+mpgain $n 2 5000000 
+mpgain $n 3 5000000 
+mpgain $n 4 5000000 
+mpgain $n 5 5000000 
+mpgain $n 6 5000000 
+mpgain $n 7 5000000 
+endif 
+mpforce $n pull immortal 
+~
+|
+#3330
+red dress~
+&RA Sheer Silk Dress~
+&RA Sheer Silk Dress~
+~
+4 0 2089 4
+10 10 0 0
+4 250 25
+#3331
+blouse~
+&bA Business-like Satin Blouse~
+&bA Business-like Satin Blouse~
+~
+4 0 9 4
+5 5 0 0
+5 175 17
+#3332
+skirt~
+&bA Matching Business-like Skirt~
+&bA Matching Business-like Skirt~
+~
+4 0 2049 4
+5 5 0 0
+3 145 14
+#3333
+silk skirt~
+&RA Sheer Silk Skirt~
+&RA Sheer Silk Skirt~
+~
+4 0 2049 4
+10 10 0 0
+2 235 23
+#3334
+pantyhose~
+&B&WA pair of panty hose~
+&B&WA pair of nice pantyhose~
+~
+4 0 33 1
+2 2 0 0
+1 25 2
+#3335
+stockings~
+&zThigh length stockings~
+&zThigh length stockings~
+~
+4 0 33 1
+3 3 0 0
+2 100 10
+#3336
+thong~
+&zA black lace thong~
+&zA black lace thong~
+~
+4 0 2049 1
+4 4 0 0
+1 125 12
+#3337
+bra~
+&zBlack lace bra~
+&zBlack lace bra~
+~
+4 0 9 1
+3 3 0 0
+1 125 12
+#3338
+garter~
+&zBlack lace garter belt~
+&zBlack lace garter belt~
+~
+4 0 2049 2
+1 1 0 0
+1 100 10
+#3339
+corset~
+&zBlack lace corset~
+&zBlack lace corset~
+~
+4 0 9 2
+5 5 0 0
+4 200 20
+#3340
+red pumps~
+&RSleek looking red pumps~
+&RSleek looking red pumps~
+~
+4 0 65 254
+2 2 0 0
+2 200 20
+#3341
+black heels~
+&zBlack 6" Stiletto Heels~
+&zBlack 6" Stiletto Heels~
+~
+4 8193 65 254
+2 2 0 0
+2 200 20
+#3342
+red sleeves~
+&RSheer Silk Sleeves~
+&RSheer Silk Sleeves~
+~
+4 0 257 4
+3 3 0 0
+2 100 10
+#3343
+Kethelin Breast Plate~
+&B&WKethelin Breast Plate&G~
+&B&WKethelin Breast Plate&G~
+~
+4 0 9 240
+35 35 0 0
+25 35000 3500
+E
+breast~
+This is an impressive suite of Kethelin Fullplate. It is made of many small
+metal plates that lock together and brace eachother, across breast plate is an
+itricate engraving of the magical construction shop of Itzana, this plate
+never seems to get dented or scratched.. ever. In addition to all these
+wonderful features the armor seems to be magically light and cool at all
+times. 
+~
+#3344
+Kethelin Helm~
+&B&WKethelin Helm&G~
+&B&WKethelin Helm&G~
+~
+4 0 17 240
+10 10 0 0
+5 10000 1000
+E
+helm~
+This is a highly decorative helm, it is made out of hardened titanium and has
+attachment points for a full neckguard and visor, you look upon it but see no
+way to penetrate it, you wonder how the person wearing it could even see out
+or breathe but somehow they can, this helm looks like it was designed to
+compliment the Kethelin Fullplate. 
+~
+#3345
+Kethelin Leg Guards~
+&B&WKethelin Leg Guards&G~
+&B&WKethelin Leg Guards&G~
+~
+4 0 33 224
+25 25 0 0
+20 25000 2500
+E
+leg~
+These breeches are made from a layer of soft leather covered with chainmail,
+sewn into place, and then plate greaves over the chain, the greaves are
+delicately engraved with runes and appear to compliment the Kethelin Fullplate
+armour. 
+~
+#3346
+Kethelin Arm Guards~
+&B&WKethelin Arm Guards&G~
+&B&WKethelin Arm Guards&G~
+~
+4 0 257 240
+20 20 0 0
+20 22000 2200
+E
+Arm~
+These armguards are composed of a small tube of chainmail which leads from the
+shoulder hooks down to the wrists. On the exterior of this tube are a couple
+bracers around the forarms and two small shields which are attached to the
+outside of the upper arm so if a weapon fails to block an attack the sholder
+can be raised to deflect it instead, this looks like it was designed to
+compliment the Kethelin Fullplate. 
+~
+#3347
+Kethelin Boots~
+&B&WKethelin Boots&G~
+&B&WKethelin Boots&G~
+~
+4 0 65 240
+15 15 0 0
+4 15000 1500
+E
+boots~
+These aren't your everyday pair of boots, these things have been carefully
+crafted with extremly strong yet altogether moveable metal plates, they seem
+about impossible to penetrate, unless of course you count where the foot is
+supposed to enter it at the top. They look like they were made to compliment
+the Kethelin Fullplate. 
+~
+#3348
+Kethelin Gauntlets~
+&B&WKethelin Gauntlets&G~
+&B&WKethelin Gauntlets&G~
+~
+4 0 129 240
+15 15 0 0
+3 15000 1500
+E
+gauntlets~
+These gauntlets have been crafted from alot of small steel plates, they have
+been carefully fitted together to give good range of movement and extreme
+protection for the hands, they look like they were made to compliment the
+Kethelin Fullplate. 
+~
+#3349
+Kethelin Visor~
+&B&WKethelin Visor&G~
+&B&WKethelin Visor&G~
+~
+4 0 131073 240
+10 10 0 0
+2 15000 1500
+E
+visor~
+This Visor is a piece of curved titanium with a couple small slits for you to
+see out of, at its ends are a couple clasps to attach it to the helm it was
+designed to go with. As you examine it you see intricate etchings put into it
+which must raise its value a good deal, it appears to have been made to
+compliment the Kethelin Fullplate. 
+~
+#3350
+Kethelin Neck Guard~
+&B&WKethelin Neck Guard&G~
+&B&WKethelin Neck Guard&G~
+~
+4 0 5 240
+10 10 0 0
+2 15000 1500
+E
+neck~
+The Neck guard is built from two carefully crafted and curved metal plates.
+When they lock together they hook up under the helm and down under the neck
+opening of the breastplates thus providing good protecting to the neck, while
+you can still turn your head fairly easily this does hamper movement a bit, it
+appears to have been constructed to compliment the Kethelin Fullplate.
+~
+#3351
+Kethelin Waist Guard~
+&B&WKethelin Waist Guard&G~
+&B&WKethelin Waist Guard&G~
+~
+4 0 2049 240
+15 15 0 0
+4 20000 2000
+E
+waist~
+The Waist Guard is composed of vertical strips of metal that are jointed
+together. They provide a sort of flexible skirt protecting the small area
+between the main breast plates and the start of the leg plates. While is looks
+constrictive it actually allows quite a bit of movement, it appears to be
+dessigned to compliment the Kethelin Fullplate.
+~
+#3352
+pheasant~
+Spiced Pheasant~
+Spiced Pheasant~
+~
+12 0 1
+0 100 0 0
+1 45 4
+#3353
+salad~
+&B&GA tossed salad~
+&B&GA tossed salad~
+~
+12 0 1
+15 100 0 0
+1 20 2
+#3354
+steak~
+Elk Steak~
+Elk Steak~
+~
+12 0 1
+40 100 0 0
+1 75 7
+#3355
+ommlette~
+Ham 'n cheese Ommlette~
+Ham 'n cheese Ommlette~
+~
+12 0 1
+30 100 0 0
+1 35 3
+#3356
+water~
+Mineral Water~
+Mineral Water~
+~
+10 0 1
+5 5 0 0
+1 2 0
+#3357
+draught~
+Warrier's Draught~
+Warrier's Draught~
+~
+10 0 1
+4 4 4 0
+1 50 5
+#3358
+wine~
+&rFae Wine&g~
+&rFae Wine&g~
+~
+10 0 1
+3 3 2 0
+1 150 15
+#3359
+vodka~
+&B&WA shot of Vodka&g~
+&B&WA shot of Vodka&g~
+~
+10 0 1
+1 1 8 0
+1 300 30
+#3360
+pretzals~
+A bowl of pretzals~
+A bowl of pretzals~
+~
+12 0 1
+5 12 0 0
+1 20 2
+#3361
+mead~
+&YA mug of mead&g~
+&YA mug of mead&g~
+~
+10 0 1
+8 8 16 0
+1 75 7
+#3362
+cookie~
+A chocolate chip cookie&g~
+A freshly baked chocolate cookie&g~
+~
+12 0 1
+2 100 0 0
+1 3 0
+#3363
+milk~
+&B&WA Glass of milk&g~
+&B&WA Glass of milk&g~
+~
+10 0 1
+5 5 10 0
+1 10 1
+#3364
+quilt~
+&rA large comfy, cozy, red quilt~
+&rA large comfy, cozy, red quilt~
+~
+4 0 1025
+1 1 0 0
+1 0 0
+#3365
+kilt~
+&rA Kilt&G~
+&rA Kilt&G~
+~
+7 0 2049 4
+0 0 0 0
+1 0 0
+#3366
+top~
+&rA Kilt Top&G~
+&rA Kilt Top&G~
+~
+7 0 9 4
+0 0 0 0
+1 0 0
+#3367
+bagpipes~
+A set of bagpipes~
+A set of bagpipes~
+~
+27 0 16385
+0 0 0 0
+1 0 0
+> wear_prog 100~
+mpechoaround $n They take the bagpipes and hold them under their arm.. 
+mpechoat $n You take the bagpipes under one arm and inflate them.. 
+~
+> remove_prog 100~
+mpechoat $n You set the bagpipes down and they deflate with a groan 
+mpechoaround $n They set the bagpipes down and they deflate with a groan
+~
+> push_prog 100~
+mpechoat $n you squeeze the bagpipes 
+mpechoaround $n $n squeezes the bagpipes 
+mpforce $n pull bagpipes 
+mpecho $n plays an Irish March on the bagpipes 
+~
+|
+#3368
+shotgun~
+A ten gauge semi-automatic shotgun with folding stock.~
+An antique projectile weapon.~
+~
+2 0 8193
+12 5000 6 6 14 14
+1 50000 5000
+E
+shotgun~
+This is an antique shotgun from an era where weapons were just bits of flying
+metal, its flat black and very sturdy for the engineering methods used when it
+was constructed, you see its semi-automatic mechanics have been altered
+slightly and there is now a selecter to control how many shells are fired in a
+rapid automatic state. Under the end of the barrel is a small stun device that
+has been installed on this weapon making it quite versatile.
+~
+E
+selecter~
+The selector has 6 settings, each with the number of shells expended etched in
+next to them.. Full-7 High-4 Normal-3 Half-2 Low-1 and then there is a setting
+for stun which consumes 3 specially designed shells. You notice the maximum
+number of shells the shotgun can hold is 14 so setting it for Full automatic
+will allow you only 2 bursts. 
+~
+A
+18 50
+A
+19 -5
+#3369
+ten gauge shells~
+a ten gauge shells~
+A ten gauge shells is here.~
+~
+25 0 0
+0 0 0 0
+1 0 0
+#3370
+Longsword~
+Longsword~
+Longsword~
+~
+2 0 8193
+12 10 75 0 10000 10000
+1 3000 300
+A
+18 -3
+A
+19 4
+#3371
+gate key~
+A small metal key~
+A small metal key to something has been dropped here.~
+~
+7 8192 16385
+0 0 0 0
+1 0 0
+#3600
+tag~
+&rA tag that says,&b"Property of Itzana."&G~
+&rA tag that says,&b"Property of Itzana."&G~
+~
+4 4096 5 1
+1 1 0 0
+1 0 0
+#0
+
+
+#ROOMS
+#3301
+Dockingbay 31A&C~
+This docking bay has been built into the side of one of the smaller asteroids.
+Artificial gravity plates line all the coridors though provide the needed
+gravity for timely movement and work. To one side is the airlock leading to
+the coridors inside the asteroid and perched high above you is the control
+booth for the dockingbay. 
+~
+33554432 0 0 1
+D1
+~
+~
+3 -1 3302
+S
+#3302
+Durasteel Coridor~
+You are walking through a passageway that has been mined out of the interior of
+the asteroid, this hall is lined by some heavy durasteel framing with sheets
+of it lining the exterior. Beneath your feet gravity plates line the entire
+deck, giving the needed gravity the asteroid doesn't have. This particular
+coridor is dimly lit with a single flourescent lightbar running down the
+center of the ceiling as far as you can see in either direction.
+~
+33554432 0 0 1
+D0
+~
+~
+0 -1 3303
+D2
+~
+~
+0 -1 3313
+D3
+~
+~
+3 -1 3301
+S
+#3303
+Durasteel Coridor~
+You are walking through a passageway that has been mined out of the interior of
+the asteroid, this hall is lined by some heavy durasteel framing with sheets
+of it lining the exterior. Beneath your feet gravity plates line the entire
+deck, giving the needed gravity the asteroid doesn't have. This particular
+coridor is dimly lit with a single flourescent lightbar running down the
+center of the ceiling as far as you can see in either direction.
+~
+33554432 0 0 1
+D2
+~
+~
+0 -1 3302
+D6
+~
+~
+0 -1 3304
+S
+#3304
+Durasteel Coridor~
+You are walking through a passageway that has been mined out of the interior of
+the asteroid, this hall is lined by some heavy durasteel framing with sheets
+of it lining the exterior. Beneath your feet gravity plates line the entire
+deck, giving the needed gravity the asteroid doesn't have. This particular
+coridor is dimly lit with a single flourescent lightbar running down the
+center of the ceiling as far as you can see in either direction.
+~
+33554432 0 0 1
+D1
+~
+~
+0 -1 3305
+D7
+~
+~
+0 -1 3323
+D9
+~
+~
+0 -1 3303
+S
+#3305
+Durasteel Coridor~
+You are walking through a passageway that has been mined out of the interior of
+the asteroid, this hall is lined by some heavy durasteel framing with sheets
+of it lining the exterior. Beneath your feet gravity plates line the entire
+deck, giving the needed gravity the asteroid doesn't have. This particular
+coridor is dimly lit with a single flourescent lightbar running down the
+center of the ceiling as far as you can see in either direction.
+~
+33554432 0 0 1
+D1
+~
+~
+0 -1 3306
+D2
+~
+~
+0 -1 3314
+D3
+~
+~
+0 -1 3304
+S
+#3306
+Durasteel Coridor~
+You are walking through a passageway that has been mined out of the interior of
+the asteroid, this hall is lined by some heavy durasteel framing with sheets
+of it lining the exterior. Beneath your feet gravity plates line the entire
+deck, giving the needed gravity the asteroid doesn't have. This particular
+coridor is dimly lit with a single flourescent lightbar running down the
+center of the ceiling as far as you can see in either direction.
+~
+33554432 0 0 1
+D3
+~
+~
+0 -1 3305
+D6
+~
+~
+0 -1 3324
+D8
+~
+~
+0 -1 3307
+S
+#3307
+Durasteel Coridor~
+You are walking through a passageway that has been mined out of the interior of
+the asteroid, this hall is lined by some heavy durasteel framing with sheets
+of it lining the exterior. Beneath your feet gravity plates line the entire
+deck, giving the needed gravity the asteroid doesn't have. This particular
+coridor is dimly lit with a single flourescent lightbar running down the
+center of the ceiling as far as you can see in either direction.
+~
+33554432 0 0 1
+D2
+~
+~
+0 -1 3308
+D7
+~
+~
+0 -1 3306
+S
+#3308
+Durasteel Hatchway~
+You are walking through a passageway that has been mined out of the interior of
+the asteroid, this hall is lined by some heavy durasteel framing with sheets
+of it lining the exterior. Beneath your feet gravity plates line the entire
+deck, giving the needed gravity the asteroid doesn't have. This particular
+coridor is dimly lit with a single flourescent lightbar running down the
+center of the ceiling as far as you can see in either direction.
+To the east here is the airlock leading to the long gantry strung between this
+asteroid station and her sister station. 
+~
+33554432 0 0 1
+D0
+~
+~
+0 -1 3307
+D1
+~
+~
+3 -1 3319
+D2
+~
+~
+0 -1 3309
+S
+#3309
+Durasteel Coridor~
+You are walking through a passageway that has been mined out of the interior of
+the asteroid, this hall is lined by some heavy durasteel framing with sheets
+of it lining the exterior. Beneath your feet gravity plates line the entire
+deck, giving the needed gravity the asteroid doesn't have. This particular
+coridor is dimly lit with a single flourescent lightbar running down the
+center of the ceiling as far as you can see in either direction.
+~
+33554432 0 0 1
+D0
+~
+~
+0 -1 3308
+D9
+~
+~
+0 -1 3310
+S
+#3310
+Durasteel Coridor~
+You are walking through a passageway that has been mined out of the interior of
+the asteroid, this hall is lined by some heavy durasteel framing with sheets
+of it lining the exterior. Beneath your feet gravity plates line the entire
+deck, giving the needed gravity the asteroid doesn't have. This particular
+coridor is dimly lit with a single flourescent lightbar running down the
+center of the ceiling as far as you can see in either direction.
+~
+33554432 0 0 1
+D3
+~
+~
+0 -1 3311
+D6
+~
+~
+0 -1 3309
+D8
+~
+~
+0 -1 3325
+S
+#3311
+Durasteel Coridor~
+You are walking through a passageway that has been mined out of the interior of
+the asteroid, this hall is lined by some heavy durasteel framing with sheets
+of it lining the exterior. Beneath your feet gravity plates line the entire
+deck, giving the needed gravity the asteroid doesn't have. This particular
+coridor is dimly lit with a single flourescent lightbar running down the
+center of the ceiling as far as you can see in either direction.
+~
+33554432 0 0 1
+D1
+~
+~
+0 -1 3310
+D3
+~
+~
+0 -1 3312
+S
+#3312
+Durasteel Coridor~
+You are walking through a passageway that has been mined out of the interior of
+the asteroid, this hall is lined by some heavy durasteel framing with sheets
+of it lining the exterior. Beneath your feet gravity plates line the entire
+deck, giving the needed gravity the asteroid doesn't have. This particular
+coridor is dimly lit with a single flourescent lightbar running down the
+center of the ceiling as far as you can see in either direction.
+~
+33554432 0 0 1
+D1
+~
+~
+0 -1 3311
+D7
+~
+~
+0 -1 3313
+D9
+~
+~
+0 -1 3326
+S
+#3313
+Durasteel Coridor~
+You are walking through a passageway that has been mined out of the interior of
+the asteroid, this hall is lined by some heavy durasteel framing with sheets
+of it lining the exterior. Beneath your feet gravity plates line the entire
+deck, giving the needed gravity the asteroid doesn't have. This particular
+coridor is dimly lit with a single flourescent lightbar running down the
+center of the ceiling as far as you can see in either direction. 
+~
+33554432 0 0 1
+D0
+~
+~
+0 -1 3302
+D8
+~
+~
+0 -1 3312
+S
+#3314
+Durasteel Hatchway~
+You are walking through a passageway that has been mined out of the interior of
+the asteroid, this hall is lined by some heavy durasteel framing with sheets
+of it lining the exterior. Beneath your feet gravity plates line the entire
+deck, giving the needed gravity the asteroid doesn't have. This particular
+coridor is dimly lit with a single flourescent lightbar running down the
+center of the ceiling as far as you can see in either direction. 
+To the south of here is a very heavily reinforced durasteel door mounted in
+what apear to be titanium framing, it looks very stolid, not about to knock
+this one down, but the lock seems to be only a standard keycard swipe. 
+~
+33554432 0 0 1
+D0
+~
+~
+0 -1 3305
+D2
+~
+~
+8388615 3310 3315
+S
+#3315
+Lower Controlhub~
+You are standing in the lower part of the main hub, down here are the various
+computers and electrical and mechanical equipment needed to keep such a
+station running. There is a spiral staircase in the middle leading up to the
+upper part of the hub where the main controls for the station are located. Off
+to either side of the room are a couple crawl tubes with ladders running up
+them that lead to various other parts of the station. 
+~
+33554432 0 0 1
+D0
+~
+~
+8388615 3310 3314
+D1
+~
+~
+0 -1 3321
+D3
+~
+~
+0 -1 3320
+D4
+~
+~
+0 -1 3316
+S
+#3316
+Upper Controlhub~
+All around you is a giant Transparasteel dome that covers a good portion of the
+"top" side of the asteroid, guards its exterior is a heavy framework of
+Durasteel and a low power shield generator. In the middle of the room is a
+spiral staircase leading to the Lower portion of the hub. All about this level
+are various stations from which you can control the vital systems. 
+~
+33554432 0 0 1
+D5
+~
+~
+0 -1 3315
+S
+#3317
+Long Durasteel Coridor~
+As you try to squeeze along you notice that this coridor is made out of heavy
+durasteel, its only a few feet wide and about 6 feet tall. While dimly lit you
+can still make your way through it without too much difficulty. From all these
+detractions of comfort and astetics you take it that this passageway was
+designed for minimal use and probably only by station personel. 
+~
+33554432 0 0 1
+D3
+~
+~
+0 -1 3318
+D5
+~
+~
+0 -1 3320
+S
+#3318
+Long Narrow Coridor~
+You are standing in a small cramped booth that overhangs the docking bay,
+through the big transparasteel windows you have an excelent view of the
+dockingbay. While cramped this room also boasts a good view of the external
+surroundings of the station, not to mention a couple consoles from which you
+can check the radar and station status'. 
+~
+33554432 0 0 1
+D1
+~
+~
+0 -1 3317
+D5
+~
+~
+33554432 -1 3301
+S
+#3319
+Gantry Airlock~
+This airlock is only about 10 feet deep, 7 tall and 5 wide, at both ends are 8
+inch thick pressure doors to protect the station should the gantry collapse,
+hope that never happens. This room is well lit since the walls are practicaly
+lined with lightbars, on one side are a couple enviromental suits on hooks.
+Bellow you are the gravity plates standard throughout the entire station. 
+~
+33554432 0 0 1
+D1
+~
+~
+3 -1 3336
+D3
+~
+~
+3 -1 3308
+S
+#3320
+Crawltube~
+This small tube is only a few feet wide an cylindrical and it runs along side
+the main hub. Down its center is a small ladder that station employees use to
+transverse the levels of the station. 
+~
+33554432 0 0 1
+D1
+~
+~
+0 -1 3315
+D4
+~
+~
+0 -1 3317
+S
+#3321
+Crawltube~
+This small tube is only a few feet wide an cylindrical and it runs along side
+the main hub. Down its center is a small ladder that station employees use to
+transverse the levels of the station. 
+~
+33554432 0 0 1
+D3
+~
+~
+0 -1 3315
+D5
+~
+~
+0 -1 3322
+S
+#3322
+Deffense Turet~
+This small turet is one of the few minimal deffenses this asteroid spacestation
+has, while it may be small the ratator cuffs give it a very smooth ride and it
+can swival to point in almost any direction. While not the best of weapons it
+can still probably shoot down a few starfighters or even a midship or two
+before they become a real threat.. 
+~
+33554432 0 0 1
+D4
+~
+~
+0 -1 3321
+S
+#3323
+Marcie's Clothing Shop for Women~
+This is Marcie's little shop. Along the walls are racks with the clothes she
+makes herself, they look very well done and quite attractive. As you move to
+the back of the shop the undergarments get a little more seductive. At the
+very back of the shop is Marcie herself standing close to an old fashioned
+cash register.
+~
+33554432 0 0 1
+D8
+~
+~
+0 -1 3304
+S
+#3324
+Empty Shop~
+~
+33554432 0 0 1
+D9
+~
+~
+0 -1 3306
+S
+#3325
+Empty Shop~
+~
+33554432 0 0 1
+D7
+~
+~
+0 -1 3310
+S
+#3326
+Empty Shop~
+~
+33554432 0 0 1
+D6
+~
+~
+0 -1 3312
+S
+#3327
+Floating in a void~
+~
+1107296264 0 0 1
+S
+#3328
+Floating in a void~
+~
+1107296264 0 0 1
+S
+#3329
+Floating in a void~
+~
+1107296264 0 0 1
+S
+#3330
+Floating in a void~
+~
+1107296264 0 0 1
+S
+#3331
+Floating in a void~
+~
+1107296264 0 0 1
+S
+#3332
+Floating in a void~
+~
+1107296264 0 0 1
+S
+#3333
+Floating in a void~
+~
+1107296264 0 0 1
+S
+#3334
+Floating in a void~
+~
+1107296264 0 0 1
+S
+#3335
+Floating in a void&g~
+~
+1107296264 0 0 1
+S
+#3336
+Gantry~
+~
+33554432 0 0 1
+D1
+~
+~
+0 -1 3337
+D3
+~
+~
+3 -1 3319
+S
+#3337
+Gantry~
+~
+33554432 0 0 1
+D1
+~
+~
+0 -1 3338
+D3
+~
+~
+0 -1 3336
+S
+#3338
+Gantry~
+~
+33554432 0 0 1
+D1
+~
+~
+0 -1 3339
+D3
+~
+~
+0 -1 3337
+S
+#3339
+Gantry~
+~
+33554432 0 0 1
+D1
+~
+~
+0 -1 3340
+D3
+~
+~
+0 -1 3338
+S
+#3340
+Gantry~
+~
+33554432 0 0 1
+D1
+~
+~
+0 -1 3341
+D3
+~
+~
+0 -1 3339
+S
+#3341
+Gantry~
+~
+33554432 0 0 1
+D1
+~
+~
+0 -1 3342
+D3
+~
+~
+0 -1 3340
+S
+#3342
+Gantry~
+~
+33554432 0 0 1
+D1
+~
+~
+0 -1 3343
+D3
+~
+~
+0 -1 3341
+S
+#3343
+Gantry~
+~
+33554432 0 0 1
+D1
+~
+~
+0 -1 3344
+D3
+~
+~
+0 -1 3342
+S
+#3344
+Gantry~
+~
+33554432 0 0 1
+D1
+~
+~
+0 -1 3345
+D3
+~
+~
+0 -1 3343
+S
+#3345
+Gantry&c~
+~
+33554432 0 0 1
+D1
+~
+~
+0 -1 3346
+D3
+~
+~
+0 -1 3344
+S
+#3346
+Gantry Airlock~
+~
+33554432 0 0 1
+D1
+~
+~
+0 -1 3347
+D3
+~
+~
+0 -1 3345
+S
+#3347
+Durasteel Coridor~
+You are walking through a passageway that has been mined out of the interior of
+the asteroid, this hall is lined by some heavy durasteel framing with sheets 
+of it lining the exterior. Beneath your feet gravity plates line the entire 
+deck, giving the needed gravity the asteroid doesn't have. This particular 
+coridor is dimly lit with a single flourescent lightbar running down the 
+center of the ceiling as far as you can see in either direction. 
+~
+33554432 0 0 1
+D1
+~
+~
+0 -1 3348
+D3
+~
+~
+0 -1 3346
+S
+#3348
+Durasteel Coridor~
+You are walking through a passageway that has been mined out of the interior of
+the asteroid, this hall is lined by some heavy durasteel framing with sheets 
+of it lining the exterior. Beneath your feet gravity plates line the entire 
+deck, giving the needed gravity the asteroid doesn't have. This particular 
+coridor is dimly lit with a single flourescent lightbar running down the 
+center of the ceiling as far as you can see in either direction. 
+~
+33554432 0 0 1
+D1
+~
+~
+0 -1 3349
+D3
+~
+~
+0 -1 3347
+S
+#3349
+Hub~
+~
+33554432 0 0 1
+D0
+~
+~
+0 -1 3350
+D1
+~
+~
+0 -1 3354
+D2
+~
+~
+0 -1 3352
+D3
+~
+~
+0 -1 3348
+D4
+~
+~
+0 -1 3356
+D5
+~
+~
+0 -1 3358
+D6
+~
+~
+0 -1 3360
+D7
+~
+~
+0 -1 3363
+D8
+~
+~
+0 -1 3361
+D9
+~
+~
+0 -1 3362
+S
+#3350
+Durasteel Coridor~
+You are walking through a passageway that has been mined out of the interior of
+the asteroid, this hall is lined by some heavy durasteel framing with sheets 
+of it lining the exterior. Beneath your feet gravity plates line the entire 
+deck, giving the needed gravity the asteroid doesn't have. This particular 
+coridor is dimly lit with a single flourescent lightbar running down the 
+center of the ceiling as far as you can see in either direction. 
+~
+33554432 0 0 1
+D0
+~
+~
+0 -1 3351
+D2
+~
+~
+0 -1 3349
+S
+#3351
+Durasteel Coridor~
+You are walking through a passageway that has been mined out of the interior of
+the asteroid, this hall is lined by some heavy durasteel framing with sheets 
+of it lining the exterior. Beneath your feet gravity plates line the entire 
+deck, giving the needed gravity the asteroid doesn't have. This particular 
+coridor is dimly lit with a single flourescent lightbar running down the 
+center of the ceiling as far as you can see in either direction. 
+~
+33554432 0 0 1
+D2
+~
+~
+0 -1 3350
+S
+#3352
+Durasteel Coridor~
+You are walking through a passageway that has been mined out of the interior of
+the asteroid, this hall is lined by some heavy durasteel framing with sheets 
+of it lining the exterior. Beneath your feet gravity plates line the entire 
+deck, giving the needed gravity the asteroid doesn't have. This particular 
+coridor is dimly lit with a single flourescent lightbar running down the 
+center of the ceiling as far as you can see in either direction. 
+~
+33554432 0 0 1
+D0
+~
+~
+0 -1 3349
+D2
+~
+~
+0 -1 3353
+S
+#3353
+Durasteel Coridor~
+You are walking through a passageway that has been mined out of the interior of
+the asteroid, this hall is lined by some heavy durasteel framing with sheets 
+of it lining the exterior. Beneath your feet gravity plates line the entire 
+deck, giving the needed gravity the asteroid doesn't have. This particular 
+coridor is dimly lit with a single flourescent lightbar running down the 
+center of the ceiling as far as you can see in either direction. 
+~
+33554432 0 0 1
+D0
+~
+~
+0 -1 3352
+S
+#3354
+Durasteel Coridor~
+You are walking through a passageway that has been mined out of the interior of
+the asteroid, this hall is lined by some heavy durasteel framing with sheets 
+of it lining the exterior. Beneath your feet gravity plates line the entire 
+deck, giving the needed gravity the asteroid doesn't have. This particular 
+coridor is dimly lit with a single flourescent lightbar running down the 
+center of the ceiling as far as you can see in either direction. 
+~
+33554432 0 0 1
+D1
+~
+~
+0 -1 3355
+D3
+~
+~
+0 -1 3349
+S
+#3355
+Durasteel Coridor~
+You are walking through a passageway that has been mined out of the interior of
+the asteroid, this hall is lined by some heavy durasteel framing with sheets 
+of it lining the exterior. Beneath your feet gravity plates line the entire 
+deck, giving the needed gravity the asteroid doesn't have. This particular 
+coridor is dimly lit with a single flourescent lightbar running down the 
+center of the ceiling as far as you can see in either direction. 
+~
+33554432 0 0 1
+D3
+~
+~
+0 -1 3354
+S
+#3356
+Durasteel Coridor~
+~
+33554432 0 0 1
+D4
+~
+~
+0 -1 3357
+D5
+~
+~
+0 -1 3349
+S
+#3357
+Durasteel Coridor~
+~
+33554432 0 0 1
+D4
+~
+~
+0 -1 3364
+D5
+~
+~
+0 -1 3356
+S
+#3358
+Durasteel Coridor~
+~
+33554432 0 0 1
+D4
+~
+~
+0 -1 3349
+D5
+~
+~
+0 -1 3359
+S
+#3359
+Durasteel Coridor~
+~
+33554432 0 0 1
+D4
+~
+~
+0 -1 3358
+S
+#3360
+Floating in a void~
+~
+33554432 0 0 1
+D9
+~
+~
+0 -1 3349
+S
+#3361
+Floating in a void~
+~
+33554432 0 0 1
+D7
+~
+~
+0 -1 3349
+S
+#3362
+Floating in a void~
+~
+33554432 0 0 1
+D6
+~
+~
+0 -1 3349
+S
+#3363
+Floating in a void~
+~
+33554432 0 0 1
+D8
+~
+~
+0 -1 3349
+S
+#3364
+Dockingbay 42R~
+~
+33554432 0 0 1
+D5
+~
+~
+0 -1 3357
+S
+#3365
+Floating in a void~
+~
+33554440 0 0 1
+S
+#3366
+Floating in a void~
+~
+33554440 0 0 1
+S
+#3367
+Floating in a void~
+~
+33554440 0 0 1
+S
+#3368
+Floating in a void~
+~
+33554440 0 0 1
+S
+#3369
+Floating in a void~
+~
+33554440 0 0 1
+S
+#3370
+Floating in a void~
+~
+33554440 0 0 1
+S
+#3371
+Floating in a void~
+~
+33554440 0 0 1
+S
+#3372
+Floating in a void~
+~
+33554440 0 0 1
+S
+#3373
+Floating in a void~
+~
+33554440 0 0 1
+S
+#3374
+Floating in a void~
+~
+33554440 0 0 1
+S
+#3375
+Floating in a void~
+~
+33554440 0 0 1
+S
+#3376
+Floating in a void~
+~
+33554440 0 0 1
+S
+#3377
+Floating in a void~
+~
+33554440 0 0 1
+S
+#3378
+Floating in a void~
+~
+33554440 0 0 1
+S
+#3379
+Floating in a void~
+~
+33554440 0 0 1
+S
+#3380
+Floating in a void&G~
+~
+33554440 0 0 1
+S
+#3381
+Open Field~
+This large recently mowed field looks like you have steped back in time, asside
+from the various ships parked here and the occasional crate this place looks
+to be from an entirely different time. There is a small hardpacked dirt road
+leading north and there is not one scrap of any sophisticated technology along
+it whatso ever. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3382
+S
+#3382
+Dirt Road~
+This dirt road has been packed down by centurys of travel, is runs in either
+direction for miles and to a town north of here. Its only about 8 feet wide
+and has ruts worn into it from ceaseless cart travel. Over head is a small
+canopy created by some fairly leafy trees. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3383
+D2
+~
+~
+0 -1 3381
+S
+#3383
+Bridge~
+say A long wooden planked bridge spans the small river here. It goes for about
+40 feet before meeting the other side at a large gate built right up against
+the river bank. The bridge itself looks sturdy enough to hold even the
+heaviest cartloads without even the slightest creak or groan, the gate is also
+made of heavy planking with metal strips bolted acrossed them.
+~
+0 0 1
+D0
+~
+~
+7 3371 3384
+D2
+~
+~
+0 -1 3382
+S
+#3384
+Gatehouse~
+This small structure is made from stones held together by a crude form of
+mortar but appears to be relatively strong. At the southern side of it is a
+heavy wood planked door and to the west is a small guard post from which you
+can keep an eye on the bridge. The only other opening is to the north leading
+out into the city.
+~
+0 0 1
+D0
+~
+~
+0 -1 3386
+D2
+~
+~
+7 3371 3383
+D3
+~
+~
+0 -1 3385
+S
+#3385
+Guardhouse~
+This small guardhouse is made almost exclusively of bricks, including the roof,
+you could almost call it a bunker. In the southeast wall is an archer slit
+used for scaning the bridge and if need be warding off any unwanteds with a
+hail of arrows. The ones in the rack look particularly nasty with sharps
+points and barbs on them. 
+~
+16 0 0 1
+D1
+~
+~
+0 -1 3384
+D3
+~
+~
+8388643 -1 3496
+D8
+~
+~
+33554432 -1 3383
+S
+#3386
+Dirt Street~
+This street is made of hard packed earth and is about 20 feet wide with
+buildings on either side. Most of the streets through the main part of wilksen
+are like this. The occasionally citizen moves by not really noticing you as
+they go about their daily routine. At this point a couple of the streets merge
+at a resonably sized intersection, to the east and west are a couple streets
+running along the inside of the town walls, to the south is a small gatehouse
+leading out over a bridge and to your north is the main part of Wilksen. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3387
+D1
+~
+~
+0 -1 3398
+D2
+~
+~
+0 -1 3384
+D3
+~
+~
+0 -1 3390
+S
+#3387
+Dirt Street~
+This street is made of hard packed earth and is about 20 feet wide with
+buildings on either side. Most of the streets through the main part of wilksen
+are like this. The occasionally citizen moves by not really noticing you as
+they go about their daily routine. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3388
+D2
+~
+~
+0 -1 3386
+D3
+~
+~
+0 -1 3413
+S
+#3388
+Dirt Street~
+This street is made of hard packed earth and is about 20 feet wide with
+buildings on either side. Most of the streets through the main part of wilksen
+are like this. The occasionally citizen moves by not really noticing you as
+they go about their daily routine. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3389
+D2
+~
+~
+0 -1 3387
+D3
+~
+~
+0 -1 3406
+S
+#3389
+Dirt Crossroads~
+This street is made of hard packed earth and is about 20 feet wide with
+buildings on either side. Most of the streets through the main part of wilksen
+are like this. The occasionally citizen moves by not really noticing you as
+they go about their daily routine. At this point a couple of the streets merge
+at a resonably sized intersection, off to the north is the market square, well
+more diamond than square, where the common citizen can peddle their goods,
+around to the south east and west are streets leading off into the rest of
+Wilksen. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3401
+D1
+~
+~
+0 -1 3399
+D2
+~
+~
+0 -1 3388
+D3
+~
+~
+0 -1 3400
+S
+#3390
+City Wall~
+This street is made of hard packed earth and is about 20 feet wide with
+buildings on either side. Most of the streets through the main part of wilksen
+are like this. The occasionally citizen moves by not really noticing you as
+they go about their daily routine. Towering over you to your side is a heavy
+stone wall going up about 30 feet, at the top of which is a walkway and a few
+protections for the guards who walk it. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3391
+D1
+~
+~
+0 -1 3386
+S
+#3391
+Dirt Crossroads~
+This street is made of hard packed earth and is about 20 feet wide with
+buildings on either side. Most of the streets through the main part of wilksen
+are like this. The occasionally citizen moves by not really noticing you as
+they go about their daily routine. At this point a couple of the streets merge
+at a resonably sized intersection, off to the west is the western gate leading
+deep into the forest while to the north and south are streets running along
+the inside of the stone wall, back east is the central part of Wilksen. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3392
+D1
+~
+~
+0 -1 3400
+D2
+~
+~
+0 -1 3390
+D3
+~
+~
+0 -1 3414
+S
+#3392
+City Wall~
+This street is made of hard packed earth and is about 20 feet wide with
+buildings on either side. Most of the streets through the main part of wilksen
+are like this. The occasionally citizen moves by not really noticing you as
+they go about their daily routine. Towering over you to your side is a heavy
+stone wall going up about 30 feet, at the top of which is a walkway and a few
+protections for the guards who walk it. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3393
+D2
+~
+~
+0 -1 3391
+S
+#3393
+City Wall~
+This street is made of hard packed earth and is about 20 feet wide with
+buildings on either side. Most of the streets through the main part of wilksen
+are like this. The occasionally citizen moves by not really noticing you as
+they go about their daily routine. Towering over you to your side is a heavy
+stone wall going up about 30 feet, at the top of which is a walkway and a few
+protections for the guards who walk it. 
+~
+0 0 1
+D1
+~
+~
+0 -1 3394
+D2
+~
+~
+0 -1 3392
+S
+#3394
+Before the Priory~
+You stand just outside the gatehouse of the monestary, as you gaze over the
+exterior of the place pleasact scents waft through the air of deliscous foods
+and fresh hewn fields. 
+~
+0 0 1
+D0
+~
+~
+3 -1 3441
+D1
+~
+~
+0 -1 3395
+D2
+~
+~
+0 -1 3403
+D3
+~
+~
+0 -1 3393
+S
+#3395
+City Wall~
+This street is made of hard packed earth and is about 20 feet wide with
+buildings on either side. Most of the streets through the main part of wilksen
+are like this. The occasionally citizen moves by not really noticing you as
+they go about their daily routine. Towering over you to your side is a heavy
+stone wall going up about 30 feet, at the top of which is a walkway and a few
+protections for the guards who walk it. 
+~
+0 0 1
+D2
+~
+~
+0 -1 3396
+D3
+~
+~
+0 -1 3394
+S
+#3396
+City Wall~
+This street is made of hard packed earth and is about 20 feet wide with
+buildings on either side. Most of the streets through the main part of wilksen
+are like this. The occasionally citizen moves by not really noticing you as
+they go about their daily routine. Towering over you to your side is a heavy
+stone wall going up about 30 feet, at the top of which is a walkway and a few
+protections for the guards who walk it. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3395
+D2
+~
+~
+0 -1 3397
+S
+#3397
+Dirt Crossroads~
+This street is made of hard packed earth and is about 20 feet wide with
+buildings on either side. Most of the streets through the main part of wilksen
+are like this. The occasionally citizen moves by not really noticing you as
+they go about their daily routine. At this point a couple of the streets merge
+at a resonably sized intersection, leading east is the residential area of
+Wilksen, thanks to the extra income provided by the generous upper class of
+Wilksen it was able to be paved with cobble stones rather than be left to
+muddy up when it rains. Going north and south is a road running along the
+inside of the eastern wall of Wilksen, west leading back into the heart of the
+town. You notice that this entry/exit point of the city doesn't have a full
+gate house, just a moderate sized wood gate that can be closed during a siege,
+after all, wouldn't wanna lock the pub regulars from their homes at night.
+~
+0 0 1
+D0
+~
+~
+0 -1 3396
+D2
+~
+~
+0 -1 3398
+D3
+~
+~
+0 -1 3399
+S
+#3398
+City Wall~
+This street is made of hard packed earth and is about 20 feet wide with
+buildings on either side. Most of the streets through the main part of wilksen
+are like this. The occasionally citizen moves by not really noticing you as
+they go about their daily routine. Towering over you to your side is a heavy
+stone wall going up about 30 feet, at the top of which is a walkway and a few
+protections for the guards who walk it. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3397
+D3
+~
+~
+0 -1 3386
+S
+#3399
+Dirt Street~
+This street is made of hard packed earth and is about 20 feet wide with
+buildings on either side. Most of the streets through the main part of wilksen
+are like this. The occasionally citizen moves by not really noticing you as
+they go about their daily routine. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3408
+D1
+~
+~
+0 -1 3397
+D2
+~
+~
+0 -1 3409
+D3
+~
+~
+0 -1 3389
+S
+#3400
+Dirt Street~
+This street is made of hard packed earth and is about 20 feet wide with
+buildings on either side. Most of the streets through the main part of wilksen
+are like this. The occasionally citizen moves by not really noticing you as
+they go about their daily routine. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3407
+D1
+~
+~
+0 -1 3389
+D2
+~
+~
+0 -1 3406
+D3
+~
+~
+0 -1 3391
+S
+#3401
+Market Place~
+You wander through the Market Place run by the townsfolk, around you are many
+stalls with many different kinds of goods and materials all waiting to be
+purchased, your nose is taunted with the smells of fresh baked goods, roasts
+and all sorts of delicacies. There is so much your not even sure where to
+start..
+~
+0 0 1
+D0
+~
+~
+0 -1 3402
+D2
+~
+~
+0 -1 3389
+D6
+~
+~
+0 -1 3405
+D7
+~
+~
+0 -1 3404
+S
+#3402
+Market Place~
+You wander through the Market Place run by the townsfolk, around you are many
+stalls with many different kinds of goods and materials all waiting to be
+purchased, your nose is taunted with the smells of fresh baked goods, roasts
+and all sorts of delicacies. There is so much your not even sure where to
+start..
+~
+0 0 1
+D0
+~
+~
+0 -1 3403
+D1
+~
+~
+0 -1 3405
+D2
+~
+~
+0 -1 3401
+D3
+~
+~
+0 -1 3404
+S
+#3403
+Market Place~
+You wander through the Market Place run by the townsfolk, around you are many
+stalls with many different kinds of goods and materials all waiting to be
+purchased, your nose is taunted with the smells of fresh baked goods, roasts
+and all sorts of delicacies. There is so much your not even sure where to
+start..
+~
+0 0 1
+D0
+~
+~
+0 -1 3394
+D2
+~
+~
+0 -1 3402
+D8
+~
+~
+0 -1 3405
+D9
+~
+~
+0 -1 3404
+S
+#3404
+Market Place~
+You wander through the Market Place run by the townsfolk, around you are many
+stalls with many different kinds of goods and materials all waiting to be
+purchased, your nose is taunted with the smells of fresh baked goods, roasts
+and all sorts of delicacies. There is so much your not even sure where to
+start.. 
+~
+0 0 1
+D1
+~
+~
+0 -1 3402
+D6
+~
+~
+0 -1 3403
+D8
+~
+~
+0 -1 3401
+S
+#3405
+Market Place~
+You wander through the Market Place run by the townsfolk, around you are many
+stalls with many different kinds of goods and materials all waiting to be
+purchased, your nose is taunted with the smells of fresh baked goods, roasts
+and all sorts of delicacies. There is so much your not even sure where to
+start..
+~
+0 0 1
+D3
+~
+~
+0 -1 3402
+D7
+~
+~
+0 -1 3403
+D9
+~
+~
+0 -1 3401
+S
+#3406
+Wilksen town Bank~
+This inside of this building shows the small influence outsiders have caused in
+this town, instead of being the normal wood construct this building actually
+uses more modern materials such as duraplast. In the back is a single
+terminal, the only piece of technology here, which allows the clerks to adjust
+peoples accounts. There are also a few older looking vaults where the old
+tangible forms of curency were stored.
+~
+152 0 0 1
+D0
+~
+~
+0 -1 3400
+D1
+~
+~
+0 -1 3388
+S
+#3407
+Wilksen Smithy~
+This large shop looks like a smithy from ancient times. Up front are racks of
+various finished articles for sale while further back in the shop are a couple
+forges with blacksmiths banging away at anvils and apprentices assisting where
+needed. 
+~
+24 0 0 1
+D0
+~
+~
+0 -1 3495
+D2
+~
+~
+0 -1 3400
+S
+#3408
+Empty Shop~
+This small building is barren and devoid of any kind of furniture or decoration
+at the moment. 
+~
+0 0 1
+D2
+~
+~
+0 -1 3399
+S
+#3409
+Wilksen town Inn~
+~
+512 0 0 1
+D0
+~
+~
+0 -1 3399
+D2
+~
+~
+0 -1 3412
+D4
+~
+~
+0 -1 3410
+S
+#3410
+Hallway~
+~
+512 0 0 1
+D2
+~
+~
+0 -1 3411
+D5
+~
+~
+0 -1 3409
+S
+#3411
+Bedroom~
+In this small cozy attic bedroom are several beds for guests to use incase they
+need to stay overnight or something, the room is well kept and warm on winter
+nights and cool on summer ones. This looks like the perfect place to take a
+rest and the surroundings only reasure your safety 
+~
+524800 0 0 1
+D0
+~
+~
+0 -1 3410
+S
+#3412
+Pub~
+~
+512 0 0 1
+D0
+~
+~
+0 -1 3409
+S
+#3413
+Empty Shop~
+This small building is barren and devoid of any kind of furniture or decoration
+at the moment. 
+~
+0 0 1
+D1
+~
+~
+0 -1 3387
+S
+#3414
+Gatehouse~
+~
+8 0 0 1
+D1
+~
+~
+0 -1 3391
+D3
+~
+~
+0 -1 3523
+S
+#3415
+Floating in a void~
+~
+8 0 0 1
+S
+#3416
+Cobblestone Street~
+~
+0 0 1
+D1
+~
+~
+0 -1 3417
+D3
+~
+~
+8388647 -1 3397
+S
+#3417
+Cobblestone Street~
+~
+0 0 1
+D0
+~
+~
+0 -1 3420
+D1
+~
+~
+0 -1 3418
+D2
+~
+~
+0 -1 3423
+D3
+~
+~
+0 -1 3416
+S
+#3418
+Cobblestone Street~
+~
+0 0 1
+D0
+~
+~
+0 -1 3426
+D1
+~
+~
+0 -1 3419
+D2
+~
+~
+0 -1 3427
+D3
+~
+~
+0 -1 3417
+S
+#3419
+Cobblestone Street~
+~
+0 0 1
+D0
+~
+~
+0 -1 3431
+D1
+~
+~
+0 -1 3425
+D2
+~
+~
+0 -1 3433
+D3
+~
+~
+0 -1 3418
+S
+#3420
+Cobblestone Street~
+~
+0 0 1
+D0
+~
+~
+0 -1 3421
+D2
+~
+~
+0 -1 3417
+S
+#3421
+Cobblestone Street~
+~
+0 0 1
+D0
+~
+~
+0 -1 3422
+D2
+~
+~
+0 -1 3420
+S
+#3422
+Cobblestone Street~
+~
+0 0 1
+D2
+~
+~
+0 -1 3421
+S
+#3423
+Cobblestone Street~
+~
+0 0 1
+D0
+~
+~
+0 -1 3417
+D2
+~
+~
+0 -1 3424
+S
+#3424
+Cobblestone Street~
+~
+0 0 1
+D0
+~
+~
+0 -1 3423
+S
+#3425
+Frontgate to Wilksen Mannor~
+~
+0 0 1
+D1
+~
+~
+0 -1 3434
+D3
+~
+~
+0 -1 3419
+S
+#3426
+Cobblestone Street~
+~
+0 0 1
+D0
+~
+~
+0 -1 3429
+D2
+~
+~
+0 -1 3418
+S
+#3427
+Cobblestone Street~
+~
+0 0 1
+D0
+~
+~
+0 -1 3418
+D2
+~
+~
+0 -1 3428
+S
+#3428
+Cobblestone Street~
+~
+0 0 1
+D0
+~
+~
+0 -1 3427
+S
+#3429
+Cobblestone Street~
+~
+0 0 1
+D0
+~
+~
+0 -1 3430
+D2
+~
+~
+0 -1 3426
+S
+#3430
+Cobblestone Street~
+~
+0 0 1
+D2
+~
+~
+0 -1 3429
+S
+#3431
+Cobblestone Street~
+~
+0 0 1
+D0
+~
+~
+0 -1 3432
+D2
+~
+~
+0 -1 3419
+S
+#3432
+Cobblestone Street~
+~
+0 0 1
+D2
+~
+~
+0 -1 3431
+S
+#3433
+Cobblestone Street~
+~
+0 0 1
+D0
+~
+~
+0 -1 3419
+S
+#3434
+Front Garden~
+~
+0 0 1
+D1
+~
+~
+0 -1 3435
+D3
+~
+~
+0 -1 3425
+S
+#3435
+Foyer~
+~
+0 0 1
+D0
+~
+~
+0 -1 3436
+D1
+~
+~
+0 -1 3437
+D2
+~
+~
+0 -1 3487
+D3
+~
+~
+0 -1 3434
+D6
+~
+~
+0 -1 3438
+D8
+~
+~
+0 -1 3439
+S
+#3436
+Hall~
+~
+0 0 1
+D0
+~
+~
+0 -1 3485
+D1
+~
+~
+0 -1 3484
+D2
+~
+~
+0 -1 3435
+S
+#3437
+Hall~
+~
+0 0 1
+D1
+~
+~
+0 -1 3490
+D3
+~
+~
+0 -1 3435
+S
+#3438
+Stairway~
+~
+0 0 1
+D4
+~
+~
+0 -1 3551
+D9
+~
+~
+0 -1 3435
+S
+#3439
+Stairway~
+~
+0 0 1
+D4
+~
+~
+0 -1 3550
+D7
+~
+~
+0 -1 3435
+S
+#3440
+Second Floor~
+~
+0 0 1
+D7
+~
+~
+0 -1 3551
+D9
+~
+~
+0 -1 3550
+S
+#3441
+Priory Gatehouse~
+You are withing the confines of the monestary's gate house, the large doors
+here can be closed to seal off the Monestary from the rest of the town.
+~
+16 0 0 1
+D0
+~
+~
+0 -1 3443
+D2
+~
+~
+3 -1 3394
+D4
+~
+~
+0 -1 3442
+S
+#3442
+Atop the Gatehouse~
+You are ontop of the monestary's gatehouse, there is a small wooden roof over
+you to keep this area dry on wet days, before you is some sort of cranking
+system. 
+~
+0 0 1
+D2
+~
+~
+33554432 -1 3394
+D5
+~
+~
+0 -1 3441
+S
+#3443
+Courtyard~
+You are standing in a large courtyard inside a monestary, off to the west a
+small bit is a well and to your east is what appears to be the stables, a
+couple paths run off to the north east and north west and dead ahead stands a
+magnificient looking structure that could only be the cathedral.
+~
+0 0 1
+D0
+~
+~
+0 -1 3457
+D1
+~
+~
+0 -1 3444
+D2
+~
+~
+0 -1 3441
+D6
+~
+~
+0 -1 3446
+D7
+~
+~
+0 -1 3447
+E
+well~
+As you peer down into a small well you see crystal clear water at the bottom
+that looks very refreshing, around the sides of the well are your basic
+stonework. 
+~
+E
+cathedral~
+Standing boldly above all the other buildings is the cathedral, you can see two
+spires, the one on the left a bit higher than the one on the right. 
+~
+S
+#3444
+Stables~
+You have steped into a small barn type building, you can smell fresh hay and
+hear horses stiring in their stalls, this looks like a safe place you could
+leave your steed while visiting the monestary. 
+~
+16 0 0 1
+D3
+~
+~
+0 -1 3443
+D10
+~
+stall~
+524288 -1 3445
+E
+stall~
+This is your basic horse stall you should be able to leave your horse in it
+while your at the monestary, there are a few stable hands working about so you
+don't have to worry about thieves and such. 
+~
+S
+#3445
+Stables~
+This is the basic horses stall, in one corner is a bucket of water and a tray
+of oats and on the are the owners tack and supplies. 
+~
+16 0 0 1
+D3
+~
+~
+0 -1 3444
+S
+#3446
+Dirt Path~
+To your Southwest is the courtyard and to the north is the crossing of a few
+paths leading to various buildings, to your left is the wall of the cathedral.
+~
+0 0 1
+D0
+~
+~
+0 -1 3453
+D9
+~
+~
+0 -1 3443
+S
+#3447
+Dirt Path~
+This path moves around the western side of the cathedral, off to the southwest
+should be the store house where the priory would keep all its goods until
+needed and used, further to the north appears to be a few more buildings.
+~
+0 0 1
+D0
+~
+~
+0 -1 3448
+D8
+~
+~
+0 -1 3443
+D9
+~
+~
+0 -1 3449
+E
+storehouse~
+This is a good sized structure that is a little on the long side, it probably
+contain huge ammounts of grain, seed and all the necesitys of everyday life.
+~
+S
+#3448
+Dirt Path~
+Here several buildings come together, most prominently the cathedral to the
+east, but your nose and stomach both alert you quite quickly to the presence
+of the kitchen to the southwest, over to the northwest appears to be the study
+where the monks go to learn. 
+~
+0 0 1
+D1
+~
+~
+3 -1 3465
+D2
+~
+~
+0 -1 3447
+D7
+~
+~
+0 -1 3452
+D9
+~
+~
+0 -1 3451
+E
+kitchen~
+You can't really see much but your nose sure has alot to say, it smells like a
+roasting ham and fresh baked bread but you can also smell other things like
+salted fish, pungeant wine and various herbs. 
+~
+S
+#3449
+Storage Barn~
+Your in the front of a long store house, all around you are various containers
+with goods in them.. 
+~
+16 0 0 1
+D6
+~
+~
+0 -1 3447
+D9
+~
+~
+0 -1 3450
+E
+containers~
+These one appear to be bag of oats and grains, a few are marked as beans and
+other such dry foods. 
+~
+S
+#3450
+Storage Barn~
+You have come to the back of the store house all around are various sizes of
+containers now.. 
+~
+16 0 0 1
+D6
+~
+~
+0 -1 3449
+E
+containers~
+These ones a various kegs, most are the midsized ones but a few are are large
+ones mounted in brackets against the wall, you check the markings on them and
+find some are wine and beer of varying streangths. 
+~
+S
+#3451
+Kitchen~
+You are standing inside the kitchen of the monestary, before you are many
+things including a large number of ovens and fires on on which to cook, and a
+long table cover in trays of various things. 
+~
+16 0 0 1
+D6
+~
+~
+0 -1 3448
+E
+trays~
+These trays are filled with small rolls that will be used in the monks meals.
+~
+E
+ovens~
+There are about ten of these large ovens, you could cook up alot of food in
+short time by using them all, no doubt the monestary does and gives away alot
+of the food as charity. 
+~
+S
+#3452
+Study House~
+This is a circular room that goes up and out steps so that the monks can sit
+around the head teacher and learn. 
+~
+16 0 0 1
+D8
+~
+~
+0 -1 3448
+E
+steps~
+The steps start at the base circle with has about a 10 foot diameter, and then
+step up about 2 and a half feet before moving back 3 feet repeating 4 times.
+~
+S
+#3453
+Dirt Path~
+You are at the intersection of several buildings, to the north you have the
+priors personal house, to the west a door into the cathedral, to the east the
+monestary's library and to the southeast, the dormitory. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3456
+D1
+~
+~
+0 -1 3455
+D2
+~
+~
+0 -1 3446
+D3
+~
+~
+3 -1 3464
+D8
+~
+~
+0 -1 3454
+S
+#3454
+Dormitory~
+This is where the monks sleep during the night, all along the walls are bunks
+that look somewhat comfy. 
+~
+16 0 0 1
+D7
+~
+~
+0 -1 3453
+S
+#3455
+Library~
+You are inside the monestary's library, this is where the monestary keeps its
+collection of old scrolls and tomes.  All along the back and side walls are
+shelves covered in books and on special stands are the scrolls
+~
+16 0 0 1
+D3
+~
+~
+0 -1 3453
+S
+#3456
+Priors House~
+This is the Prior of the monestary's private bedroom, there is a bed against
+one wall of the room and a small dressar in the corner. 
+~
+16 0 0 1
+D2
+~
+~
+0 -1 3453
+S
+#3457
+Cathedral Steps~
+You on the steps of a great cathedral, above you tower its spires and before
+you are its two great doors. 
+~
+16 0 0 1
+D0
+~
+~
+3 -1 3458
+D2
+~
+~
+0 -1 3443
+E
+spires~
+Above you stand two great spires, with large bells at the top no doubt. 
+~
+E
+doors~
+Before you are are two massive wooden doors made from large planks of oak bound
+with iron. 
+~
+S
+#3458
+Entry Hall~
+You are just inside the cathedral doors, before you spans a cavern of a
+building, side you see an aisle and above that giant windows that let in
+tremendous amounts of light 
+~
+16 0 0 1
+D0
+~
+~
+0 -1 3459
+D2
+~
+~
+3 -1 3457
+E
+aisle~
+The aisle is a small stone path on the outside of the pews allowing for
+descreet travel along the length of the church, just above the aisles are a
+stone balcony that runs along under the stained glass windows. 
+~
+E
+windows~
+These windows tower more than thirty feet above and span the entire leangth of
+the wall with the occasional collum seperating it. The ammount of light
+entering the windows not only lights up the entire chapel but the colors cause
+a wonderful affect giving the entire building an aura of sorts
+~
+S
+#3459
+Upper-South Wing~
+You are now between the middle of the chapel where the wings cross and the
+entry way where the great oaken doors stand, on each side of you are rows and
+rows of pews where the worshipers would sit during ceremonys. 
+~
+16 0 0 1
+D0
+~
+~
+0 -1 3460
+D2
+~
+~
+0 -1 3458
+E
+pews~
+There have to be hundreds of them they are simple but beutifally crafted oak
+benchs, the varnish applied to them has been highly buffed and polished and
+they look almost brand new. 
+~
+E
+windows~
+These windows tower more than thirty feet above and span the entire leangth of
+the wall with the occasional collum seperating it. The ammount of light
+entering the windows not only lights up the entire chapel but the colors cause
+a wonderful affect giving the entire building an aura of sorts
+~
+S
+#3460
+Cathedral Center~
+You are stand in the heart of the Cathedral, the four wings spread out from you
+to the north, south, east and west. In front of you stands the altar and all
+around are candles. As your gaze travels upwards it comes to a breathtaking
+dome that covers the center portion of the cathedral.
+~
+16 0 0 1
+D0
+~
+~
+0 -1 3461
+D1
+~
+~
+0 -1 3464
+D2
+~
+~
+0 -1 3459
+D3
+~
+~
+0 -1 3465
+E
+dome~
+Above you is stunning dome made from, starting at its edge and moving inward,
+polished granite, marble and then crystal that has intricate etching work done
+into it which refractes the light into a myriad of colors. 
+~
+E
+candles~
+On each side of the altar are stands with rows and rows of candles, you wonder
+what they would need all of them for since so much light is already provided
+by the great windows that run the entire leangth of the church, but then
+recall that monks hold midnight services each night. 
+~
+E
+altar~
+The altar is made of highly polished marble and has a bright white clothe laid
+over it, around it are various candles and holy symbols and things. 
+~
+S
+#3461
+Floating in a void~
+You move back around behind the altar and enter the northern area of the
+church, built into the north wall of the cathedral is a gigantic pipe organ,
+it is flanked on each side by pews for choirs to sit in while not singing. As
+you move further back behind the place where the organist sits you come to a
+trap door in the floor leading down.
+~
+16 0 0 1
+D2
+~
+~
+0 -1 3460
+D5
+~
+~
+0 -1 3462
+E
+organ~
+This pipe organ appears to be built literally right into the cathedral, at the
+base of it are the bellows one would pump while the organist sat on the bench
+above them playing, it must take alot of skill for someone to play this thing,
+there are 5 rows of keys for the different sets of pipe and ALOT of pedals for
+the bass pipes. 
+~
+S
+#3462
+Crypt~
+~
+16 0 0 1
+D2
+~
+~
+0 -1 3463
+D4
+~
+~
+0 -1 3461
+S
+#3463
+Crypt~
+~
+16 0 0 1
+D0
+~
+~
+0 -1 3462
+S
+#3464
+East Wing~
+You walk slowly into the eastern wing of the cathedral and notice that along
+the north and south walls there are alcoves with statues in them, off to the
+south west is a small door leading someplace. To the east is another door,
+sort of a minuature of the main doors, probably leading outside.
+~
+16 0 0 1
+D1
+~
+~
+3 -1 3453
+D3
+~
+~
+0 -1 3460
+D9
+~
+~
+0 -1 3475
+D10
+~
+alcove~
+526336 -1 3546
+E
+alcove~
+There are lots of alcoves filled with the statues of saints and kings like in
+the west wing but here there are a few that are still empty. 
+~
+S
+#3465
+West Wing~
+You move into the western wing of the church and notice rows of alcoves with
+statues of past kings and saints along the walls instead of the Aisles that
+were in the southern part of the church. To the south east you notice a door
+set between two alcoves. To the west is another heavy looking oak door.
+~
+16 0 0 1
+D1
+~
+~
+0 -1 3460
+D3
+~
+~
+3 -1 3448
+D8
+~
+~
+0 -1 3466
+E
+alcove~
+These alcoves run along the northern and southern walls of this wing, each
+contains the statue of a king or saint from another time. 
+~
+S
+#3466
+West Staircase~
+You have entered a spiraling staircase that leads from the west wing to the
+balcony above the aisle on the western side of the south wing. 
+~
+16 0 0 1
+D4
+~
+~
+0 -1 3467
+D7
+~
+~
+0 -1 3465
+S
+#3467
+Above the Isle~
+As you move along the balcony you get a great view of all the light coming in
+through the eastern windows, further to the south you see a door set in the
+wall. 
+~
+16 0 0 1
+D2
+~
+~
+0 -1 3468
+D5
+~
+~
+0 -1 3466
+E
+windows~
+Since not so much light is coming in on this side at the moment you can study
+the windows a bit closer without being blinded, you can easily make out the
+picture of the last supper, an old story from one of the ancient human
+religions. 
+~
+S
+#3468
+Above the Isle~
+As you move along the balcony you get a great view of all the light coming in
+through the eastern windows, further to the south you see a door set in the
+wall. 
+~
+16 0 0 1
+D0
+~
+~
+0 -1 3467
+D2
+~
+~
+0 -1 3469
+E
+windows~
+Since not so much light is coming in on this side at the moment you can study
+the windows a bit closer without being blinded, you can easily make out the
+picture of the last supper, an old story from one of the ancient human
+religeons. 
+~
+S
+#3469
+Bell Tower~
+You are in the lower portion of one of the cathedrals bell towers, before you
+is the rope you pull to ring the bells and leading around in the inside of the
+outerwalls are stairs leading up, this tower differs from the other only in
+its shear height, it must be a good 35 feet taller than the other from this
+view. 
+~
+16 0 0 1
+D0
+~
+~
+0 -1 3468
+D4
+~
+~
+0 -1 3470
+E
+ropes~
+There are several ropes here, likely for many different sized bells, in the
+middle is a particularly thick one with lead counter wieghts on it, this one
+must be for the largest of the bells. 
+~
+S
+#3470
+Bell Tower~
+~
+16 0 0 1
+D4
+~
+~
+0 -1 3471
+D5
+~
+~
+0 -1 3469
+S
+#3471
+Bell Tower~
+~
+16 0 0 1
+D4
+~
+~
+0 -1 3472
+D5
+~
+~
+0 -1 3470
+S
+#3472
+Bell Tower~
+~
+16 0 0 1
+D4
+~
+~
+0 -1 3473
+D5
+~
+~
+0 -1 3471
+S
+#3473
+Bell Tower~
+~
+16 0 0 1
+D4
+~
+~
+0 -1 3474
+D5
+~
+~
+0 -1 3472
+S
+#3474
+Top of the Bell Tower~
+~
+0 0 1
+D5
+~
+~
+0 -1 3473
+S
+#3475
+East Staircase~
+You have entered a spiraling staircase that leads from the east wing to the
+balcony above the aisle on the eastern side of the south wing. 
+~
+16 0 0 1
+D4
+~
+~
+0 -1 3476
+D6
+~
+~
+0 -1 3464
+S
+#3476
+Above the Isle~
+You are above the aisle on the eastern side of the southwing now, to your east
+are huge stained glass windows and to your west are the rows and rows of pews.
+Further down you see a door in the south wall. 
+~
+16 0 0 1
+D2
+~
+~
+0 -1 3477
+D5
+~
+~
+0 -1 3475
+E
+windows~
+The light coming in from this vantage point is almost blinding, your eyes are
+filled with the colors of red, green and gold. 
+~
+S
+#3477
+Above the Isle~
+You are above the aisle on the eastern side of the southwing now, to your east
+are huge stained glass windows and to your west are the rows and rows of pews.
+Further down you see a door in the south wall.
+~
+16 0 0 1
+D0
+~
+~
+0 -1 3476
+D2
+~
+~
+0 -1 3478
+E
+windows~
+The light coming in from this vantage point is almost blinding, your eyes are
+filled with the colors of red, green and gold. 
+~
+S
+#3478
+Bell Tower~
+You are in the lower portion of one of the cathedrals bell towers, before you
+is the rope you pull to ring the bells and leading around in the inside of the
+outerwalls are stairs leading up.
+~
+16 0 0 1
+D0
+~
+~
+0 -1 3477
+D4
+~
+~
+0 -1 3479
+E
+rope ~
+This rope runs from a hole in the floor up to the bells in the top of the
+tower. 
+~
+S
+#3479
+Bell Tower~
+~
+16 0 0 1
+D4
+~
+~
+0 -1 3480
+D5
+~
+~
+0 -1 3478
+S
+#3480
+Bell Tower~
+~
+16 0 0 1
+D4
+~
+~
+0 -1 3481
+D5
+~
+~
+0 -1 3479
+S
+#3481
+Bell Tower~
+~
+16 0 0 1
+D4
+~
+~
+0 -1 3482
+D5
+~
+~
+0 -1 3480
+S
+#3482
+Bell Tower~
+~
+16 0 0 1
+D4
+~
+~
+0 -1 3483
+D5
+~
+~
+0 -1 3481
+S
+#3483
+Top of the Bell Tower~
+~
+0 0 1
+D5
+~
+~
+0 -1 3482
+S
+#3484
+Hall~
+~
+0 0 1
+D0
+~
+~
+0 -1 3486
+D1
+~
+~
+0 -1 3491
+D3
+~
+~
+0 -1 3436
+S
+#3485
+Study~
+~
+0 0 1
+D1
+~
+~
+0 -1 3486
+D2
+~
+~
+0 -1 3436
+S
+#3486
+Study~
+~
+0 0 1
+D2
+~
+~
+0 -1 3484
+D3
+~
+~
+0 -1 3485
+S
+#3487
+Hall~
+~
+0 0 1
+D0
+~
+~
+0 -1 3435
+D1
+~
+~
+0 -1 3488
+D2
+~
+~
+0 -1 3492
+S
+#3488
+Hall~
+~
+0 0 1
+D1
+~
+~
+0 -1 3489
+D3
+~
+~
+0 -1 3487
+D8
+~
+~
+0 -1 3494
+S
+#3489
+Hall~
+~
+0 0 1
+D0
+~
+~
+0 -1 3490
+D3
+~
+~
+0 -1 3488
+S
+#3490
+Hall~
+~
+0 0 1
+D0
+~
+~
+0 -1 3491
+D2
+~
+~
+0 -1 3489
+D3
+~
+~
+0 -1 3437
+S
+#3491
+Hall~
+~
+0 0 1
+D2
+~
+~
+0 -1 3490
+D3
+~
+~
+0 -1 3484
+S
+#3492
+Dinning Room~
+~
+0 0 1
+D0
+~
+~
+0 -1 3487
+D1
+~
+~
+0 -1 3493
+S
+#3493
+Dinning Room~
+~
+0 0 1
+D1
+~
+~
+0 -1 3494
+D3
+~
+~
+0 -1 3492
+S
+#3494
+Kitchen~
+~
+0 0 1
+D3
+~
+~
+0 -1 3493
+D7
+~
+~
+0 -1 3488
+S
+#3495
+The Forge~
+You have passed beyond the storefront area of the smithy and are now standing
+next to a large hot forge with a ceramic pan of molten metal in it, a
+blacksmith stands near by getting ready to turn this bit of metal into an
+object of some sort. His apprentice busilly gets more raw materials and works
+the bellows to keep it all running.
+~
+24 0 0 1
+D2
+~
+~
+0 -1 3407
+S
+#3496
+Prison Cell~
+You are in a small dark cell in the Wilksen prison, it appears well maintained
+despite its dungeon atmosphere and is dry and warm. I guess these people take
+care of their prisoners, on the wall written in several languages are the
+instructions for posting bail..  
+~
+24 0 0 1
+D1
+~
+~
+8388647 -1 3385
+E
+instructions~
+Bail simply consists of paying the cell guard a set amount of credits at which
+point the guard will escourt you out of the city setting you on your way. The
+current general bail for most acts is 25,000 credits. 
+~
+S
+#3497
+Floating in a void~
+~
+8 0 0 1
+S
+#3498
+Floating in a void~
+~
+8 0 0 1
+S
+#3499
+Floating in a void~
+~
+8 0 0 1
+S
+#3500
+Floating in a void&B~
+~
+8 0 0 1
+S
+#3501
+Forest Path~
+You see trees, lots of trees, and little paths running of in varios directions.
+the sky is hidden from view so the direction of travel is hard to make out..
+Its very hard to see the path even under your feet and you have a strong sense
+of forboding that you shouldn't leave it. Around you are many choices of where
+to tread but only a few will lead you to salvation. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3529
+D1
+~
+~
+0 -1 3534
+D2
+~
+~
+0 -1 3503
+D3
+~
+~
+0 -1 3517
+D6
+~
+~
+0 -1 3540
+D7
+~
+~
+0 -1 3520
+D8
+~
+~
+0 -1 3504
+D9
+~
+~
+0 -1 3502
+S
+#3502
+Forest Path~
+You see trees, lots of trees, and little paths running of in varios directions.
+the sky is hidden from view so the direction of travel is hard to make out..
+Its very hard to see the path even under your feet and you have a strong sense
+of forboding that you shouldn't leave it. Around you are many choices of where
+to tread but only a few will lead you to salvation. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3535
+D1
+~
+~
+0 -1 3513
+D2
+~
+~
+0 -1 3529
+D3
+~
+~
+0 -1 3502
+D6
+~
+~
+0 -1 3501
+D7
+~
+~
+0 -1 3534
+D8
+~
+~
+0 -1 3509
+D9
+~
+~
+0 -1 3507
+S
+#3503
+Forest Path~
+You see trees, lots of trees, and little paths running of in varios directions.
+the sky is hidden from view so the direction of travel is hard to make out..
+Its very hard to see the path even under your feet and you have a strong sense
+of forboding that you shouldn't leave it. Around you are many choices of where
+to tread but only a few will lead you to salvation. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3501
+D1
+~
+~
+0 -1 3513
+D2
+~
+~
+0 -1 3509
+D3
+~
+~
+0 -1 3502
+D6
+~
+~
+0 -1 3539
+D7
+~
+~
+0 -1 3534
+D8
+~
+~
+0 -1 3531
+D9
+~
+~
+0 -1 3524
+S
+#3504
+Forest Path~
+You see trees, lots of trees, and little paths running of in varios directions.
+the sky is hidden from view so the direction of travel is hard to make out..
+Its very hard to see the path even under your feet and you have a strong sense
+of forboding that you shouldn't leave it. Around you are many choices of where
+to tread but only a few will lead you to salvation. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3535
+D1
+~
+~
+0 -1 3513
+D2
+~
+~
+0 -1 3510
+D3
+~
+~
+0 -1 3502
+D6
+~
+~
+0 -1 3535
+D7
+~
+~
+0 -1 3501
+D8
+~
+~
+0 -1 3531
+D9
+~
+~
+0 -1 3524
+S
+#3505
+Forest Path~
+You see trees, lots of trees, and little paths running of in varios directions.
+the sky is hidden from view so the direction of travel is hard to make out..
+Its very hard to see the path even under your feet and you have a strong sense
+of forboding that you shouldn't leave it. Around you are many choices of where
+to tread but only a few will lead you to salvation. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3535
+D1
+~
+~
+0 -1 3506
+D2
+~
+~
+0 -1 3529
+D3
+~
+~
+0 -1 3502
+D6
+~
+~
+0 -1 3539
+D7
+~
+~
+0 -1 3535
+D8
+~
+~
+0 -1 3531
+D9
+~
+~
+0 -1 3511
+S
+#3506
+Forest Path~
+You see trees, lots of trees, and little paths running of in varios directions.
+the sky is hidden from view so the direction of travel is hard to make out..
+Its very hard to see the path even under your feet and you have a strong sense
+of forboding that you shouldn't leave it. Around you are many choices of where
+to tread but only a few will lead you to salvation. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3539
+D1
+~
+~
+0 -1 3513
+D2
+~
+~
+0 -1 3513
+D3
+~
+~
+0 -1 3505
+D6
+~
+~
+0 -1 3540
+D7
+~
+~
+0 -1 3534
+D8
+~
+~
+0 -1 3531
+D9
+~
+~
+0 -1 3524
+S
+#3507
+Forest Path~
+You see trees, lots of trees, and little paths running of in varios directions.
+the sky is hidden from view so the direction of travel is hard to make out..
+Its very hard to see the path even under your feet and you have a strong sense
+of forboding that you shouldn't leave it. Around you are many choices of where
+to tread but only a few will lead you to salvation. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3535
+D1
+~
+~
+0 -1 3513
+D2
+~
+~
+0 -1 3515
+D3
+~
+~
+0 -1 3502
+D6
+~
+~
+0 -1 3502
+D7
+~
+~
+0 -1 3534
+D8
+~
+~
+0 -1 3531
+D9
+~
+~
+0 -1 3524
+S
+#3508
+Forest Path~
+You see trees, lots of trees, and little paths running of in varios directions.
+the sky is hidden from view so the direction of travel is hard to make out..
+Its very hard to see the path even under your feet and you have a strong sense
+of forboding that you shouldn't leave it. Around you are many choices of where
+to tread but only a few will lead you to salvation. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3535
+D1
+~
+~
+0 -1 3509
+D2
+~
+~
+0 -1 3529
+D3
+~
+~
+0 -1 3502
+D6
+~
+~
+0 -1 3539
+D7
+~
+~
+0 -1 3534
+D8
+~
+~
+0 -1 3531
+D9
+~
+~
+0 -1 3515
+S
+#3509
+Forest Path~
+You see trees, lots of trees, and little paths running of in varios directions.
+the sky is hidden from view so the direction of travel is hard to make out..
+Its very hard to see the path even under your feet and you have a strong sense
+of forboding that you shouldn't leave it. Around you are many choices of where
+to tread but only a few will lead you to salvation. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3503
+D1
+~
+~
+0 -1 3513
+D2
+~
+~
+0 -1 3529
+D3
+~
+~
+0 -1 3508
+D6
+~
+~
+0 -1 3539
+D7
+~
+~
+0 -1 3502
+D8
+~
+~
+0 -1 3531
+D9
+~
+~
+0 -1 3524
+D10
+~
+climb~
+526464 -1 3545
+S
+#3510
+Forest Path~
+You see trees, lots of trees, and little paths running of in varios directions.
+the sky is hidden from view so the direction of travel is hard to make out..
+Its very hard to see the path even under your feet and you have a strong sense
+of forboding that you shouldn't leave it. Around you are many choices of where
+to tread but only a few will lead you to salvation. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3504
+D1
+~
+~
+0 -1 3511
+D2
+~
+~
+0 -1 3529
+D3
+~
+~
+0 -1 3502
+D6
+~
+~
+0 -1 3539
+D7
+~
+~
+0 -1 3534
+D8
+~
+~
+0 -1 3531
+D9
+~
+~
+0 -1 3517
+S
+#3511
+Forest Clearing~
+The trees and underbrush part in a small clearing here, off to the north of it
+is a good sized cabin with a sign hanging in front of it declaring that it is
+the Rhapsody Inn. A large chimney at the top is putting out a modest amount of
+smoke so you are sure it has to be inhabited. It certainly looks more inviting
+than the forest around you, perhaps you should stop in for a while?
+~
+0 0 1
+D0
+~
+~
+3 -1 3541
+D1
+~
+~
+0 -1 3512
+D2
+~
+~
+0 -1 3519
+D3
+~
+~
+0 -1 3510
+D6
+~
+~
+0 -1 3505
+S
+#3512
+Forest Path~
+You see trees, lots of trees, and little paths running of in varios directions.
+the sky is hidden from view so the direction of travel is hard to make out..
+Its very hard to see the path even under your feet and you have a strong sense
+of forboding that you shouldn't leave it. Around you are many choices of where
+to tread but only a few will lead you to salvation. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3535
+D1
+~
+~
+0 -1 3513
+D2
+~
+~
+0 -1 3529
+D3
+~
+~
+0 -1 3511
+D6
+~
+~
+0 -1 3539
+D7
+~
+~
+0 -1 3534
+D8
+~
+~
+0 -1 3531
+D9
+~
+~
+0 -1 3524
+S
+#3513
+Forest Path~
+You see trees, lots of trees, and little paths running of in varios directions.
+the sky is hidden from view so the direction of travel is hard to make out..
+Its very hard to see the path even under your feet and you have a strong sense
+of forboding that you shouldn't leave it. Around you are many choices of where
+to tread but only a few will lead you to salvation. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3506
+D1
+~
+~
+0 -1 3514
+D2
+~
+~
+0 -1 3521
+D3
+~
+~
+0 -1 3512
+D6
+~
+~
+0 -1 3539
+D7
+~
+~
+0 -1 3534
+D8
+~
+~
+0 -1 3531
+D9
+~
+~
+0 -1 3524
+S
+#3514
+Forest Path~
+You see trees, lots of trees, and little paths running of in varios directions.
+the sky is hidden from view so the direction of travel is hard to make out..
+Its very hard to see the path even under your feet and you have a strong sense
+of forboding that you shouldn't leave it. Around you are many choices of where
+to tread but only a few will lead you to salvation. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3535
+D1
+~
+~
+0 -1 3513
+D2
+~
+~
+0 -1 3529
+D3
+~
+~
+0 -1 3513
+D6
+~
+~
+0 -1 3539
+D7
+~
+~
+0 -1 3534
+D8
+~
+~
+0 -1 3523
+D9
+~
+~
+0 -1 3524
+S
+#3515
+Forest Path~
+You see trees, lots of trees, and little paths running of in varios directions.
+the sky is hidden from view so the direction of travel is hard to make out..
+Its very hard to see the path even under your feet and you have a strong sense
+of forboding that you shouldn't leave it. Around you are many choices of where
+to tread but only a few will lead you to salvation. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3507
+D1
+~
+~
+0 -1 3516
+D2
+~
+~
+0 -1 3529
+D3
+~
+~
+0 -1 3502
+D6
+~
+~
+0 -1 3508
+D7
+~
+~
+0 -1 3534
+D8
+~
+~
+0 -1 3531
+D9
+~
+~
+0 -1 3524
+S
+#3516
+Forest Path~
+You see trees, lots of trees, and little paths running of in varios directions.
+the sky is hidden from view so the direction of travel is hard to make out..
+Its very hard to see the path even under your feet and you have a strong sense
+of forboding that you shouldn't leave it. Around you are many choices of where
+to tread but only a few will lead you to salvation. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3535
+D1
+~
+~
+0 -1 3517
+D2
+~
+~
+0 -1 3524
+D3
+~
+~
+0 -1 3515
+D6
+~
+~
+0 -1 3539
+D7
+~
+~
+0 -1 3534
+D8
+~
+~
+0 -1 3531
+D9
+~
+~
+0 -1 3524
+S
+#3517
+Forest Path~
+You see trees, lots of trees, and little paths running of in varios directions.
+the sky is hidden from view so the direction of travel is hard to make out..
+Its very hard to see the path even under your feet and you have a strong sense
+of forboding that you shouldn't leave it. Around you are many choices of where
+to tread but only a few will lead you to salvation. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3535
+D1
+~
+~
+0 -1 3518
+D2
+~
+~
+0 -1 3529
+D3
+~
+~
+0 -1 3516
+D6
+~
+~
+0 -1 3510
+D7
+~
+~
+0 -1 3534
+D8
+~
+~
+0 -1 3531
+D9
+~
+~
+0 -1 3524
+S
+#3518
+Forest Path~
+You see trees, lots of trees, and little paths running of in varios directions.
+the sky is hidden from view so the direction of travel is hard to make out..
+Its very hard to see the path even under your feet and you have a strong sense
+of forboding that you shouldn't leave it. Around you are many choices of where
+to tread but only a few will lead you to salvation. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3535
+D1
+~
+~
+0 -1 3513
+D2
+~
+~
+0 -1 3526
+D3
+~
+~
+0 -1 3517
+D6
+~
+~
+0 -1 3539
+D7
+~
+~
+0 -1 3534
+D8
+~
+~
+0 -1 3531
+D9
+~
+~
+0 -1 3524
+S
+#3519
+Forest Path~
+You see trees, lots of trees, and little paths running of in varios directions.
+the sky is hidden from view so the direction of travel is hard to make out..
+Its very hard to see the path even under your feet and you have a strong sense
+of forboding that you shouldn't leave it. Around you are many choices of where
+to tread but only a few will lead you to salvation. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3511
+D1
+~
+~
+0 -1 3520
+D2
+~
+~
+0 -1 3529
+D3
+~
+~
+0 -1 3502
+D6
+~
+~
+0 -1 3539
+D7
+~
+~
+0 -1 3534
+D8
+~
+~
+0 -1 3531
+D9
+~
+~
+0 -1 3524
+S
+#3520
+Forest Path~
+You see trees, lots of trees, and little paths running of in varios directions.
+the sky is hidden from view so the direction of travel is hard to make out..
+Its very hard to see the path even under your feet and you have a strong sense
+of forboding that you shouldn't leave it. Around you are many choices of where
+to tread but only a few will lead you to salvation. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3535
+D1
+~
+~
+0 -1 3521
+D2
+~
+~
+0 -1 3527
+D3
+~
+~
+0 -1 3519
+D6
+~
+~
+0 -1 3539
+D7
+~
+~
+0 -1 3534
+D8
+~
+~
+0 -1 3531
+D9
+~
+~
+0 -1 3524
+S
+#3521
+Forest Path~
+You see trees, lots of trees, and little paths running of in varios directions.
+the sky is hidden from view so the direction of travel is hard to make out..
+Its very hard to see the path even under your feet and you have a strong sense
+of forboding that you shouldn't leave it. Around you are many choices of where
+to tread but only a few will lead you to salvation. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3513
+D1
+~
+~
+0 -1 3513
+D2
+~
+~
+0 -1 3529
+D3
+~
+~
+0 -1 3520
+D6
+~
+~
+0 -1 3539
+D7
+~
+~
+0 -1 3534
+D8
+~
+~
+0 -1 3528
+D9
+~
+~
+0 -1 3524
+S
+#3522
+Forest Path~
+You see trees, lots of trees, and little paths running of in varios directions.
+the sky is hidden from view so the direction of travel is hard to make out..
+Its very hard to see the path even under your feet and you have a strong sense
+of forboding that you shouldn't leave it. Around you are many choices of where
+to tread but only a few will lead you to salvation. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3535
+D1
+~
+~
+0 -1 3523
+D2
+~
+~
+0 -1 3528
+D3
+~
+~
+0 -1 3502
+D6
+~
+~
+0 -1 3539
+D7
+~
+~
+0 -1 3534
+D8
+~
+~
+0 -1 3531
+D9
+~
+~
+0 -1 3524
+S
+#3523
+Forest Path~
+You see trees, lots of trees, and little paths running of in varios directions.
+the sky is hidden from view so the direction of travel is hard to make out..
+Its very hard to see the path even under your feet and you have a strong sense
+of forboding that you shouldn't leave it. Around you are many choices of where
+to tread but only a few will lead you to salvation. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3535
+D1
+~
+~
+0 -1 3513
+D2
+~
+~
+0 -1 3529
+D3
+~
+~
+0 -1 3522
+D6
+~
+~
+0 -1 3539
+D7
+~
+~
+0 -1 3514
+D8
+~
+~
+0 -1 3531
+D9
+~
+~
+0 -1 3524
+S
+#3524
+Forest Path~
+You see trees, lots of trees, and little paths running of in varios directions.
+the sky is hidden from view so the direction of travel is hard to make out..
+Its very hard to see the path even under your feet and you have a strong sense
+of forboding that you shouldn't leave it. Around you are many choices of where
+to tread but only a few will lead you to salvation. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3516
+D1
+~
+~
+0 -1 3525
+D2
+~
+~
+0 -1 3529
+D3
+~
+~
+0 -1 3502
+D6
+~
+~
+0 -1 3539
+D7
+~
+~
+0 -1 3534
+D8
+~
+~
+0 -1 3531
+D9
+~
+~
+0 -1 3524
+S
+#3525
+Forest Path~
+~
+0 0 1
+D0
+~
+~
+0 -1 3535
+D1
+~
+~
+0 -1 3526
+D2
+~
+~
+0 -1 3529
+D3
+~
+~
+0 -1 3524
+D6
+~
+~
+0 -1 3539
+D7
+~
+~
+0 -1 3534
+D8
+~
+~
+0 -1 3531
+D9
+~
+~
+0 -1 3524
+S
+#3526
+Forest Path~
+You see trees, lots of trees, and little paths running of in varios directions.
+the sky is hidden from view so the direction of travel is hard to make out..
+Its very hard to see the path even under your feet and you have a strong sense
+of forboding that you shouldn't leave it. Around you are many choices of where
+to tread but only a few will lead you to salvation. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3518
+D2
+~
+~
+0 -1 3529
+D3
+~
+~
+0 -1 3525
+D6
+~
+~
+0 -1 3539
+D7
+~
+~
+0 -1 3534
+D8
+~
+~
+0 -1 3529
+D9
+~
+~
+0 -1 3524
+D10
+~
+gatehouse~
+524288 -1 3414
+S
+#3527
+Forest Path~
+You see trees, lots of trees, and little paths running of in varios directions.
+the sky is hidden from view so the direction of travel is hard to make out..
+Its very hard to see the path even under your feet and you have a strong sense
+of forboding that you shouldn't leave it. Around you are many choices of where
+to tread but only a few will lead you to salvation. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3520
+D1
+~
+~
+0 -1 3513
+D2
+~
+~
+0 -1 3529
+D3
+~
+~
+0 -1 3502
+D6
+~
+~
+0 -1 3539
+D7
+~
+~
+0 -1 3534
+D8
+~
+~
+0 -1 3531
+D9
+~
+~
+0 -1 3529
+S
+#3528
+Forest Path~
+You see trees, lots of trees, and little paths running of in varios directions.
+the sky is hidden from view so the direction of travel is hard to make out..
+Its very hard to see the path even under your feet and you have a strong sense
+of forboding that you shouldn't leave it. Around you are many choices of where
+to tread but only a few will lead you to salvation. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3522
+D1
+~
+~
+0 -1 3513
+D2
+~
+~
+0 -1 3529
+D3
+~
+~
+0 -1 3502
+D6
+~
+~
+0 -1 3539
+D7
+~
+~
+0 -1 3521
+D8
+~
+~
+0 -1 3531
+D9
+~
+~
+0 -1 3531
+S
+#3529
+Forest Path~
+You see trees, lots of trees, and little paths running of in varios directions.
+the sky is hidden from view so the direction of travel is hard to make out..
+Its very hard to see the path even under your feet and you have a strong sense
+of forboding that you shouldn't leave it. Around you are many choices of where
+to tread but only a few will lead you to salvation. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3535
+D1
+~
+~
+0 -1 3414
+D2
+~
+~
+0 -1 3529
+D3
+~
+~
+0 -1 3502
+D6
+~
+~
+0 -1 3527
+D7
+~
+~
+0 -1 3526
+D8
+~
+~
+0 -1 3531
+D9
+~
+~
+0 -1 3524
+S
+#3530
+Forest Path~
+You see trees, lots of trees, and little paths running of in varios directions.
+the sky is hidden from view so the direction of travel is hard to make out..
+Its very hard to see the path even under your feet and you have a strong sense
+of forboding that you shouldn't leave it. Around you are many choices of where
+to tread but only a few will lead you to salvation. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3535
+D1
+~
+~
+0 -1 3531
+D2
+~
+~
+0 -1 3533
+D3
+~
+~
+0 -1 3529
+D6
+~
+~
+0 -1 3539
+D7
+~
+~
+0 -1 3534
+D8
+~
+~
+0 -1 3531
+D9
+~
+~
+0 -1 3524
+S
+#3531
+Forest Path~
+You see trees, lots of trees, and little paths running of in varios directions.
+the sky is hidden from view so the direction of travel is hard to make out..
+Its very hard to see the path even under your feet and you have a strong sense
+of forboding that you shouldn't leave it. Around you are many choices of where
+to tread but only a few will lead you to salvation. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3535
+D1
+~
+~
+0 -1 3513
+D2
+~
+~
+0 -1 3529
+D3
+~
+~
+0 -1 3530
+D6
+~
+~
+0 -1 3528
+D7
+~
+~
+0 -1 3534
+D8
+~
+~
+0 -1 3531
+D9
+~
+~
+0 -1 3524
+S
+#3532
+Forest Path~
+You see trees, lots of trees, and little paths running of in varios directions.
+the sky is hidden from view so the direction of travel is hard to make out..
+Its very hard to see the path even under your feet and you have a strong sense
+of forboding that you shouldn't leave it. Around you are many choices of where
+to tread but only a few will lead you to salvation. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3535
+D1
+~
+~
+0 -1 3533
+D2
+~
+~
+0 -1 3529
+D3
+~
+~
+0 -1 3502
+D6
+~
+~
+0 -1 3539
+D7
+~
+~
+0 -1 3534
+D8
+~
+~
+0 -1 3531
+D9
+~
+~
+0 -1 3524
+S
+#3533
+Forest Path~
+You see trees, lots of trees, and little paths running of in varios directions.
+the sky is hidden from view so the direction of travel is hard to make out..
+Its very hard to see the path even under your feet and you have a strong sense
+of forboding that you shouldn't leave it. Around you are many choices of where
+to tread but only a few will lead you to salvation. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3530
+D1
+~
+~
+0 -1 3513
+D2
+~
+~
+0 -1 3529
+D3
+~
+~
+0 -1 3532
+D6
+~
+~
+0 -1 3539
+D7
+~
+~
+0 -1 3534
+D8
+~
+~
+0 -1 3531
+D9
+~
+~
+0 -1 3524
+S
+#3534
+Forest Path~
+You see trees, lots of trees, and little paths running of in varios directions.
+the sky is hidden from view so the direction of travel is hard to make out..
+Its very hard to see the path even under your feet and you have a strong sense
+of forboding that you shouldn't leave it. Around you are many choices of where
+to tread but only a few will lead you to salvation. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3536
+D1
+~
+~
+0 -1 3515
+D2
+~
+~
+0 -1 3510
+D3
+~
+~
+0 -1 3501
+D6
+~
+~
+0 -1 3511
+D7
+~
+~
+0 -1 3522
+D8
+~
+~
+0 -1 3535
+D9
+~
+~
+0 -1 3507
+S
+#3535
+Forest Path~
+You see trees, lots of trees, and little paths running of in varios directions.
+the sky is hidden from view so the direction of travel is hard to make out..
+Its very hard to see the path even under your feet and you have a strong sense
+of forboding that you shouldn't leave it. Around you are many choices of where
+to tread but only a few will lead you to salvation. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3537
+D1
+~
+~
+0 -1 3530
+D2
+~
+~
+0 -1 3529
+D3
+~
+~
+0 -1 3502
+D6
+~
+~
+0 -1 3539
+D7
+~
+~
+0 -1 3534
+D8
+~
+~
+0 -1 3505
+D9
+~
+~
+0 -1 3504
+S
+#3536
+Forest Path~
+You see trees, lots of trees, and little paths running of in varios directions.
+the sky is hidden from view so the direction of travel is hard to make out..
+Its very hard to see the path even under your feet and you have a strong sense
+of forboding that you shouldn't leave it. Around you are many choices of where
+to tread but only a few will lead you to salvation. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3535
+D1
+~
+~
+0 -1 3537
+D2
+~
+~
+0 -1 3534
+D3
+~
+~
+0 -1 3502
+D6
+~
+~
+0 -1 3539
+D7
+~
+~
+0 -1 3534
+D8
+~
+~
+0 -1 3531
+D9
+~
+~
+0 -1 3524
+S
+#3537
+Forest Path~
+You see trees, lots of trees, and little paths running of in varios directions.
+the sky is hidden from view so the direction of travel is hard to make out..
+Its very hard to see the path even under your feet and you have a strong sense
+of forboding that you shouldn't leave it. Around you are many choices of where
+to tread but only a few will lead you to salvation. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3535
+D1
+~
+~
+0 -1 3538
+D2
+~
+~
+0 -1 3535
+D3
+~
+~
+0 -1 3536
+D6
+~
+~
+0 -1 3539
+D7
+~
+~
+0 -1 3534
+D8
+~
+~
+0 -1 3531
+D9
+~
+~
+0 -1 3524
+S
+#3538
+Forest Path~
+You see trees, lots of trees, and little paths running of in varios directions.
+the sky is hidden from view so the direction of travel is hard to make out..
+Its very hard to see the path even under your feet and you have a strong sense
+of forboding that you shouldn't leave it. Around you are many choices of where
+to tread but only a few will lead you to salvation. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3535
+D1
+~
+~
+0 -1 3513
+D2
+~
+~
+0 -1 3529
+D3
+~
+~
+0 -1 3537
+D6
+~
+~
+0 -1 3539
+D7
+~
+~
+0 -1 3534
+D8
+~
+~
+0 -1 3539
+D9
+~
+~
+0 -1 3524
+S
+#3539
+Forest Path~
+You see trees, lots of trees, and little paths running of in varios directions.
+the sky is hidden from view so the direction of travel is hard to make out..
+Its very hard to see the path even under your feet and you have a strong sense
+of forboding that you shouldn't leave it. Around you are many choices of where
+to tread but only a few will lead you to salvation. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3535
+D1
+~
+~
+0 -1 3540
+D2
+~
+~
+0 -1 3506
+D3
+~
+~
+0 -1 3502
+D6
+~
+~
+0 -1 3539
+D7
+~
+~
+0 -1 3538
+D8
+~
+~
+0 -1 3531
+D9
+~
+~
+0 -1 3524
+S
+#3540
+Forest Path~
+You see trees, lots of trees, and little paths running of in varios directions.
+the sky is hidden from view so the direction of travel is hard to make out..
+Its very hard to see the path even under your feet and you have a strong sense
+of forboding that you shouldn't leave it. Around you are many choices of where
+to tread but only a few will lead you to salvation. 
+~
+0 0 1
+D0
+~
+~
+0 -1 3535
+D1
+~
+~
+0 -1 3513
+D2
+~
+~
+0 -1 3529
+D3
+~
+~
+0 -1 3539
+D6
+~
+~
+0 -1 3539
+D7
+~
+~
+0 -1 3534
+D8
+~
+~
+0 -1 3531
+D9
+~
+~
+0 -1 3506
+S
+#3541
+Rhapsody Inn~
+This is a cozy little inn, a ways above you are the rafters and the woodshingle
+roof, all about you are a few tables, one &ztable&g in particular stands out
+from the rest. Off to the east side of the room is the bar with the ever
+watchful bartender standing behind it. Off to the west is a small stage with
+&Rred&g velvet curtans drawn closed. By the bar is a wooden door leading
+someplace and up against the north wall is a big fireplace with roaring
+&Yfire&g. In one corner hangs a &Bhammock&g while in the other sits and old
+worn &rarm chair&g belonging to some warrier of long ago. 
+~
+16 0 0 1
+D1
+~
+~
+3 -1 3542
+D2
+~
+~
+3 -1 3511
+D10
+~
+exitstageright~
+526336 -1 3544
+E
+fire~
+This is a large fireplace, you could practically stand in it without having to
+stoop and its wide enough you could get a rather large circle of chairs around
+it without having to scrunch. 
+~
+E
+curtains~
+These are velvet curtains of a wonderful shade of red. The are currently
+closing off all but from front edge of the stage from view. 
+~
+E
+table~
+This table stands out in that its totally bare and covered with blood. In the
+center of the table is an assasins dagger planted deeply into it. 
+~
+S
+#3542
+Storeroom~
+This is the backroom of the Inn where all the kegs of drink and crates of food
+are kept. There is a small barrell serving as a table with a few small crates
+around it for chairs, and on the table is a large pot of black coffee incase
+any of the patrons need to be brought back here to sober up. Off against the
+wall are a couple small cots as well for those so inebrated to not be able to
+leave till the morning. 
+~
+528 0 0 1
+D3
+~
+~
+1 -1 3541
+D4
+~
+~
+3 -1 3543
+S
+#3543
+Storeroom Roof~
+Up here ontop of the store room roof you get a good look of the area around the
+inn. Mostly are tree and down to the south is the small clearing just infront
+of the inn. Aside from the trees you get an incredible view of the sky and all
+the stars at night. 
+~
+512 0 0 1
+D5
+~
+~
+3 -1 3542
+S
+#3544
+Backstage~
+~
+16 0 0 1
+D1
+~
+~
+0 -1 3541
+S
+#3545
+Loft in the trees~
+You have climbed up neer to the top of the tree cannopy, you find a old
+platform build into the trees up here occupied by a very old hermit. He
+appears to collect many things including old intact machinery and weapons from
+the ancient war which nearly exterminated this planet and threw it back
+technilogocally by thousands of years.
+~
+16 0 0 1
+D5
+~
+~
+0 -1 3509
+S
+#3546
+Alcove~
+You have climbed up and are standing in one of the alcoves vacant of a statue.
+From this vantage point you can see that the statues are lifesize and the
+alcoves are big enough for about one person each with a comfortable distance
+from the surrounding walls. This one is made from carefully carved &zgranite
+stones &gthat interlock together almost perfectly.
+~
+8 0 0 1
+D2
+~
+~
+0 -1 3464
+D10
+~
+press~
+526336 -1 3547
+E
+granite stones~
+As you examine the stones more carefully you notice that neear the top one is
+depressed ever so slightly, you wonder if it would be possible to press the
+stone in further, but then again why, after all this is only an alcove for a
+statue, what real use would a mislaid stone be? 
+~
+S
+#3547
+Granite tunnel~
+You are now inside a small tunnel made entirely of polished black granite. You
+examine the walls closely with your light and find that there are no more
+seams that show where one brick ends and one starts, its as if this entire
+tunnel was made of one large piece of stone. What little light produced is
+reflected by the polished mirror of the surface so well it lights almost the
+entire tunnel, your mind revolts against this though as the reflecting surface
+is obviously black.
+~
+8 0 0 1
+D0
+~
+~
+3 -1 3548
+D10
+~
+alcove~
+524288 -1 3546
+S
+#3548
+A Magical Workshop~
+You step into a small cluttered room, all around you are small bits and pieces
+of work in progress, you glance about and you notice a sizable workbenched
+worked into the room long ways. You notice something off in the corner, as you
+move further back into shop you come a sort of curtain pulled across part way
+separating the last few feet of space in this place. Off to the back wall is a
+door leading somewhere. 
+~
+520 0 0 1
+D2
+~
+~
+3 -1 3547
+D10
+~
+curtain~
+524288 -1 3549
+E
+corner~
+In the corner is an armor rack holding some very impresive pieces 
+~
+E
+bench~
+This work bench is long and from the look of the mars and scratches, very well
+used. Upon it are some partially assembled suits of armor, a half forged sword
+and a few oddities found only in major foundrys and work shops of the most
+weathy kingdoms. 
+~
+E
+door~
+This door must be close to half a foot thick and is made from solid iron.
+Acrossed it are several steel reinforcing braces about 4 inchs thick each.
+This behemoth of a door is attached to the wall by 5 large steal hinges with
+giant bolts going deep into the stone. The locking system is intricate in that
+one large lever raises 3 thick and heavy latches but is ammazingly strong, as
+you test the door thinking it would take 10 men to budge it, it swings gently
+and quite easily open. 
+~
+S
+#3549
+backroom~
+You have steped behind the curtains into a small back room, it messures only
+about 7 feet wide and 8 feet deep but feels very comfortable. Before you is a
+comfy looking bed with an old quilt laid out on it, something above the
+headboard catches your eye and you look up in astonishment. Hanging above the
+bed is the great Godblade, you wonder how it could have come to be in such a
+place and then you think that the person who lives here couldn't possibly have
+made it, could she? 
+~
+537395224 0 0 1
+D3
+~
+~
+0 -1 3548
+S
+#3550
+Stairs~
+~
+8 0 0 1
+D5
+~
+~
+0 -1 3439
+D6
+~
+~
+0 -1 3440
+S
+#3551
+Stairs~
+~
+8 0 0 1
+D5
+~
+~
+0 -1 3438
+D8
+~
+~
+0 -1 3440
+S
+#3552
+Floating in a void~
+~
+8 0 0 1
+S
+#3553
+Floating in a void~
+~
+8 0 0 1
+S
+#3554
+Floating in a void~
+~
+8 0 0 1
+S
+#3555
+Floating in a void~
+~
+8 0 0 1
+S
+#3556
+Floating in a void~
+~
+8 0 0 1
+S
+#3557
+Floating in a void~
+~
+8 0 0 1
+S
+#3558
+Floating in a void~
+~
+8 0 0 1
+S
+#3559
+Floating in a void~
+~
+8 0 0 1
+S
+#3560
+Floating in a void~
+~
+8 0 0 1
+S
+#3561
+Floating in a void~
+~
+8 0 0 1
+S
+#3562
+Floating in a void~
+~
+8 0 0 1
+S
+#3563
+Floating in a void~
+~
+8 0 0 1
+S
+#3564
+Floating in a void~
+~
+8 0 0 1
+S
+#3565
+Floating in a void~
+~
+8 0 0 1
+S
+#3566
+Floating in a void~
+~
+8 0 0 1
+S
+#3567
+Floating in a void~
+~
+8 0 0 1
+S
+#3568
+Floating in a void~
+~
+8 0 0 1
+S
+#3569
+Floating in a void~
+~
+8 0 0 1
+S
+#3570
+Floating in a void~
+~
+8 0 0 1
+S
+#3571
+Floating in a void~
+~
+8 0 0 1
+S
+#3572
+Floating in a void~
+~
+8 0 0 1
+S
+#3573
+Floating in a void~
+~
+8 0 0 1
+S
+#3574
+Floating in a void~
+~
+8 0 0 1
+S
+#3575
+Floating in a void~
+~
+8 0 0 1
+S
+#3576
+Floating in a void~
+~
+8 0 0 1
+S
+#3577
+Floating in a void~
+~
+8 0 0 1
+S
+#3578
+Floating in a void~
+~
+8 0 0 1
+S
+#3579
+Floating in a void~
+~
+8 0 0 1
+S
+#3580
+Floating in a void~
+~
+8 0 0 1
+S
+#3581
+Floating in a void~
+~
+8 0 0 1
+S
+#3582
+Floating in a void~
+~
+8 0 0 1
+S
+#3583
+Floating in a void~
+~
+8 0 0 1
+S
+#3584
+Floating in a void~
+~
+8 0 0 1
+S
+#3585
+Floating in a void~
+~
+8 0 0 1
+S
+#3586
+Floating in a void~
+~
+8 0 0 1
+S
+#3587
+Floating in a void~
+~
+8 0 0 1
+S
+#3588
+Floating in a void~
+~
+8 0 0 1
+S
+#3589
+Floating in a void~
+~
+8 0 0 1
+S
+#3590
+Floating in a void~
+~
+8 0 0 1
+S
+#3591
+Floating in a void~
+~
+8 0 0 1
+S
+#3592
+Floating in a void~
+~
+8 0 0 1
+S
+#3593
+Floating in a void~
+~
+8 0 0 1
+S
+#3594
+Floating in a void~
+~
+8 0 0 1
+S
+#3595
+Floating in a void~
+~
+8 0 0 1
+S
+#3596
+Floating in a void~
+~
+8 0 0 1
+S
+#3597
+Floating in a void~
+~
+8 0 0 1
+S
+#3598
+Floating in a void~
+~
+8 0 0 1
+S
+#3599
+Floating in a void~
+~
+8 0 0 1
+S
+#3600
+Floating in a void&g~
+~
+8 0 0 1
+S
+#0
+
+
+#RESETS
+D 0 3308 1 1
+D 0 3319 1 1
+D 0 3319 3 1
+D 0 3314 2 2
+O 1 3302 1 3322
+O 1 3302 1 3316
+O 1 3301 1 3316
+D 0 3511 0 1
+D 0 3302 3 1
+D 0 3301 1 1
+O 1 3303 1 3315
+D 0 3315 0 2
+D 0 3336 3 1
+D 0 3458 2 1
+M 1 3301 1 3323
+G 1 3341 1
+G 1 3340 1
+G 1 3339 1
+G 1 3337 1
+G 1 3338 1
+G 1 3336 1
+G 1 3335 1
+G 1 3333 1
+G 1 3330 1
+G 1 3332 1
+G 1 3331 1
+G 1 3334 1
+G 1 3342 1
+O 1 3304 1 3323
+M 1 3303 1 3545
+D 0 3547 0 1
+M 1 3304 1 3548
+D 0 3548 2 1
+O 1 3318 1 3549
+O 1 3306 1 3549
+O 1 3319 1 3549
+O 1 3328 1 3542
+D 0 3542 3 0
+D 0 3542 4 1
+M 1 3306 1 3541
+G 1 3354 1
+G 1 3352 1
+G 1 3355 1
+G 1 3353 1
+G 1 3360 1
+G 1 3362 1
+G 1 3363 1
+G 1 3356 1
+G 1 3361 1
+G 1 3357 1
+G 1 3358 1
+G 1 3359 1
+M 1 3307 1 3541
+M 1 3309 1 3541
+E 1 3351 1 13
+E 1 3350 1 3
+E 1 3348 1 9
+E 1 3347 1 8
+E 1 3345 1 7
+E 1 3344 1 6
+E 1 3343 1 5
+E 1 3307 1 20
+E 1 3312 1 4
+O 1 3322 1 3541
+O 1 3323 1 3541
+O 1 3325 1 3541
+O 1 3324 1 3541
+D 0 3541 1 1
+D 0 3541 2 1
+D 0 3394 0 1
+D 0 3441 2 1
+D 0 3457 0 1
+D 0 3464 1 1
+D 0 3453 3 1
+D 0 3448 1 1
+D 0 3465 3 1
+D 0 3416 3 2
+D 0 3397 1 2
+M 1 3311 1 3407
+G 1 3370 1
+M 1 3310 1 3414
+E 1 3370 1 16
+M 1 3312 1 3384
+E 1 3371 1 17
+E 1 3370 1 16
+D 0 3384 2 2
+M 1 3315 2 3389
+E 1 3370 1 16
+M 1 3315 3 3387
+E 1 3370 1 16
+M 1 3314 1 3385
+E 1 3370 1 16
+M 1 3 1 3385
+D 0 3385 3 1
+M 1 3315 1 3406
+E 1 3370 1 16
+M 1 3313 1 3496
+E 1 3370 1 16
+G 1 3 1
+D 0 3496 1 2
+M 1 3310 2 3383
+E 1 3371 1 17
+D 0 3383 0 2
+S
+
+
+#SHOPS
+ 3301    0  0  0  0  0   120  90         0 23    ; Frauline Marcie, clothing Designer
+ 3303    0  0  0  0  0   120 100         0 23    ; Old forest Hermit
+ 3306    0  0  0  0  0   120  90         0 23    ; Seldar, Inn bartender
+ 3311    4  0  0  0  0   108  90         0 23    ; Yojo
+0
+
+
+#REPAIRS
+0
+
+
+#SPECIALS
+M  3308 spec_guardian
+M  3309 spec_guardian
+M  3310 spec_guardian
+S
+
+
+#$

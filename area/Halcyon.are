@@ -1,0 +1,5389 @@
+#AREA   {PROTO} Halcyon's area in progress~
+
+
+
+#AUTHOR Halcyon~
+
+#RANGES
+0 0 0 0
+$
+
+#FLAGS
+0
+
+#ECONOMY 0 6313279
+
+#CLIMATE 4 3 0
+
+#MOBILES
+#5101
+first mob~
+a newly created first mob~
+Some god abandoned a newly created first mob here.
+~
+~
+1 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#5102
+repair technician~
+a repair technician~
+A repair technician is inspecting a freighter.
+~
+~
+268435459 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 2147483647 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#5103
+Customs Officer~
+a Customs Officer~
+A Customs Officer is sitting at his desk.
+~
+~
+268468227 0 0 Z
+60 0 -50 12d10+600 6d4+2
+0 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+12 12 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> act_prog p arrives from the east.~
+nod 
+say May I help you? 
+~
+> speech_prog weapon storage confiscate confiscated confiscation~
+say We store all confiscated weapons here. 
+say There's a 1000 credit fee to retrieve your weapon. 
+nod 
+~
+> bribe_prog 1000~
+nod 
+if ovnuminv(5108) >= 1 
+unlock s 
+open s 
+else 
+mpoload 5108 
+unlock s 
+open s 
+endif 
+say There you are. 
+mpdeposit 1000 
+~
+> rand_prog 25~
+mpat 5139 drop all 
+~
+|
+#5104
+bartender~
+a bartender~
+&Y&OA bartender is serving drinks.&w
+~
+~
+268435459 0 0 Z
+15 0 62 3d10+150 1d4+2
+351 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+2 0 0 0 3 2 0
+3 3 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> greet_prog 75~
+emote nods as $n walks in. 
+say What'll you have? 
+~
+|
+#5105
+station guard~
+The Gate Keeper~
+The Gate Keeper stands here greeting guests of Wilksen.
+~
+~
+268468227 0 0 Z
+45 0 -12 9d10+450 4d4+2
+0 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+9 9 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#5106
+clerk droid~
+a clerk droid~
+A clerk droid is selling merchandise of dubious quality.
+~
+~
+67108867 4194344 0 Z
+75 0 -200 15d10+750 7d4+2
+351 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 2147483647 0 0
+15 15 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#5107
+shop clerk~
+a shop clerk~
+A clerk is selling rations and similar items.
+~
+~
+268435459 4194344 0 Z
+34 0 15 6d10+340 3d4+2
+273 0
+8 8 2
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 2147483647 0 0
+6 6 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#5108
+shop clerk~
+a shop clerk~
+A clerk is ringing up merchandise.
+~
+~
+268435459 4194344 0 Z
+34 0 15 6d10+340 3d4+2
+273 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 2147483647 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#5109
+3PO Protocol Droid~
+a 3PO Protocol Droid~
+&C&cA silver protocol droid is standing here.&w
+~
+~
+68157699 4194344 0 Z
+15 0 62 3d10+150 1d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+3 3 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#5110
+shop clerk~
+a shop clerk~
+A clerk is selling used droids.
+~
+~
+268435459 4194344 0 Z
+34 0 15 6d10+340 3d4+2
+273 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 2147483647 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#5111
+ASP-9 Worker Drone~
+an ASP-9 Worker Drone~
+&Y&OA lumbering ASP-9 worker drone is here.&w
+~
+~
+67109123 0 0 Z
+25 0 -50 5d10+250 2d4+2
+0 0
+8 8 0
+25 10 10 25 18 10 10
+0 0 0 0 0
+0 0 0 0 67108864 67108864 0
+5 5 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#5112
+binary load lifter~
+a binary load lifter~
+&C&cA binary load lifter is here.&w
+~
+~
+67109123 0 0 Z
+10 0 75 2d10+100 1d4+2
+0 0
+8 8 0
+10 10 10 20 10 10 10
+0 0 0 0 0
+0 0 0 0 67108864 67108864 0
+2 2 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#5113
+dewback~
+a dewback~
+&G&gA dewback is snorting loudly.&w
+~
+~
+3 0 0 Z
+5 0 87 1d10+50 0d4+2
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1073741824 1073741824 0
+1 1 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#5114
+waitress~
+a waitress~
+&Y&OA waitress is serving drinks.&w
+~
+~
+268435459 0 0 Z
+15 0 62 3d10+150 1d4+2
+351 0
+8 8 2
+10 10 10 10 10 10 10
+0 0 0 0 0
+5 0 0 0 21 20 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#5115
+clerk droid~
+a clerk droid~
+A clerk droid is selling electronics.
+~
+~
+67108867 4194344 0 Z
+75 0 -200 15d10+750 7d4+2
+351 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 2147483647 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#5116
+shop clerk~
+a shop clerk~
+A clerk is selling weapons and similar items.
+~
+~
+268435459 4194344 0 Z
+34 0 15 6d10+340 3d4+2
+273 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 2147483647 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#5117
+waitress~
+a waitress~
+&c&CA waitress is serving diner patrons.&w
+~
+~
+268435459 0 0 Z
+15 0 62 3d10+150 1d4+2
+351 0
+8 8 2
+10 10 10 10 10 10 10
+0 0 0 0 0
+14 0 0 0 2147483647 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> greet_prog 90~
+nod 
+say What can I get you? 
+~
+> speech_prog water~
+say Sure thing. 
+mpforce $n give 4 credits waitress 
+mpoload 5147 
+give water $n 
+say Enjoy. 
+~
+> speech_prog ryshcate~
+nod 
+mpforce $n give 14 credits waitress 
+mpoload 5148 
+give ryshcate $n 
+~
+> speech_prog caf~
+emote pours $n a mug of caf. 
+mpoload 5146 
+mpforce $n give 8 credits waitress 
+give caf $n 
+~
+> speech_prog tubers~
+mpoload 5145 
+give tubers $n 
+mpforce $n give 20 credits waitress 
+say Thanks for the tip. 
+~
+> speech_prog steak~
+mpoload 5144 
+give steak $n 
+mpforce $n give 30 credits waitress 
+smile 
+~
+> speech_prog p alzat rimmer~
+emote looks up in surprise. 
+say Uh... Alzat Rimmer? 
+say I.. don't know him... 
+~
+> speech_prog lie lying liar~
+say I just don't want him to get hurt, that's all... 
+sniff 
+~
+|
+#5118
+pawnshop clerk~
+a pawnshop clerk~
+A grimy-looking pawnshop clerk is sitting behind a counter.
+~
+~
+268435459 4194344 0 Z
+34 0 15 6d10+340 3d4+2
+273 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 2147483647 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#5119
+hokum keeper~
+a hokum keeper~
+A hokum keeper is distributing illegal substances.
+~
+~
+67108867 4194344 0 Z
+75 0 -200 15d10+750 7d4+2
+351 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#5120
+shop clerk~
+a shop clerk~
+A clerk is watching over his merchandise.
+~
+~
+268435459 4194344 0 Z
+34 0 15 6d10+340 3d4+2
+273 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 2147483647 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#5121
+shop clerk~
+a shop clerk~
+A clerk is watching over his merchandise.
+~
+~
+268435459 4194344 0 Z
+34 0 15 6d10+340 3d4+2
+273 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 2147483647 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#5122
+shop clerk~
+a shop clerk~
+A clerk is selling needles and cloth.
+~
+~
+268435459 4194344 0 Z
+34 0 15 6d10+340 3d4+2
+273 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 2147483647 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#5123
+medic~
+a medic~
+&c&CA medic is monitoring the bacta readouts.&w
+~
+~
+402654723 0 500 Z
+64 0 -60 12d10+640 6d4+2
+0 0
+8 8 2
+4 20 15 16 14 17 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+12 12 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#5124
+clerk droid~
+a clerk droid~
+A droid is selling furniture.
+~
+~
+67108867 4194344 0 Z
+75 0 -200 15d10+750 7d4+2
+351 0
+8 8 0
+25 10 10 20 10 10 10
+0 0 0 0 0
+0 0 0 0 2147483647 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#5125
+butcher~
+a Wookiee butcher~
+A butcher is laboring to cut slabs of meat.
+~
+~
+268435459 4194344 0 Z
+65 0 -62 13d10+650 6d4+2
+273 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+1 0 0 0 1 1043389 0
+13 13 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#5126
+shop clerk~
+a shop clerk~
+A clerk is selling armor and similar items.
+~
+~
+268435459 4194344 0 Z
+34 0 15 6d10+340 3d4+2
+273 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 2147483647 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#5127
+bounty hunter~
+a bounty hunter~
+A brawny-looking bounty hunter is standing here.
+~
+~
+1342181379 4194344 0 Z
+90 0 -125 18d10+900 9d4+2
+273 0
+8 8 2
+10 10 10 10 10 10 10
+0 0 0 0 0
+13 0 0 0 7 6 0
+18 18 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> speech_prog p alzat rimmer~
+say Oh, interested in him? 
+chuckle 
+say Apparently, he sliced into the Imperial Ubiqtorate database. 
+say The Imps want him brought back in a bag. 
+say Somebody says they saw him walking down Entraepot a week ago. 
+shrug 
+~
+> act_prog alzat~
+if ovnuminv(5207) >= 1 
+nod $n 
+say Good job, they've been looking for him for a while. 
+mpwithdraw 7500 
+give 7500 credits $n 
+mpgain $n 3 50000 
+else 
+say That's not Alzat Rimmer... 
+sneer 
+endif 
+mpat 4 drop all 
+mpat 4 mppurge corpse 
+~
+|
+#5128
+shop clerk~
+a shop clerk~
+A clerk is selling second-hand clothing.
+~
+~
+268435459 4194344 0 Z
+34 0 15 6d10+340 3d4+2
+273 0
+8 8 2
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 2147483647 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#5129
+jewelry clerk~
+a jewelry clerk~
+A clerk is selling second-rate jewelry.
+~
+~
+268435459 4194344 0 Z
+34 0 15 6d10+340 3d4+2
+273 0
+8 8 2
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 2147483647 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#5130
+receptionist droid~
+a receptionist droid~
+&B&bA snooty-looking receptionist droid is in the center of the room.&w
+~
+~
+67108867 4194344 0 Z
+75 0 -200 15d10+750 7d4+2
+351 0
+8 8 0
+25 10 10 20 10 10 10
+0 0 0 0 0
+0 0 0 0 2147483647 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> act_prog factory~
+if ovnuminv(5206) >= 1  
+stare $n  
+say This is for the factory foreman...  
+drop foreman  
+else  
+emote looks at $n disdainfully.  
+endif  
+~
+> act_prog p arrives from the east.~
+say Greetings, how may I serve you?  
+emote makes electronic sounds.  
+mpechoat $n A receptionist droid turns away from you.  
+mpechoat $n A receptionist droid ignores you completely.  
+mpechoaround $n A receptionist droid begins to ignore $n.  
+~
+|
+#5131
+male citizen~
+a male citizen~
+A grungy-looking male citizen is walking down the street.
+~
+~
+268435521 0 -20 Z
+6 0 85 1d10+60 0d4+2
+8 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+1 1 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#5132
+female citizen~
+a female citizen~
+A female citizen is walking quickly down the lane.
+~
+~
+268435649 0 10 Z
+6 0 85 1d10+60 0d4+2
+4 0
+8 8 2
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#5133
+Rodian~
+a Rodian~
+A Rodian is wandering about warily.
+~
+~
+268435521 0 -20 Z
+14 0 65 2d10+140 1d4+2
+45 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+3 0 0 0 3 3 0
+2 2 0 0 0 0 0 0
+-2147483648 0 0 0 0 0 0 0
+#5134
+Station Guard~
+a Station Guard~
+&C&cA station guard is monitoring through traffic.&w
+~
+~
+268468227 0 0 Z
+45 0 -12 9d10+450 4d4+2
+0 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#5135
+dirty chef~
+a dirty chef~
+A dirty chef is dishing out food.
+~
+~
+268435459 4194344 0 Z
+34 0 15 6d10+340 3d4+2
+273 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#5136
+Bith musician~
+a Bith musician~
+A Bith musician is playing a strange instrument for money.
+~
+~
+402653889 0 100 Z
+12 0 70 2d10+120 1d4+2
+400 0
+8 8 2
+10 10 10 20 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+2 2 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> rand_prog 17~
+emote plays a nice jizz tune. 
+~
+> bribe_prog 100~
+say Thank you! 
+smile 
+mpdeposit 100 
+if ovnuminv(5199) >= 1 
+say Here, take this to Nakka and he'll give you a job. 
+give data $n 
+else 
+bow $n 
+endif 
+~
+> time_prog 14~
+if ovnuminv(5199) >= 1 
+emote wails some jizz. 
+else 
+mpoload 5199 
+endif 
+~
+> speech_prog p shut up~
+emote raises her hand, holding all fingers down but the middle one. 
+emote goes back to playing. 
+~
+|
+#5137
+Nakka~
+Nakka~
+A Twi'lek is sitting at a desk.
+~
+~
+671088643 4194344 -400 Z
+70 0 -75 14d10+700 7d4+2
+700 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+2 0 0 0 3 2 0
+14 14 0 0 0 0 0 0
+-2147483648 0 0 0 0 0 0 0
+> act_prog data-disc.~
+if ovnuminv(5199) >= 1  
+say Ah, Leenen sent you?  
+smile  
+say I can put you to work right away!  
+mpoload 5203  
+say Give this to the Hutt working at the Information Brokerage.  
+give packet $n  
+else  
+say Pardon me?  
+endif  
+mpat 4 drop all  
+~
+> speech_prog p Alzat Rimmer~
+cough 
+say Uh... Alzat Rimmer? 
+say No... I haven't seen him... 
+~
+|
+#5138
+Hutt~
+a Hutt~
+A large Hutt is glancing about warily.
+~
+~
+1207959555 4194344 -400 Z
+20 0 -300 4d10+200 2d4+2
+0 0
+8 8 0
+10 10 10 10 20 10 10
+0 0 0 0 0
+4 0 0 0 -1 16 0
+4 4 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> act_prog packet.~
+if ovnuminv(5203) >= 1 
+emote chortles loudly. 
+say I've been waiting for this. 
+mpwithdraw 1000 
+give 1000 credits $n 
+mpgain $n 4 50000 
+say Hmm... would you be interested in another job?
+else 
+growl 
+endif 
+~
+> speech_prog no~
+if ovnuminv(5203) >= 1 
+smile 
+mpat 4 drop all 
+emote chortles loudly. 
+else 
+eyebrow 
+endif 
+~
+> speech_prog yes~
+if ovnuminv(5203) >= 1 
+smile 
+mpoload 5204 
+give chit $n 
+mpat 4 drop packet 
+emote chortles loudly. 
+say Take that to the Shipping Guild. 
+say They'll know what to do with it. 
+emote laughs ominously... 
+else 
+stare $n 
+endif 
+~
+|
+#5139
+Quarren~
+a Quarren~
+A Quarren looks a bit bored.
+~
+~
+1879048195 4194344 0 Z
+45 0 -12 9d10+450 4d4+2
+0 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+15 0 0 0 11 11 0
+9 9 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> act_prog small~
+if ovnuminv(5204) >= 1 
+emote blinks. 
+say Oh, Barda sent you! 
+emote chuckles nervously. 
+say I need you to retrieve a package from Warehouse 9421. 
+say You might have to dig around a bit to find it... 
+emote chuckles nervously again. 
+else 
+say Uh... I don't think I can help you... 
+emote glances about nervously. 
+endif 
+mpat 4 drop all 
+~
+> act_prog crate~
+if ovnuminv(5205) >= 1 
+say Ah! Thank you! 
+smile 
+mpwithdraw 1000 
+give 1000 credits $n 
+mpgain $n 4 50000 
+say Oh, if you like, I have another package I need delivered... 
+else 
+say I don't believe that's what I was looking for... 
+mpat 4 drop all 
+endif 
+~
+> speech_prog no~
+if ovnuminv(5205) >= 1 
+say Oh... all right then. 
+shrug 
+else 
+glare $n 
+endif 
+mpat 4 drop all 
+~
+> speech_prog yes~
+if ovnuminv(5205) >= 1 
+say Excellent! 
+mpoload 5206 
+give foreman $n 
+else 
+eyebrow $n 
+endif 
+mpat 4 drop all 
+~
+|
+#5140
+factory foreman~
+the factory foreman~
+The factory foreman is sitting at his desk.
+~
+~
+2013265923 4194344 0 Z
+70 0 -75 14d10+700 7d4+2
+0 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+2 0 0 0 3 2 0
+14 14 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> act_prog factory~
+if ovnuminv(5206) >= 1 
+say Ah, finally! 
+smile 
+mpwithdraw 2000 
+give 2000 credits $n 
+mpgain $n 4 75000 
+emote looks around warily. 
+say Hmm... I don't suppose you'd be interested in, uh... 
+eyebrow 
+say Slaves? 
+else 
+mpat 4 drop all 
+stare $n 
+endif 
+~
+> speech_prog yes~
+if ovnuminv(5206) >= 1 
+smile 
+say I thought so. 
+say You look like the... discerning sort. 
+evilgrin 
+mpopenpassage 5236 5264 5 
+mpforce $n down 
+mpclosepassage 5236 5 
+else 
+glare $n 
+endif 
+mpat 4 drop all 
+~
+> speech_prog no~
+if ovnuminv(5206) >= 1 
+say Then get out! 
+growl 
+else 
+glare $n 
+endif 
+mpat 4 drop all 
+~
+|
+#5141
+Twi'lek Dancer~
+a Twi'lek Dancer~
+A beautiful Twi'lek Dancer is standing here.
+~
+~
+536871683 0 200 Z
+25 0 37 5d10+250 2d4+2
+0 0
+8 8 2
+8 14 10 20 12 20 10
+0 0 0 0 0
+2 0 0 0 3 2 0
+5 5 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#5142
+shop clerk~
+a shop clerk~
+A clerk is watching over his merchandise.
+~
+~
+268435459 4194344 0 Z
+34 0 15 6d10+340 3d4+2
+273 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#5143
+Bodyguard~
+a bodyguard~
+A hulking brute of a bodyguard is standing here.
+~
+~
+259 0 100 Z
+75 0 -87 15d10+750 7d4+2
+0 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+15 15 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#5144
+Kubaz~
+a Kubaz spy~
+&x&zA suspicious looking Kubaz is loitering around.&w
+~
+~
+4099 65576 -400 Z
+67 0 -67 13d10+670 6d4+2
+1230 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 512 0
+13 13 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> speech_prog p alzat rimmer~
+say 1,000 credits and I can tell you where he is... 
+emote rubs his fingers together. 
+~
+> bribe_prog 1000~
+emote makes a squeaking noise. 
+say He's hiding in the Old Republic ruins east of the oil fields... 
+say A girl working at one of the diners takes him food sometimes. 
+mpdeposit 1000 
+say Pleasure doing business with you... 
+chuckle 
+~
+|
+#5145
+Alzat Rimmer~
+Alzat Rimmer~
+A shadowed form is hunched over with its back turned.
+~
+~
+671125633 0 20 Z
+75 0 -87 15d10+750 7d4+2
+0 0
+8 8 1
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+15 15 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+> death_prog 100~
+mpmload 5146 
+mpforce roon mpoload 5207 
+mpforce roon drop all 
+mppurge roon 
+~
+|
+#5146
+roon~
+a mouse droid~
+A mouse droid is trundling about.
+~
+~
+1677721601 4259882 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 67108865 67108864 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#5147
+systems droid~
+a systems droid~
+A systems droid is methodically performing its tasks.
+~
+~
+1677721603 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#5400
+last mob~
+a newly created last mob~
+Some god abandoned a newly created last mob here.
+~
+~
+1 0 0 Z
+1 0 0 0d0+0 0d0+0
+0 0
+8 8 0
+10 10 10 10 10 10 10
+0 0 0 0 0
+0 0 0 0 1 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#0
+
+
+#OBJECTS
+#5101
+first object~
+a first object~
+A first object is here.~
+~
+7 0 0
+0 0 0 0
+1 0 0
+#5102
+fuel tank~
+a fuel tank~
+&c&CA massive fuel tank is making gurgling noises...&w~
+~
+37 2 0
+0 0 0 0
+5000 0 0
+#5103
+crane~
+a large crane~
+&C&cA large crane is loading heavy crates of cargo.&w~
+~
+49 4098 0
+0 0 0 -1
+2500 0 0
+#5104
+durasteel handrails~
+a durasteel handrail~
+&C&cDurasteel handrails line the walkway on either side.&w~
+~
+6 4096 0
+0 0 33 0
+1200 0 0
+#5105
+duraplast bench~
+a duraplast bench~
+&G&gA duraplast bench is sitting against a wall.&w~
+~
+6 4096 0
+0 0 585 0
+1400 0 0
+#5106
+durasteel guardrail~
+a durasteel guardrail~
+&C&cA durasteel guardrail surrounds the entire observation deck.&w~
+~
+6 4096 0
+0 0 33 0
+1200 0 0
+#5107
+flight control console~
+a flight control console~
+A flight control console is making strange noises...~
+~
+6 4098 0
+0 0 2340 0
+1400 0 0
+#5108
+key~
+a key~
+An electronic cypher key is lying on the ground.~
+~
+11 2 16385
+0 0 0 0
+1 25 2
+#5109
+synth-wood desk~
+a synth-wood desk~
+&Y&OA synth-wood desk is in the center of the room.&w~
+~
+6 4098 0
+0 0 2340 0
+1400 0 0
+#5110
+flashing sign~
+a flashing sign~
+&c&CA flashing sign is advertising a local drinking establishment.&w~
+~
+49 4097 0
+0 0 0 -1
+2500 0 0
+E
+flashing sign ad advertisement list~
+^z&RTRAMP'S CANTINA 
+^z&YBest Liquer in Urbis! 
+~
+#5111
+glass of Whyren's Reserve~
+a glass of Whyren's Reserve~
+A shot glass is lying on the ground.~
+~
+10 0 16385
+3 3 3 0
+1 20 2
+#5112
+mug of lum~
+a mug of lum~
+A mug is lying on the ground.~
+~
+10 0 16385
+4 4 1 0
+1 8 0
+#5113
+glass of Abrax Cognac~
+a glass of Abrax Cognac~
+A shot glass is lying on the ground.~
+~
+10 0 16385
+3 3 2 0
+1 14 1
+#5114
+duraplast table~
+a duraplast table~
+&C&cDuraplast tables are scattered about the bar.&w~
+~
+6 4098 0
+0 0 2340 0
+1400 0 0
+#5115
+bantha-shank couch~
+a bantha-shank couch~
+&Y&OA battered old bantha-shank couch is sitting against a wall.&w~
+~
+6 4096 0
+0 0 585 0
+1400 0 0
+#5116
+oil pumping rig~
+an oil-pumping rig~
+&C&cOil rigs are pumping laborously.&w~
+~
+49 4098 0
+0 0 0 -1
+2500 0 0
+#5117
+row of bunks~
+a small bed~
+&C&cA row of bunks line the walls on either side.&w~
+~
+6 4096 0
+0 0 585 0
+1400 0 0
+#5118
+comlink headset~
+a comlink headset~
+A comlink headset is lying on the ground.~
+~
+42 2 17
+0 0 0 0
+1 50 5
+A
+17 -2
+#5119
+hydrospanner~
+a hydrospanner~
+A hydrospanner might come in handy...~
+~
+36 0 1
+0 0 0 0
+3 77 7
+#5120
+flightsuit~
+a flightsuit~
+A flightsuit is lying on the floor in a wad.~
+~
+4 0 9 16
+6 6 0 0
+1 98 9
+#5121
+battery~
+a battery~
+A battery is lying on the ground... maybe there's still some charge left.~
+~
+35 0 1
+50 0 0 0
+1 6 0
+#5122
+a ration bar~
+a ration bar~
+A ration bar is lying on the ground...~
+~
+12 8192 1
+25 25 0 0
+2 5 0
+#5123
+packet of rations~
+a packet of rations~
+A packet of rations has been left here.~
+~
+12 8192 1
+65 65 0 0
+2 25 2
+#5124
+canteen~
+a canteen~
+A canteen is lying on the ground.~
+~
+10 0 1
+20 20 0 0
+7 25 2
+#5125
+bottle of energy drink~
+a bottle of energy drink~
+A bottle of energy drink is lying on the ground.~
+~
+10 0 1
+20 20 9 0
+3 40 4
+#5126
+statue of a bloated old Hutt~
+a statue of a bloated old Hutt~
+&C&cA statue of a bloated old Hutt is in the center of the square.&w~
+~
+45 4096 0
+0 0 0 0
+1200 0 0
+#5127
+leather backpack~
+a leather backpack~
+A backpack is lying on the ground.~
+~
+8 0 524289
+10 0 0 20
+1 115 11
+#5128
+whuffa-hide briefcase~
+a whuffa-hide briefcase~
+&Y&OA briefcase is lying on the ground.&w~
+~
+8 0 16385
+6 0 0 15
+1 75 7
+#5129
+travel suitcase~
+a travel suitcase~
+&C&cA grey suitcase was foolishly left here.&w~
+~
+8 0 16385
+25 0 0 20
+1 240 24
+#5130
+identity device~
+an identity scanner~
+&C&cAn identity scanner is embedded in the wall.&w~
+~
+49 4098 0
+0 0 0 -1
+1 0 0
+#5131
+glass of Corellian Ale~
+a glass of Corellian Ale~
+A shot glass is lying on the ground.~
+~
+10 0 16385
+3 3 3 0
+1 10 1
+#5132
+repulsorlift track~
+a repulsorlift track~
+&c&CA repulsorlift track is running down the center of the path.&w~
+~
+49 4098 0
+0 0 0 -1
+1200 0 0
+#5133
+sign~
+a sign~
+&C&cA sign has been mounted beside the track.&w~
+~
+3 4096 0
+0 0 0 0
+1 0 0
+E
+sign~
+&YNorth &c- &rMining Station Isk 
+  
+&YEast &c- &rLumber Yards 
+  
+&YSouth &c- &rUrbis Spaceport 
+~
+#5134
+pile timber~
+a pile of timber~
+&Y&ORecently cut timber has been piled here.&w~
+~
+54 33554432 1
+0 0 0 0
+4000 0 0
+#5135
+some timber~
+some timber~
+&Y&OA loose piece of timber is lying on the ground.&w~
+~
+54 33554432 1
+0 0 0 0
+40 0 0
+#5136
+pile timber~
+a pile of timber~
+&Y&OA pile of freshly-cut timber has been stacked on the ground.&w~
+~
+54 0 1
+0 0 0 0
+2000 0 0
+#5137
+some timber~
+some timber~
+&Y&OA loose piece of timber is lying on the ground.&w~
+~
+54 33554432 1
+0 0 0 0
+20 0 0
+#5138
+visor~
+a visor~
+A visor is here.~
+~
+7 0 17
+0 0 0 0
+1 0 0
+A
+20 32
+#5139
+portable scanner~
+a portable scanner~
+A portable scanner is lying on the ground.~
+~
+49 0 16385
+0 4 4 53
+1 125 12
+#5140
+Concussion Rifle~
+a Concussion Rifle~
+&C&cA silver concussion rifle is lying on the ground.&w~
+~
+2 6 8193
+20 20 2 6 800 800
+20 8500 850
+#5141
+pocket vibro-blade~
+a pocket vibro-blade~
+A small vibro-blade could be hidden easily.~
+~
+2 64 8193
+12 3 8 2
+3 500 50
+#5142
+Concussion Cell~
+a Concussion Cell~
+A bulky-looking ammunition cell is lying on the ground.~
+~
+25 0 1
+800 0 0 0
+4 75 7
+#5143
+dirty table~
+a dirty table~
+&C&cDirty tables are scattered about the diner.&w~
+~
+6 4096 0
+0 0 2340 0
+1400 0 0
+#5144
+gundark steak~
+a gundark steak~
+&Y&OSome gundark steak has been grilled to perfection... or something close to that.&w~
+~
+12 0 1
+8 8 0 0
+1 8 0
+#5145
+bowl of tubers~
+a bowl of tubers~
+A bowl of tubers was left here.~
+~
+12 0 1
+4 4 0 0
+1 6 0
+#5146
+mug of caf~
+a mug of caf~
+&c&CA ceramic mug of hot caf is here.&w~
+~
+10 0 1
+4 3 12 0
+1 4 0
+#5147
+glass of water~
+a glass of water~
+A glass of water is sitting here.~
+~
+10 0 1
+5 4 0 0
+1 2 0
+#5148
+some ryshcate~
+some ryshcate~
+Some ryshcate is sitting on a small plate.~
+~
+12 0 1
+4 4 0 0
+1 7 0
+#5149
+comlink~
+a comlink~
+A comlink is making strange noises.~
+~
+42 2 16385
+0 0 0 0
+1 23 2
+#5150
+some glitterstim~
+some glitterstim~
+Some glitterstim was foolishly dropped on the ground.~
+~
+47 0 1
+0 10 0 0
+1 512 51
+#5151
+vial of dilluted ryll~
+a vial of dilluted ryll~
+A vial of some strange substance is lying on the ground.~
+~
+47 0 1
+2 10 0 0
+1 332 33
+#5152
+vial of pure glit~
+a vial of pure glit~
+A glass vial is lying on the ground.~
+~
+47 0 1
+0 30 0 0
+1 2500 250
+#5153
+old couch~
+an old couch~
+&C&cA tattered old couch is intended for any beings too high to leave the premises.&w~
+~
+6 4096 0
+0 0 585 0
+1400 0 0
+#5154
+well~
+a well~
+A well in the center of the street is used by locals as a water source.~
+~
+16 0 0
+2000 2000 0 0
+1 0 0
+#5155
+Wartaki Reed Pipe~
+a Wartaki Reed Pipe~
+A pipe is lying on the ground.~
+~
+19 0 1
+1 0 0 0
+1 250 25
+A
+21 2
+#5156
+chunk of pipeweed~
+a chunk of pipeweed~
+A chunk of strange-smelling herbs is here.~
+~
+21 0 1
+0 2 0 0
+1 21 2
+#5157
+some breadl herbs~
+some breadl~
+Some herbs were dropped on the ground.~
+~
+21 0 1
+0 4 5 0
+1 36 3
+#5158
+cabarra root~
+some cabarra root~
+Some cabarra roots are lying on the ground.~
+~
+21 0 1
+0 2 4 0
+1 22 2
+#5159
+mini thermal detonator~
+a mini thermal detonator~
+A small silver ball is lying on the ground...~
+~
+50 0 16385
+100 50 0 0
+3 1500 150
+#5160
+proton mine~
+a proton mine~
+A suspicious looking object is partially buried here...~
+~
+51 0 16385
+90 190 0 0
+7 1250 100
+#5161
+concussion shield~
+a concussion shield~
+An energy shield is lying on the ground.~
+~
+4 0 513
+19 20 0 0
+10 5172 517
+#5162
+sewing needle~
+a sewing needle~
+A small needle is lying on the ground.~
+~
+46 0 1
+0 0 0 0
+1 179 17
+#5163
+some satin~
+a some satin~
+A some satin is here.~
+~
+44 0 0
+0 0 0 0
+1 0 0
+#5164
+synth-wood desk~
+a synth-wood desk~
+&Y&OA synth-wood desk is sitting in a corner.&w~
+~
+6 0 1
+0 0 2340 0
+80 472 47
+#5165
+comfortable bed~
+a comfortable bed~
+&C&cA comfortable bed is sitting here.&w~
+~
+6 0 1
+0 0 585 0
+100 734 73
+#5166
+whuffa-hide sofa~
+a whuffa-hide sofa~
+&Y&OA whuffa-hide sofa is sitting against a wall.&w~
+~
+6 0 1
+0 0 585 0
+130 613 61
+#5167
+headstone~
+a headstone~
+&x&zHeadstones are scattered about the somber field.&w~
+~
+3 4096 0
+0 0 0 0
+1200 0 0
+E
+headstone headstones~
+&C&cApparently, quite a few beings hereabouts die early... This planet
+doesn't seem to be conducive to long life.
+
+~
+#5168
+slab of nerf~
+a slab of nerf~
+&Y&OA perfect slab of nerf was left here!&w~
+~
+12 0 1
+12 12 0 0
+3 19 1
+#5169
+tongue of bantha~
+a tongue of bantha~
+A grilled bantha tongue was left here...~
+~
+12 0 1
+13 13 0 0
+2 12 1
+#5170
+KZZ Riot Armor~
+KZZ Riot Armor~
+Some armor was foolishly left lying on the ground.~
+~
+4 0 9 8
+5 5 0 0
+4 6000 600
+#5171
+pair of Infra-red Goggles~
+a pair of Infra-red Goggles~
+Some goggles are lying on the ground.~
+~
+49 0 131073 128
+0 0 0 -1
+1 2500 250
+A
+20 8
+#5172
+blast helmet~
+a blast helmet~
+A blast helmet is here.~
+~
+4 0 17 128
+6 6 0 0
+4 1600 160
+#5173
+a Stormtrooper shoulder plate~
+a Stormtrooper shoulder plate~
+A shoulder plate is lying on the ground.~
+~
+4 0 5 2
+4 4 0 0
+3 2700 270
+#5174
+ammunition cell ammo~
+an ammunition cell~
+An ammunition cell was carelessly left here.~
+~
+25 8192 16385
+500 500 0 0
+1 10 1
+#5175
+list of Galactic Bounties~
+a list of Galactic Bounties~
+A list of Galactic Bounties has been mounted on the wall.~
+~
+49 4096 0
+0 0 0 -1
+1 0 0
+E
+list l li lis bounty bounties galactic~
+&GThere are currently &r&R1 &g&Gbounties posted. 
+  
+&C&cAlzat Rimmer &O&Y- &r&RWANTED&C&c for Treason &O&Y - &r&R7,500 credits&w 
+~
+#5176
+pair of black boots~
+a pair of black boots~
+&x&zA pair of black boots were left here.&w~
+~
+4 0 65
+3 3 0 0
+3 213 21
+#5177
+some brown robes~
+some brown robes~
+&Y&OSome brown robes are all wadded up on the ground.&w~
+~
+4 0 1025 32
+2 2 0 0
+1 116 11
+#5178
+old flightsuit~
+an old flightsuit~
+A flightsuit is lying on the floor in a wad.~
+~
+4 0 9 1
+4 4 0 0
+1 74 7
+#5179
+leather holster~
+a leather holster~
+&Y&OA leather holster is lying on the ground.&w~
+~
+4 0 2049 8
+2 2 0 0
+1 40 4
+#5180
+brass ring~
+a brass ring~
+A brass ring is lying on the ground.~
+~
+3 0 3 8
+2 8 0 0
+1 220 22
+#5181
+small necklace~
+a small necklace~
+A small necklace is lying on the ground.~
+~
+3 0 5 64
+0 1 0 0
+1 74 7
+#5182
+small diamond~
+a small diamond~
+A small diamond was dropped on the ground!~
+~
+3 0 16385
+0 20 0 0
+4 500 50
+#5183
+workbench bench~
+a workbench~
+&C&cA workbench seems to see a lot of use.&w~
+~
+6 4096 0
+0 0 609 0
+1500 0 0
+#5184
+conveyor belt~
+a conveyor belt~
+&C&cA conveyor belt is moving items past various work stations.&w~
+~
+6 4098 0
+0 0 2149 0
+2500 0 0
+#5185
+pile of crates~
+a pile of crates~
+&Y&OPiles of crates fill the warehouse.&w~
+~
+6 0 1
+0 0 585 0
+5000 0 0
+#5186
+oil tank~
+an oil tank~
+&x&zA large oil tank has been installed here.&w~
+~
+37 2 0
+0 0 0 0
+5000 0 0
+#5187
+pump~
+a pump~
+&x&zA large pump is working laborously to refine oil.&w~
+~
+49 2 0
+0 0 0 -1
+5000 0 0
+#5188
+ornate desk~
+an ornate desk~
+&c&CAn ornate desk is in the center of the room.&w~
+~
+6 4098 0
+0 0 2340 0
+1400 0 0
+#5189
+conference table~
+a conference table~
+&C&cA conference table is at the front of the room.&w~
+~
+6 4096 0
+0 0 2340 0
+1400 0 0
+#5190
+duraplast bench~
+a duraplast bench~
+&G&gRows of duraplast benches face the conference table.&w~
+~
+6 4096 0
+0 0 585 0
+1400 0 0
+#5191
+duraplast desk~
+a duraplast desk~
+&C&cA duraplast desk is in the center of the room.&w~
+~
+6 4096 0
+0 0 2340 0
+1400 0 0
+#5192
+abstract painting~
+an abstract painting~
+&O&YAn abstract painting is hanging on the western wall.&w~
+~
+3 4096 0
+0 0 0 0
+1 0 0
+E
+painting abstract art~
+&O&YA flurry of colors and shapes, it's hard to tell what the art is
+supposed to mean... or why anyone would want to buy such a thing.
+
+~
+#5193
+vial of ryll~
+a vial of ryll~
+A vial of some strange substance is lying on the ground.~
+~
+47 33554432 1
+2 10 0 0
+1 332 33
+#5194
+bantha stew~
+a bantha stew~
+A bowl of stew was left here.~
+~
+12 0 1
+5 5 0 0
+1 9 0
+#5195
+dirty table~
+a dirty table~
+&C&cDirty tables have been set up underneath the canopy.&w~
+~
+6 4096 0
+0 0 2340 0
+1400 0 0
+#5196
+lichens~
+some lichens~
+Mossy lichens hang from the walls.~
+~
+30 4096 0
+0 0 0 0 -1 -1
+1 0 0
+#5197
+row of flowers~
+a row of flowers~
+&O&YRows of beautiful flowers line the garden.&w~
+~
+12 0 0
+0 0 0 0
+1 0 0
+#5198
+drafting table~
+a drafting table~
+&Y&OSeveral drafting tables are covered with papers.&w~
+~
+6 4096 0
+0 0 2340 0
+1400 0 0
+#5199
+data-disc~
+a data-disc~
+A datacard is lying on the ground.~
+~
+3 2 1
+0 0 0 0
+1 500 50
+#5200
+ruins of a wall~
+the ruins of a wall~
+&x&zThe ruins of a long-ago constructed wall intersect with the road.&w~
+~
+7 4096 0
+0 0 0 0
+3000 0 0
+#5201
+spa~
+an ornate spa~
+&C&cAn ornate spa has steam emanating from it.&w~
+~
+49 4096 0
+0 0 0 -1
+4000 0 0
+#5202
+cheap desk~
+a cheap desk~
+&C&cA cheap desk is in the center of the room.&w~
+~
+6 4096 0
+0 0 2340 0
+1400 0 0
+#5203
+packet~
+a packet~
+A packet of some sort is lying on the ground.~
+~
+8 0 1
+0 0 0 0
+4 0 0
+#5204
+small chit~
+a small chit~
+A small chit is lying on the ground.~
+~
+3 0 1
+0 0 0 0
+1 0 0
+#5205
+crate addressed to the Shipping Guild~
+a crate addressed to the Shipping Guild~
+A Shipping Guild crate has fallen on the floor.~
+~
+8 33554432 1
+0 0 0 0
+40 2000 200
+#5206
+a package to the Textiles Factory foreman~
+a package to the Textiles Factory foreman~
+A package is lying on the ground.~
+~
+8 0 1
+0 0 0 0
+70 0 0
+#5207
+corpse of Alzat Rimmer~
+the corpse of Alzat Rimmer~
+The corpse of Alzat Rimmer is lying in a pool of blood.~
+~
+14 0 1
+0 0 0 0
+40 0 0
+#5208
+row of beds~
+a comfortable bed~
+&G&gRows of fairly comfortable beds line the walls.&w~
+~
+6 1073741824 1
+0 0 585 0
+1400 734 73
+#5400
+first object~
+a first object~
+A first object is here.~
+~
+7 0 0
+0 0 0 0
+1 0 0
+#0
+
+
+#ROOMS
+#5101
+Urbis Landing Field~
+Urbis Landing Field is a large slab of ferrocrete which, though fairly
+recently built, already harbors cracks and ion burns from constant use. To
+the east, a small fueling station has been erected, complementing the
+cargo loading area to the south. A walkway to the north leads to the main
+portion of the spaceport.
+
+~
+0 0 0
+D0
+~
+~
+0 -1 5106
+D1
+~
+~
+0 -1 5104
+D2
+~
+~
+0 -1 5102
+S
+#5102
+Cargo Loading Area~
+A large cargo area has been constructed here, with cargo conveyors and
+massive cranes moving crates, barrels, and timber here and there. Several
+cargo ships are docked here as they are loaded with valuable commodities.
+To the north, the main landing field of Urbis Spaceport sits.
+
+~
+0 0 0
+D0
+~
+~
+0 -1 5101
+D1
+~
+'durasteel gate'~
+3 -1 5120
+S
+#5103
+Spaceport Square~
+You are in the central square of Urbis Spaceport, a fairly new stardock
+that seems to have attracted riff-raff rather quickly. Above you is an
+observation tower, where one can watch the ships launching and landing,
+though usually the persons observing the spaceport aren't exactly
+tourists.
+
+~
+0 0 0
+D0
+~
+~
+0 -1 5108
+D1
+~
+~
+0 -1 5150
+D2
+~
+~
+0 -1 5106
+D3
+~
+~
+0 -1 5107
+D4
+~
+~
+0 -1 5109
+D5
+~
+~
+0 -1 5110
+S
+#5104
+Fueling Station~
+To deal with the great amounts of space traffic coming into and out of
+Urbis, a fuel station has been placed at a convenient position for large
+freighers and other fuel-guzzling starships. Even though Urbis has a
+virtually bottomless supply of fuel deposits, the price to fill your
+vessel is still quite high. This probably wouldn't be a safe place to have
+a firefight. 
+~
+0 0 0
+D0
+~
+~
+0 -1 5105
+D3
+~
+~
+0 -1 5101
+S
+#5105
+Repair Bay~
+Located in a fairly large hangar bay, this building seems to have been set
+aside for ship repairs. The technicians always seem to be quite busy,
+taking ships apart and then putting them back together again. If you look
+around, you might be able to find a tech willing to fix broken equipment,
+as well. 
+~
+0 0 0
+D2
+~
+~
+0 -1 5104
+S
+#5106
+Spaceport Walkway~
+Leading from the landing field to the main spaceport center, this small
+walkway acts as a bridge over a ditch that seems to be used primarily to
+dump refuse... Suprisingly, handrails have been installed on either side
+of the walkway to keep you from falling into the mess below. 
+~
+0 0 0
+D0
+~
+~
+0 -1 5103
+D2
+~
+~
+0 -1 5101
+S
+#5107
+Customs Office~
+Off to one side of the Spaceport Square, the Urbis Customs Office is a
+little-used place. Since Urbis is controlled by the Hutts, there isn't
+really any sort of law enforcement, and the majority of persons arriving
+in Urbis never bother to check in at Customs anyway. 
+~
+16 0 0 1
+D1
+~
+~
+0 -1 5103
+D2
+~
+~
+7 5108 5139
+S
+#5108
+Durasteel Catwalk~
+Leading from the Spaceport Square to the Urbis city proper, this durasteel
+catwalk seperates the poured-ferrocrete island on which the spaceport was
+constructed, and the boomtown that has sprung up to the north. The city
+has been growing quickly ever since the Hutts discovered fuel deposits in
+Urbis' soil.
+
+~
+0 0 0
+D0
+~
+~
+0 -1 5111
+D2
+~
+~
+0 -1 5103
+S
+#5109
+Observation Tower~
+~
+0 0 0
+D2
+~
+~
+33554432 -1 5101
+D5
+~
+~
+0 -1 5103
+S
+#5110
+Flight Control Office~
+The Flight Control Office is the command center of Urbis Spaceport. From
+this location, all incoming and outgoing ships are monitored and assigned
+docking spaces. Most of the controls are automated, requiring little
+sentient supervision of any kind. As a result, this office usually
+contains no more than a handful of beings.
+
+~
+16 0 0 1
+D4
+~
+~
+0 -1 5103
+S
+#5111
+Urbis Spaceport Entrance~
+You stand at the entrance to Urbis Spaceport, the gateway between the rowdy
+city to the north and the spaceport to the south. Looking south from this
+location, one can see the rolling shantytowns and prefabricated building
+that have sprung up near the Hutt fuel-drilling operations. 
+~
+8 0 0 1
+D0
+~
+~
+0 -1 5112
+D2
+~
+~
+0 -1 5108
+S
+#5112
+Dernier Square~
+You stand in a dirty, ill-lit sqare in the city of Urbis. All around you,
+the stench of industry prevails. In the distance, smokestacks rise from
+refineries and factories, while large prefabricated warehouses and shops
+line the crooked roads. This doesn't look like the safest place in the
+galaxy to be...
+
+~
+0 0 0
+D0
+~
+~
+0 -1 5113
+D1
+~
+~
+0 -1 5121
+D2
+~
+~
+0 -1 5111
+D3
+~
+~
+0 -1 5122
+S
+#5113
+Dernier Street~
+Running directly from Urbis Spaceport to the Governing Quarters to the
+north, Dernier Street is one of the few well-lit and generally clean areas
+of the city. Apart from a thug here and there, the street is generally a
+pleasant place to be (compared to other parts of the city). 
+~
+0 0 0
+D0
+~
+~
+0 -1 5114
+D1
+~
+~
+0 -1 5131
+D2
+~
+~
+0 -1 5112
+D3
+~
+~
+0 -1 5132
+S
+#5114
+Dernier Street~
+Running directly from Urbis Spaceport to the Governing Quarters to the
+north, Dernier Street is one of the few well-lit and generally clean areas
+of the city. Apart from a thug here and there, the street is generally a
+pleasant place to be (compared to other parts of the city).  
+~
+0 0 0
+D0
+~
+~
+0 -1 5115
+D1
+~
+~
+0 -1 5134
+D2
+~
+~
+0 -1 5113
+D3
+~
+~
+0 -1 5133
+S
+#5115
+Dernier Street~
+Running directly from Urbis Spaceport to the Governing Quarters to the
+north, Dernier Street is one of the few well-lit and generally clean areas
+of the city. Apart from a thug here and there, the street is generally a
+pleasant place to be (compared to other parts of the city).  
+~
+0 0 0
+D0
+~
+~
+0 -1 5116
+D1
+~
+~
+0 -1 5135
+D2
+~
+~
+0 -1 5114
+D3
+~
+~
+0 -1 5136
+S
+#5116
+Dernier Street~
+Running directly from Urbis Spaceport to the Governing Quarters to the
+north, Dernier Street is one of the few well-lit and generally clean areas
+of the city. Apart from a thug here and there, the street is generally a
+pleasant place to be (compared to other parts of the city).  
+~
+0 0 0
+D0
+~
+~
+0 -1 5117
+D1
+~
+~
+0 -1 5138
+D2
+~
+~
+0 -1 5115
+D3
+~
+~
+0 -1 5137
+S
+#5117
+Urbis Square~
+Directly in front of the planetary Governing Quarters, Urbis Square is a
+fair-sized area that does little more than serve as a buffer between the
+more affluent portions of the Urbis heirarchy and the low-rent
+neighborhoods to the south. 
+~
+0 0 0
+D0
+~
+~
+0 -1 5118
+D1
+~
+~
+0 -1 5241
+D2
+~
+~
+0 -1 5116
+S
+#5118
+Urbis Governing Quarters~
+The Urbis Governing Quarters are located in a large, prefabricated building
+looming over the rest of the city of Urbis. The "Government" of Urbis is a
+commercially-run organisation controlled by the Hutts. The leader wears
+the title of Proconsul, though that may change upon his eventual usurpal.
+
+~
+24 0 0 1
+D0
+~
+~
+0 -1 5119
+D2
+~
+~
+0 -1 5117
+S
+#5119
+Reception Lounge~
+The reception lounge of the Urbis Governing Quarters is fairly
+well-appointed, filled with thick rugs, ornate paintings, and a rather
+ugly couch sitting in one corner. It's doubtful you'll find anyone willing
+to help you here, but it still *looks* nice. 
+~
+24 0 0 1
+D0
+~
+~
+0 -1 5250
+D2
+~
+~
+0 -1 5118
+S
+#5120
+Repulsorlift Track~
+Recently built in drained portions of the marshes surrounding the city of
+Urbis, fairly low-tech repulsorlift tracks run from the Oil/Fuel Drills
+and Timber Yards to Urbis Spaceport. The tracks generate an anti-grav
+field, allowing normally heavy crates and barrels to be moved almost
+effortlessly. 
+~
+8 0 0 1
+D1
+~
+~
+0 -1 5140
+D3
+~
+'durasteel gate'~
+35 -1 5102
+S
+#5121
+Entraepot Street~
+Entraepot Street was one of the first parts of the city to be built,
+filling up quickly with businesses catering to the influx of freighter
+crews, as well as ominously dark warehouses. The beings that seem to have
+settled this city don't look like the most refined people in the galaxy,
+but their eyes betray a certain intelligence from living off of their
+wits.
+
+~
+0 0 0
+D0
+~
+~
+0 -1 5199
+D1
+~
+~
+0 -1 5185
+D2
+~
+~
+0 -1 5196
+D3
+~
+~
+0 -1 5112
+S
+#5122
+Entraepot Street~
+Entraepot Street was one of the first parts of the city to be built,
+filling up quickly with businesses catering to the influx of freighter
+crews, as well as ominously dark warehouses. The beings that seem to have
+settled this city don't look like the most refined people in the galaxy,
+but their eyes betray a certain intelligence from living off of their
+wits.
+
+~
+0 0 0
+D0
+~
+~
+0 -1 5129
+D1
+~
+~
+0 -1 5112
+D2
+~
+~
+0 -1 5130
+D3
+~
+~
+0 -1 5123
+S
+#5123
+Entraepot Street~
+Entraepot Street was one of the first parts of the city to be built,
+filling up quickly with businesses catering to the influx of freighter
+crews, as well as ominously dark warehouses. The beings that seem to have
+settled this city don't look like the most refined people in the galaxy,
+but their eyes betray a certain intelligence from living off of their
+wits.
+
+~
+0 0 0
+D0
+~
+~
+0 -1 5127
+D1
+~
+~
+0 -1 5122
+D2
+~
+~
+0 -1 5126
+D3
+~
+~
+0 -1 5124
+S
+#5124
+Entraepot Street~
+Entraepot Street was one of the first parts of the city to be built,
+filling up quickly with businesses catering to the influx of freighter
+crews, as well as ominously dark warehouses. The beings that seem to have
+settled this city don't look like the most refined people in the galaxy,
+but their eyes betray a certain intelligence from living off of their
+wits.
+
+~
+0 0 0
+D0
+~
+~
+0 -1 5125
+D1
+~
+~
+0 -1 5123
+D2
+~
+~
+0 -1 5128
+D3
+~
+~
+0 -1 5163
+S
+#5125
+Spacer's Hotel~
+The Spacer's Hotel is a low-rent hostel used mostly by freighter pilots and
+bounty hunters. The rooms are cheap, and fairly clean, which makes the
+Spacer a fairly popular place.
+
+&R&rYou may QUIT at this location.&w 
+~
+524816 0 0 1
+D2
+~
+~
+0 -1 5124
+S
+#5126
+Tramp's Cantina~
+Tramp's Cantina is one of many such establishments in Urbis, catering to
+freighter pilots and transport crews eager to spend their pay. However,
+the liquor doesn't seem to be watered down *too* much, so you might be
+able to get nice and drunk if you feel like it. 
+~
+16 0 0 1
+D0
+~
+~
+0 -1 5123
+S
+#5127
+Warehouse 6127~
+This is just one of many warehouses located in Urbis. The warehouses are
+used to store all manner of items, from fuel bins to crates of timber, but
+the warehouses more often serve merely as an attractant to all manner of
+crime.
+
+~
+16 0 0 1
+D2
+~
+~
+0 -1 5123
+S
+#5128
+Warehouse 5723~
+This is just one of many warehouses located in Urbis. The warehouses are
+used to store all manner of items, from fuel bins to crates of timber, but
+the warehouses more often serve merely as an attractant to all manner of
+crime. 
+~
+16 0 0 1
+D0
+~
+~
+0 -1 5124
+S
+#5129
+Shipping Guild~
+You are in the local Shipping Guild offices, a loose-knit organisation
+spanning many sectors in the galaxy. Most Guild members are either
+smugglers or pirates, though a few are legitimate freight-haulers. You
+could probably get a job here, if you had some sort of references.
+
+~
+24 0 0 1
+D2
+~
+~
+0 -1 5122
+S
+#5130
+Warehouse 6924~
+This is just one of many warehouses located in Urbis. The warehouses are
+used to store all manner of items, from fuel bins to crates of timber, but
+the warehouses more often serve merely as an attractant to all manner of
+crime.
+
+~
+16 0 0 1
+D0
+~
+~
+0 -1 5122
+S
+#5131
+Entech Ration Company~
+You are in a small outlet shop that seems to specialize in rations and
+other survival equipment. Though rations aren't known for their taste,
+they're still quite popular, especially with freighter pilots and other
+beings who spend their time scraping together as much money as they can.
+
+~
+24 0 0 1
+D3
+~
+~
+0 -1 5113
+S
+#5132
+Warehouse 5153~
+This is just one of many warehouses located in Urbis. The warehouses are
+used to store all manner of items, from fuel bins to crates of timber, but
+the warehouses more often serve merely as an attractant to all manner of
+crime.
+
+~
+24 0 0 1
+D1
+~
+~
+0 -1 5113
+S
+#5133
+Corusca Luggage~
+With the influx of travelers, it's no wonder that a shop like this sees a
+lot of business. Corusca Luggage sells all types of containers, from
+backpacks to suitcases. The store, unlike many in Urbis, actually has an
+air of respectability about it. 
+~
+24 0 0 1
+D1
+~
+~
+0 -1 5114
+S
+#5134
+Nar-Ebba Ship Supply~
+Nar-Ebba Ship Supply is a Hutt-owned supplier with stores on several major
+smuggling/freight destinations, including Ord Mantell and Nar Shaddaa. The
+store sells a wide variety of products, all of them geared towards
+freighter crews. 
+~
+24 0 0 1
+D3
+~
+~
+0 -1 5114
+S
+#5135
+White Krayt Bistro~
+~
+24 0 0 1
+D3
+~
+~
+0 -1 5115
+S
+#5136
+Grand Galactic Bank~
+Grand Galactic Bank is the largest banking establishment in the galaxy,
+with literally tens of thousands of branches all over the galaxy. GGB has
+a good reputation, so storing money with them is probably a safe bet.
+There's even an identity scanner to make sure no-one impersonates you.
+
+~
+152 0 0 1
+D1
+~
+~
+0 -1 5115
+> entry_prog 100~
+mpecho A vox says, 'Identity confirmed.' 
+mpecho A vox says, 'Welcome to the Galactic Bank, $n.' 
+~
+|
+S
+#5137
+Chempat Road~
+A wide, bumpy boulevard, Chempat Road stretches across the northern end of
+the city, directly before the Governing Quarters and other more prestigous
+buildings. Small hovels line the road, along with the occasional shop
+selling trinkets and other harmless objects. There's a bit more lighting
+here than in other parts of the city.
+
+~
+0 0 0
+D0
+~
+~
+0 -1 5226
+D1
+~
+~
+0 -1 5116
+D2
+~
+~
+0 -1 5227
+D3
+~
+~
+0 -1 5228
+S
+#5138
+Chempat Road~
+A wide, bumpy boulevard, Chempat Road stretches across the northern end of
+the city, directly before the Governing Quarters and other more prestigous
+buildings. Small hovels line the road, along with the occasional shop
+selling trinkets and other harmless objects. There's a bit more lighting
+here than in other parts of the city.
+
+~
+0 0 0
+D0
+~
+~
+0 -1 5217
+D1
+~
+~
+0 -1 5220
+D2
+~
+~
+0 -1 5218
+D3
+~
+~
+0 -1 5116
+S
+#5139
+Confiscation Storage~
+Located in a small closet in the Urbis Customs Office, this room is used to
+store any and all confiscated items. This closet is seldom full, since
+there's barely any law enforcement on Urbis anyway. However, you might be
+able to find something worthwhile if you dig around a bit.
+
+~
+24 0 0 1
+D0
+~
+~
+1 -1 5107
+S
+#5140
+Repulsorlift Track~
+Recently built in drained portions of the marshes surrounding the city of
+Urbis, fairly low-tech repulsorlift tracks run from the Oil/Fuel Drills
+and Timber Yards to Urbis Spaceport. The tracks generate an anti-grav
+field, allowing normally heavy crates and barrels to be moved almost
+effortlessly. 
+~
+8 0 0 1
+D1
+~
+~
+0 -1 5141
+D3
+~
+~
+0 -1 5120
+S
+#5141
+Repulsorlift Track~
+Recently built in drained portions of the marshes surrounding the city of
+Urbis, fairly low-tech repulsorlift tracks run from the Oil/Fuel Drills
+and Timber Yards to Urbis Spaceport. The tracks generate an anti-grav
+field, allowing normally heavy crates and barrels to be moved almost
+effortlessly. 
+~
+0 0 0
+D0
+~
+~
+0 -1 5142
+D3
+~
+~
+0 -1 5140
+S
+#5142
+Repulsorlift Track~
+Recently built in drained portions of the marshes surrounding the city of
+Urbis, fairly low-tech repulsorlift tracks run from the Oil/Fuel Drills
+and Timber Yards to Urbis Spaceport. The tracks generate an anti-grav
+field, allowing normally heavy crates and barrels to be moved almost
+effortlessly. 
+~
+0 0 0
+D0
+~
+~
+0 -1 5143
+D2
+~
+~
+0 -1 5141
+D3
+~
+~
+33554432 -1 5162
+S
+#5143
+Repulsorlift Track~
+Recently built in drained portions of the marshes surrounding the city of
+Urbis, fairly low-tech repulsorlift tracks run from the Oil/Fuel Drills
+and Timber Yards to Urbis Spaceport. The tracks generate an anti-grav
+field, allowing normally heavy crates and barrels to be moved almost
+effortlessly. 
+~
+0 0 0
+D0
+~
+~
+0 -1 5144
+D2
+~
+~
+0 -1 5142
+S
+#5144
+Repulsorlift Track~
+Recently built in drained portions of the marshes surrounding the city of
+Urbis, fairly low-tech repulsorlift tracks run from the Oil/Fuel Drills
+and Timber Yards to Urbis Spaceport. The tracks generate an anti-grav
+field, allowing normally heavy crates and barrels to be moved almost
+effortlessly. 
+~
+0 0 0
+D0
+~
+~
+0 -1 5145
+D2
+~
+~
+0 -1 5143
+S
+#5145
+Track Junction~
+A makeshift repulsor-track junction is located here, with the main line
+branching off north towards the Oil fields and east towards the Timber
+yards. The main Spaceport Line runs south and then west, towards the city
+of Urbis. The repulsorlift tracks seem to be giving off heat, which makes
+the oppressive humidity even worse.
+
+~
+0 0 0
+D0
+~
+~
+0 -1 5146
+D1
+~
+~
+0 -1 5171
+D2
+~
+~
+0 -1 5144
+S
+#5146
+Repulsor-track Isk~
+Recently built in drained portions of the marshes surrounding the city of
+Urbis, fairly low-tech repulsorlift tracks run from the Oil/Fuel Drills
+and Timber Yards to Urbis Spaceport. The tracks generate an anti-grav
+field, allowing normally heavy crates and barrels to be moved almost
+effortlessly. 
+~
+0 0 0
+D0
+~
+~
+0 -1 5147
+D2
+~
+~
+0 -1 5145
+S
+#5147
+Repulsorlift Track~
+Recently built in drained portions of the marshes surrounding the city of
+Urbis, fairly low-tech repulsorlift tracks run from the Oil/Fuel Drills
+and Timber Yards to Urbis Spaceport. The tracks generate an anti-grav
+field, allowing normally heavy crates and barrels to be moved almost
+effortlessly. 
+~
+0 0 0
+D0
+~
+~
+0 -1 5148
+D2
+~
+~
+0 -1 5146
+S
+#5148
+Repulsorlift Track~
+Recently built in drained portions of the marshes surrounding the city of
+Urbis, fairly low-tech repulsorlift tracks run from the Oil/Fuel Drills
+and Timber Yards to Urbis Spaceport. The tracks generate an anti-grav
+field, allowing normally heavy crates and barrels to be moved almost
+effortlessly. 
+~
+0 0 0
+D0
+~
+~
+0 -1 5149
+D2
+~
+~
+0 -1 5147
+S
+#5149
+Loading Station~
+Located on a raised platform above the repulsorlift track, this loading
+station is used to set heavy barrels of oil onto the repulsor-tracks so
+that they may be transported to the spaceport located to the south-west of
+this location. 
+~
+0 0 0
+D2
+~
+~
+0 -1 5148
+D3
+~
+~
+3 -1 5151
+S
+#5150
+Rest Lounge~
+Intended to serve as a resting place for beings waiting for chartered
+flights to arrive, this lounge is more often than not commandeered by
+freighter crews as their ships are loaded or unloaded. Still, the lounge
+is kept fairly clean, and there's a CommNet access terminal.
+
+~
+524816 0 0 1
+D3
+~
+~
+0 -1 5103
+S
+#5151
+Control Room~
+The control room for Loading Station Isk is small, cramped, and almost
+unbearably hot. Aside from a few control panels and varied cargo lists and
+schedules, there's nothing of interest. Rather crass pictures of Rodian
+females in compromising positions have been tacked on the walls. 
+~
+16 0 0 1
+D0
+~
+~
+0 -1 5152
+D1
+~
+~
+3 -1 5149
+S
+#5152
+Crew Lounge~
+The crew lounge for Loading Station Isk isn't anything special, with little
+entertainment at all. There are a few old holo-magazines scattered about,
+but otherwise the room is pretty bare. The lounge is used every once in a
+while by members of the oil crews while they wait for their cargo to be
+loaded onto the repulsor-tracks.
+
+~
+524304 0 0 1
+D0
+~
+~
+0 -1 5153
+D2
+~
+~
+0 -1 5151
+S
+#5153
+Loading Station Isk~
+Slightly cooler than the humid heat outside, Loading Station Isk is just
+one of many oil/fuel cargo platforms. From here, barrels of precious oil
+are sent down a repulsorlift track to Urbis Spaceport, where they are
+loaded onto freighters and distributed throughout the galaxy.
+
+~
+0 0 0
+D0
+~
+~
+0 -1 5154
+D2
+~
+~
+0 -1 5152
+S
+#5154
+Gravel Walkway~
+With the humidity being what it is, standing here on a gravel walkway is
+like being in an oven. Even a frequent breeze through the area isn't
+enough to keep the area from becoming scolding hot, especially in the
+summer months. From this location, oil-pumping rigs can be clearly made
+out. 
+~
+0 0 0
+D0
+~
+~
+0 -1 5155
+D2
+~
+~
+0 -1 5153
+D3
+~
+~
+0 -1 5249
+S
+#5155
+Gravel Walkway~
+With the humidity being what it is, standing here on a gravel walkway is
+like being in an oven. Even a frequent breeze through the area isn't
+enough to keep the area from becoming scolding hot, especially in the
+summer months. From this location, oil-pumping rigs can be clearly made
+out.  
+~
+0 0 0
+D0
+~
+~
+0 -1 5156
+D1
+~
+~
+0 -1 5160
+D2
+~
+~
+0 -1 5154
+D3
+~
+~
+0 -1 5161
+S
+#5156
+Gravel Walkway~
+With the humidity being what it is, standing here on a gravel walkway is
+like being in an oven. Even a frequent breeze through the area isn't
+enough to keep the area from becoming scolding hot, especially in the
+summer months. From this location, oil-pumping rigs can be clearly made
+out.  
+~
+0 0 0
+D0
+~
+~
+0 -1 5157
+D1
+~
+~
+0 -1 5158
+D2
+~
+~
+0 -1 5155
+D3
+~
+~
+0 -1 5159
+S
+#5157
+Pumping Station #1~
+One of many oil pumping stations installed in the swamps and marshes of
+Urbis, oil rigs work to bring an endless supply of fuel (and credits) into
+the hands of the Hutts who control this world. The stench of oil, combined
+with the hot, humid weather, leads one to wish for the comforts of an
+environmental control unit. 
+~
+0 0 0
+D2
+~
+~
+0 -1 5156
+S
+#5158
+Pumping Station #2~
+One of many oil pumping stations installed in the swamps and marshes of
+Urbis, oil rigs work to bring an endless supply of fuel (and credits) into
+the hands of the Hutts who control this world. The stench of oil, combined
+with the hot, humid weather, leads one to wish for the comforts of an
+environmental control unit.  There seems to be something beneath the
+rig... 
+~
+0 0 0
+D3
+~
+~
+0 -1 5156
+D5
+~
+~
+2048 -1 5266
+S
+#5159
+Pumping Station #3~
+One of many oil pumping stations installed in the swamps and marshes of
+Urbis, oil rigs work to bring an endless supply of fuel (and credits) into
+the hands of the Hutts who control this world. The stench of oil, combined
+with the hot, humid weather, leads one to wish for the comforts of an
+environmental control unit.  
+~
+0 0 0
+D1
+~
+~
+0 -1 5156
+S
+#5160
+Crew Barracks~
+Little more than a big prefabricated box, these barracks serve as the home
+for several dozen beings working as an oil crew. There is little in the
+way of amenities, though there is an environmental control unit blowing
+blessedly cool air. 
+~
+524304 0 0 1
+D3
+~
+~
+0 -1 5155
+S
+#5161
+Canopied Cafeteria~
+Basically nothing more than a large tent, this cafeteria provides food and
+drink for the oil crews. Though it's still fairly hot and humid, the shade
+provided by the canopy above cools it down a little. The ground, however,
+is covered with the same gravel as the walkway outside.
+
+~
+16 0 0 1
+D1
+~
+~
+0 -1 5155
+S
+#5162
+Guard Station~
+This is a small guard station where personnel are assigned to make sure
+nothing bad happens to cargo moving along the tracks. Unfortunately, the
+station guards sleep most of the time. Natch.
+
+~
+16 0 0 1
+D1
+~
+~
+33554432 -1 5142
+S
+#5163
+Entraepot Street~
+Entraepot Street was one of the first parts of the city to be built,
+filling up quickly with businesses catering to the influx of freighter
+crews, as well as ominously dark warehouses. The beings that seem to have
+settled this city don't look like the most refined people in the galaxy,
+but their eyes betray a certain intelligence from living off of their
+wits.
+
+~
+0 0 0
+D0
+~
+~
+0 -1 5166
+D1
+~
+~
+0 -1 5124
+D2
+~
+~
+0 -1 5164
+D3
+~
+~
+0 -1 5167
+S
+#5164
+Reeka's Droids~
+Reeka's Droids provides used and refurbished droids to the populace of
+Urbis, as well as any freighters passing through. You get that sense that
+if Jawas lived on this planet, they'd own this shop. However, most of the
+stock doesn't look too beat up, so you might be able to take a chance.
+
+~
+2072 0 0 1
+D0
+~
+~
+0 -1 5163
+S
+#5165
+Droid Storage Room~
+~
+8 0 0 1
+S
+#5166
+Twin Eopies Mounts~
+You are in a hot corral, filled with snorting dewbacks. The animals are
+obviously meant for sale or rent, but you could easily make off with one
+without the owner even knowing. The air is hot and muggy, almost
+unbearably so. 
+~
+8 0 0 1
+D2
+~
+~
+0 -1 5163
+S
+#5167
+Intersection of Entraepot and Daen~
+Like most parts of the city, this intersection is dark, grimy, and rather
+grungy-looking. The pavement is uneven, and the lack of lighting sends a
+wary chill down your spine. This street corner, like many other places in
+Urbis, could easily witness a murder daily. A warm wind blows through,
+making you want to continue to another portion of the city. 
+~
+0 0 0
+D0
+~
+~
+0 -1 5168
+D1
+~
+~
+0 -1 5163
+S
+#5168
+Daen Road~
+One of the darker and more foreboding sections of Urbis, Daen Road is a
+hilly, poorly paved lane running along the western portion of the city.
+Many of the businesses on Daen look a bit less-than-legitimate, though the
+occasional shop looks like it doesn't cheat *all* of its customers.  
+~
+0 0 0
+D0
+~
+~
+0 -1 5189
+D1
+~
+~
+0 -1 5169
+D2
+~
+~
+0 -1 5167
+D3
+~
+~
+0 -1 5170
+S
+#5169
+Information Brokerage~
+You are in a small shack just off of Daen Road. An information brokering
+service seems to have been set up here, dealing in bytes and data-cards. A
+being could retrieve any information in the galaxy from a source like
+this... for a price. 
+~
+24 0 0 1
+D3
+~
+~
+0 -1 5168
+S
+#5170
+Swamp Wampa Bar~
+You are in a dirty, smoke-filled bar that look as if it attracts some rough
+characters. Though some attempts are made to hide them, there are very
+distinct blaster holes on the walls, and signs of a recent bar scuffle are
+evident. 
+~
+24 0 0 1
+D1
+~
+~
+0 -1 5168
+S
+#5171
+Repulsorlift Side-track~
+Recently built in drained portions of the marshes surrounding the city of
+Urbis, fairly low-tech repulsorlift tracks run from the Oil/Fuel Drills
+and Timber Yards to Urbis Spaceport. The tracks generate an anti-grav
+field, allowing normally heavy crates and barrels to be moved almost
+effortlessly. 
+~
+0 0 0
+D1
+~
+~
+0 -1 5172
+D3
+~
+~
+0 -1 5145
+S
+#5172
+Repulsorlift Track~
+Recently built in drained portions of the marshes surrounding the city of
+Urbis, fairly low-tech repulsorlift tracks run from the Oil/Fuel Drills
+and Timber Yards to Urbis Spaceport. The tracks generate an anti-grav
+field, allowing normally heavy crates and barrels to be moved almost
+effortlessly. 
+~
+0 0 0
+D1
+~
+~
+0 -1 5173
+D3
+~
+~
+0 -1 5171
+S
+#5173
+Repulsorlift Track~
+Recently built in drained portions of the marshes surrounding the city of
+Urbis, fairly low-tech repulsorlift tracks run from the Oil/Fuel Drills
+and Timber Yards to Urbis Spaceport. The tracks generate an anti-grav
+field, allowing normally heavy crates and barrels to be moved almost
+effortlessly. 
+~
+0 0 0
+D1
+~
+~
+0 -1 5174
+D3
+~
+~
+0 -1 5172
+S
+#5174
+Loading Station~
+Located on a raised platform above the repulsorlift track, this loading
+station is used to set heavy loads of freshly-cut timber onto the
+repulsor-tracks so that they may be transported to the spaceport located
+to the south-west of this location. 
+~
+0 0 0
+D2
+~
+'durasteel gate'~
+3 -1 5175
+D3
+~
+~
+0 -1 5173
+S
+#5175
+Loading Dock~
+Loads of timber are stored here, away from the hostile elements of Urbis,
+until they are ready to be loaded on the repulsor-tracks and ferried to
+Urbis Spaceport. To keep the timber fresh, this area is sealed and kept
+fairly cold. 
+~
+16 0 0 1
+D0
+~
+'durasteel gate'~
+3 -1 5174
+D1
+~
+~
+0 -1 5176
+S
+#5176
+Mossy Path~
+You walk along a recently-built path that already has moss creeping up on
+it. All around you, the marsh-forests of Urbis loom above. Most of the
+nearby trees have been cut, though a few remain. A few hundred yards
+distant, however, the forest rises up like an impenetrable wall.
+
+~
+0 0 0
+D0
+~
+~
+0 -1 5180
+D1
+~
+~
+0 -1 5177
+D2
+~
+~
+0 -1 5181
+D3
+~
+~
+0 -1 5175
+S
+#5177
+Mossy Path~
+You walk along a recently-built path that already has moss creeping up on
+it. All around you, the marsh-forests of Urbis loom above. Most of the
+nearby trees have been cut, though a few remain. A few hundred yards
+distant, however, the forest rises up like an impenetrable wall.
+
+~
+0 0 0
+D1
+~
+~
+0 -1 5178
+D3
+~
+~
+0 -1 5176
+S
+#5178
+Mossy Path~
+You walk along a recently-built path that already has moss creeping up on
+it. All around you, the marsh-forests of Urbis loom above. Most of the
+nearby trees have been cut, though a few remain. A few hundred yards
+distant, however, the forest rises up like an impenetrable wall.
+
+~
+0 0 0
+D0
+~
+~
+0 -1 5182
+D1
+~
+~
+0 -1 5179
+D2
+~
+~
+0 -1 5183
+D3
+~
+~
+0 -1 5177
+S
+#5179
+Forest Edge~
+The edge of the swamp-forest is quiet, though a few avians can be heard
+making noise as they fly overhead. Directly to the east, the forest
+begins, though a large fence seems to have been mounted there to keep
+predators out of the Yards. 
+~
+-2147483648 0 0 1
+D1
+~
+'chainlink gate'~
+8389671 -1 5184
+D3
+~
+~
+0 -1 5178
+D7
+~
+~
+0 -1 5182
+D9
+~
+~
+0 -1 5183
+S
+#5180
+Timber Storage~
+Freshly-cut timber is piled here until it is examined and prepared for
+transport. The wood seems to be of good quality, though the bark has a
+strange consistency that must be indigenous to this planet. Perhaps if you
+look around, you'll find some spare pieces of wood with which to build
+something nice.
+
+~
+0 0 0
+D2
+~
+~
+0 -1 5176
+S
+#5181
+Timber Storage~
+Freshly-cut timber is piled here until it is examined and prepared for
+transport. The wood seems to be of good quality, though the bark has a
+strange consistency that must be indigenous to this planet. Perhaps if you
+look around, you'll find some spare pieces of wood with which to build
+something nice.
+
+~
+0 0 0
+D0
+~
+~
+0 -1 5176
+S
+#5182
+Forest Clearing~
+The spongy ground dulls the sound of footsteps in this clearing, where
+until recently full-grown swamp trees lived. This area has been cleared
+entirely of such trees, to be used to construct expensive desks and other
+exotic furniture. A large fence to the east keep predators out of the
+timber yards at night.
+
+~
+0 0 0
+D1
+~
+'chainlink fence'~
+8389671 -1 5184
+D2
+~
+~
+0 -1 5178
+D8
+~
+~
+0 -1 5179
+S
+#5183
+Forest Clearing~
+The spongy ground dulls the sound of footsteps in this clearing, where
+until recently full-grown swamp trees lived. This area has been cleared
+entirely of such trees, to be used to construct expensive desks and other
+exotic furniture. A large fence to the east keep predators out of the
+timber yards at night.
+
+~
+0 0 0
+D0
+~
+~
+0 -1 5178
+D1
+~
+'chainlink fence'~
+8389671 -1 5184
+D6
+~
+~
+0 -1 5179
+S
+#5184
+Forest~
+~
+8 0 0 1
+D3
+~
+~
+0 -1 5183
+S
+#5185
+Entraepot Street~
+Entraepot Street was one of the first parts of the city to be built,
+filling up quickly with businesses catering to the influx of freighter
+crews, as well as ominously dark warehouses. The beings that seem to have
+settled this city don't look like the most refined people in the galaxy,
+but their eyes betray a certain intelligence from living off of their
+wits.
+
+~
+0 0 0
+D0
+~
+~
+0 -1 5197
+D1
+~
+~
+0 -1 5186
+D2
+~
+~
+0 -1 5198
+D3
+~
+~
+0 -1 5121
+S
+#5186
+Entraepot Street~
+Entraepot Street was one of the first parts of the city to be built,
+filling up quickly with businesses catering to the influx of freighter
+crews, as well as ominously dark warehouses. The beings that seem to have
+settled this city don't look like the most refined people in the galaxy,
+but their eyes betray a certain intelligence from living off of their
+wits.
+
+~
+0 0 0
+D0
+~
+~
+0 -1 5188
+D1
+~
+~
+0 -1 5200
+D2
+~
+~
+0 -1 5187
+D3
+~
+~
+0 -1 5185
+S
+#5187
+Nal Drulla Oil Refinery~
+Nall Drulla Oil Refinery is one of the many fuel refineries in the city.
+The refinery is generally a dirty, smelly place filled with half-wit
+workers spouting endless strings of profanities. With luck, you ought to
+be able to fit right in. 
+~
+24 0 0 1
+D0
+~
+~
+0 -1 5186
+D1
+~
+~
+0 -1 5238
+D2
+~
+~
+0 -1 5239
+S
+#5188
+Retah Electronics~
+You are in a small electronics store that deals mostly in replacement parts
+for freighters and other ships. Even if you aren't a freighter pilot,
+there are a few items that might be worth looking at.
+
+~
+24 0 0 1
+D2
+~
+~
+0 -1 5186
+S
+#5189
+Daen Road~
+One of the darker and more foreboding sections of Urbis, Daen Road is a
+hilly, poorly paved lane running along the western portion of the city.
+Many of the businesses on Daen look a bit less-than-legitimate, though the
+occasional shop looks like it doesn't cheat *all* of its customers.  
+~
+0 0 0
+D0
+~
+~
+0 -1 5192
+D1
+~
+~
+0 -1 5190
+D2
+~
+~
+0 -1 5168
+D3
+~
+~
+0 -1 5191
+S
+#5190
+Tukatu Weapons~
+You are in a small weapons shop just off of Daen Road. The store is filled
+with evil-looking weapons of every sort, from Imperial blaster rifles to
+Concussion rifles. It's obvious that Urbis doesn't have a very good law
+system, or else stores like these would be illegal. 
+~
+24 0 0 1
+D3
+~
+~
+0 -1 5189
+S
+#5191
+Desilijic Textiles Factory~
+One of the many factories in Urbis, this textiles factory is run by the
+Desilijic clan of Hutts. In other words, most of the workers here are
+probably slave labor. The reception area doesn't look like it's cleaned
+often, and the temperature controls are dialed up to accomodate Hutts.
+
+~
+24 0 0 1
+D0
+~
+~
+3 -1 5234
+D1
+~
+~
+0 -1 5189
+S
+#5192
+Daen Road~
+One of the darker and more foreboding sections of Urbis, Daen Road is a
+hilly, poorly paved lane running along the western portion of the city.
+Many of the businesses on Daen look a bit less-than-legitimate, though the
+occasional shop looks like it doesn't cheat *all* of its customers. 
+~
+0 0 0
+D0
+~
+~
+0 -1 5195
+D1
+~
+~
+0 -1 5193
+D2
+~
+~
+0 -1 5189
+D3
+~
+~
+0 -1 5194
+S
+#5193
+Chempat Explosives~
+You are in a small shop devoted to explosives. It should be hoped that this
+section of the city never catches fire, or all that may be left is a very
+large crater. you get the sense that most of the customers to this shop
+are bounty hunters, assassins, and all around bad guys.
+
+~
+16 0 0 1
+D3
+~
+~
+0 -1 5192
+S
+#5194
+Elite Bodyguard Consortium~
+~
+24 0 0 1
+D1
+~
+~
+0 -1 5192
+S
+#5195
+Intersection of Daen and Chempat~
+Like most parts of the city, this intersection is dark, grimy, and rather
+grungy-looking. The pavement is uneven, and the lack of lighting sends a
+wary chill down your spine. This street corner, like many other places in
+Urbis, could easily witness a murder daily. 
+~
+0 0 0
+D1
+~
+~
+0 -1 5231
+D2
+~
+~
+0 -1 5192
+S
+#5196
+Macrofuser Diner~
+You step into a small diner that is obviously run with freighter crews in
+mind. The food is greasy, the lighting is dim, and the atmosphere is...
+less than pleasant. However, the food seems to be *fairly* good, which is
+a step above some of the other food establishments in the surrounding
+area.
+
+~
+24 0 0 1
+D0
+~
+~
+0 -1 5121
+S
+#5197
+Hyperspeed Courier Offices~
+~
+24 0 0 1
+D2
+~
+~
+0 -1 5185
+S
+#5198
+Arana Speeder Rentals~
+This looks like the local speeder rental/purchase lot, though most of the
+stock looks pretty beat up. Still, it's probably safer to use a speeder
+than chance walking the streets at night. Standing on the ferrocrete slab
+that the lot is located on, it's hard to ignore the oppressive heat.
+
+~
+8 0 0 1
+D0
+~
+~
+0 -1 5185
+S
+#5199
+Nakka Transport Services~
+Housed in a small, pre-fabricated module, Nakka Transport Services is a
+small transport company that gets a fair amount of business from the
+Hutts. Naturally, most of the cargo being transported is not entirely
+legal...
+
+~
+24 0 0 1
+D2
+~
+~
+0 -1 5121
+S
+#5200
+Entraepot Street~
+Entraepot Street was one of the first parts of the city to be built,
+filling up quickly with businesses catering to the influx of freighter
+crews, as well as ominously dark warehouses. The beings that seem to have
+settled this city don't look like the most refined people in the galaxy,
+but their eyes betray a certain intelligence from living off of their
+wits.
+
+~
+0 0 0
+D0
+~
+~
+0 -1 5201
+D1
+~
+~
+0 -1 5203
+D2
+~
+~
+0 -1 5202
+D3
+~
+~
+0 -1 5186
+S
+#5201
+Dhuliwal Jewelry~
+One of many less-than-reliable businesses in Urbis, Dhuliwal Jewelry mostly
+sells cheap trinkets and fake jewelry, though every once in a while
+authentic precious metals will make their way into the inventory.
+
+~
+24 0 0 1
+D2
+~
+~
+0 -1 5200
+S
+#5202
+Warehouse 9421~
+This is just one of many warehouses located in Urbis. The warehouses are
+used to store all manner of items, from fuel bins to crates of timber, but
+the warehouses more often serve merely as an attractant to all manner of
+crime.
+
+~
+24 0 0 1
+D0
+~
+~
+0 -1 5200
+S
+#5203
+Intersection of Entraepot and Valerius~
+Like most parts of the city, this intersection is dark, grimy, and rather
+grungy-looking. The pavement is uneven, and the lack of lighting sends a
+wary chill down your spine. This street corner, like many other places in
+Urbis, could easily witness a murder daily. 
+~
+0 0 0
+D0
+~
+~
+0 -1 5204
+D3
+~
+~
+0 -1 5200
+S
+#5204
+Valerius Road~
+Valerius Road is a hilly lane stretching across the eastern portion of
+Urbis. Most of the buildings on the street seem to be devoted to
+businesses, and some of them even look a bit legitimate. It's a step up
+from the area surrounding the spaceport, anyway. 
+~
+0 0 0
+D0
+~
+~
+0 -1 5207
+D1
+~
+~
+0 -1 5205
+D2
+~
+~
+0 -1 5203
+D3
+~
+~
+0 -1 5206
+S
+#5205
+Hokum Shop~
+You are in a Hokum Shop just off of Valerius Road. This tiny, smoke-filled
+shack houses dozens of substances all but illegal on most planets in the
+galaxy. However, since Urbis is controlled by the Hutts, drugs such as
+glit and andris are available without even so much as a tariff.
+
+~
+24 0 0 1
+D3
+~
+~
+0 -1 5204
+S
+#5206
+Glitterspin Pawn Shop~
+Cramped, grimy, and filled mostly with worthless junk, the Glitterspin Pawn
+Shop is one of many questionable establishments in Urbis. The Glitterspin
+seems to be especially popular with glitbiters and junkies, who pawn
+whatever they can for a quick fix.
+
+~
+24 0 0 1
+D1
+~
+~
+0 -1 5204
+S
+#5207
+Valerius Road~
+Valerius Road is a hilly lane stretching across the eastern portion of
+Urbis. Most of the buildings on the street seem to be devoted to
+businesses, and some of them even look a bit legitimate. It's a step up
+from the area surrounding the spaceport, anyway.  
+~
+0 0 0
+D0
+~
+~
+0 -1 5210
+D1
+~
+~
+0 -1 5208
+D2
+~
+~
+0 -1 5204
+D3
+~
+~
+0 -1 5209
+S
+#5208
+2nd-Hand Clothing Store~
+You are in a small second-hand clothing store just off of Valerius Road.
+Racks of old, out-of-fashion shirts, dresses, pants, and capes are hanging
+all about, though there are a few lone islands of fashionably sensible
+clothing. Still, some of the prices seem a bit steep, but if you really
+need clothing in a jam...
+
+~
+24 0 0 1
+D3
+~
+~
+0 -1 5207
+S
+#5209
+Urbis Bounty Offices~
+The Urbis Bounty Offices are just like any other hunter guild office in the
+galaxy. A list of especially dangerous Galactic Bounties are mounted on
+the wall, along with pictures of various outlaws. Out of work bounty
+hunters lounge about, hoping to be available when a call comes in.
+
+~
+16777240 0 0 1
+D1
+~
+~
+0 -1 5207
+S
+#5210
+Valerius Road~
+Valerius Road is a hilly lane stretching across the eastern portion of
+Urbis. Most of the buildings on the street seem to be devoted to
+businesses, and some of them even look a bit legitimate. It's a step up
+from the area surrounding the spaceport, anyway.  
+~
+0 0 0
+D0
+~
+~
+0 -1 5213
+D1
+~
+~
+0 -1 5211
+D2
+~
+~
+0 -1 5207
+D3
+~
+~
+0 -1 5212
+S
+#5211
+Antarian Armor && Supply~
+Antarian Armor && Supply is a fair-sized shop located just off of Valerius
+Road. Various forms of armor are sold, as well as other forms of defense
+and offense. Some of the armor is in fairly good shape, while some of it
+is just about falling apart. 
+~
+24 0 0 1
+D3
+~
+~
+0 -1 5210
+S
+#5212
+Nerfherder's Butcher-shop~
+Nerfherder's Butcher-shop is a locally-run operation, dealing in fair
+quality meats of all types. The prices are actually quite good, and the
+meat is usually grilled to perfection right before your eyes. You might
+want to stay away from the tongue of Bantha, though... 
+~
+24 0 0 1
+D1
+~
+~
+0 -1 5210
+S
+#5213
+Intersection of Valerius and Chempat~
+Like most parts of the city, this intersection is dark, grimy, and rather
+grungy-looking. The pavement is uneven, and the lack of lighting sends a
+wary chill down your spine. This street corner, like many other places in
+Urbis, could easily witness a murder daily. 
+~
+0 0 0
+D2
+~
+~
+0 -1 5210
+D3
+~
+~
+0 -1 5214
+S
+#5214
+Chempat Road~
+A wide, bumpy boulevard, Chempat Road stretches across the northern end of
+the city, directly before the Governing Quarters and other more prestigous
+buildings. Small hovels line the road, along with the occasional shop
+selling trinkets and other harmless objects. There's a bit more lighting
+here than in other parts of the city.
+
+~
+0 0 0
+D0
+~
+~
+0 -1 5215
+D1
+~
+~
+0 -1 5213
+D2
+~
+~
+0 -1 5216
+D3
+~
+~
+0 -1 5223
+S
+#5215
+Small Hovel~
+You are in a small hovel on Urbis. Though it's not the most pristine or
+luxurious home in the world, it's cheap and would do very well for a
+person involved in the smuggling or piloting trade. Just a few touches,
+and it would be quite comfortable. 
+~
+135004688 0 0 1
+D2
+~
+~
+0 -1 5214
+S
+#5216
+Urbis Cemetary~
+The local cemetary has been situated in a small field on Chempat Road. Rows
+of headstones are scattered all about, a mix of local deaths and
+by-products of vicious barfights. Many of the headstones betray the cold
+hard truth that life is short in a place like this. 
+~
+8 0 0 2
+D0
+~
+~
+0 -1 5214
+S
+#5217
+Chempa MedStation~
+One of the few medical facilities in the city, this medstation gets more
+action than you might think. Barroom brawls happen quite often on Urbis,
+and countless freighter crewers have the scars to show it. In any case,
+the bacta tank is to the east. 
+~
+24&2 0 0 1
+D1
+~
+~
+0 -1 5219
+D2
+~
+~
+0 -1 5138
+S
+#5218
+Small Hovel~
+You are in a small hovel on Urbis. Though it's not the most pristine or
+luxurious home in the world, it's cheap and would do very well for a
+person involved in the smuggling or piloting trade. Just a few touches,
+and it would be quite comfortable. 
+~
+135004688 0 0 1
+D0
+~
+~
+0 -1 5138
+S
+#5219
+Bacta Tank~
+Floating around in a bacta tank isn't exactly one of the top ten things on
+a person's wish list, but the sticky fluid is an amazing healer of wounds,
+no matter how serious. The fluid is an emerald-purple color, and it leaves
+a bad taste in your mouth, so you should either put a rebreather on or
+avoid talking.
+
+~
+16 0 0 1 0 0 3
+D3
+~
+~
+0 -1 5217
+> rand_prog 40~
+mpecho The bacta slowly rejuvenates your body... 
+mprestore $n 200 
+~
+|
+S
+#5220
+Chempat Road~
+A wide, bumpy boulevard, Chempat Road stretches across the northern end of
+the city, directly before the Governing Quarters and other more prestigous
+buildings. Small hovels line the road, along with the occasional shop
+selling trinkets and other harmless objects. There's a bit more lighting
+here than in other parts of the city.
+
+~
+0 0 0
+D0
+~
+~
+0 -1 5221
+D1
+~
+~
+0 -1 5223
+D2
+~
+~
+0 -1 5222
+D3
+~
+~
+0 -1 5138
+S
+#5221
+Beow's Furniture~
+Beow's Furniture is one of the more popular furnishing stores in Urbis:
+most homeowners go there when they need new furniture. While the selection
+isn't as varied as it would be on a planet on the Inner Rim, it still has
+a good array of choices. 
+~
+24 0 0 1
+D2
+~
+~
+0 -1 5220
+S
+#5222
+Small Hovel~
+You are in a small hovel on Urbis. Though it's not the most pristine or
+luxurious home in the world, it's cheap and would do very well for a
+person involved in the smuggling or piloting trade. Just a few touches,
+and it would be quite comfortable. 
+~
+135004696 0 0 1
+D0
+~
+~
+0 -1 5220
+S
+#5223
+Chempat Road~
+A wide, bumpy boulevard, Chempat Road stretches across the northern end of
+the city, directly before the Governing Quarters and other more prestigous
+buildings. Small hovels line the road, along with the occasional shop
+selling trinkets and other harmless objects. There's a bit more lighting
+here than in other parts of the city.
+
+~
+0 0 0
+D0
+~
+~
+0 -1 5224
+D1
+~
+~
+0 -1 5214
+D2
+~
+~
+0 -1 5225
+D3
+~
+~
+0 -1 5220
+S
+#5224
+Ranger's Pipe Store~
+Dim and a bit musky, Ranger's deals in pipes and herbs, one of the many
+past-times of beings in the galaxy. While not as cheap as cigarras, pipes
+have more flavour, often providing the user with a clearer mind. Wartaki
+Reed Pipes were originally made by Wookiees, but the design has spread
+throughout the galaxy.
+
+~
+24 0 0 1
+D2
+~
+~
+0 -1 5223
+S
+#5225
+Small Hovel~
+You are in a small hovel on Urbis. Though it's not the most pristine or
+luxurious home in the world, it's cheap and would do very well for a
+person involved in the smuggling or piloting trade. Just a few touches,
+and it would be quite comfortable. 
+~
+135004696 0 0 1
+D0
+~
+~
+0 -1 5223
+S
+#5226
+Garden Plaza~
+This small, picturesque plaza seems almost out of place in the midst of the
+suburban sprawl of Urbis... flowers here are carefully tended, with tiny
+fountains spaced at intervals. Most likely this garden was built for the
+wealthier (and more corrupt) beings, such as the Hutts and the ruling
+consulars.
+
+~
+8 0 0 2
+D2
+~
+~
+0 -1 5137
+S
+#5227
+Small Hovel~
+You are in a small hovel on Urbis. Though it's not the most pristine or
+luxurious home in the world, it's cheap and would do very well for a
+person involved in the smuggling or piloting trade. Just a few touches,
+and it would be quite comfortable. 
+~
+135004696 0 0 1
+D0
+~
+~
+0 -1 5137
+S
+#5228
+Chempat Road~
+A wide, bumpy boulevard, Chempat Road stretches across the northern end of
+the city, directly before the Governing Quarters and other more prestigous
+buildings. Small hovels line the road, along with the occasional shop
+selling trinkets and other harmless objects. There's a bit more lighting
+here than in other parts of the city.
+
+~
+0 0 0
+D0
+~
+~
+0 -1 5229
+D1
+~
+~
+0 -1 5137
+D2
+~
+~
+0 -1 5230
+D3
+~
+~
+0 -1 5231
+S
+#5229
+Twine's Sewing Shop~
+You are in a small shop devoted to sewing, needlepoint, and all manner of
+such exciting hobbies... Well, you never know, it might be good to learn
+how to sew, just in case. In any case, you can buy needles, thread, and
+fabric here. 
+~
+24 0 0 1
+D2
+~
+~
+0 -1 5228
+S
+#5230
+Small Hovel~
+You are in a small hovel on Urbis. Though it's not the most pristine or
+luxurious home in the world, it's cheap and would do very well for a
+person involved in the smuggling or piloting trade. Just a few touches,
+and it would be quite comfortable. 
+~
+135004696 0 0 1
+D0
+~
+~
+0 -1 5228
+S
+#5231
+Chempat Road~
+A wide, bumpy boulevard, Chempat Road stretches across the northern end of
+the city, directly before the Governing Quarters and other more prestigous
+buildings. Small hovels line the road, along with the occasional shop
+selling trinkets and other harmless objects. There's a bit more lighting
+here than in other parts of the city.
+
+~
+0 0 0
+D0
+~
+~
+0 -1 5232
+D1
+~
+~
+0 -1 5228
+D2
+~
+~
+0 -1 5233
+D3
+~
+~
+0 -1 5195
+S
+#5232
+Small Hovel~
+You are in a small hovel on Urbis. Though it's not the most pristine or
+luxurious home in the world, it's cheap and would do very well for a
+person involved in the smuggling or piloting trade. Just a few touches,
+and it would be quite comfortable. 
+~
+135004696 0 0 1
+D2
+~
+~
+0 -1 5231
+S
+#5233
+Mercenary Barracks~
+Originally built for Red Syndicate mercenaries working for the Hutt
+overlords, this prefabricated unit is now used to house troops in the
+Urbian Defense Corps. The UDC generally does little more than accept
+bribes and bully citizens, but the Proconsul mostly ignores it.
+
+~
+268435480 0 0 1
+D0
+~
+~
+0 -1 5231
+S
+#5234
+Assembly Line~
+Hot and noisy, the assembly line is a motley collection of half-working
+machines and tired-looking workers. Row after row of textiles move past,
+making one feel hypnotized if they stare at it long enough. Working here
+is no doubt a colossal bore. 
+~
+4194328 0 0 1
+D0
+~
+~
+0 -1 5235
+D2
+~
+~
+3 -1 5191
+S
+#5235
+Assembly Line~
+Hot and noisy, the assembly line is a motley collection of half-working
+machines and tired-looking workers. Row after row of textiles move past,
+making one feel hypnotized if they stare at it long enough. Working here
+is no doubt a colossal bore. 
+~
+4194328 0 0 1
+D0
+~
+~
+0 -1 5237
+D1
+~
+~
+3 -1 5236
+D2
+~
+~
+0 -1 5234
+S
+#5236
+Foreman's Office~
+The foreman's office is located in a tiny room just off of the Assembly
+Line. It does mute the sound coming off the factory floor, which is a
+plus. There is little in this room save a desk and some pictures hanging
+on the wall. 
+~
+24 0 0 1
+D3
+~
+~
+3 -1 5235
+S
+#5237
+Machine Shop~
+The factory machine shop is the portion of the complex tasked with keeping
+the assembly line machinery funcitoning. Unfortunately, it doesn't look
+like a very good job is being done. The tools here see a lot of use,
+however. There's obviously a lot of breakdowns in a given day.
+
+~
+4194328 0 0 1
+D2
+~
+~
+0 -1 5235
+S
+#5238
+Loading Dock~
+Fuel/Oil production is the main industry on Urbis, which can explain why
+this loading dock is so full of activity. Droids and organics rush about,
+moving barrels and crates as the precious fuel is loaded onto speeders and
+shipped out. 
+~
+24 0 0 1
+D2
+~
+~
+0 -1 5240
+D3
+~
+~
+0 -1 5187
+S
+#5239
+Oil Refinery~
+The main portion of the refinery is a massive room in which large pumps
+work to refine oil into valuable ship fuel. The noise is very loud, but
+not loud enough to avoid hearing off-color jokes coming from the workers.
+
+~
+2097176 0 0 1
+D0
+~
+~
+0 -1 5187
+D1
+~
+~
+0 -1 5240
+S
+#5240
+Storage XL7~
+Once oil is refined, it is placed in a large holding tank in rooms like
+this, where the liquid is stored until it can be loaded into barrels and
+shipped off. The storage room is dirty and grimy, and the lack of an
+environmental unit means it's extremely hot and humid. 
+~
+24 0 0 1
+D0
+~
+~
+0 -1 5238
+D3
+~
+~
+0 -1 5239
+S
+#5241
+Traeden Street~
+A small, fairly well-paved road, Traeden Street leads from the main city to
+the fuel/oil drilling operations to the east of Urbis. The road also leads
+to a fighting colosseum that is being built for the entertainment of the
+Hutt overlords. 
+~
+8 0 0 1
+D0
+~
+~
+0 -1 5261
+D1
+~
+~
+0 -1 5242
+D3
+~
+~
+0 -1 5117
+S
+#5242
+Traeden Street~
+A small, fairly well-paved road, Traeden Street leads from the main city to
+the fuel/oil drilling operations to the east of Urbis. The road also leads
+to a fighting colosseum that is being built for the entertainment of the
+Hutt overlords.  
+~
+0 0 0
+D1
+~
+~
+0 -1 5243
+D3
+~
+~
+0 -1 5241
+S
+#5243
+Traeden Street~
+A small, fairly well-paved road, Traeden Street leads from the main city to
+the fuel/oil drilling operations to the east of Urbis. The road also leads
+to a fighting colosseum that is being built for the entertainment of the
+Hutt overlords.  
+~
+0 0 0
+D1
+~
+~
+0 -1 5244
+D3
+~
+~
+0 -1 5242
+S
+#5244
+Traeden Street~
+A small, fairly well-paved road, Traeden Street leads from the main city to
+the fuel/oil drilling operations to the east of Urbis. The road also leads
+to a fighting colosseum that is being built for the entertainment of the
+Hutt overlords.  
+~
+0 0 0
+D1
+~
+~
+0 -1 5245
+D3
+~
+~
+0 -1 5243
+S
+#5245
+Traeden Street~
+A small, fairly well-paved road, Traeden Street leads from the main city to
+the fuel/oil drilling operations to the east of Urbis. The road also leads
+to a fighting colosseum that is being built for the entertainment of the
+Hutt overlords.  
+~
+0 0 0
+D1
+~
+~
+0 -1 5246
+D3
+~
+~
+0 -1 5244
+S
+#5246
+Traeden Street~
+A small, fairly well-paved road, Traeden Street leads from the main city to
+the fuel/oil drilling operations to the east of Urbis. The road also leads
+to a fighting colosseum that is being built for the entertainment of the
+Hutt overlords.  
+~
+0 0 0
+D1
+~
+~
+0 -1 5247
+D3
+~
+~
+0 -1 5245
+S
+#5247
+Gatehouse~
+You are in a small gatehouse that monitors through-traffic from the main
+thoroughfares to the fuel/oil drilling operations in the hot, muggy
+marshes to the east. The main road ends here, while a speeder path leads
+into the oil fields. It was fairly warm in the city, but out here the
+humidity is almost unbearable. 
+~
+0 0 0
+D1
+~
+~
+0 -1 5248
+D3
+~
+~
+0 -1 5246
+S
+#5248
+Speeder Path~
+This speeder path runs along a marsh that was drained to allow for oil/fuel
+drilling operations to commence. Off to the side, skeletons of dead
+aquatic creatures have been picked clean by the local scavengers.
+Strange-looking trees rise up from the marshes in the distance. 
+~
+0 0 0
+D1
+~
+~
+0 -1 5249
+D3
+~
+~
+0 -1 5247
+S
+#5249
+Speeder Path~
+This speeder path runs along a marsh that was drained to allow for oil/fuel
+drilling operations to commence. Off to the side, skeletons of dead
+aquatic creatures have been picked clean by the local scavengers.
+Strange-looking trees rise up from the marshes in the distance. 
+
+~
+0 0 0
+D1
+~
+~
+0 -1 5154
+D3
+~
+~
+0 -1 5248
+S
+#5250
+Meeting Hall~
+The large meeting hall in the center of the Urbis Governing Quarters is
+where the Proconsul holds court, hearing pleas and requests from citizens
+of Urbis. There is a large conference table, where the Consuls of
+different departments sit with the governor as he makes decisions.
+
+~
+16 0 0 1
+D1
+~
+~
+3 -1 5251
+D2
+~
+~
+0 -1 5119
+D3
+~
+~
+3 -1 5258
+S
+#5251
+Ornate Hallway~
+You are standing in an ornate corridor overlaid with wood plating and
+covered with carpets and tapestries of all sorts. Obviously the rules of
+this planet have done quite well for themselves... whether or not it was
+done through legal means is another matter. 
+~
+0 0 0
+D0
+~
+~
+0 -1 5255
+D1
+~
+~
+0 -1 5252
+D2
+~
+~
+0 -1 5254
+D3
+~
+~
+3 -1 5250
+S
+#5252
+Ornate Hallway~
+You are standing in an ornate corridor overlaid with wood plating and
+covered with carpets and tapestries of all sorts. Obviously the rules of
+this planet have done quite well for themselves... whether or not it was
+done through legal means is another matter.  
+~
+0 0 0
+D0
+~
+~
+0 -1 5256
+D1
+~
+~
+0 -1 5253
+D2
+~
+~
+0 -1 5257
+D3
+~
+~
+0 -1 5251
+S
+#5253
+Proconsul's Office~
+The Proconsul, though a very despicable creature, has nonetheless done some
+good to the populace of Urbis. Productivity has skyrocketed since he took
+control of the government, nad he's smart enough not to become too
+extravegant in his excesses, allowing him to stay in the Hutt's good
+graces. 
+~
+16 0 0 1
+D3
+~
+~
+0 -1 5252
+S
+#5254
+Finance Consul~
+The Consul of Finances keeps track of the budget allotted to Urbis by the
+Hutt Overclan. However, a good percentage of the subsidiaries often finds
+its way into the pockets of the Consul. The remaining budget is then
+skimmed by the Proconsul, the Legal Consul, the Trade Consul, and the
+Corporate Liaison...
+
+~
+16 0 0 1
+D0
+~
+~
+0 -1 5251
+S
+#5255
+Legal Consul~
+Tasked with overseeing any legal matters that come before the ruling
+council, the Legal Consul more often than not bends the law around to suit
+his own purposes. He's made quite a bit of money off of his job, and not
+just from paychecks. 
+~
+16 0 0 1
+D2
+~
+~
+0 -1 5251
+S
+#5256
+Trade Consul~
+Urbis sees a lot of commerce and trade, making this concul a rather
+integral part of the government. Unfortunately, like the other government
+leaders, this consul is more concerned with stuffing her own pockets than
+dealing with real problems. 
+~
+16 0 0 1
+D2
+~
+~
+0 -1 5252
+S
+#5257
+Corporate Liaison~
+The Corporate Liaison is a Hutt that deals directly with the leading
+businesses and corporations on Urbis. Among other things, the Liaison
+collects bribes and gifts from corporate lackeys not wishing their
+exploits to be made known to the upper echelons. 
+~
+16 0 0 1
+D0
+~
+~
+0 -1 5252
+S
+#5258
+Greel-wood Stairway~
+You are on an ornate stairway made of very fine greel-wood. It's suprising
+that such an out-of-the-way boom planet would have such expensive
+appointments, but it's obvious that the governing leaders have an extra
+influx of credits from somewhere. This stairway doesn't even look as if
+it's used that much...
+
+~
+24 0 0 1
+D1
+~
+~
+3 -1 5250
+D5
+~
+~
+0 -1 5259
+S
+#5259
+Greel-wood Stairway~
+You are on an ornate stairway made of very fine greel-wood. It's
+suprising;that such an out-of-the-way boom planet would have such
+expensive;appointments, but it's obvious that the governing leaders have
+an extra influx of credits from somewhere. This stairway doesn't even look
+as if;it's used that much...
+
+~
+24 0 0 1
+D1
+~
+~
+0 -1 5260
+D4
+~
+~
+0 -1 5258
+S
+#5260
+Scriptorium~
+The scriptorium is a small room whose entire purpose is to serve as a place
+for scribes to draw up chronicles, letters, charters, treaties, contracts,
+and all other manner of paperwork. Apart from the scribes, it doesn't look
+like anyone else ever bothers to come down here. 
+~
+24 0 0 1
+D3
+~
+~
+0 -1 5259
+S
+#5261
+Urbian Baths~
+~
+0 0 0
+D1
+~
+spa~
+657408 -1 5262
+D2
+~
+~
+0 -1 5241
+S
+#5262
+Ornate Spa~
+~
+0 0 0
+D10
+~
+baths~
+788480 -1 5261
+S
+#5263
+Floating in a void~
+~
+8 0 0 1
+S
+#5264
+Slave Shop~
+~
+2064 0 0 1
+D4
+~
+~
+0 -1 5236
+S
+#5265
+Mob Storage - DO NOT TOUCH~
+~
+8728 0 0 1
+S
+#5266
+Dirt Path~
+~
+8 0 0 2
+D1
+~
+~
+0 -1 5267
+D4
+~
+~
+0 -1 5158
+S
+#5267
+Dirt Path~
+~
+8 0 0 2
+D1
+~
+~
+0 -1 5268
+D3
+~
+~
+0 -1 5266
+S
+#5268
+Dirt Path~
+~
+8 0 0 2
+D1
+~
+~
+0 -1 5269
+D3
+~
+~
+0 -1 5267
+S
+#5269
+Dirt Path~
+~
+8 0 0 2
+D1
+~
+~
+0 -1 5270
+D3
+~
+~
+0 -1 5268
+S
+#5270
+Marshy Clearing~
+~
+8 0 0 2
+D3
+~
+~
+0 -1 5269
+D8
+~
+~
+0 -1 5271
+S
+#5271
+Marshes~
+~
+0 0 0
+D1
+~
+~
+0 -1 5272
+D7
+~
+~
+0 -1 5270
+S
+#5272
+Marshes~
+~
+8 0 0 0
+D0
+~
+~
+0 -1 5274
+D1
+~
+~
+0 -1 5273
+D3
+~
+~
+0 -1 5271
+S
+#5273
+Marshes~
+~
+0 0 0
+D3
+~
+~
+0 -1 5272
+S
+#5274
+Ancient Ruins~
+~
+0 0 0
+D0
+~
+~
+0 -1 5275
+D2
+~
+~
+0 -1 5272
+D3
+~
+~
+0 -1 5276
+S
+#5275
+Ruins of a Building~
+~
+16 0 0 1
+D2
+~
+~
+0 -1 5274
+S
+#5276
+Watch Tower~
+~
+16 0 0 2
+D1
+~
+~
+0 -1 5274
+D2
+~
+~
+33554432 -1 5271
+D3
+~
+~
+33554432 -1 5270
+S
+#5277
+Floating in a void~
+~
+8 0 0 1
+S
+#5278
+Floating in a void~
+~
+8 0 0 1
+S
+#5279
+Floating in a void~
+~
+8 0 0 1
+S
+#5280
+Floating in a void~
+~
+8 0 0 1
+S
+#5395
+West Range~
+~
+8 0 0 1
+D1
+~
+~
+0 -1 5399
+S
+#5396
+North Range~
+~
+8 0 0 1
+D2
+~
+~
+0 -1 5399
+S
+#5397
+South Range~
+~
+8 0 0 1
+D0
+~
+~
+0 -1 5399
+S
+#5398
+East Range~
+~
+8 0 0 1
+D3
+~
+~
+0 -1 5399
+S
+#5399
+Grenade Test Range~
+~
+8 0 0 1
+D0
+~
+~
+0 -1 5396
+D1
+~
+~
+0 -1 5398
+D2
+~
+~
+0 -1 5397
+D3
+~
+~
+0 -1 5395
+S
+#5400
+Floating in a void~
+~
+8 0 0 1
+S
+#0
+
+
+#RESETS
+M 1 5400 1 5400
+M 1 5101 1 5400
+O 1 5102 1 5104
+O 1 5103 1 5102
+D 0 5102 1 1
+O 1 5104 1 5106
+O 1 5105 1 5103
+O 1 100 1 5150
+O 1 5106 1 5109
+O 1 5107 1 5110
+M 1 5103 1 5107
+G 1 5108 1
+O 1 5109 1 5107
+D 0 5107 2 2
+O 1 5104 1 5108
+O 1 5110 1 5111
+M 1 5104 1 5126
+G 1 5113 1
+G 1 5111 1
+G 1 5112 1
+O 1 5114 1 5126
+O 1 5115 1 5125
+D 0 5151 1 1
+O 1 5116 1 5159
+O 1 5116 1 5158
+O 1 5116 1 5157
+O 1 5117 1 5160
+M 1 5105 1 5162
+E 1 51 1 16
+M 1 5106 1 5134
+G 1 5121 1
+G 1 5118 1
+G 1 5119 1
+G 1 5120 1
+M 1 5107 1 5131
+G 1 5125 1
+G 1 5124 1
+G 1 5122 1
+G 1 5123 1
+O 1 5126 1 5112
+M 1 5108 1 5133
+G 1 5127 1
+G 1 5128 1
+G 1 5129 1
+O 1 5130 1 5136
+M 1 5109 1 5165
+M 1 5111 1 5165
+M 1 5112 1 5165
+M 1 5110 1 5164
+M 1 5113 3 5166
+M 1 5113 3 5166
+M 1 5113 3 5166
+M 1 5114 1 5170
+G 1 5112 1
+G 1 5113 1
+G 1 5131 1
+O 1 5132 1 5148
+O 1 5132 1 5147
+O 1 5132 1 5146
+O 1 5132 1 5144
+O 1 5132 1 5143
+O 1 5132 1 5142
+O 1 5132 1 5141
+O 1 5132 1 5140
+O 1 5132 1 5120
+D 0 5120 3 1
+O 1 5132 1 5173
+O 1 5132 1 5172
+O 1 5132 1 5171
+O 1 5133 1 5145
+D 0 5175 0 1
+O 1 5134 1 5181
+O 1 5135 1 5181
+O 1 5103 1 5174
+D 0 5174 2 1
+M 1 5102 1 5105
+M 1 5115 1 5188
+G 1 5139 1
+G 1 5149 1
+M 1 5118 1 5206
+M 1 5119 1 5205
+G 1 5151 1
+G 1 5152 1
+G 1 5150 1
+O 1 5153 1 5205
+O 1 5154 1 5116
+M 1 5120 1 5224
+G 1 5155 1
+G 1 5156 1
+G 1 5157 1
+G 1 5158 1
+M 1 5121 1 5193
+G 1 5159 1
+G 1 5160 1
+G 1 5161 1
+M 1 5123 1 5217
+M 1 5124 1 5221
+G 1 5164 1
+G 1 5166 1
+G 1 5165 1
+O 1 5167 1 5216
+M 1 5125 1 5212
+G 1 5144 1
+G 1 5168 1
+G 1 5169 1
+M 1 5126 1 5211
+G 1 5170 1
+G 1 5171 1
+G 1 5172 1
+G 1 5174 1
+G 1 5173 1
+M 1 5128 1 5208
+G 1 5177 1
+G 1 5176 1
+G 1 5178 1
+G 1 5179 1
+M 1 5129 1 5201
+G 1 5182 1
+G 1 5181 1
+G 1 5180 1
+O 1 5183 1 5237
+O 1 5184 1 5234
+D 0 5234 2 1
+M 1 5130 1 5191
+D 0 5191 0 1
+O 1 5185 1 5128
+O 1 5185 1 5130
+O 1 5103 1 5238
+O 1 5186 1 5240
+O 1 5187 1 5239
+M 1 5131 1 5213
+M 1 5131 2 5138
+M 1 5131 3 5228
+M 1 5131 4 5192
+M 1 5131 5 5167
+M 1 5131 6 5122
+M 1 5132 1 5189
+M 1 5132 2 5123
+M 1 5132 3 5121
+M 1 5132 4 5186
+M 1 5132 5 5204
+M 1 5132 6 5210
+M 1 5132 7 5223
+M 1 5132 8 5137
+M 1 5132 9 5195
+M 1 5133 1 5168
+M 1 5133 2 5124
+M 1 5133 3 5185
+M 1 5133 4 5207
+M 1 5133 5 5113
+M 1 5132 10 5114
+M 1 5131 8 5115
+M 1 5134 1 5247
+O 1 5109 1 5256
+O 1 5109 1 5257
+O 1 5109 1 5255
+O 1 5109 1 5254
+D 0 5251 3 1
+M 1 5130 2 5119
+O 1 5192 1 5119
+O 1 5191 1 5119
+O 1 5115 1 5119
+O 1 5193 1 5139
+D 0 5139 0 0
+M 1 5135 1 5161
+G 1 5194 1
+G 1 5145 1
+G 1 5147 1
+G 1 5131 1
+O 1 5195 1 5161
+O 1 5115 1 5152
+O 1 5136 1 5180
+O 1 5196 1 5226
+O 1 5197 1 5226
+M 1 5122 1 5229
+M 1 5116 1 5190
+G 1 52 1
+G 1 50 1
+G 1 5140 1
+G 1 5141 1
+G 1 5142 1
+O 1 5189 1 5250
+O 1 5190 1 5250
+D 0 5250 1 1
+D 0 5250 3 1
+D 0 5258 1 1
+O 1 5198 1 5260
+O 1 5185 1 5132
+O 1 5184 1 5235
+D 0 5235 1 1
+M 1 5136 1 5117
+G 1 5199 1
+O 1 5200 1 5244
+O 1 5201 1 5261
+M 1 5137 1 5199
+O 1 5202 1 5199
+M 1 5138 1 5169
+O 1 5185 1 5202
+O 1 5205 1 5202
+M 1 5139 1 5129
+O 1 5202 1 5129
+M 1 5140 1 5236
+O 1 5109 1 5236
+D 0 5236 3 1
+M 1 5142 1 5264
+M 1 5141 1 5265
+M 1 5143 1 5265
+O 1 5103 1 5149
+D 0 5149 3 1
+M 1 5127 1 5209
+O 1 5175 1 5209
+M 1 5144 1 5127
+E 1 52 1 16
+G 1 3 1
+O 1 5185 1 5127
+M 1 5117 1 5196
+G 1 5144 1
+G 1 5145 1
+G 1 5146 1
+G 1 5148 1
+G 1 5147 1
+O 1 5143 1 5196
+M 1 5145 1 5275
+O 1 5208 1 5233
+M 1 5147 1 5253
+O 1 5188 1 5253
+S
+
+
+#SHOPS
+ 5104    0  0  0  0  0   120  90         0 23    ; a bartender
+ 5106    0  0  0  0  0   120  90         0 23    ; a clerk droid
+ 5107    0  0  0  0  0   120  90         0 23    ; a shop clerk
+ 5108    0  0  0  0  0   120  90         0 23    ; a shop clerk
+ 5110    0  0  0  0  0   120  90         0 23    ; a shop clerk
+ 5114    0  0  0  0  0   120 110         0 23    ; a waitress
+ 5115    0  0  0  0  0   120  90         0 23    ; a clerk droid
+ 5116    0  0  0  0  0   120 100         0 23    ; a shop clerk
+ 5117    0  0  0  0  0   120  90         0 23    ; a waitress
+ 5118    2  4  8  3 49   100  50         0 23    ; a pawnshop clerk
+ 5119    0  0  0  0  0   120 114         0 23    ; a hokum keeper
+ 5120    0  0  0  0  0   120  90         0 23    ; a shop clerk
+ 5121    0  0  0  0  0   100  80         0 23    ; a shop clerk
+ 5124    0  0  0  0  0   120  90         0 23    ; a clerk droid
+ 5125    0  0  0  0  0   130  90         0 23    ; a Wookiee butcher
+ 5126    0  0  0  0  0   100  90         0 23    ; a shop clerk
+ 5128    0  0  0  0  0   120  90         0 23    ; a shop clerk
+ 5129    0  3 45 37  0   140  90         0 23    ; a jewelry clerk
+ 5135    0  0  0  0  0   120  90         0 23    ; a dirty chef
+ 5142    0  0  0  0  0   300 100         0 23    ; a shop clerk
+0
+
+
+#REPAIRS
+ 5102    2  4 49         125   1         0 23    ; a repair technician
+0
+
+
+#SPECIALS
+M  5103 spec_finer
+M  5103 spec_customs_weapons
+M  5147 spec_clan_order
+S
+
+
+#$

@@ -1,0 +1,32 @@
+#SYSTEM
+MudName	     Unknown Regions~
+Highplayers    8
+Highplayertime Mon Jul 16 17:54:46 2001~
+Nameresolving  1
+Waitforauth    0
+Readallmail    199
+Readmailfree   1
+Writemailfree  101
+Takeothersmail 199
+Build          188
+Log            194
+Protoflag      185
+Overridepriv   190
+Msetplayer     195
+Stunplrvsplr   20
+Stunregular    0
+Damplrvsplr    103
+Damplrvsmob    103
+Dammobvsplr    103
+Dammobvsmob    103
+Forcepc        190
+Saveflags      2557
+Savefreq       5
+PetSave	     1
+BanSiteLevel   0
+BanRaceLevel   0
+BanClassLevel  0
+IdentTries     0
+End
+
+#END

@@ -1,0 +1,26 @@
+#PROTOTYPE
+Name         K-wing~
+Filename     kwing.type~
+Description  The K-wing is a dedicated bomber craft, they specialize in surface attacks or
+warship assaults. With no hyperdrive or dogfight weapons they must rely on
+other fighters and carriers for protection and transport. 
+~
+Class        0
+Tractorbeam  0
+Lasers       2
+Maxmissiles  18
+Maxshield    225
+Maxhull      450
+Maxenergy    2500
+Hyperspeed   0
+Maxchaff     5
+Realspeed    110
+Manuever     50
+Maxbombs     25
+Comm         0
+Sensor       0
+Astro_array  0
+Ion          4
+End
+
+#END

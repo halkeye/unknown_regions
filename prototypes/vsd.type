@@ -1,0 +1,23 @@
+#PROTOTYPE
+Name         Victory-class Star Destoyer~
+Filename     vsd.type~
+Description  ~
+Class        2
+Tractorbeam  20
+Lasers       6
+Maxmissiles  40
+Maxshield    850
+Maxhull      9000
+Maxenergy    16000
+Hyperspeed   120
+Maxchaff     20
+Realspeed    15
+Manuever     0
+Maxbombs     6
+Comm         25
+Sensor       25
+Astro_array  25
+Ion          8
+End
+
+#END

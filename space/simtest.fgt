@@ -1,0 +1,52 @@
+#SHIP
+Name         simtest~
+OrigName     simtest~
+Filename     simtest.fgt~
+Description  ~
+Owner        public~
+Pilot        ~
+Copilot      ~
+Color        Cyan~
+Class        0
+Shipyard     101
+Hanger       0
+sim_vnum     101
+Turret1      0
+Turret2      0
+Statet0      0
+Statet1      0
+Statet2      0
+Lastdoc      101
+Firstroom    100
+Lastroom     100
+Cockpit      100
+Coseat       100
+Pilotseat    100
+Gunseat      100
+Navseat      100
+Engineroom   0
+Entrance     100
+Hyperspeed   255
+Comm         0
+Tractorbeam  0
+Sensor       0
+Astro_array  0
+Realspeed    150
+Maxshield    0
+Maxhull      0
+Maxenergy    5000
+Manuever     0
+Maxchaff     0
+Maxmissiles  0
+MaxBombs     0
+Ion	       0
+Lasers       0
+LaserDamage  0
+Shipstate    0
+Missilestate 0
+Home         coruscant~
+Flags		   32
+Alarm	       0
+End
+
+#END

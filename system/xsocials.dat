@@ -1,0 +1,591 @@
+#XSOCIAL
+Name        x_earlobe~
+CharNoArg   On whom do you wish to do this?~
+CharFound   You gently tug on $S earlobe with your teeth.~
+OthersFound $n gently tugs on $N's earlobe with $s teeth.~
+VictFound   $n gently tugs on your earlobe with $s teeth.~
+CharAuto    Not on yourself!~
+GenderTo     0
+Gender       0
+Stage        0
+Position     0
+Self         1
+Other        1
+Chance       0
+End
+
+#XSOCIAL
+Name        x_french~
+CharNoArg   On whom do you wish to do this?~
+CharFound   You give $M a deep throbbing kiss, rolling your tongue around with $S.~
+OthersFound $n gives $N a deep throbbing kiss.~
+VictFound   $n gives you a deep throbbing kiss, rolling $s tongue around yours.~
+CharAuto    Not on yourself!~
+GenderTo     0
+Gender       0
+Stage        0
+Position     0
+Self         1
+Other        1
+Chance       0
+End
+
+#XSOCIAL
+Name        x_kissneck~
+CharNoArg   On whom do you wish to do this?~
+CharFound   You slowly and softly kiss and nuzzle $M neck.~
+OthersFound $n slowly and softly kisses and nuzzles $N's neck.~
+VictFound   $n slowly and softly kisses and nuzzles your neck.~
+CharAuto    Not on yourself!~
+GenderTo     0
+Gender       0
+Stage        0
+Position     0
+Self         1
+Other        1
+Chance       0
+End
+
+#XSOCIAL
+Name        x_moan~
+CharNoArg   On whom do you wish to do this?~
+CharFound   You start moaning 'Oh $N...oh yes...don't stop...mmMMmm...'~
+OthersFound $n starts moaning 'Oh $N...oh yes...don't stop...mmMMmm...'~
+VictFound   $n starts moaning 'Oh $N...oh yes...don't stop...mmMMmm...'~
+CharAuto    Not on yourself!~
+GenderTo     0
+Gender       0
+Stage        2
+Position     0
+Self         1
+Other        1
+Chance       0
+End
+
+#XSOCIAL
+Name        x_nuttella~
+CharNoArg   On whom do you wish to do this?~
+CharFound   You cover $N's naked flesh with a popular chocolate spread, before licking it off.~
+OthersFound $n smears a chocolate spread over $N's body, licking $M clean with relish.~
+VictFound   $n smears a popular chocolate spread on your naked flesh, licking it off you.~
+CharAuto    Not on yourself!~
+GenderTo     0
+Gender       0
+Stage        0
+Position     0
+Self         5
+Other        20
+Chance       0
+End
+
+#XSOCIAL
+Name        x_stroke~
+CharNoArg   On whom do you wish to do this?~
+CharFound   You lightly run your fingers along the insides of $S thighs.~
+OthersFound $n lightly runs $s fingers along the insides of $N's thighs.~
+VictFound   $n lightly runs $s fingers along the insides of your thighs.~
+CharAuto    Not on yourself!~
+GenderTo     0
+Gender       0
+Stage        0
+Position     0
+Self         5
+Other        10
+Chance       0
+End
+
+#XSOCIAL
+Name        x_tender~
+CharNoArg   On whom do you wish to do this?~
+CharFound   You run your fingers through $S hair and kiss $M tenderly on the lips.~
+OthersFound $n runs $s fingers through $N's hair and kisses $M tenderly on the lips.~
+VictFound   $n runs $s fingers through your hair and kisses you tenderly on the lips.~
+CharAuto    Not on yourself!~
+GenderTo     0
+Gender       0
+Stage        0
+Position     0
+Self         1
+Other        1
+Chance       0
+End
+
+#XSOCIAL
+Name        x_withdraw~
+CharNoArg   On whom do you wish to do this?~
+CharFound   You gently pull yourself free of $M.~
+OthersFound $n gently pulls $mself free of $N.~
+VictFound   $n gently pulls $mself free of you.~
+CharAuto    Not on yourself!~
+GenderTo     0
+Gender       0
+Stage        1
+Position     0
+Self         0
+Other        0
+Chance       0
+End
+
+#XSOCIAL
+Name        xf_blowjob~
+CharNoArg   On whom do you wish to do this?~
+CharFound   You take $N's hot member in your mouth, sucking $S shaft.~
+OthersFound $n takes $N's throbbing penis in $s mouth, sucking $N's cock.~
+VictFound   You gasp as $n takes your penis in $s mouth, licking your head.~
+CharAuto    On yourself? I'm impressed!~
+GenderTo     1
+Gender       2
+Stage        0
+Position     0
+Self         10
+Other        25
+Chance       0
+End
+
+#XSOCIAL
+Name        xf_breasts~
+CharNoArg   On whom do you wish to do this?~
+CharFound   You take $S hands and press them to your breasts.~
+OthersFound $n takes $N's hands and presses them to $m breasts.~
+VictFound   $n takes your hands and presses them to $m breasts.~
+CharAuto    Not on yourself!~
+GenderTo     1
+Gender       2
+Stage        0
+Position     0
+Self         5
+Other        10
+Chance       0
+End
+
+#XSOCIAL
+Name        xf_caress~
+CharNoArg   On whom do you wish to do this?~
+CharFound   Reaching out, you touch $N's manhood, stroking $M gently, your fingers slipping around $M to caress $M gently.~
+OthersFound $n reaches out to touch $N's manhood, stroking $M gently, $m fingers slipping around $M to carress $M gently.~
+VictFound   $n reaches out to touch your manhood, stroking you gently $m fingers slipping around you to caress you gently.~
+CharAuto    Not on yourself!~
+GenderTo     1
+Gender       2
+Stage        0
+Position     0
+Self         0
+Other        0
+Chance       0
+End
+
+#XSOCIAL
+Name        xf_contract~
+CharNoArg   On whom do you wish to do this?~
+CharFound   You contract your vaginal muscles, driving $M wild.~
+OthersFound $n contracts $m vaginal muscles, driving $N wild.~
+VictFound   $n contracts $m vaginal muscles, driving you wild.~
+CharAuto    Not on yourself!~
+GenderTo     1
+Gender       2
+Stage        2
+Position     0
+Self         10
+Other        15
+Chance       1
+End
+
+#XSOCIAL
+Name        xf_floor~
+CharNoArg   On whom do you wish to do this?~
+CharFound   You lie on your back, and pull $M between your parted legs.~
+OthersFound $n lies on $m back, and pulls $N between $s parted legs.~
+VictFound   $n lies on $s back, and pulls you between $s parted legs.~
+CharAuto    Not on yourself!~
+GenderTo     1
+Gender       2
+Stage        1
+Position     250
+Self         25
+Other        20
+Chance       1
+End
+
+#XSOCIAL
+Name        xf_grind~
+CharNoArg   On whom do you wish to do this?~
+CharFound   You grind your hips up to meet $S thrusts.~
+OthersFound $n grinds $s hips up to meet $N's thrusts.~
+VictFound   $n grinds $s hips up to meet your thrusts.~
+CharAuto    Not on yourself!~
+GenderTo     1
+Gender       2
+Stage        2
+Position     0
+Self         15
+Other        10
+Chance       1
+End
+
+#XSOCIAL
+Name        xf_mount~
+CharNoArg   On whom do you wish to do this?~
+CharFound   You push $M onto $S back, and slowly lower yourself onto $S erection.~
+OthersFound $n pushes $N onto $S back, and slowly lowers $mself onto $S erection.~
+VictFound   $n pushes you onto your back, and slowly lowers $mself onto your erection.~
+CharAuto    Not on yourself!~
+GenderTo     1
+Gender       2
+Stage        1
+Position     250
+Self         25
+Other        20
+Chance       1
+End
+
+#XSOCIAL
+Name        xf_nails~
+CharNoArg   On whom do you wish to do this?~
+CharFound   You scratch your nails down $S back.~
+OthersFound $n scratches $s nails down $N's back.~
+VictFound   $n scratches $s nails down your back.~
+CharAuto    Not on yourself!~
+GenderTo     1
+Gender       2
+Stage        2
+Position     0
+Self         5
+Other        1
+Chance       1
+End
+
+#XSOCIAL
+Name        xf_pull~
+CharNoArg   On whom do you wish to do this?~
+CharFound   You wrap your arms and legs around $M and pull $M into you.~
+OthersFound $n wraps $s arms and legs around $N and pulls $M into $m.~
+VictFound   $n wraps $s arms and legs around you and pulls you into $m.~
+CharAuto    Not on yourself!~
+GenderTo     1
+Gender       2
+Stage        2
+Position     0
+Self         15
+Other        10
+Chance       1
+End
+
+#XSOCIAL
+Name        xf_squeeze~
+CharNoArg   On whom do you wish to do this?~
+CharFound   Your wrap your legs around $M and squeeze tightly.~
+OthersFound $n wraps $s legs around $N and squeezes tightly.~
+VictFound   $n wraps $s legs around you and squeezes tightly.~
+CharAuto    Not on yourself!~
+GenderTo     1
+Gender       2
+Stage        2
+Position     0
+Self         15
+Other        10
+Chance       1
+End
+
+#XSOCIAL
+Name        xf_suck~
+CharNoArg   On whom do you wish to do this?~
+CharFound   You fall to your knees before him, kissing his belly and thighs, then taking him in your mouth, you love him until he begs you to stop.~
+OthersFound $n falls to $m her knees before $N, kissing $S belly and thighs, then taking $M in her mouth, $e loves him until $E begs $e to stop.~
+VictFound   $n slips to her knees before you, kisses your belly and thighs, then takes you into her mouth and loves you until you beg her to stop.~
+CharAuto    Not on yourself!~
+GenderTo     1
+Gender       2
+Stage        0
+Position     0
+Self         10
+Other        25
+Chance       0
+End
+
+#XSOCIAL
+Name        xf_titfuck~
+CharNoArg   Whom do you wish to treat to this?~
+CharFound   You take $N's cock and place it between your breasts, as $E gently thrusts.~
+OthersFound $n takes $N's penis, places it between $s breasts, and wanks $M off.~
+VictFound   $n takes your cock, places it between $s breasts, and wanks you gently with them.~
+CharAuto    Not on yourself!~
+GenderTo     1
+Gender       2
+Stage        1
+Position     0
+Self         10
+Other        20
+Chance       0
+End
+
+#XSOCIAL
+Name        xf_undress~
+CharNoArg   On whom do you wish to do this?~
+CharFound   You push $N onto the floor, a gleam in your eyes, and tear $S clothes off.~
+OthersFound $n pushes $N to the floor, tears $S clothes from $S body.~
+VictFound   $n pushes you to the floor, grins, and rips your clothes from your body.~
+CharAuto    Not on yourself!~
+GenderTo     1
+Gender       2
+Stage        0
+Position     0
+Self         1
+Other        1
+Chance       0
+End
+
+#XSOCIAL
+Name        xm_back~
+CharNoArg   On whom do you wish to do this?~
+CharFound   You roll $M onto all fours and penetrate $S hot flesh from behind.~
+OthersFound $n rolls $N onto all fours and penetrates $S hot flesh from behind.~
+VictFound   $n rolls you onto all fours and penetrates your hot flesh from behind.~
+CharAuto    Not on yourself!~
+GenderTo     2
+Gender       1
+Stage        1
+Position     250
+Self         25
+Other        15
+Chance       0
+End
+
+#XSOCIAL
+Name        xm_breasts~
+CharNoArg   On whom do you wish to do this?~
+CharFound   You gently run the tip of your tongue across $S naked breasts.~
+OthersFound $n gently runs the tip of $s tongue across $N's naked breasts.~
+VictFound   $n gently runs the tip of $s tongue across your naked breasts.~
+CharAuto    Not on yourself!~
+GenderTo     2
+Gender       1
+Stage        0
+Position     0
+Self         5
+Other        10
+Chance       0
+End
+
+#XSOCIAL
+Name        xm_cup~
+CharNoArg   On whom do you wish to do this?~
+CharFound   You cup $N's breasts in your hands, and caress $S nipples.~
+OthersFound $n cups $N's breasts in $s hands and caress' $S nipples.~
+VictFound   $n cups your breasts in $s palms and caress' your nipples.~
+CharAuto    ON YOURSELF??~
+GenderTo     2
+Gender       1
+Stage        0
+Position     0
+Self         1
+Other        5
+Chance       0
+End
+
+#XSOCIAL
+Name        xm_finger~
+CharNoArg   On whom do you wish to do this?~
+CharFound   You slide your fingers between $S legs, gently stroking $S clitoris.~
+OthersFound $n slides $s fingers between $N's legs, gently stroking $S clitoris.~
+VictFound   $n slides $s fingers between your legs, gently stroking your clitoris.~
+CharAuto    Not on yourself!~
+GenderTo     2
+Gender       1
+Stage        1
+Position     250
+Self         0
+Other        10
+Chance       0
+End
+
+#XSOCIAL
+Name        xm_fist~
+CharNoArg   On whom do you wish to do this? I hope you asked!~
+CharFound   You make a fist and thrust it up $N's spread wide vagina as she screams with pleasure.~
+OthersFound $N gasps as $n pushes $s hand up between $S legs into $S vagina.~
+VictFound   $n spreads your legs wide, and thrusts $s hand up your vagina making you cry out in pleasure.~
+CharAuto    C'est non possible.. I hope...~
+GenderTo     2
+Gender       1
+Stage        1
+Position     250
+Self         5
+Other        15
+Chance       0
+End
+
+#XSOCIAL
+Name        xm_floor~
+CharNoArg   On whom do you wish to do this?~
+CharFound   You lower $M to the floor, and slide your body between $S parted legs.~
+OthersFound $n lowers $N to the floor, and slides $s body between $S parted legs.~
+VictFound   $n lowers you to the floor, and slides $s body between your parted legs.~
+CharAuto    Not on yourself!~
+GenderTo     2
+Gender       1
+Stage        1
+Position     250
+Self         15
+Other        10
+Chance       1
+End
+
+#XSOCIAL
+Name        xm_lickbreasts~
+CharNoArg   On whom do you wish to do this?~
+CharFound   You begin to tentatively lick at $N's nipples, first one, and then the other, teasing the soft flesh into tight, hard spear points of tingling sensation.~
+OthersFound $n begins to tentatively lick at $N's nipples, first one, and then the other, teasing the soft flesh into tight, hard spear points of tingling sensation.~
+VictFound   $n begins to tentatively lick at your breasts first one, then the other, teasing your soft flesh into tight hard spear points of tingling sensation.~
+CharAuto    ON YOURSELF??~
+GenderTo     2
+Gender       1
+Stage        0
+Position     0
+Self         15
+Other        25
+Chance       0
+End
+
+#XSOCIAL
+Name        xm_nipple~
+CharNoArg   On whom do you wish to do this?~
+CharFound   You gently twist $S nipple between your thumb and forefinger.~
+OthersFound $n gently twists $N's nipple between $s thumb and forefinger.~
+VictFound   $n gently twists your nipple between $s thumb and forefinger.~
+CharAuto    Not on yourself!~
+GenderTo     2
+Gender       1
+Stage        0
+Position     0
+Self         5
+Other        10
+Chance       0
+End
+
+#XSOCIAL
+Name        xm_oral~
+CharNoArg   On whom do you wish to do this?~
+CharFound   $N squirms in delight as you bend down and run your tongue along and into $S vagina.~
+OthersFound $N squirms ecstatically as $n licks and kisses $S loveslit.~
+VictFound   $n wriggles $s tongue about between your legs, making you squirm in ecstacy.~
+CharAuto    Biologically impossible I think you'll find!~
+GenderTo     2
+Gender       1
+Stage        0
+Position     0
+Self         10
+Other        25
+Chance       0
+End
+
+#XSOCIAL
+Name        xm_press~
+CharNoArg   On whom do you wish to do this?~
+CharFound   You press $M against the wall, pulling $S legs around your hips.~
+OthersFound $n presses $N against the wall, pulling $S legs around $s hips.~
+VictFound   $n presses you against the wall, pulling your legs around $s hips.~
+CharAuto    Not on yourself!~
+GenderTo     2
+Gender       1
+Stage        1
+Position     250
+Self         25
+Other        20
+Chance       1
+End
+
+#XSOCIAL
+Name        xm_pull~
+CharNoArg   On whom do you wish to do this?~
+CharFound   You grab $M around the hips and pull $M firmly onto your erection.~
+OthersFound $n grabs $N around the hips and pull $M firmly onto $s erection.~
+VictFound   $n grabs you around the hips and pulls you firmly onto $s erection.~
+CharAuto    Not on yourself!~
+GenderTo     2
+Gender       1
+Stage        2
+Position     0
+Self         10
+Other        10
+Chance       1
+End
+
+#XSOCIAL
+Name        xm_suck~
+CharNoArg   On whom do you wish to do this?~
+CharFound   You suck slowly on $M nipple, feeling it harden between your lips.~
+OthersFound $n suck slowly on $N's nipple.~
+VictFound   $n sucks slowly on your nipple, and you feel it harden between $s lips.~
+CharAuto    Not on yourself!~
+GenderTo     2
+Gender       1
+Stage        0
+Position     0
+Self         5
+Other        10
+Chance       0
+End
+
+#XSOCIAL
+Name        xm_thrust~
+CharNoArg   On whom do you wish to do this?~
+CharFound   You thrust deeply between $M warm, slippery thighs.~
+OthersFound $n thrusts deeply between $N's warm, slippery thighs.~
+VictFound   $n thrusts deeply between your warm, slippery thighs.~
+CharAuto    Not on yourself!~
+GenderTo     2
+Gender       1
+Stage        2
+Position     0
+Self         15
+Other        10
+Chance       1
+End
+
+#XSOCIAL
+Name        xm_tug~
+CharNoArg   On whom do you wish to do this?~
+CharFound   You gently tug $M nipple between your teeth.~
+OthersFound $n gently tugs $N's nipple between $s teeth.~
+VictFound   $n gently tugs your nipple between $s teeth.~
+CharAuto    Not on yourself!~
+GenderTo     2
+Gender       1
+Stage        0
+Position     0
+Self         5
+Other        10
+Chance       0
+End
+
+#XSOCIAL
+Name        xm_undress~
+CharNoArg   Who do you wish to undress?~
+CharFound   You gently tug at $N's garments with your teeth, until $E stands naked before you.~
+OthersFound $n gently tugs at $N's clothes with his teeth, until $E stands naked infront of $m.~
+VictFound   $n gently tugs at your clothing with his teeth, you stand naked before $m.~
+CharAuto    Not on yourself!~
+GenderTo     2
+Gender       1
+Stage        0
+Position     0
+Self         1
+Other        1
+Chance       0
+End
+
+#XSOCIAL
+Name        xm_wall~
+CharNoArg   On whom do you wish to do this?~
+CharFound   You press $N against the wall, pulling her legs around your hips.  She wimpers as she cums.~
+VictFound   $n presses you against the wall, pulling your legs around his hips.  You wimper as you cum.~
+GenderTo     2
+Gender       1
+Stage        0
+Position     0
+Self         0
+Other        0
+Chance       0
+End
+
+#END

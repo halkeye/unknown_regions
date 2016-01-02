@@ -1,0 +1,651 @@
++-------[ 2.42 ]-------+
+removed /*	CHAR_DATA *		partner;*/ from pcdata
+added voltecs bday stuff
+fixed some billion vnum stuff
+do_knock
+
++-------[ 2.43 ]-------+
+added lilith's restore
+allow 190's to do restore all
+
++-------[ 2.44 ]-------+
+finished enhancing promote
+majorly redid promote(appoint) and demote
+changed do_who so it doesn't show spouse anymore
+change do_areas
+fixed do_channels
+fixed landship
+
+
++-------[ 2.45 ]-------+
+changed myclan a bit
+maybe buy is fixed now
+fixed vedors removing deeds i hope
+
++-------[ 2.46 ]-------+
+fixed do_buy
+removed the sex check in wedding stuff
+fixed act_string and display_prompts
+updated can_carry_w and can_carry_n for vendors
+removed capatalize on the list thing
+added pemote
+
+
++-------[ 2.47 ]-------+
+changed do_who
+updated get_clan to include partial typing
+updated get_planet too
+updated myclan
+make max wage for clan rank 5 digits(10000)
+fixed get_cost for pshops
+added do_pemote to tables.c and mud.h
+added color to bounties list
+added pob to pcdata
+changed mset name marriage, so it'll always clear, as well as change how it clears
+fixed the spelling mistake in mset name flags
+made it so you can only set titles when you your above the cset thing
+same with rank
+fixed pemote
+
++-------[ 2.48 ]-------+
+updated bombing
+upfixed a bug in restore
+changed it so you can't give items to other people's vendors
+fixed a bug in docking (I hope)
+changed LEADERSHIP_ABILITY to PIRACY_ABILITY
+i think i fixed vandilize so you can gain levels
+added #define MEDIC_ABILITY		6
+
++-------[ 2.49 ]-------+
+added do_makemedkit code
+put the pedit bestowment in again
+add gsn_makemedkit
+worked on emotion_randoms
+fixed escape pods i hope
+worked on do_showrace and setrace
+changed something that lists the names for cybernetic parts
+
++-------[ 2.50 ]-------+
+changed MEDIC_ABILITY from 6 to 7
+changed IS_HERO to trust greater than 100 
+added char *lasttag to sysdata
+may have fixed blackjack
+changed "Evasive" to "evasive"
+fixed strlen in the look function and change it so it does not check alot of times per loop
+fixed hail
+changed default home systems for mob ships
+change system_ship_status todo with atwar clans
+added SHIP_BAYOPEN		BV01, SHIP_AUTOPILOT		BV02
+changed autopilot and bayopen to ship bitvector flags
+
++-------[ 2.51 ]-------+
+make a command to manually check birthday (time_data) things
+in use is_damaged --- ie. ship->system[SYSTEM_HYPERDRIVE] == SYSTEM_STATUS_DAMAGED
+@ get MAX_SHIP in use
+fixed a cosmetic bug with do_placevendor
+changed PERS function/define
+messed with bus stops
+ship collisions might work
+removed torpedos, and rockets
+added SECT_SHIP
+added BOARD_CLAN
+added POS_CARRIED
+removed PCFLAG_ARENA, PCFLAG_LEARNER, PCFLAG_APPRENTICE and PCFLAG_MASTER
+reformated do_land
+removed the code for appoint force
+changed dreams
+
++-------[ 2.52 ]-------+
+changed $g to use "A male" stuff
+removed quit on repeat
+pObjIndex->layers		= x4;
+pObjIndex->size_flags		= x5;
+/* Size flags - for item wear sizes */
+#define SIZE_HUMAN				BV00
+#define SIZE_DUINUOGWUIN		BV01
+#define	SIZE_DEFEL				BV02
+
++-------[ 2.53 ]-------+
+added ships and areas to saveall
+removed losing items when immortalize
+added in new bday system using time_info
+removed preg info from score
+removed "stage" info from score
+fixed not showing zero ages in whois
+fixed marriage things
+removed ship collision for now
+made a new birth_date function, still need to remove the rest of the godwars functions.
+@ change preg to bday system
+
++-------[ 2.54 ]-------+
+moved the VENDOR_FEE define from vendor.c to defines.h
+changed LEVEL_BUY_VENDOR to AGE_BUY_VENDOR
+put AGE_BUY_VENDOR check in placevendor
+defined SCRAMBLE
+put home saving in get_obj
+furniture value[4] = 1 denotes container, cept for value[2],and value[5], values are the same as containers
+added in do_carry
+added ch->pregtime
+added POS_CARRYING
+added carrying info to act_info
+updated clear_carry
+put POS_CARRYING, and POS_CARRIED into do_carry
+updated act_move for POS_CARRIED
+carry name again puts the person down
+
+@make furniture types for containers, search for keyring
+@change ->pcdata->partner into a linked list
+
++-------[ 2.55 ]-------+
+updated pierce/tattoo
+changed default_prompt so that it'll include an argument
+completly removed update_sickness
+added complex to mset
+added complex to pcdata
+added 2 more hair types
+added complex to do_save
+updated the stuff for carrying in act_move.c
+fixed a pontential bug in do_carry
+added 	ch->pcdata->tattoos and ch->pcdata->piercings;
+
++-------[ 2.56 ]-------+
+added new con state CON_GET_NEW_COMPLEX
+added APPLY_ODOR, APPLY_ROOMFLAG, APPLY_SECTORTYPE, APPLY_ROOMLIGHT, APPLY_TELEVNUM, and APPLY_TELEDELAY
+added dir_pulltypes
+put in extern int port;
+
++-------[ 2.57 ]-------+
+put in able to pierce only one loc right now ( use a struct type thing for mutliple ones later )
+added a msg to do_carry
+
++-------[ 2.6 ]-------+
+
+sitting while carrying someone is done.
+removed other_age
+removed years_old
+changed SAVEVERSION to 4
+added ch->pcdata->pregnacy as TIME_INFO
+do_diagnose moved to medical skills
+
++-------[ 2.61 ]-------+
+fixed do_makemedkit
+fixed carry
+always get preg - To Debug
+
++-------[ 2.62 ]-------+
+
+moved do_abort to medical.c
+added morning sickness acording to elysa's notes
+added weight upping at month 4
+added ch->birth_wait in char_update
+put in ch->birth_name
+
++-------[ 2.63 ]-------+
+this that and the other thing
+fixed check_preg
+added stripclr
+
++-------[ 2.56 ]-------+
+
+cybernetic prices were upped
+diagnose
+abort is done by a player to a victim
+bodyparts were added BODY_*
+
++-------[ 2.56 - 3.00 ]-------+
+Major Jump, Done a Crapload of things, mostly forgoten, which is the cause for the big jump.
+
++-------[ 3.01 ]-------+
+
+took out the private thing for new homes code
+removed APPLY_IONCANNONS
+slightly started on do_splint
+updated some of the homes code
+
++-------[ 3.11 ]-------+
+
+added zeroing movement points if both legs are broken
+
++-------[ 3.20 ]-------+
+
+changed default help to help newbie
+added ch->full_name
+added do_trip to fight.c
+NAME(ch) shows ch->full_name if one is defined(donno why one wouldn't be)
+um... made gsn_trip and gsn_splint
+other stuff but i'm not keeping this uptodate
+
++-------[ 3.21 ]-------+
+added $V which is fullname
+working to bring back subclans
+added do_roommate
+think i fixed docking too
+
++-------[ 3.22 ]-------+
+
+Updated subclan stuff so main clan would share ranks, funds, and ships
+removed mkills, mdeaths, pkills, mdeaths from clans
+removed leadrank, onerank, tworank, badge from clans
+removed motto,score,favour,strikes,mem_limit from clans
+removed do_senate, do_addsenator, do_remsenator, load_senate, save_senate, do_newclan, do_orders, do_guilds, do_ordertalk, do_ot , do_guildtalk
+removed mkills, mdeaths, pkills, mdeaths, and illegal_pk from areas
+changed do_bank to use mainclan funds
+changed do_launch to use mainclan funds
+updated clan stuff in space.c
+updated strip_clr
+added ship->shipclass;
+changed aassign to let LEVEL_TRUEIMM(191) aass areas
+
++-------[ 3.23 ]-------+
+
+put collisions back in
+changed the hyperdrive readout (x1 is best)
+
++-------[ 3.30 ]-------+
+removed ROOM_INDEX_DATA * cargohold; from ships
+saved "Repulsor"
+
++-------[ 3.40 ]-------+
+put in class restrictions
+put in class banning
+
++-------[ 3.42 ]-------+
+fixed loading object in homes
+
++-------[ 3.43 ]-------+
+changed amount var in bribe to long
+put in nodeath flag for like holodecks
+removed BIRTH flag
+fixed butcher
+
++-------[ 3.44 ]-------+
+fixed age loading (i hope)
+fixed nodeath flag
+fixed trip
+fixed some stuff with makedroid
+fixed check_pilot (i hope) to work with subclans
+maybe if autopilot is on.. then avoid collision
+removed council from homes
+put in death_age in race info. - min 150
+put in setrace <race> on
+made it so you can remove bounties from offlien players
+
++-------[ 3.45 ]-------+
+fixed it so you can go into empty homes
+fixed it so ships will load with full fuel
+
++-------[ 3.46 ]-------+
+made it so the "other" ship can avoid also
+
++-------[ 3.47 ]-------+
+made it so that missiles extract
+put in gsn_birth, gsn_abort, gsn_stealcode
+
++-------[ 3.48 ]-------+
+falling will hurt your legs
+
++-------[ 3.49 ]-------+
+changed it so newbie players over level 2 can save
+fixed the age thing in nanny
+fixed some bugs in nanny
+fixed something to do with assigning bday
+updated some stuff todo with new auth system
+updated check_pilot
+
++-------[ 3.50 ]-------+
+made it so you can go like "prac bounty hunting"
+
++-------[ 3.51 ]-------+
+removed prac additions
+put save stuff back to only authed
+removed the clan checking for bounties
+added simple mxp support for shops
+
++-------[ 3.52 ]-------+
+put in home reseting in raw_kill
+added some more things to mxp info, ie, room name, desc, and exits
+i think i fixed do_setrace
+made it so mobs can't murder
+added in gsn_cosmetic
+
++-------[ 3.53 ]-------+
+fixed stripclr function
+put in homes stuff for the hoems code
+added styles
+added gsn_cook
+updated do_consider
+added some skill related stuff
+
++-------[ 3.54 ]-------+
+put in RNum mxp eliment
+corpse value 4 = race #
+fixed some spelling mistakes in do_makemedkit
+added CLEAR_BITS macro
+fixed some stuff in eng-skills.c
+fixed some bugs in make commands
+fixed some bugs in seduce
+added do_cosmetic to tables.c
+i think cosmetic skill is finished
+do_fullname uses strip_clr
+clan money stuff fixed
+setrace ability fixed
+fixed councilbuyhome
+fixed a few other things
+
++-------[ 3.55 ]-------+
+fixed spling not getting better at
+added wayland spot to the busses
+added AT_INFO which is red
+fixed some color issues in act_comm.c
+diagnose is ready for a teacher i think
+added gsn_cosmetic
+added do_cook to the tables
+removed gsn_feed
+fixed ships getting stuck if planetary shields are up
+put in stuff for eat and drink
+updated max_level for medical
+
++-------[ 3.56 ]-------+
+i think i fixed do_dock
+
++-------[ 3.57 ]-------+
+fixed update_planet
+worked on some of mobships(gendi's code)
+fixed do_diagnose
+updated setcode and sendcode
+
++-------[ 3.59 ]-------+
+updated empower
+updated pshields todo with leaders
+updated do_alertstatus
+updated stuff todo with alertstatus in space.c
+removed ability,minlevel, and alignment from setclan
+added show_preg_line to act_info.c
+added preg line to show_char_to_char_1 (looking at a character)
+took out the council motd
+added in a plu stop
+
++-------[ 3.60 ]-------+
+put in some smaug1.4a bug fixes
+put in not transfering when idle out
+fixed birth's languages
+fiexed pet rename desc part
+must be at least LEVEL_IMPLEMENTOR to multiplay
+no more color checking on titles
+
++-------[ 3.61 ]-------+
+able to bid on own items
+changed gemote to Holographic Comlink Picture
+all ooc channels have ()'s while ic channels have []'s
+made armed_by for corpses
+made do_autopsy
+added gsn_autopsy
+updated homeid
+
++-------[ 3.63 ]-------+
+finished autopsy
+fixed some homes stuff
+uh... yea
+
+
++-------[ 3.65 ]-------+
+put in hp todo with cosmetic
+if ( number_percent() <= 10 ) for make_preg
+void miscarage
+fixed set_fighting to clear carrying
+put in check for birth_wait in do_quit
+birth now has a waiting period before dilevery
+act_move makes it so you can't move when giving birth
+put in council powers stuff to interp
+
++-------[ 3.66 ]-------+
+added a check in update_char for birth_name being null/clear
+
++-------[ 3.67 ]-------+
+fixed show_preg_line
+fixed do_drive
+fixed repulsors todo with shipclass
+edited do_showship todo with speeders and stuff
+fixed do_xsedit
+updated do_consent
+updated do_carry todo with weight
+updated medical skills to use consent
+added AT_XSOCIAL
+birth docks move
+
++-------[ 0.3.68 ]-------+
+fixed bug in update.c
+fixed makeshield
+moved the controls stuff to once a day (time_update)
+updated getcode,setcode,sendcode for planetary code
+
++-------[ 0.3.69 ]-------+
+added time ifcheck
+
++-------[ 0.3.70 ]-------+
+fixed banning classes (changed "bounty hunting" to "bounty_hunting" )
+did some fixes to do_myclan
+added show_obj_values to handler.c
+added get_type_liquid to handler.c
+changed ROOM_VNUM_NURSERY to 92079
+added show_obj_values to act_wiz.c
+removed the echo in birth_ok
+updated max_levels
+
++-------[ 0.3.71 ]-------+
+added LOG_PROGBUG
+updated log_string_plus to use LOG_PROGBUG
+added CHANNEL_PROGBUG
+
++-------[ 0.3.72 ]-------+
+fixed obj loading fixed for homes
+obj saving fixed i hope
+updated max_levels again
+added do_upgradeship
+
++-------[ 0.3.73 ]-------+
+fixed repulsors
+added class bans
+
++-------[ 0.3.74 ]-------+
+fixed slist
+added LANG_BOTHAN and LANG_ASKANI 
+fixed do_name
+updated the wages to put into the player's bank account
+updated wages msg
+changed bounty_hunting into hunting
+updated auth_info stuff to include sex and ability;
+updated save_char_obj to allow saving unauth's over level 5
+same with do_save
+rearrange the nanny stuff to make more sense
+fixed showrace
+removed force from do_level and do_score
+
++-------[ 0.3.75 ]-------+
+finally think i fixed item saving in homes
+
+
++-------[ 0.3.76 ]-------+
+updated auth stuff
+updated planet flags, and added a list to mset
+updated showrace to include home
+added race->planetname;
+updated spec_newbie_pilot
+
++-------[ 0.3.77 ]-------+
+fixed formating in nanny
+removed rolling stats from nanny
+removed CON_GET_PKILL, CON_GET_NEW_EMAIL, CON_ROLL_STATS, and CON_STATS_OK
+fixed do_freehomes
+changed do_save back
+updated gain_exp for unauthed
+added wearing and class ifcheck
+updated quest stuff
+fixed breaking bones so that it won't happen for imms
+changed quest_curr to int
+
++-------[ 0.3.78 ]-------+
+updated do_score
+
++-------[ 0.3.79 ]-------+
+removed ch->pagelen,inter_page,inter_type,
+	inter_editing,inter_editing_vnum, inter_editing_mob,inter_editing_obj
+remove pcdata->outcast_time
+added arena stuff(lots)
+fixed do_tell,retell,reply,whisper to scramble
+
++-------[ 0.3.80 ]-------+
+did some arena stuff
+added ARENA_FILE for arena long
+fixed stat moding in nanny
+
+
++-------[ 0.3.81 ]-------+
+( http://homepages.enterprise.net/cyclops/snippets1.shtml )
+put in Colour Fix Snippet v 1.0 by Shadroth ( AKA Cyclops 0-) : cyclops@enterprise.net )
+put in Pet Saving Snippet v 1.1 by Shadroth ( AKA Cyclops 0-) : cyclops@enterprise.net )
+
++-------[ 0.3.82 ]-------+
+BV13 - ACT_POLYSELF has been removed
+updated IS_AFFECTED (commented out)
+
++-------[ 0.3.83 ]-------+
+put back MAX_VNUMS to 2000000000
+removed drunkspeech from avtalk
+remove do_pemote
+updated saveing ship stats for allowing negitive stats
+worked on do_upgradeship
+updated marriage toput the opposite sex check in
+fixed sex check on xsocials
+added CYBER_STERILE
+
++-------[ 0.3.83 ]-------+
+removed "blah is dead echo" and the bounty one
+fixed xsocials
+updated some mxp mapping stuff
+
++-------[ 0.3.84 ]-------+
+removed hard/soft ranges
+updated do_jail
+removed grenading of ships
+edited ship types
+updated in_arena
+put in the half breed thing
+
++-------[ 0.3.85 ]-------+
+fixed makefurniture not using toolkit
+#define AT_RMDESC	   AT_GREY
+added the ooc to dead msgs
+
++-------[ 0.3.86 ]-------+
+removed neutral from nanny
+fixed loading vendor # in save.c
+hunters now can have some medical
+removed highwind.
+grenades harm ships if inside
+updated do_kill/murder for defels
+
++-------[ 0.3.87 ]-------+
+updated grenade thing
+rearranged languges
+remove homes and funds from councils
+#define ROOM_AUTH_LAND		  300
+added do_mpapply and do_mpapplyb
+putting smaug's auth in
+removed space->crash and max_land
+removed abil and minlevel from clans and alignment
+fixed resets todo with roomflags
+fixed quest items
+fixed a hair type problem
+
++-------[ 0.3.88 ]-------+
+put in age restriction to login
+updated max_levels to purely use the stuff in setrace 
+setrace changed from
+if ( tempnum < ship->firstroom || tempnum > ship->lastroom )
+to
+if ( tempnum <= ship->firstroom || tempnum >= ship->lastroom )
+
++-------[ 0.3.89 ]-------+
+allowed bounting offline players
+allow bounty hunting guild to bounty players
+
++-------[ 0.3.90 ]-------+
+put in legal age of consent in showrace
+put in deathage stuff in update.c
+put in speakswell for shops.c
+updated blackjack
+updated roommate
+updated petname desc
+
++-------[ 0.3.91 ]-------+
+made bounties logged
+made reason logged
+bounties list and clear have been added
+
++-------[ 0.3.92 ]-------+
+clones don't keep arena stats, birthdays(updated to year of clones), marriage, nuscance, mentalstate, area info and khistory
+	helled, ptimer, site, wanted, force, genes,last played, email, homepage, cparents
+updated vip flags
+added consent to race_type
+added age of consent to xsocials and propose
+
++-------[ 0.3.93 ]-------+
+updated how arena stats are saved(the log ones)
+updated scoreboard command
+removed trap references.
+removed #define OBJ_VNUM_TRAP		     31
+removed spell_remove_trap
+added complex picking to nanny
+added immortal check to the age part in nanny
+updated do_boards and do_bstat
+removed pemote
+put comlink check in tell
+removed pierce and tattoo
+removed pcdata->conception
+removed pcdata->special_skills,openedtourney,email,homepage
+added stuff for charmies
+removed do_homepage
+removed tourney_data
+
++-------[ 0.3.94 ]-------+
+added it so you can type "clan imperial" can get simple info
+
++-------[ 0.3.95 ]-------+
+roommate info added
+fixed a error in clans
+updated frontend to quest
+
++-------[ 0.3.96 ]-------+
+added following macros:
+GET_MAX_STR(CH), GET_MAX_DEX(CH), GET_MAX_INT(CH), GET_MAX_WIS(CH),
+GET_MAX_CON(CH), GET_MAX_CHA(CH), GET_MAX_LCK(CH), GET_MAX_FRC(CH)
+fixed trip to not at all break your legs if you have cybernetic legs
+added ability to do a custom suicide message
+removed the failing cloneing without warning (in the function that writes the clone file)
+modified clone command a bit
+made some minor updates to birthday code, no changes, just less functioncalls
+removed int door from do_open and do_close
+removed int counter from do_clans
+
++-------[ 0.3.97 ]-------+
+Drraagh - Added run code
+removed profanity code
+remove char *translate(int percent, const char *in, const char *name)
+remove void    init_profanity_checker	args( ( void ) ); from mud.h
+remove char *	translate	args( ( int percent, const char *in, const char *name) ); from mud.h
+
++-------[ 1.0.10 ]-------+
+Restarted using versions log.
+Added do_rcreate for auto-creating rooms between a range
+removed last_pkroom
+removed find_location( *, "pk" ), at pk, ipcompare pkill
+removed CAN_PKILL macro
+removed stuff from grub.c, including the old diagnose command (non-ic, imm command), do_grub, do_ogrub, 
+do_rgrub, and alot of function
+added mail to imms, for mails just to imms, and mail to mortals
+removed IS_IDLE macro
+removed PCFLAG_IDLE (bv23 free now), and PCFLAG_HIGHGAG (bv20), and PCFLAG_DEADLY (bv25), and
+PCFLAG_NORECALL (bv03), PCFLAG_NOINTRO (bv04), PCFLAG_NOSUMMON (bv08) 
+added notice to when mud puts you afk
+removed ch->pcdata->createtime

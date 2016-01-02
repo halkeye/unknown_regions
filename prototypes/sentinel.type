@@ -1,0 +1,23 @@
+#PROTOTYPE
+Name         Sentinel-class Shuttle~
+Filename     sentinel.type~
+Description  ~
+Class        0
+Tractorbeam  1
+Lasers       4
+Maxmissiles  8
+Maxshield    350
+Maxhull      750
+Maxenergy    1
+Hyperspeed   125
+Maxchaff     0
+Realspeed    100
+Manuever     0
+Maxbombs     0
+Comm         0
+Sensor       0
+Astro_array  0
+Ion          0
+End
+
+#END
